@@ -1,4 +1,4 @@
-[![CI status](https://github.com/biosimulations/biosimulations_bigg/workflows/Continuous%20integration/badge.svg)](https://github.com/biosimulations/biosimulations_bigg/actions?query=workflow%3A%22Continuous+integration%22)
+[![Continuous integration](https://github.com/biosimulations/biosimulations-bigg/actions/workflows/ci.yml/badge.svg)](https://github.com/biosimulations/biosimulations-bigg/actions/workflows/ci.yml)
 [![Test coverage](https://codecov.io/gh/biosimulations/biosimulations_bigg/branch/dev/graph/badge.svg)](https://codecov.io/gh/biosimulations/biosimulations_bigg)
 
 # BioSimulations-BiGG
