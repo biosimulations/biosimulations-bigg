@@ -1,0 +1,29 @@
+**/source/models/
+**/source/thumbnails/
+**/source/visualizations/
+**/source/*.sqlite
+final/
+
+# Entrez schema
+esummary_assembly.dtd
+
+# compiled Python files
+*.egg-info/
+__pycache__/
+*.pyc
+dist/
+build/
+
+# coverage files
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# compiled documentation
+README.rst
+docs/objects.inv
+docs/.buildinfo
+docs/.doctrees/
+docs/_raw_sources/
+docs/_sources/

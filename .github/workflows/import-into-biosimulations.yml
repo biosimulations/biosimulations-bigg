@@ -1,0 +1,46 @@
+name: Import repository into BioSimulations
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # weekly at 12:00 on Sundays
+
+jobs:
+  importRepository:
+    name: Import repository into BioSimulations
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: dev
+
+      # Install requirements
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements.optional.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
+      # install package
+      - name: Install the package
+        run: python -m pip install .[all]
+
+      # Import models into BioSimulations
+      - name: Import repository
+        env:
+          ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
+        run: biosimulations-bigg --dry-run

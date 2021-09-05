@@ -1,0 +1,15 @@
+# description
+include README.rst
+
+# license
+include LICENSE
+
+# requirements
+include requirements.txt
+include requirements.optional.txt
+
+# BiGG license
+include biosimulations_bigg/source/LICENSE
+
+# curation information
+include biosimulations_bigg/final/*.yml
