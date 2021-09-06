@@ -2,7 +2,7 @@
 [![Test coverage](https://codecov.io/gh/biosimulations/biosimulations_bigg/branch/dev/graph/badge.svg)](https://codecov.io/gh/biosimulations/biosimulations_bigg)
 
 # BioSimulations-BiGG
-BioSimulations-BiGG provides a command-line application for importing the [BiGG model repository(http://bigg.ucsd.edu/) of flux balance models into the [BioSimulations](https://biosimulations.org) repository for simulation projects.
+BioSimulations-BiGG provides a command-line application for importing the [BiGG model repository](http://bigg.ucsd.edu/) of flux balance models into the [BioSimulations](https://biosimulations.org) repository for simulation projects.
 
 This command-line program is run weekly by the GitHub action in this repository.
 
