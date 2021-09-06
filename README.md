@@ -19,7 +19,7 @@ pip install git+https://github.com/biosimulations/biosimulations-bigg.git#biosim
 ```
 
 ## API documentation
-API documentation is available [here](https://docs.biosimulations.org/biosimulations-bigg/).
+API documentation is available [here](https://docs.biosimulations.org/repositories/bigg).
 
 ## License
 This package is released under the [MIT license](LICENSE). BiGG is licensed under the [BiGG License](http://bigg.ucsd.edu/license).
