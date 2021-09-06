@@ -49,8 +49,8 @@ Please use GitHub pull requests to submit changes. Each request should include a
 
 ## Reporting issues
 
-Please use [GitHub issues](https://github.com/biosimulations/biosimulations_bigg/issues) to report any issues to the development community.
+Please use [GitHub issues](https://github.com/biosimulations/biosimulations-bigg/issues) to report any issues to the development community.
 
 ## Getting help
 
-Please use [GitHub issues](https://github.com/biosimulations/biosimulations_bigg/issues) to post questions or contact the lead developers at [info@biosimulations.org](mailto:info@biosimulations.org).
+Please use [GitHub issues](https://github.com/biosimulations/biosimulations-bigg/issues) to post questions or contact the lead developers at [info@biosimulations.org](mailto:info@biosimulations.org).

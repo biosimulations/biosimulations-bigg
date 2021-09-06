@@ -14,4 +14,4 @@ After installing `Python <https://www.python.org/downloads/>`_ (>= 3.7) and `pip
 
 .. code-block:: text
 
-    pip install git+https://github.com/biosimulations/biosimulations_bigg#egg=biosimulations-bigg
+    pip install git+https://github.com/biosimulations/biosimulations-bigg#egg=biosimulations-bigg

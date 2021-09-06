@@ -29,14 +29,14 @@ md = pkg_utils.get_package_metadata(dirname, name, package_data_filename_pattern
 
 # install package
 setuptools.setup(
-    name=name,
+    name='biosimulations-bigg',
     version=md.version,
     description=(
         "Command-line program for importing the BiGG model repository into BioSimulations."
     ),
     long_description=md.long_description,
-    url="https://github.com/biosimulations/biosimulations_bigg",
-    download_url='https://github.com/biosimulations/biosimulations_bigg',
+    url="https://github.com/biosimulations/biosimulations-bigg",
+    download_url='https://github.com/biosimulations/biosimulations-bigg',
     author='Center for Reproducible Biomedical Modeling',
     author_email="info@biosimulations.org",
     license="MIT",

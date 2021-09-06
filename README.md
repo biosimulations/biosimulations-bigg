@@ -1,5 +1,5 @@
 [![Continuous integration](https://github.com/biosimulations/biosimulations-bigg/actions/workflows/ci.yml/badge.svg)](https://github.com/biosimulations/biosimulations-bigg/actions/workflows/ci.yml)
-[![Test coverage](https://codecov.io/gh/biosimulations/biosimulations_bigg/branch/dev/graph/badge.svg)](https://codecov.io/gh/biosimulations/biosimulations_bigg)
+[![Test coverage](https://codecov.io/gh/biosimulations/biosimulations-bigg/branch/dev/graph/badge.svg)](https://codecov.io/gh/biosimulations/biosimulations-bigg)
 
 # BioSimulations-BiGG
 BioSimulations-BiGG provides a command-line application for importing the [BiGG model repository](http://bigg.ucsd.edu/) of flux balance models into the [BioSimulations](https://biosimulations.org) repository for simulation projects.
@@ -15,11 +15,11 @@ This command-line program is run weekly by the GitHub action in this repository.
 
 ### Install latest revision from GitHub
 ```
-pip install git+https://github.com/biosimulations/biosimulations_bigg.git#biosimulations-bigg
+pip install git+https://github.com/biosimulations/biosimulations-bigg.git#biosimulations-bigg
 ```
 
 ## API documentation
-API documentation is available [here](https://docs.biosimulations.org/biosimulations_bigg/).
+API documentation is available [here](https://docs.biosimulations.org/biosimulations-bigg/).
 
 ## License
 This package is released under the [MIT license](LICENSE). BiGG is licensed under the [BiGG License](http://bigg.ucsd.edu/license).

@@ -3,7 +3,7 @@ About BioSimulations-BiGG
 
 License
 -------
-This package is released under the `MIT License <https://github.com/biosimulations/biosimulations_bigg/blob/dev/LICENSE>`_. BiGG is licensed under the `BiGG License <http://bigg.ucsd.edu/license>`_.
+This package is released under the `MIT License <https://github.com/biosimulations/biosimulations-bigg/blob/dev/LICENSE>`_. BiGG is licensed under the `BiGG License <http://bigg.ucsd.edu/license>`_.
 
 Development team
 ----------------
@@ -11,7 +11,7 @@ This package was developed by the `Karr Lab <https://www.karrlab.org>`_ at the I
 
 Contributing to BioSimulations-BiGG
 -----------------------------------
-We enthusiastically welcome contributions to BioSimulations-BiGG! Please see the `guide to contributing <https://github.com/biosimulations/biosimulations_bigg/blob/dev/CONTRIBUTING.md>`_ and the `developer's code of conduct <https://github.com/biosimulations/biosimulations_bigg/blob/dev/CODE_OF_CONDUCT.md>`_.
+We enthusiastically welcome contributions to BioSimulations-BiGG! Please see the `guide to contributing <https://github.com/biosimulations/biosimulations-bigg/blob/dev/CONTRIBUTING.md>`_ and the `developer's code of conduct <https://github.com/biosimulations/biosimulations-bigg/blob/dev/CODE_OF_CONDUCT.md>`_.
 
 Acknowledgements
 ----------------

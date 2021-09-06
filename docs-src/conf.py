@@ -18,7 +18,7 @@ source_dir = os.path.join(os.path.dirname(__file__), '..', 'biosimulations_bigg'
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 # -- Project information -----------------------------------------------------
-source_base_url = 'https://github.com/biosimulations/biosimulations_bigg/blob/dev/'
+source_base_url = 'https://github.com/biosimulations/biosimulations-bigg/blob/dev/'
 project = 'BioSimulations-BiGG'
 copyright = '{}, BioSimulations Team'.format(datetime.datetime.now().year)
 author = 'BioSimulations Team'
@@ -103,7 +103,7 @@ html_static_path = ['_static']
 
 html_theme_options = {
     'github_user': 'biosimulations',
-    'github_repo': 'biosimulations_bigg',
+    'github_repo': 'biosimulations-bigg',
     'github_banner': True,
     'github_button': True,
     'description': 'Tool for importing the BiGG model repository into BioSimulations',
