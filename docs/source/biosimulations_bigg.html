@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. biosimulations_bigg package &#8212; BioSimulations-BiGG 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. About BioSimulations-BiGG" href="../about.html" />
+    <link rel="prev" title="2. Tutorial" href="../tutorial.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BioSimulations-BiGG</a></h1>
+
+
+
+<p class="blurb">Tool for importing the BiGG model repository into BioSimulations</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=biosimulations&repo=biosimulations_bigg&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. Installation instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">2. Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">3.1. Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-biosimulations_bigg.core">3.2. biosimulations_bigg.core module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">4. About BioSimulations-BiGG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">5. Index</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://biosimulations.org">BioSimulations</a></li>
+    
+    <li class="toctree-l1"><a href="https://run.biosimulations.org">runBioSimulations</a></li>
+    
+    <li class="toctree-l1"><a href="http://bigg.ucsd.edu/">BiGG</a></li>
+    
+    <li class="toctree-l1"><a href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/fbc">SBML-fbc</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../tutorial.html" title="previous chapter"><span class="section-number">2. </span>Tutorial</a></li>
+      <li>Next: <a href="../about.html" title="next chapter"><span class="section-number">4. </span>About BioSimulations-BiGG</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-biosimulations_bigg">
+<span id="biosimulations-bigg-package"></span><h1><span class="section-number">3. </span>biosimulations_bigg package<a class="headerlink" href="#module-biosimulations_bigg" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2><span class="section-number">3.1. </span>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-biosimulations_bigg.core">
+<span id="biosimulations-bigg-core-module"></span><h2><span class="section-number">3.2. </span>biosimulations_bigg.core module<a class="headerlink" href="#module-biosimulations_bigg.core" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="biosimulations_bigg.core.get_config">
+<code class="sig-prename descclassname"><span class="pre">biosimulations_bigg.core.</span></code><code class="sig-name descname"><span class="pre">get_config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dirname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./source'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_license_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./source/LICENSE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sessions_dirname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./source'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_dirname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./final'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curators_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./final/curators.yml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">issues_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./final/issues.yml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jonrkarr/Documents/biosimulations-bigg/docs-src/../biosimulations_bigg/./final/status.yml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_models</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_num_reactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dry_run</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulations/biosimulations_bigg/blob/dev/biosimulations_bigg/core.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulations_bigg.core.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a configuration</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>obj</strong> (<em>status_filename</em>) – <cite>str</cite>, optional): directory where source models, metabolic flux maps, and thumbnails should be stored</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): path to BiGG license to copy into COMBINE/OMEX archives</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): directory where cached HTTP sessions should be stored</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): directory where created SED-ML, metadata, and COMBINE/OMEX archives should be stored</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): path which describes the people who helped curator the repository</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): path to issues which prevent some models from being imported</p></li>
+<li><p><strong>(</strong><strong>obj</strong> – <cite>str</cite>, optional): path to save the import status of each model</p></li>
+<li><p><strong>max_models</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – maximum number of models to download, convert, execute, and submit; used for testing</p></li>
+<li><p><strong>max_num_reactions</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – maximum size model to import; used for testing</p></li>
+<li><p><strong>dry_run</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code>, optional) – whether to submit models to BioSimulations or not; used for testing</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><cite>dict</cite>: configuration</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biosimulations_bigg.core.import_models">
+<code class="sig-prename descclassname"><span class="pre">biosimulations_bigg.core.</span></code><code class="sig-name descname"><span class="pre">import_models</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulations/biosimulations_bigg/blob/dev/biosimulations_bigg/core.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulations_bigg.core.import_models" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download the source database, convert into COMBINE/OMEX archives, simulate the archives, and submit them to BioSimulations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>config</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code>) – configuration</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2021, BioSimulations Team.
+      
+      |
+      <a href="../_sources/source/biosimulations_bigg.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/biosimulations/biosimulations_bigg" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

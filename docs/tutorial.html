@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Tutorial &#8212; BioSimulations-BiGG 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. About BioSimulations-BiGG" href="about.html" />
+    <link rel="prev" title="1. Installation instructions" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BioSimulations-BiGG</a></h1>
+
+
+
+<p class="blurb">Tool for importing the BiGG model repository into BioSimulations</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=biosimulations&repo=biosimulations_bigg&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. Installation instructions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">3. About BioSimulations-BiGG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">4. Index</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://biosimulations.org">BioSimulations</a></li>
+    
+    <li class="toctree-l1"><a href="https://run.biosimulations.org">runBioSimulations</a></li>
+    
+    <li class="toctree-l1"><a href="http://bigg.ucsd.edu/">BiGG</a></li>
+    
+    <li class="toctree-l1"><a href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/fbc">SBML-fbc</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter"><span class="section-number">1. </span>Installation instructions</a></li>
+      <li>Next: <a href="about.html" title="next chapter"><span class="section-number">3. </span>About BioSimulations-BiGG</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="tutorial">
+<h1><span class="section-number">2. </span>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>The models in the BiGG repository can be imported in BioSimulations by running the command-line program as illustrated below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span>
+</pre></div>
+</div>
+<p>Help for the command-line program is available inline by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<p>The command-line program imports each BiGG models into BioSimulations as follows:</p>
+<ol class="arabic simple">
+<li><p>Checks <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/issues.yml</span></code> for any known issues about the model which prevent it from being imported in BioSimulations (e.g., the files are not valid SBML or no reference is available). Issues with models should be reported using the <a class="reference external" href="https://github.com/SBRG/bigg_models/issues">BiGG issue tracker</a>.</p></li>
+<li><p>Checks the import status of the model in <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/status.yml</span></code> and determines whether the model hasn’t yet been imported into BioSimuations or needs to be re-imported because it has been updated in BiGG since it was imported into BioSimulations.</p></li>
+<li><p>Retrieves the model and metadata about the model from BiGG.</p></li>
+<li><p>If applicable, retrieves <a class="reference external" href="https://escher.github.io/">Escher</a> flux maps for the model from BiGG.</p></li>
+<li><p>Uses <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a class="reference external" href="https://crossref.org/">CrossRef</a> to get information about the publication cited for the model.</p></li>
+<li><p>If possible, uses the <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/">open access subset of PubMed Central</a> to retrive thumbnail images for the model.</p></li>
+<li><p>Creates a <a class="reference external" href="http://sed-ml.org/">Simulation Experiment Description Markup Langauge</a> (SED-ML) file which describes a flux balance analysis simulation of the model.</p></li>
+<li><p>Converts the Escher flux maps to <a class="reference external" href="https://vega.github.io/vega/">Vega</a> data visualizations.</p></li>
+<li><p>Exports the metadata to a OMEX metadata-compliant RDF file. The list of curators is determined by <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/curators.yml</span></code>. Individuals who contribute should add their name to this document.</p></li>
+<li><p>Packages the model, SED-ML, Escher and Vega flux maps, images, and metadata files into a <a class="reference external" href="https://combinearchive.org/">COMBINE/OMEX archive</a>.</p></li>
+<li><p>Uses <a class="reference external" href="https://github.com/biosimulators/Biosimulators_COBRApy">BioSimultors-COBRApy</a> to execute the COMBINE/OMEX archive.</p></li>
+<li><p>Checks that the optimal objective value is positive.</p></li>
+<li><p>Submits the COMBINE/OMEX archive to RunBioSimulations.</p></li>
+<li><p>Updates the import status of the model in <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/status.yml</span></code></p></li>
+</ol>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2021, BioSimulations Team.
+      
+      |
+      <a href="_sources/tutorial.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/biosimulations/biosimulations_bigg" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
