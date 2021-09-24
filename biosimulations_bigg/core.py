@@ -11,7 +11,7 @@ from biosimulators_utils.sedml.data_model import (
     SedDocument, Model, ModelLanguage, SteadyStateSimulation,
     Task, DataGenerator, Report, DataSet)
 from biosimulators_utils.sedml.io import SedmlSimulationWriter
-from biosimulators_utils.sedml.model_utils import get_parameters_variables_for_simulation
+from biosimulators_utils.sedml.model_utils import get_parameters_variables_outputs_for_simulation
 from biosimulators_utils.viz.vega.escher import escher_to_vega
 from biosimulators_utils.warnings import BioSimulatorsWarning
 import biosimulators_cobrapy
@@ -316,7 +316,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, refe
 
 
 def build_combine_archive_for_model(model_filename, archive_filename, extra_contents):
-    params, sims, vars = get_parameters_variables_for_simulation(model_filename, ModelLanguage.SBML, SteadyStateSimulation, native_ids=True)
+    params, sims, vars, outputs = get_parameters_variables_outputs_for_simulation(model_filename, ModelLanguage.SBML, SteadyStateSimulation, native_ids=True)
 
     obj_vars = list(filter(lambda var: var.target.startswith('/sbml:sbml/sbml:model/fbc:listOfObjectives/'), vars))
     rxn_flux_vars = list(filter(lambda var: var.target.startswith('/sbml:sbml/sbml:model/sbml:listOfReactions/'), vars))
@@ -406,6 +406,7 @@ def build_combine_archive_for_model(model_filename, archive_filename, extra_cont
     archive.contents.append(CombineArchiveContent(
         location='simulation.sedml',
         format=CombineArchiveContentFormat.SED_ML.value,
+        master=True,
     ))
     for local_path, extra_content in extra_contents.items():
         shutil.copyfile(local_path, os.path.join(archive_dirname, extra_content.location))
