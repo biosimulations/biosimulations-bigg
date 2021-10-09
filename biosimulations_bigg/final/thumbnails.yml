@@ -1,0 +1,449 @@
+STM_v1_0:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
+  id: 1752-0509-5-8/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
+  id: 1752-0509-5-8/F1
+  label: Figure 1
+e_coli_core: []
+iAB_RBC_283:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-2.jpg
+  id: 1752-0509-5-110/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-1.jpg
+  id: 1752-0509-5-110/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-3.jpg
+  id: 1752-0509-5-110/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-4.jpg
+  id: 1752-0509-5-110/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-5.jpg
+  id: 1752-0509-5-110/F5
+  label: Figure 5
+iAF1260:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f1.jpg
+  id: msb4100155/f1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f2.jpg
+  id: msb4100155/f2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f3.jpg
+  id: msb4100155/f3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f4.jpg
+  id: msb4100155/f4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f5.jpg
+  id: msb4100155/f5
+  label: Figure 5
+iAF1260b: []
+iAF987:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g003.jpg
+  id: pcbi.1003575/pcbi-1003575-g003
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g002.jpg
+  id: pcbi.1003575/pcbi-1003575-g002
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g001.jpg
+  id: pcbi.1003575/pcbi-1003575-g001
+  label: Figure 1
+iAM_Pb448:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6
+iAM_Pc455:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6
+iAM_Pf480:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6
+iAM_Pk459:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6
+iAM_Pv461:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6
+iAPECO1_1312: []
+iB21_1397: []
+iBWG_1329: []
+iCHOv1_DG44: []
+iE2348C_1286: []
+iEC042_1314: []
+iEC1344_C: []
+iEC1349_Crooks: []
+iEC1356_Bl21DE3: []
+iEC1364_W: []
+iEC1368_DH5a: []
+iEC1372_W3110: []
+iEC55989_1330: []
+iECABU_c1320: []
+iECBD_1354: []
+iECB_1328: []
+iECDH10B_1368: []
+iECDH1ME8569_1439: []
+iECD_1391: []
+iECED1_1282: []
+iECH74115_1262: []
+iECIAI1_1343: []
+iECIAI39_1322: []
+iECNA114_1301: []
+iECO103_1326: []
+iECO111_1330: []
+iECO26_1355: []
+iECOK1_1307: []
+iECP_1309: []
+iECS88_1305: []
+iECSE_1348: []
+iECSF_1327: []
+iECSP_1301: []
+iECUMN_1333: []
+iECW_1372: []
+iECs_1301: []
+iEK1008:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
+  id: 12918_2018_Article_557/Fig3
+  label: Fig. 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
+  id: 12918_2018_Article_557/Fig4
+  label: Fig. 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
+  id: 12918_2018_Article_557/Fig1
+  label: Fig. 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
+  id: 12918_2018_Article_557/Fig2
+  label: Fig. 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
+  id: 12918_2018_Article_557/Fig5
+  label: Fig. 5
+iETEC_1333: []
+iEcDH1_1363: []
+iEcE24377_1341: []
+iEcHS_1320: []
+iEcSMS35_1347: []
+iEcolC_1368: []
+iG2583_1286: []
+iHN637:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
+  id: 1475-2859-12-118/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
+  id: 1475-2859-12-118/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
+  id: 1475-2859-12-118/F5
+  label: Figure 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
+  id: 1475-2859-12-118/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
+  id: 1475-2859-12-118/F1
+  label: Figure 1
+iIT341: []
+iJN678: []
+iJN746:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
+  id: 1752-0509-2-79/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
+  id: 1752-0509-2-79/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
+  id: 1752-0509-2-79/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
+  id: 1752-0509-2-79/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
+  id: 1752-0509-2-79/F5
+  label: Figure 5
+iJO1366:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f1.jpg
+  id: msb201165/f1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f2.jpg
+  id: msb201165/f2
+  label: Figure 2
+iJR904:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
+  id: gb-2003-4-9-r54/F6
+  label: Figure 6
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
+  id: gb-2003-4-9-r54/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
+  id: gb-2003-4-9-r54/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
+  id: gb-2003-4-9-r54/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
+  id: gb-2003-4-9-r54/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
+  id: gb-2003-4-9-r54/F5
+  label: Figure 5
+iLF82_1304: []
+iLJ478: []
+iML1515: []
+iMM904:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
+  id: 1752-0509-3-37/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
+  id: 1752-0509-3-37/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
+  id: 1752-0509-3-37/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
+  id: 1752-0509-3-37/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
+  id: 1752-0509-3-37/F5
+  label: Figure 5
+iND750: []
+iNF517: []
+iNJ661:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-6.jpg
+  id: 1752-0509-1-26/F6
+  label: Figure 6
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-1.jpg
+  id: 1752-0509-1-26/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-2.jpg
+  id: 1752-0509-1-26/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-3.jpg
+  id: 1752-0509-1-26/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-4.jpg
+  id: 1752-0509-1-26/F4
+  label: Figure 4
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-5.jpg
+  id: 1752-0509-1-26/F5
+  label: Figure 5
+iNRG857_1313: []
+iPC815:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
+  id: 1752-0509-5-163/F3
+  label: Figure 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
+  id: 1752-0509-5-163/F2
+  label: Figure 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
+  id: 1752-0509-5-163/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
+  id: 1752-0509-5-163/F4
+  label: Figure 4
+iSB619:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
+  id: 1471-2180-5-8/F1
+  label: Figure 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
+  id: 1471-2180-5-8/F2
+  label: Figure 2
+iSBO_1134: []
+iSDY_1059: []
+iSFV_1184: []
+iSF_1195: []
+iSFxv_1172: []
+iSSON_1240: []
+iS_1188: []
+iSbBS512_1146: []
+iUMN146_1321: []
+iUMNK88_1353: []
+iUTI89_1310: []
+iWFL_1372: []
+iY75_1357: []
+iYL1228: []
+iYO844: []
+iYS854:
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g005.jpg
+  id: pcbi.1006644/pcbi.1006644.g005
+  label: Fig 5
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g001.jpg
+  id: pcbi.1006644/pcbi.1006644.g001
+  label: Fig 1
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g002.jpg
+  id: pcbi.1006644/pcbi.1006644.g002
+  label: Fig 2
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g003.jpg
+  id: pcbi.1006644/pcbi.1006644.g003
+  label: Fig 3
+- enabled: true
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g004.jpg
+  id: pcbi.1006644/pcbi.1006644.g004
+  label: Fig 4
+iZ_1308: []
+ic_1306: []

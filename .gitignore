@@ -1,8 +1,11 @@
-**/source/models/
-**/source/thumbnails/
-**/source/visualizations/
-**/source/*.sqlite
-final/
+biosimulations_bigg/source/models/
+biosimulations_bigg/source/thumbnails/
+biosimulations_bigg/source/visualizations/*.json
+biosimulations_bigg/source/*.sqlite
+biosimulations_bigg/final/projects/
+biosimulations_bigg/final/metadata/
+biosimulations_bigg/final/simulation-results/
+biosimulations_bigg/final/visualizations/
 
 # Entrez schema
 esummary_assembly.dtd
