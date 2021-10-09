@@ -397,7 +397,7 @@ def build_combine_archive_for_model(model_filename, archive_filename, extra_cont
         sedml_doc.data_generators.append(data_gen)
         report.data_sets.append(DataSet(
             id=var_id,
-            label=var_id,
+            label=var_id[2:] if var_id.startswith('R_') else var_id,
             name=var_name if len(rxn_flux_vars) < 4000 else None,
             data_generator=data_gen,
         ))
@@ -520,11 +520,16 @@ def import_models(config):
         print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
         taxon, reference, thumbnails = get_metadata_for_model(model, config)
 
-        # filter  out disabled thumbnails
-        if model['model_bigg_id'] in thumbnails_curation:
-            is_thumbnail_enabled = {thumbnail['id']: thumbnail['enabled'] for thumbnail in thumbnails_curation[model['model_bigg_id']]}
-            thumbnails = list(filter(lambda thumbnail: is_thumbnail_enabled[thumbnail.id], thumbnails))
-
+        # filter out disabled thumbnails
+        if thumbnails_curation.get(model['model_bigg_id'], []):
+            thumbnails = []
+            for thumbnail in thumbnails_curation[model['model_bigg_id']]:
+                if thumbnail['enabled'] and not thumbnails:
+                    thumbnails.append(PubMedCentralOpenAccesGraphic(
+                        id=thumbnail['id'],
+                        label=thumbnail['label'],
+                        filename=thumbnail['filename'],
+                    ))
         else:
             thumbnails_curation[model['model_bigg_id']] = [
                 {
@@ -535,7 +540,7 @@ def import_models(config):
                 }
                 for thumbnail in thumbnails
             ]
-        for thumbnail in thumbnails:            
+        for thumbnail in thumbnails:
             thumbnail.location = reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg'
             thumbnail.format = CombineArchiveContentFormat.JPEG
 
@@ -550,7 +555,7 @@ def import_models(config):
                 escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
             png_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.png')
             if os.path.isfile(png_filename):
-                thumbnails.append(attrdict.AttrDict(                    
+                thumbnails.append(attrdict.AttrDict(
                     filename=png_filename,
                     location=escher_map['map_name'] + '.png',
                     format=CombineArchiveContentFormat.PNG,
