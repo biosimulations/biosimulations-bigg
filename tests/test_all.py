@@ -1,10 +1,13 @@
 from biosimulations_bigg.__main__ import main
 from biosimulations_bigg.core import import_models, get_config
 from unittest import mock
+import Bio.Entrez
 import os
 import shutil
 import tempfile
 import unittest
+
+Bio.Entrez.email = 'biosimulations.daemon@gmail.com'
 
 
 class TestCase(unittest.TestCase):

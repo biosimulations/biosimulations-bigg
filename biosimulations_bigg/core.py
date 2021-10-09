@@ -14,6 +14,7 @@ from biosimulators_utils.sedml.io import SedmlSimulationWriter
 from biosimulators_utils.sedml.model_utils import get_parameters_variables_outputs_for_simulation
 from biosimulators_utils.viz.vega.escher import escher_to_vega
 from biosimulators_utils.warnings import BioSimulatorsWarning
+import attrdict
 import biosimulators_cobrapy
 import biosimulators_utils.biosimulations.utils
 import datetime
@@ -30,6 +31,7 @@ import yaml
 BASE_DIR = pkg_resources.resource_filename('biosimulations_bigg', '.')
 
 Entrez.email = os.getenv('ENTREZ_EMAIL', None)
+ENTREZ_DELAY = 5.
 
 SOURCE_API_ENDPOINT = 'http://bigg.ucsd.edu/api/v2'
 SOURCE_MODEL_FILES_ENDPOINT = 'http://bigg.ucsd.edu/static'
@@ -46,8 +48,10 @@ def get_config(
         curators_filename=os.path.join(BASE_DIR, 'final', 'curators.yml'),
         issues_filename=os.path.join(BASE_DIR, 'final', 'issues.yml'),
         status_filename=os.path.join(BASE_DIR, 'final', 'status.yml'),
+        thumbnails_filename=os.path.join(BASE_DIR, 'final', 'thumbnails.yml'),
         max_models=None,
         max_num_reactions=None,
+        simulate_models=True,
         dry_run=False,
 ):
     """ Get a configuration
@@ -60,8 +64,10 @@ def get_config(
         curators_filename (obj:`str`, optional): path which describes the people who helped curator the repository
         issues_filename (obj:`str`, optional): path to issues which prevent some models from being imported
         status_filename (obj:`str`, optional): path to save the import status of each model
+        thumbnails_filename (obj:`str`, optional): path to curated list of good thumbnails
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
+        simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
 
     Returns:
@@ -85,6 +91,7 @@ def get_config(
         'curators': curators,
         'issues_filename': issues_filename,
         'status_filename': status_filename,
+        'thumbnails_filename': thumbnails_filename,
 
         'source_session': requests_cache.CachedSession(
             os.path.join(sessions_dirname, 'source'),
@@ -98,6 +105,7 @@ def get_config(
 
         'max_models': max_models,
         'max_num_reactions': max_num_reactions,
+        'simulate_models': simulate_models,
         'dry_run': dry_run,
     }
 
@@ -172,10 +180,8 @@ def get_metadata_for_model(model_detail, config):
             * :obj:`Reference`: structured information about the reference
             * :obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`: figures of the reference
     """
-    # delay to prevent overloading NCBI servers
-    time.sleep(0.5)
-
     # NCBI id for organism
+    time.sleep(ENTREZ_DELAY)
     handle = Entrez.esearch(db="nucleotide", term='{}[Assembly] OR {}[Primary Accession]'.format(
         model_detail['genome_name'], model_detail['genome_name']), retmax=1, retmode="xml")
     record = Entrez.read(handle)
@@ -183,6 +189,7 @@ def get_metadata_for_model(model_detail, config):
     if len(record["IdList"]) > 0:
         nucleotide_id = record["IdList"][0]
 
+        time.sleep(ENTREZ_DELAY)
         handle = Entrez.esummary(db="nucleotide", id=nucleotide_id, retmode="xml")
         records = list(Entrez.parse(handle))
         handle.close()
@@ -191,6 +198,7 @@ def get_metadata_for_model(model_detail, config):
         taxon_id = records[0]['TaxId'].real
 
     else:
+        time.sleep(ENTREZ_DELAY)
         handle = Entrez.esearch(db="assembly", term='{}'.format(
             model_detail['genome_name']), retmax=1, retmode="xml")
         record = Entrez.read(handle)
@@ -201,12 +209,14 @@ def get_metadata_for_model(model_detail, config):
 
         assembly_id = record["IdList"][0]
 
+        time.sleep(ENTREZ_DELAY)
         handle = Entrez.esummary(db="assembly", id=assembly_id, retmode="xml")
         record = Entrez.read(handle)['DocumentSummarySet']['DocumentSummary'][0]
         handle.close()
 
         taxon_id = int(record['SpeciesTaxid'])
 
+    time.sleep(ENTREZ_DELAY)
     handle = Entrez.esummary(db="taxonomy", id=taxon_id, retmode="xml")
     record = Entrez.read(handle)
     assert len(record) == 1
@@ -271,7 +281,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, refe
                 'label': 'metabolic process',
             },
         ],
-        'thumbnails': [reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg' for thumbnail in thumbnails],
+        'thumbnails': [thumbnail.location for thumbnail in thumbnails],
         'sources': [],
         'predecessors': [],
         'successors': [],
@@ -316,7 +326,8 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, refe
 
 
 def build_combine_archive_for_model(model_filename, archive_filename, extra_contents):
-    params, sims, vars, outputs = get_parameters_variables_outputs_for_simulation(model_filename, ModelLanguage.SBML, SteadyStateSimulation, native_ids=True)
+    params, sims, vars, outputs = get_parameters_variables_outputs_for_simulation(
+        model_filename, ModelLanguage.SBML, SteadyStateSimulation, native_ids=True)
 
     obj_vars = list(filter(lambda var: var.target.startswith('/sbml:sbml/sbml:model/fbc:listOfObjectives/'), vars))
     rxn_flux_vars = list(filter(lambda var: var.target.startswith('/sbml:sbml/sbml:model/sbml:listOfReactions/'), vars))
@@ -454,6 +465,13 @@ def import_models(config):
     with open(config['issues_filename'], 'r') as file:
         issues = yaml.load(file, Loader=yaml.Loader)
 
+    # read thumbnails file
+    if os.path.isfile(config['thumbnails_filename']):
+        with open(config['thumbnails_filename'], 'r') as file:
+            thumbnails_curation = yaml.load(file, Loader=yaml.Loader)
+    else:
+        thumbnails_curation = {}
+
     # get a list of all models available in the source database
     models = get_models(config)
 
@@ -498,19 +516,45 @@ def import_models(config):
     for i_model, model in enumerate(models):
         model_filename = os.path.join(config['source_models_dirname'], model['model_bigg_id'] + '.xml')
 
-        # convert Escher map to Vega
+        # get additional metadata about the model
+        print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
+        taxon, reference, thumbnails = get_metadata_for_model(model, config)
+
+        # filter  out disabled thumbnails
+        if model['model_bigg_id'] in thumbnails_curation:
+            is_thumbnail_enabled = {thumbnail['id']: thumbnail['enabled'] for thumbnail in thumbnails_curation[model['model_bigg_id']]}
+            thumbnails = list(filter(lambda thumbnail: is_thumbnail_enabled[thumbnail.id], thumbnails))
+
+        else:
+            thumbnails_curation[model['model_bigg_id']] = [
+                {
+                    'id': thumbnail.id,
+                    'label': thumbnail.label,
+                    'filename': thumbnail.filename,
+                    'enabled': True,
+                }
+                for thumbnail in thumbnails
+            ]
+        for thumbnail in thumbnails:            
+            thumbnail.location = reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg'
+            thumbnail.format = CombineArchiveContentFormat.JPEG
+
+        # convert Escher map to Vega and add to thumbnails
         for escher_map in model['escher_maps']:
             escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
-            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.json')
+            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
             if not os.path.isfile(vega_filename):
                 reaction_fluxes_data_set = {
                     'sedmlUri': ['simulation.sedml', 'reaction_fluxes'],
                 }
                 escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
-
-        # get additional metadata about the model
-        print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
-        taxon, reference, thumbnails = get_metadata_for_model(model, config)
+            png_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.png')
+            if os.path.isfile(png_filename):
+                thumbnails.append(attrdict.AttrDict(                    
+                    filename=png_filename,
+                    location=escher_map['map_name'] + '.png',
+                    format=CombineArchiveContentFormat.PNG,
+                ))
 
         # export metadata to RDF
         print('Exporting project metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
@@ -541,19 +585,19 @@ def import_models(config):
         )
         for escher_map in model['escher_maps']:
             escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
-            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.json')
+            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
             extra_contents[escher_filename] = CombineArchiveContent(
                 location=escher_map['map_name'] + '.escher.json',
                 format=CombineArchiveContentFormat.Escher,
             )
             extra_contents[vega_filename] = CombineArchiveContent(
-                location=escher_map['map_name'] + '.vega.json',
+                location=escher_map['map_name'] + '.vg.json',
                 format=CombineArchiveContentFormat.Vega,
             )
         for thumbnail in thumbnails:
             extra_contents[thumbnail.filename] = CombineArchiveContent(
-                location=reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg',
-                format=CombineArchiveContentFormat.JPEG,
+                location=thumbnail.location,
+                format=thumbnail.format,
             )
 
         build_combine_archive_for_model(model_filename, project_filename, extra_contents=extra_contents)
@@ -562,25 +606,31 @@ def import_models(config):
         print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
 
         project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
-        out_dirname = os.path.join(config['final_simulation_results_dirname'], model['model_bigg_id'])
-        biosimulators_utils_config = Config(COLLECT_COMBINE_ARCHIVE_RESULTS=True)
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore", BioSimulatorsWarning)
-            results, log = biosimulators_cobrapy.exec_sedml_docs_in_combine_archive(
-                project_filename, out_dirname, config=biosimulators_utils_config)
-        if log.exception:
-            print('Simulation of `{}` failed'.format(model['model_bigg_id']))
-            raise log.exception
-        objective = results['simulation.sedml']['objective']['obj'].tolist()
-        print('  {}: Objective: {}'.format(model['model_bigg_id'], objective))
-        if objective <= 0:
-            raise ValueError('`{}` is not a meaningful simulation.'.format(model['model_bigg_id']))
-        duration = log.duration
+
+        if config['simulate_models']:
+            out_dirname = os.path.join(config['final_simulation_results_dirname'], model['model_bigg_id'])
+            biosimulators_utils_config = Config(COLLECT_COMBINE_ARCHIVE_RESULTS=True)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore", BioSimulatorsWarning)
+                results, log = biosimulators_cobrapy.exec_sedml_docs_in_combine_archive(
+                    project_filename, out_dirname, config=biosimulators_utils_config)
+            if log.exception:
+                print('Simulation of `{}` failed'.format(model['model_bigg_id']))
+                raise log.exception
+            objective = results['simulation.sedml']['objective']['obj'].tolist()
+            print('  {}: Objective: {}'.format(model['model_bigg_id'], objective))
+            if objective <= 0:
+                raise ValueError('`{}` is not a meaningful simulation.'.format(model['model_bigg_id']))
+            duration = log.duration
+        else:
+            objective = status.get(model['model_bigg_id'], {}).get('objective', None)
+            duration = status.get(model['model_bigg_id'], {}).get('duration', None)
 
         # submit COMBINE/OMEX archive to BioSimulations
         if not config['dry_run']:
             name = model['model_bigg_id']
-            runbiosimulations_id = biosimulators_utils.biosimulations.utils.submit_project_to_runbiosimulations(name, project_filename, 'cobrapy')
+            runbiosimulations_id = biosimulators_utils.biosimulations.utils.submit_project_to_runbiosimulations(
+                name, project_filename, 'cobrapy')
         else:
             runbiosimulations_id = None
 
@@ -594,3 +644,5 @@ def import_models(config):
         }
         with open(config['status_filename'], 'w') as file:
             file.write(yaml.dump(status))
+        with open(config['thumbnails_filename'], 'w') as file:
+            file.write(yaml.dump(thumbnails_curation))

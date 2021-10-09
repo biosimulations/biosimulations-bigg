@@ -43,4 +43,6 @@ jobs:
       - name: Import repository
         env:
           ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
-        run: biosimulations-bigg --dry-run
+          BIOSIMULATIONS_API_CLIENT_ID: ${{ secrets.PUBLISH_PROJECTS_BIOSIMULATIONS_API_CLIENT_ID }}
+          BIOSIMULATIONS_API_CLIENT_SECRET: ${{ secrets.PUBLISH_PROJECTS_BIOSIMULATIONS_API_CLIENT_SECRET }}
+        run: biosimulations-bigg
