@@ -14,7 +14,7 @@ from biosimulators_utils.sedml.io import SedmlSimulationWriter
 from biosimulators_utils.sedml.model_utils import get_parameters_variables_outputs_for_simulation
 from biosimulators_utils.viz.vega.escher import escher_to_vega
 from biosimulators_utils.warnings import BioSimulatorsWarning
-import attrdict
+from unittest import mock
 import biosimulators_cobrapy
 import biosimulators_utils.biosimulations.utils
 import datetime
@@ -555,7 +555,7 @@ def import_models(config):
                 escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
             png_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.png')
             if os.path.isfile(png_filename):
-                thumbnails.append(attrdict.AttrDict(
+                thumbnails.append(mock.Mock(
                     filename=png_filename,
                     location=escher_map['map_name'] + '.png',
                     format=CombineArchiveContentFormat.PNG,
