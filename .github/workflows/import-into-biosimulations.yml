@@ -37,7 +37,7 @@ jobs:
 
       # install package
       - name: Install the package
-        run: python -m pip install .[all]
+        run: python -m pip install .
 
       # Import models into BioSimulations
       - name: Import repository
