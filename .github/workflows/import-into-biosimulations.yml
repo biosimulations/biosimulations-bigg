@@ -43,6 +43,9 @@ jobs:
       - name: Import repository
         env:
           ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
+          GRB_WLSACCESSID: ${{ secrets.GRB_WLSACCESSID }}
+          GRB_WLSSECRET: ${{ secrets.GRB_WLSSECRET }}
+          GRB_LICENSEID: ${{ secrets.GRB_LICENSEID }}
           BIOSIMULATIONS_API_CLIENT_ID: ${{ secrets.PUBLISH_PROJECTS_BIOSIMULATIONS_API_CLIENT_ID }}
           BIOSIMULATIONS_API_CLIENT_SECRET: ${{ secrets.PUBLISH_PROJECTS_BIOSIMULATIONS_API_CLIENT_SECRET }}
         run: biosimulations-bigg
