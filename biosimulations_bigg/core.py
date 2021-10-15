@@ -2,7 +2,7 @@ from Bio import Entrez
 from biosimulators_utils.combine.data_model import CombineArchive, CombineArchiveContent, CombineArchiveContentFormat
 from biosimulators_utils.combine.io import CombineArchiveWriter
 from biosimulators_utils.config import Config
-# from biosimulators_utils.omex_meta.data_model import OmexMetaOutputFormat
+from biosimulators_utils.omex_meta.data_model import BIOSIMULATIONS_ROOT_URI_FORMAT
 from biosimulators_utils.omex_meta.io import BiosimulationsOmexMetaWriter, BiosimulationsOmexMetaReader
 # from biosimulators_utils.omex_meta.utils import build_omex_meta_file_for_model
 from biosimulators_utils.ref.data_model import Reference, PubMedCentralOpenAccesGraphic  # noqa: F401
@@ -177,6 +177,7 @@ def get_metadata_for_model(model_detail, config):
         :obj:`tuple`:
 
             * :obj:`dict`: NCBI taxonomy identifier and name
+            * :obj:`dict`: Genome identifier and name
             * :obj:`Reference`: structured information about the reference
             * :obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`: figures of the reference
     """
@@ -194,6 +195,11 @@ def get_metadata_for_model(model_detail, config):
         records = list(Entrez.parse(handle))
         handle.close()
         assert len(records) == 1
+
+        encodes = {
+            'uri': 'https://www.ncbi.nlm.nih.gov/nuccore/' + records[0]['Id'],
+            'label': records[0]['Title'],
+        }
 
         taxon_id = records[0]['TaxId'].real
 
@@ -213,6 +219,11 @@ def get_metadata_for_model(model_detail, config):
         handle = Entrez.esummary(db="assembly", id=assembly_id, retmode="xml")
         record = Entrez.read(handle)['DocumentSummarySet']['DocumentSummary'][0]
         handle.close()
+
+        encodes = {
+            'uri': 'https://www.ncbi.nlm.nih.gov/assembly/' + assembly_id,
+            'label': '{} genome assembly {}'.format(record['Organism'], record['AssemblyName']),
+        }
 
         taxon_id = int(record['SpeciesTaxid'])
 
@@ -244,17 +255,18 @@ def get_metadata_for_model(model_detail, config):
     else:
         thumbnails = []
 
-    return (taxon, reference, thumbnails)
+    return (taxon, encodes, reference, thumbnails)
 
 
-def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, reference, thumbnails, metadata_filename, config):
+def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, encodes, reference, thumbnails, metadata_filename, config):
     """ Export metadata about a model to an OMEX metadata RDF-XML file
 
     Args:
         model_detail (:obj:`str`): information about the model
         taxon (:obj:`dict`): NCBI taxonomy identifier and name
+        encodes (:obj:`dict`): Genome identifier and name
         reference (:obj:`Reference`): structured information about the reference
-        thumbnails (:obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`): figures of the reference
+        thumbnails (:obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`): figures of the reference        
         metadata_filename (:obj:`str`): path to save metadata
         config (:obj:`dict`): configuration
     """
@@ -262,6 +274,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, refe
     last_updated = dateutil.parser.parse(model_detail['last_updated'])
     metadata = [{
         "uri": '.',
+        "combine_archive_uri": BIOSIMULATIONS_ROOT_URI_FORMAT.format(model_detail['model_bigg_id']),
         'title': model_detail['model_bigg_id'],
         'abstract': 'Flux balance analysis model of the metabolism of {}.'.format(taxon['name']),
         'keywords': [
@@ -280,6 +293,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, refe
                 'uri': 'http://identifiers.org/GO:0008152',
                 'label': 'metabolic process',
             },
+            encodes,
         ],
         'thumbnails': [thumbnail.location for thumbnail in thumbnails],
         'sources': [],
@@ -518,7 +532,7 @@ def import_models(config):
 
         # get additional metadata about the model
         print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
-        taxon, reference, thumbnails = get_metadata_for_model(model, config)
+        taxon, encodes, reference, thumbnails = get_metadata_for_model(model, config)
 
         # filter out disabled thumbnails
         if thumbnails_curation.get(model['model_bigg_id'], []):
@@ -564,7 +578,8 @@ def import_models(config):
         # export metadata to RDF
         print('Exporting project metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
         project_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '.rdf')
-        export_project_metadata_for_model_to_omex_metadata(model, taxon, reference, thumbnails, project_metadata_filename, config)
+        export_project_metadata_for_model_to_omex_metadata(model, taxon, encodes, reference, thumbnails,
+                                                           project_metadata_filename, config)
 
         # print('Exporting model metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
         # model_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '-omex-metadata.rdf')
