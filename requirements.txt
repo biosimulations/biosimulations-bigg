@@ -1,6 +1,6 @@
 biopython
 biosimulators_cobrapy
-biosimulators_utils[escher] >= 0.1.117
+biosimulators_utils[escher] >= 0.1.137
 pyyaml
 python_dateutil
 requests_cache
