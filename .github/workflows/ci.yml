@@ -33,7 +33,7 @@ jobs:
 
       # install package
       - name: Install the package
-        run: python -m pip install .[all]
+        run: python -m pip install .
 
       # lint
       - name: Install flake8
