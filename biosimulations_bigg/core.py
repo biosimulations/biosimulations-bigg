@@ -266,7 +266,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
         taxon (:obj:`dict`): NCBI taxonomy identifier and name
         encodes (:obj:`dict`): Genome identifier and name
         reference (:obj:`Reference`): structured information about the reference
-        thumbnails (:obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`): figures of the reference        
+        thumbnails (:obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`): figures of the reference
         metadata_filename (:obj:`str`): path to save metadata
         config (:obj:`dict`): configuration
     """
