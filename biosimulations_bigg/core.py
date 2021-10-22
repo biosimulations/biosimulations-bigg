@@ -2,7 +2,7 @@ from Bio import Entrez
 from biosimulators_utils.combine.data_model import CombineArchive, CombineArchiveContent, CombineArchiveContentFormat
 from biosimulators_utils.combine.io import CombineArchiveWriter
 from biosimulators_utils.config import Config
-from biosimulators_utils.omex_meta.data_model import BIOSIMULATIONS_ROOT_URI_FORMAT
+from biosimulators_utils.omex_meta.data_model import BIOSIMULATIONS_ROOT_URI_FORMAT, OmexMetadataOutputFormat
 from biosimulators_utils.omex_meta.io import BiosimulationsOmexMetaWriter, BiosimulationsOmexMetaReader
 # from biosimulators_utils.omex_meta.utils import build_omex_meta_file_for_model
 from biosimulators_utils.ref.data_model import Reference, PubMedCentralOpenAccesGraphic  # noqa: F401
@@ -337,7 +337,8 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
         ],
         'other': [],
     }]
-    BiosimulationsOmexMetaWriter().run(metadata, metadata_filename)
+    config = Config(OMEX_METADATA_OUTPUT_FORMAT=OmexMetadataOutputFormat.rdfxml)
+    BiosimulationsOmexMetaWriter().run(metadata, metadata_filename, config=config)
     _, errors, warnings = BiosimulationsOmexMetaReader().run(metadata_filename)
     assert not errors
 
