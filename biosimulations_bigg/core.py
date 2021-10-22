@@ -51,6 +51,7 @@ def get_config(
         thumbnails_filename=os.path.join(BASE_DIR, 'final', 'thumbnails.yml'),
         max_models=None,
         max_num_reactions=None,
+        max_thumbnails=None,
         simulate_models=True,
         dry_run=False,
 ):
@@ -67,6 +68,7 @@ def get_config(
         thumbnails_filename (obj:`str`, optional): path to curated list of good thumbnails
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
+        max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
 
@@ -105,6 +107,7 @@ def get_config(
 
         'max_models': max_models,
         'max_num_reactions': max_num_reactions,
+        'max_thumbnails': max_thumbnails,
         'simulate_models': simulate_models,
         'dry_run': dry_run,
     }
@@ -538,7 +541,7 @@ def import_models(config):
         if thumbnails_curation.get(model['model_bigg_id'], []):
             thumbnails = []
             for thumbnail in thumbnails_curation[model['model_bigg_id']]:
-                if thumbnail['enabled'] and not thumbnails:
+                if thumbnail['enabled']:
                     thumbnails.append(PubMedCentralOpenAccesGraphic(
                         id=thumbnail['id'],
                         label=thumbnail['label'],
@@ -554,6 +557,7 @@ def import_models(config):
                 }
                 for thumbnail in thumbnails
             ]
+        thumbnails = thumbnails[0:config['max_thumbnails']]
         for thumbnail in thumbnails:
             thumbnail.location = reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg'
             thumbnail.format = CombineArchiveContentFormat.JPEG
