@@ -5,7 +5,7 @@ from biosimulators_utils.config import Config
 from biosimulators_utils.omex_meta.data_model import BIOSIMULATIONS_ROOT_URI_FORMAT, OmexMetadataOutputFormat
 from biosimulators_utils.omex_meta.io import BiosimulationsOmexMetaWriter, BiosimulationsOmexMetaReader
 # from biosimulators_utils.omex_meta.utils import build_omex_meta_file_for_model
-from biosimulators_utils.ref.data_model import Reference, PubMedCentralOpenAccesGraphic  # noqa: F401
+from biosimulators_utils.ref.data_model import Reference, JournalArticle, PubMedCentralOpenAccesGraphic  # noqa: F401
 from biosimulators_utils.ref.utils import get_reference, get_pubmed_central_open_access_graphics
 from biosimulators_utils.sedml.data_model import (
     SedDocument, Model, ModelLanguage, SteadyStateSimulation,
@@ -17,6 +17,7 @@ from biosimulators_utils.warnings import BioSimulatorsWarning
 from unittest import mock
 import biosimulators_cobrapy
 import biosimulators_utils.biosimulations.utils
+import dataclasses
 import datetime
 import dateutil.parser
 import os
@@ -52,6 +53,7 @@ def get_config(
         max_models=None,
         max_num_reactions=None,
         max_thumbnails=None,
+        update=False,
         simulate_models=True,
         dry_run=False,
 ):
@@ -69,6 +71,7 @@ def get_config(
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
+        update (:obj:`bool`, optional): whether to update models even if they have already been imported
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
 
@@ -108,6 +111,7 @@ def get_config(
         'max_models': max_models,
         'max_num_reactions': max_num_reactions,
         'max_thumbnails': max_thumbnails,
+        'update': update,
         'simulate_models': simulate_models,
         'dry_run': dry_run,
     }
@@ -184,79 +188,119 @@ def get_metadata_for_model(model_detail, config):
             * :obj:`Reference`: structured information about the reference
             * :obj:`list` of :obj:`PubMedCentralOpenAccesGraphic`: figures of the reference
     """
-    # NCBI id for organism
-    time.sleep(ENTREZ_DELAY)
-    handle = Entrez.esearch(db="nucleotide", term='{}[Assembly] OR {}[Primary Accession]'.format(
-        model_detail['genome_name'], model_detail['genome_name']), retmax=1, retmode="xml")
-    record = Entrez.read(handle)
-    handle.close()
-    if len(record["IdList"]) > 0:
-        nucleotide_id = record["IdList"][0]
+    metadata_filename = os.path.join(config['final_metadata_dirname'], model_detail['model_bigg_id'] + '.yml')
+    if os.path.isfile(metadata_filename):
+        with open(metadata_filename, 'r') as file:
+            metadata = yaml.load(file, Loader=yaml.Loader)
+        taxon = metadata.get('taxon', None)
+        encodes = metadata.get('encodes', None)
+        reference = metadata.get('reference', None)
+        thumbnails = metadata.get('thumbnails', None)
 
-        time.sleep(ENTREZ_DELAY)
-        handle = Entrez.esummary(db="nucleotide", id=nucleotide_id, retmode="xml")
-        records = list(Entrez.parse(handle))
-        handle.close()
-        assert len(records) == 1
-
-        encodes = {
-            'uri': 'https://www.ncbi.nlm.nih.gov/nuccore/' + records[0]['Id'],
-            'label': records[0]['Title'],
-        }
-
-        taxon_id = records[0]['TaxId'].real
-
+        if reference:
+            reference = JournalArticle(**reference)
+        if thumbnails:
+            thumbnails = [PubMedCentralOpenAccesGraphic(**thumbnail) for thumbnail in thumbnails]
     else:
+        taxon = None
+        encodes = None
+        reference = None
+        thumbnails = None
+
+    if (
+        taxon is not None
+        and encodes is not None
+        and reference is not None
+        and thumbnails is not None
+    ):
+        return taxon, encodes, reference, thumbnails
+
+    # NCBI id for organism
+    if taxon is None or encodes is None:
         time.sleep(ENTREZ_DELAY)
-        handle = Entrez.esearch(db="assembly", term='{}'.format(
-            model_detail['genome_name']), retmax=1, retmode="xml")
+        handle = Entrez.esearch(db="nucleotide", term='{}[Assembly] OR {}[Primary Accession]'.format(
+            model_detail['genome_name'], model_detail['genome_name']), retmax=1, retmode="xml")
         record = Entrez.read(handle)
         handle.close()
-        if len(record["IdList"]) == 0:
-            raise ValueError('Genome assembly `{}` could not be found for model `{}`'.format(
-                model_detail['genome_name'], model_detail['model_bigg_id']))
+        if len(record["IdList"]) > 0:
+            nucleotide_id = record["IdList"][0]
 
-        assembly_id = record["IdList"][0]
+            time.sleep(ENTREZ_DELAY)
+            handle = Entrez.esummary(db="nucleotide", id=nucleotide_id, retmode="xml")
+            records = list(Entrez.parse(handle))
+            handle.close()
+            assert len(records) == 1
+
+            encodes = {
+                'uri': 'https://www.ncbi.nlm.nih.gov/nuccore/' + str(records[0]['Id']),
+                'label': str(records[0]['Title']),
+            }
+
+            taxon_id = int(records[0]['TaxId'].real)
+
+        else:
+            time.sleep(ENTREZ_DELAY)
+            handle = Entrez.esearch(db="assembly", term='{}'.format(
+                model_detail['genome_name']), retmax=1, retmode="xml")
+            record = Entrez.read(handle)
+            handle.close()
+            if len(record["IdList"]) == 0:
+                raise ValueError('Genome assembly `{}` could not be found for model `{}`'.format(
+                    model_detail['genome_name'], model_detail['model_bigg_id']))
+
+            assembly_id = str(record["IdList"][0])
+
+            time.sleep(ENTREZ_DELAY)
+            handle = Entrez.esummary(db="assembly", id=assembly_id, retmode="xml")
+            record = Entrez.read(handle)['DocumentSummarySet']['DocumentSummary'][0]
+            handle.close()
+
+            encodes = {
+                'uri': 'https://www.ncbi.nlm.nih.gov/assembly/' + assembly_id,
+                'label': '{} genome assembly {}'.format(record['Organism'], record['AssemblyName']),
+            }
+
+            taxon_id = int(record['SpeciesTaxid'])
 
         time.sleep(ENTREZ_DELAY)
-        handle = Entrez.esummary(db="assembly", id=assembly_id, retmode="xml")
-        record = Entrez.read(handle)['DocumentSummarySet']['DocumentSummary'][0]
+        handle = Entrez.esummary(db="taxonomy", id=taxon_id, retmode="xml")
+        record = Entrez.read(handle)
+        assert len(record) == 1
         handle.close()
 
-        encodes = {
-            'uri': 'https://www.ncbi.nlm.nih.gov/assembly/' + assembly_id,
-            'label': '{} genome assembly {}'.format(record['Organism'], record['AssemblyName']),
+        taxon = {
+            'id': taxon_id,
+            'name': str(record[0]['ScientificName']),
         }
 
-        taxon_id = int(record['SpeciesTaxid'])
-
-    time.sleep(ENTREZ_DELAY)
-    handle = Entrez.esummary(db="taxonomy", id=taxon_id, retmode="xml")
-    record = Entrez.read(handle)
-    assert len(record) == 1
-    handle.close()
-
-    taxon = {
-        'id': taxon_id,
-        'name': record[0]['ScientificName'],
-    }
-
     # Citation information for the associated publication
-    reference = get_reference(
-        model_detail['reference_id'] or None if model_detail['reference_type'] == 'pmid' else None,
-        model_detail['reference_id'] or None if model_detail['reference_type'] == 'doi' else None,
-        cross_ref_session=config['cross_ref_session'],
-    )
+    if reference is None:
+        reference = get_reference(
+            model_detail['reference_id'] or None if model_detail['reference_type'] == 'pmid' else None,
+            model_detail['reference_id'] or None if model_detail['reference_type'] == 'doi' else None,
+            cross_ref_session=config['cross_ref_session'],
+        )
 
     # Figures for the associated publication from open-access subset of PubMed Central
-    if reference and reference.pubmed_central_id:
-        thumbnails = get_pubmed_central_open_access_graphics(
-            reference.pubmed_central_id,
-            os.path.join(config['source_thumbnails_dirname'], reference.pubmed_central_id),
-            session=config['pubmed_central_open_access_session'],
-        )
-    else:
-        thumbnails = []
+    if thumbnails is None:
+        if reference and reference.pubmed_central_id:
+            thumbnails = get_pubmed_central_open_access_graphics(
+                reference.pubmed_central_id,
+                os.path.join(config['source_thumbnails_dirname'], reference.pubmed_central_id),
+                session=config['pubmed_central_open_access_session'],
+            )
+        else:
+            thumbnails = []
+
+    # save metadata
+    metadata = {
+        'taxon': taxon,
+        'encodes': encodes,
+        'reference': reference.__dict__,
+        'thumbnails': [dataclasses.asdict(thumbnail) for thumbnail in thumbnails],
+    }
+    with open(metadata_filename, 'w') as file:
+        file.write(yaml.dump(metadata))
 
     return (taxon, encodes, reference, thumbnails)
 
@@ -515,17 +559,18 @@ def import_models(config):
     models = model_details
 
     # filter out models that don't need to be imported because they've already been imported and haven't been updated
-    models = list(filter(
-        lambda model:
-        (
-            model['model_bigg_id'] not in status
-            or (
-                (dateutil.parser.parse(model['last_updated']) + datetime.timedelta(1))
-                > dateutil.parser.parse(status[model['model_bigg_id']]['updated'])
-            )
-        ),
-        models
-    ))
+    if not config['update']:
+        models = list(filter(
+            lambda model:
+            (
+                model['model_bigg_id'] not in status
+                or (
+                    (dateutil.parser.parse(model['last_updated']) + datetime.timedelta(1))
+                    > dateutil.parser.parse(status[model['model_bigg_id']]['updated'])
+                )
+            ),
+            models
+        ))
 
     # filter out models with issues
     models = list(filter(lambda model: model['model_bigg_id'] not in issues, models))
