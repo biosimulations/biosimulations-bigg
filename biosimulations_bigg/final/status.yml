@@ -11,11 +11,11 @@ e_coli_core:
   runbiosimulationsId: 616123a604cd6f265f5fa751
   updated: '2021-10-09 05:06:25.317893'
 iAB_RBC_283:
-  created: '2021-10-09 01:24:51.431821'
-  duration: 6.823243
-  objective: 2.9355614666667216
-  runbiosimulationsId: 616123bf09e39122b573cdf8
-  updated: '2021-10-09 05:06:25.319867'
+  created: '2021-10-22 19:38:48.400825'
+  duration: 6.965178
+  objective: 2.9355614666666665
+  runbiosimulationsId: 61731375b2be97c51f9f68f3
+  updated: '2021-10-22 19:38:48.400825'
 iAF1260:
   created: '2021-10-09 01:24:51.433844'
   duration: 46.189741

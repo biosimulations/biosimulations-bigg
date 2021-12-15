@@ -50,6 +50,7 @@ def get_config(
         issues_filename=os.path.join(BASE_DIR, 'final', 'issues.yml'),
         status_filename=os.path.join(BASE_DIR, 'final', 'status.yml'),
         thumbnails_filename=os.path.join(BASE_DIR, 'final', 'thumbnails.yml'),
+        extra_visualizations_filename=os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'),
         max_models=None,
         max_num_reactions=None,
         max_thumbnails=None,
@@ -68,6 +69,7 @@ def get_config(
         issues_filename (obj:`str`, optional): path to issues which prevent some models from being imported
         status_filename (obj:`str`, optional): path to save the import status of each model
         thumbnails_filename (obj:`str`, optional): path to curated list of good thumbnails
+        extra_visualizations_filename (obj:`str`, optional): path to curated list of additional Escher diagrams to use with models
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
@@ -97,6 +99,7 @@ def get_config(
         'issues_filename': issues_filename,
         'status_filename': status_filename,
         'thumbnails_filename': thumbnails_filename,
+        'extra_visualizations_filename': extra_visualizations_filename,
 
         'source_session': requests_cache.CachedSession(
             os.path.join(sessions_dirname, 'source'),
@@ -534,6 +537,13 @@ def import_models(config):
     else:
         thumbnails_curation = {}
 
+    # read extra visualizations file
+    if os.path.isfile(config['extra_visualizations_filename']):
+        with open(config['extra_visualizations_filename'], 'r') as file:
+            extra_visualizations_curation = yaml.load(file, Loader=yaml.Loader)
+    else:
+        extra_visualizations_curation = {}
+
     # get a list of all models available in the source database
     models = get_models(config)
 
@@ -609,7 +619,13 @@ def import_models(config):
             thumbnail.format = CombineArchiveContentFormat.JPEG
 
         # convert Escher map to Vega and add to thumbnails
-        for escher_map in model['escher_maps']:
+        escher_maps = model['escher_maps'] + list(
+            {'map_name': name} for name in set(extra_visualizations_curation.get(model['model_bigg_id'], [])).difference(
+                set(map['map_name'] for map in model['escher_maps'])
+            )
+        )
+
+        for escher_map in escher_maps:
             escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
             vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
             if not os.path.isfile(vega_filename):
@@ -653,7 +669,7 @@ def import_models(config):
             location='LICENSE',
             format=CombineArchiveContentFormat.TEXT,
         )
-        for escher_map in model['escher_maps']:
+        for escher_map in escher_maps:
             escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
             vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
             extra_contents[escher_filename] = CombineArchiveContent(
