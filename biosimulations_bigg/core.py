@@ -670,7 +670,7 @@ def import_models(config):
             thumbnail.format = CombineArchiveContentFormat.JPEG
 
         # convert Escher map to Vega and add to thumbnails
-        escher_maps = model['escher_maps'] + list(
+        escher_maps = model['escher_maps'] + sorted(
             {'map_name': name} for name in set(extra_visualizations_curation.get(model['model_bigg_id'], [])).difference(
                 set(map['map_name'] for map in model['escher_maps'])
             )
