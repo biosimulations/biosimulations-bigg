@@ -52,19 +52,19 @@
     <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f5.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f5.jpg</collex:thumbnail>
   </rdf:Description>
   <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
-    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png">http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png</collex:thumbnail>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
-    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png">http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png</collex:thumbnail>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
     <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Central-metabolism.png">http://omex-library.org/iAF1260.omex/iJO1366.Central-metabolism.png</collex:thumbnail>
   </rdf:Description>
   <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
     <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-beta-oxidation.png">http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-beta-oxidation.png</collex:thumbnail>
   </rdf:Description>
   <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png">http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
     <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png">http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png">http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png</collex:thumbnail>
   </rdf:Description>
   <rdf:Description rdf:about="local:00004">
     <rdfs:label>Adam M Feist</rdfs:label>

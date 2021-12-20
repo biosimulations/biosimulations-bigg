@@ -1,4 +1,4 @@
-duration: 22.772593
+duration: 21.616402
 exception: null
 output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
   \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
@@ -10,7 +10,7 @@ output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tas
   \   Failed: 0\r\n  Outputs (2):\r\n    Succeeded: 2\r\n    Skipped: 0\r\n    Failed:\
   \ 0\r\n\r\n"
 sedDocuments:
-- duration: 16.875783
+- duration: 15.848947
   exception: null
   location: simulation.sedml
   output: "  Found 1 tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\
@@ -25,7 +25,7 @@ sedDocuments:
   - dataSets:
     - id: obj
       status: SUCCEEDED
-    duration: 0.044468
+    duration: 0.043587
     exception: null
     id: objective
     output: ''
@@ -5122,7 +5122,7 @@ sedDocuments:
       status: SUCCEEDED
     - id: R_OA4VL_ST
       status: SUCCEEDED
-    duration: 0.237989
+    duration: 0.243844
     exception: null
     id: reaction_fluxes
     output: ''
@@ -5132,7 +5132,7 @@ sedDocuments:
   status: SUCCEEDED
   tasks:
   - algorithm: KISAO_0000437
-    duration: 12.714592
+    duration: 11.81129
     exception: null
     id: task
     output: "Academic license - for non-commercial use only - expires 2022-09-04\r\

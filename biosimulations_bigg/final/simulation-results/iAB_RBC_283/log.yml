@@ -1,4 +1,4 @@
-duration: 2.980567
+duration: 3.862553
 exception: null
 output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
   \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
@@ -10,7 +10,7 @@ output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tas
   \   Failed: 0\r\n  Outputs (2):\r\n    Succeeded: 2\r\n    Skipped: 0\r\n    Failed:\
   \ 0\r\n\r\n"
 sedDocuments:
-- duration: 2.051704
+- duration: 2.535631
   exception: null
   location: simulation.sedml
   output: "  Found 1 tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\
@@ -25,7 +25,7 @@ sedDocuments:
   - dataSets:
     - id: obj
       status: SUCCEEDED
-    duration: 0.038176
+    duration: 0.067694
     exception: null
     id: objective
     output: ''
@@ -970,7 +970,7 @@ sedDocuments:
       status: SUCCEEDED
     - id: R_CEPTE_18_1_18_1
       status: SUCCEEDED
-    duration: 0.072732
+    duration: 0.085851
     exception: null
     id: reaction_fluxes
     output: ''
@@ -980,13 +980,13 @@ sedDocuments:
   status: SUCCEEDED
   tasks:
   - algorithm: KISAO_0000437
-    duration: 1.269877
+    duration: 1.557112
     exception: null
     id: task
     output: ''
     simulatorDetails:
     - key: method
-      value: biosimulators_cobrapy.data_model.<lambda>
+      value: cobra.core.model.optimize
     - key: arguments
       value: {}
     skipReason: null

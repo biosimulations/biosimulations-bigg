@@ -246,14 +246,18 @@ class VerifyPublicationController(cement.Controller):
                     bigg_project_id, bigg_project['runbiosimulationsId'], run_status))
             elif biosimulations_projects[bigg_project_id]['simulationRun'] != bigg_project['runbiosimulationsId']:
                 biosimulations_api_endpoint = biosimulators_config.BIOSIMULATIONS_API_ENDPOINT
-                response = requests.get(biosimulations_api_endpoint + 'project/{}'.format(bigg_project_id))
-                response.raise_for_status()
-                owner = response.json().get('owner', {}).get('name', None)
+                url = biosimulations_api_endpoint + 'projects/{}'.format(bigg_project_id)
+                response = requests.get(url)
+                try:
+                    response.raise_for_status()
+                    owner = response.json().get('owner', {}).get('name', None)
 
-                if owner != 'BiGG':
-                    reason = 'Project id has already been claimed.'
-                else:
-                    reason = 'Project is published with run `{}`.'.format(response.json()['simulationRun'])
+                    if owner != 'BiGG':
+                        reason = 'Project id has already been claimed.'
+                    else:
+                        reason = 'Project is published with run `{}`.'.format(response.json()['simulationRun'])
+                except requests.exceptions.RequestException:
+                    reason = 'Project could not be found'
 
                 errors.append('{}: not published as run {}. {}'.format(bigg_project_id, bigg_project['runbiosimulationsId'], reason))
 
