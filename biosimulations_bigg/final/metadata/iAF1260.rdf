@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<rdf:RDF xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:collex="http://www.collex.org/schema#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:scoro="http://purl.org/spar/scoro/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:biomodel="http://biomodels.net/model-qualifiers/">
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:title>iAF1260</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:abstract>Flux balance analysis model of the metabolism of Escherichia coli str. K-12 substr. MG1655.</dc:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <prism:keyword>metabolism</prism:keyword>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <dc:identifier rdf:resource="http://identifiers.org/taxonomy:511145">http://identifiers.org/taxonomy:511145</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <rdfs:label>Escherichia coli str. K-12 substr. MG1655</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <bqbiol:hasTaxon rdf:resource="local:00001">local:00001</bqbiol:hasTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <dc:identifier rdf:resource="http://identifiers.org/GO:0008152">http://identifiers.org/GO:0008152</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <rdfs:label>metabolic process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <bqbiol:encodes rdf:resource="local:00002">local:00002</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <dc:identifier rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/556503834">https://www.ncbi.nlm.nih.gov/nuccore/556503834</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <rdfs:label>Escherichia coli str. K-12 substr. MG1655, complete genome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <bqbiol:encodes rdf:resource="local:00003">local:00003</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f1.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f1.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f2.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f2.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f3.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f3.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f4.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f4.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/PMC1911197-f5.jpg">http://omex-library.org/iAF1260.omex/PMC1911197-f5.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png">http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png">http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-metabolism.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Central-metabolism.png">http://omex-library.org/iAF1260.omex/iJO1366.Central-metabolism.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-beta-oxidation.png">http://omex-library.org/iAF1260.omex/iJO1366.Fatty-acid-beta-oxidation.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png">http://omex-library.org/iAF1260.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <rdfs:label>Adam M Feist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <foaf:name>Adam M Feist</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00004">local:00004</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <rdfs:label>Christopher S Henry</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <foaf:name>Christopher S Henry</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00005">local:00005</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <rdfs:label>Jennifer L Reed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:name>Jennifer L Reed</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00006">local:00006</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <rdfs:label>Markus Krummenacker</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:name>Markus Krummenacker</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00007">local:00007</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <rdfs:label>Andrew R Joyce</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <foaf:name>Andrew R Joyce</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00008">local:00008</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <rdfs:label>Peter D Karp</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <foaf:name>Peter D Karp</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00009">local:00009</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <rdfs:label>Linda J Broadbelt</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <foaf:name>Linda J Broadbelt</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00010">local:00010</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <rdfs:label>Vassily Hatzimanikatis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <foaf:name>Vassily Hatzimanikatis</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00011">local:00011</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <rdfs:label>Bernhard Ø Palsson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <foaf:name>Bernhard Ø Palsson</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:creator rdf:resource="local:00012">local:00012</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <dc:identifier rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <rdfs:label>Systems Biology Research Group at the University of California, San Diego</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:accountName rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:name>Systems Biology Research Group at the University of California, San Diego</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:contributor rdf:resource="local:00013">local:00013</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <dc:identifier rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <rdfs:label>Jonathan R. Karr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:name>Jonathan R. Karr</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:contributor rdf:resource="local:00014">local:00014</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <rdfs:label>Briman Yang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <foaf:name>Briman Yang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:contributor rdf:resource="local:00015">local:00015</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <dc:identifier rdf:resource="http://identifiers.org/bigg.model:iAF1260">http://identifiers.org/bigg.model:iAF1260</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <rdfs:label>bigg.model:iAF1260</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <bqmodel:is rdf:resource="local:00016">local:00016</bqmodel:is>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <dc:identifier rdf:resource="http://identifiers.org/doi:10.1038/msb4100155">http://identifiers.org/doi:10.1038/msb4100155</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <rdfs:label>Adam M Feist, Christopher S Henry, Jennifer L Reed, Markus Krummenacker, Andrew R Joyce, Peter D Karp, Linda J Broadbelt, Vassily Hatzimanikatis &amp; Bernhard Ø Palsson. A genome-scale metabolic reconstruction for Escherichia coli K-12 MG1655 that accounts for 1260 ORFs and thermodynamic information. Molecular Systems Biology 3: 121 (2007).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <bqmodel:isDescribedBy rdf:resource="local:00017">local:00017</bqmodel:isDescribedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <dc:identifier rdf:resource="http://bigg.ucsd.edu/license">http://bigg.ucsd.edu/license</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <rdfs:label>BiGG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:license rdf:resource="local:00018">local:00018</dc:license>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:created>2007-12-15</dc:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iAF1260.omex">
+    <dc:modified>2019-10-31</dc:modified>
+  </rdf:Description>
+</rdf:RDF>

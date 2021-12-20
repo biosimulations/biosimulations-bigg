@@ -1,0 +1,25 @@
+encodes:
+  label: Synechocystis sp. PCC 6803 DNA, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/47118304
+reference:
+  authors:
+  - J. Nogales
+  - S. Gudmundsson
+  - E. M. Knight
+  - B. O. Palsson
+  - I. Thiele
+  date: '2012-02-14'
+  doi: 10.1073/pnas.1117907109
+  issue: '7'
+  journal: Proceedings of the National Academy of Sciences
+  pages: 2678-2683
+  pubmed_central_id: PMC3289291
+  pubmed_id: '22308420'
+  title: Detailing the optimality of photosynthesis in cyanobacteria through systems
+    biology analysis
+  volume: '109'
+  year: '2012'
+taxon:
+  id: 1148
+  name: Synechocystis sp. PCC 6803
+thumbnails: []

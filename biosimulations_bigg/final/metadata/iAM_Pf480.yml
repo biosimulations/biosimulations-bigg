@@ -1,0 +1,167 @@
+encodes:
+  label: 'Plasmodium falciparum 3D7 genome assembly, chromosome: 1'
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/1371547576
+reference:
+  authors:
+  - Alyaa M. Abdel-Haleem
+  - Hooman Hefzi
+  - Katsuhiko Mineta
+  - Xin Gao
+  - Takashi Gojobori
+  - Bernhard O. Palsson
+  - Nathan E. Lewis
+  - Neema Jamshidi
+  date: '2018-01-15'
+  doi: 10.1371/journal.pcbi.1005895
+  issue: '1'
+  journal: PLOS Computational Biology
+  pages: e1005895
+  pubmed_central_id: PMC5771636
+  pubmed_id: '29300748'
+  title: Functional interrogation of Plasmodium genus metabolism identifies species-
+    and stage-specific differences in nutrient essentiality and drug targeting
+  volume: '14'
+  year: '2018'
+taxon:
+  id: 36329
+  name: Plasmodium falciparum 3D7
+thumbnails:
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">The
+    workflow for manually curated, data-driven multi-species reconstructions of a
+    representative fraction of the plasmodium genus.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">Step 1. The Plasmodium falciparum
+    reconstruction was built using the genome annotation, lists of biomolecules, the
+    literature, and organism-specific databases. The reconstruction was refined through
+    iterations of manual curation, hypothesis generation, validation against experimental
+    data and incorporation of new knowledge[<xref rid="pcbi.1005895.ref015" ref-type="bibr">15</xref>].
+    Step 2. The reconstruction was converted into a model by specifying inputs, outputs
+    and relevant parameters, and by representing the network mathematically. The model
+    was validated against omic and physiological data. Step 3(i). Once networks were
+    accurately reconstructed and converted into stage-specific <italic>in silico</italic>
+    models, using high throughput data, the stage-specific models were then used to
+    predict genes critical for growth in different life-cycle stages and to detect
+    stage-specific redirection of flux in the parasite&#8217;s central carbon metabolism.
+    Step 3(ii). Comparative genomics and manual curation were used to build reconstructions
+    for Plasmodium species commonly used in experimental animal models to test how
+    predicted drug targets differ from predictions in the human-infecting system.
+    Multi-species metabolic models were also used to characterize pan and core metabolic
+    capacities of the different species.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  id: pcbi.1005895/pcbi.1005895.g001
+  label: Fig 1
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Content
+    description and performance evaluation of <italic>i</italic>AM-Pf480 (<italic>P</italic>.
+    <italic>falciparum</italic>).</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>(A)</bold> Reaction and gene
+    content of <italic>i</italic>AM-Pf480 (see details in Table A in <xref ref-type="supplementary-material"
+    rid="pcbi.1005895.s001">S1 Text</xref>). <bold>(b)</bold> Comparison of <italic>i</italic>AM-Pf480
+    gene essentiality predictions (simulating standard <italic>in vitro</italic> growth
+    conditions, Table B and C in <xref ref-type="supplementary-material" rid="pcbi.1005895.s002">S1
+    Tables</xref>) showed 95% and 71% accuracy when compared to single gene deletion
+    and drug inhibition experiments, respectively. <italic>In silico</italic> gene
+    essentiality was graded according to the percentage of reduction in growth rate
+    compared to wild type. Fisher exact test as well as Mathew correlation coefficient
+    (MCC) were used to compute significance of overlapping consistent predictions
+    for <italic>i</italic>AM-Pf480. (C-D) Validation of iAM-Pf480 predicted glycolytic
+    flux rates against experimentally measured fluxomic data[<xref rid="pcbi.1005895.ref020"
+    ref-type="bibr">20</xref>] in <bold>(c)</bold> wild-type and <bold>(d)</bold>
+    PDH-knock out <italic>P</italic>. <italic>falciparum</italic> while simulating
+    standard <italic>in vitro</italic> growth conditions. Flux rates are in nmol/
+    1x10<sup>8</sup> cells/min.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  id: pcbi.1005895/pcbi.1005895.g002
+  label: Fig 2
+- caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Life
+    cycle stage specific models of <italic>P</italic>. <italic>falciparum</italic>
+    predict gene targets that are essential for asexual, sexual and mosquito stages.</title><p
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>(a)</bold>
+    The core and pan metabolic content of the genome-scale life cycle stage specific
+    models of <italic>P</italic>. <italic>falciparum</italic> are 720 and 1002 reactions,
+    respectively. <bold>(b-c)</bold> Parameters and AUC plots for performance evaluation
+    of stage-specific pairwise differential gene expression comparisons following
+    a similar approach to Nam, et al.[<xref rid="pcbi.1005895.ref052" ref-type="bibr">52</xref>]
+    (<xref ref-type="supplementary-material" rid="pcbi.1005895.s004">S2 Fig</xref>).
+    AUROC: area under the receiver operator curve (ROC), DEG: differential expression
+    analysis, T: trophozoite, GII: early gametocyte stage, GV: late gametocyte stage,
+    Ook: ookinete.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  id: pcbi.1005895/pcbi.1005895.g003
+  label: Fig 3
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Stage-specific
+    central metabolic flux patterns in malaria.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>(a)</bold> Correlated reaction
+    sets for iAM-Pf480 were used to define stage and model specific pathways, which
+    were analyzed and compared across different stages. Modularity indices (see <xref
+    ref-type="sec" rid="sec012">methods</xref>) were 0.023, 0.024, 0.026, 0.145, 0.022
+    for the T, Schizont, GII, GV, and Ook stages, respectively. In proliferative versus
+    non-proliferative stages of malaria, there were changes in the patterns of central
+    carbon metabolism, notably the non-oxidative PPP and glycolysis. <bold>(b)</bold>
+    The direction of flux in the non-oxidative branch of PPP goes towards production
+    of glycolytic intermediates in the Trophozoite, Schizont, GII, and GV stages but
+    not the Ookinete stage. Reversal of non-oxidative pentose phosphate pathway fluxes
+    in the Ook enables provision of ribose 5 phosphate (r5p) needed for the synthesis
+    of nucleotide precursors of DNA. The non-oxidative branch in the schizont is colored
+    in red indicating its coupling to growth rate in this stage (Table G in <xref
+    ref-type="supplementary-material" rid="pcbi.1005895.s002">S1 Tables</xref>). Both
+    the oxidative and non-oxidative PPP branches were correlated in GII. Glycolysis
+    was split into upper and lower branches in all stages except GV where the non-oxidative
+    PPP branch was correlated with inositol metabolism. Arrows are omitted from the
+    schizont pathway map to account for reduced flux values relative the other 4 stages.
+    <bold>(c)</bold> Predicted sampled flux distribution are shown in the non-oxidative
+    branch of PPP (Transketolase; TKT1) and inositol metabolism (myo-inositol-3-phosphate
+    lyase; MI3PS) across all the stages showing increased involvement of inositol
+    metabolism in the GV stage (see supplementary material for discussion and <xref
+    ref-type="supplementary-material" rid="pcbi.1005895.s003">S1 Fig</xref> for the
+    high resolution version of the figure).</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  id: pcbi.1005895/pcbi.1005895.g004
+  label: Fig 4
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Stage-specific
+    essentiality predictions of experimentally validated druggable targets and single-gene
+    deletion experiments.</title><p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Comprehensive
+    map of experimentally tested treatment targets for <italic>P</italic>. <italic>falciparum</italic>
+    with stage-specific model predictions projected (in color) projected on top of
+    the map. Colored reaction pathways correspond to drug inhibition studies (Table
+    C in <xref ref-type="supplementary-material" rid="pcbi.1005895.s002">S1 Tables</xref>)
+    and colored reaction names in rectangles correspond to single gene deletion experiments
+    (Table B in <xref ref-type="supplementary-material" rid="pcbi.1005895.s002">S1
+    Tables</xref>). The color legend inset corresponds to iAM-Pf480 predictions. Validated
+    drug targets that are also predictive to reduce growth in proliferative as well
+    as late gametocyte stages are of particular interest. This comprehensive assessment
+    of the model and experimental results enables stratification of existing drugs,
+    new drugs to target, as well as new areas of metabolism warranting further investigation.
+    See <xref ref-type="supplementary-material" rid="pcbi.1005895.s004">S2 Fig</xref>
+    for the high resolution version of the figure.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  id: pcbi.1005895/pcbi.1005895.g005
+  label: Fig 5
+- caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Species-specific
+    models provide mechanistic explanation for differences in drug response between
+    human- and rodent-infecting malaria species.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>(a)</bold> The core and pan
+    metabolic content of 5 malaria species was identified based on the respective
+    species-specific reconstructions. The core content, illustrated by the intersection
+    of the Venn diagram, is shared by all species. The pan content represents the
+    union of the content across all of the multi-species reconstructions. <bold>(b)</bold>
+    14 metabolic reactions differed in their presence across the 5 reconstructed Plasmodium
+    species. <bold>(c)</bold> Thiamine pyrophosphokinase (TPK) and <bold>(d)</bold>
+    Choline kinase (CK) were predicted by the models to be essential for the growth
+    of the rodent-infecting species (<italic>P</italic>. <italic>berghei</italic>)
+    while their deletion had no effect on the growth of human and non-human primate
+    species. Differential essentiality of TPK is due to absence of phosphomethylpyrimidine
+    kinase and thiamine-phosphate pyrophosphorylase the rodent-infecting species.
+    In the case of CK, the differential essentiality is due to the absence of phosphoethanolamine
+    N-methyltransferase. (See Table A in <xref ref-type="supplementary-material" rid="pcbi.1005895.s002">S1
+    Tables</xref> for reactions abbreviations and gene-protein-reaction associations).
+    <bold>(e)</bold> Pantothenate metabolism showed differences in essentiality between
+    stage- and species-specific models. Tables indicate percentage in growth reduction
+    compared to the WT upon deletion of the respective gene. &#8216;X&#8217; indicates
+    absence of a reaction from the respective reconstruction, &#8216;&#8212;&#8216;
+    indicates no effect on growth upon deletion of the corresponding reaction and
+    &#8216;%&#8217; indicates the growth reduction percentage resulting from deletion
+    of the corresponding gene. T: trophozoite, GII: early gametocyte stage, GV: late
+    gametocyte stage, Ook: ookinete. See <xref ref-type="supplementary-material" rid="pcbi.1005895.s005">S3
+    Fig</xref> for the high resolution version of the figure.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  id: pcbi.1005895/pcbi.1005895.g006
+  label: Fig 6

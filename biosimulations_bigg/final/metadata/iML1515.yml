@@ -1,0 +1,31 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Jonathan M Monk
+  - Colton J Lloyd
+  - Elizabeth Brunk
+  - Nathan Mih
+  - Anand Sastry
+  - Zachary King
+  - Rikiya Takeuchi
+  - Wataru Nomura
+  - Zhen Zhang
+  - Hirotada Mori
+  - Adam M Feist
+  - Bernhard O Palsson
+  date: '2017-10-11'
+  doi: 10.1038/nbt.3956
+  issue: '10'
+  journal: Nature Biotechnology
+  pages: 904-908
+  pubmed_central_id: PMC6521705
+  pubmed_id: '29020004'
+  title: iML1515, a knowledgebase that computes Escherichia coli traits
+  volume: '35'
+  year: '2017'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails: []

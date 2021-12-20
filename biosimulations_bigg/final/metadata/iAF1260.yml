@@ -1,0 +1,129 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Adam M Feist
+  - Christopher S Henry
+  - Jennifer L Reed
+  - Markus Krummenacker
+  - Andrew R Joyce
+  - Peter D Karp
+  - Linda J Broadbelt
+  - Vassily Hatzimanikatis
+  - "Bernhard \xD8 Palsson"
+  date: '2007-12-15'
+  doi: 10.1038/msb4100155
+  issue: null
+  journal: Molecular Systems Biology
+  pages: '121'
+  pubmed_central_id: PMC1911197
+  pubmed_id: '17593909'
+  title: A genome-scale metabolic reconstruction for Escherichia coli K-12 MG1655
+    that accounts for 1260 ORFs and thermodynamic information
+  volume: '3'
+  year: '2007'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails:
+- caption: <p>Classification of the ORFs, reactions and metabolites included in <italic>i</italic>AF1260.
+    (<bold>A</bold>) Coverage of characterized ORFs from each of the COGs functional
+    classes included in <italic>i</italic>AF1260 and five previous reconstructions.
+    The percentage given is the total coverage accounted for in <italic>i</italic>AF1260
+    for each class. Some ORFs included in the reconstructions did not have a COG functional
+    class assignment (see <xref ref-type="supplementary-material" rid="S1">Supplemental
+    information</xref>). (<bold>B</bold>) The number of reactions (both gene-associated
+    and non-gene associated) that are associated to ORFs from each COG functional
+    class. Since ORFs can belong to multiple classes, the percent unique in each class
+    is listed. Non-gene-associated reactions were assigned to a class manually. (<bold>C</bold>)
+    The number of metabolites that participate in reactions from each functional class
+    and the percent unique in each class. Other (OT) includes classes J, K, L, O,
+    T, U, V (see <xref ref-type="supplementary-material" rid="S1">Supplementary information</xref>).
+    NC, no COG assignment.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f1.jpg
+  id: msb4100155/f1
+  label: Figure 1
+- caption: <p>Thermodynamic properties of the reactions in <italic>i</italic>AF1260.
+    (<bold>A</bold>) The distribution of estimated &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>
+    values for the reactions in <italic>i</italic>AF1260. &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>
+    could be estimated for 1996 reactions (96%) in the reconstruction. 64% of the
+    represented reactions have a negative &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>,
+    and 20% of the reactions have a &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>
+    of approximately zero. This distribution of &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>
+    values indicates that most reactions in the model are thermodynamically favorable
+    at millimolar concentration conditions. (<bold>B</bold>) The range of possible
+    &#916;<sub><italic>r</italic></sub>G&#8242; values for the reactions in <italic>i</italic>AF1260.
+    &#916;<sub><italic>r</italic></sub>G&#8242; differs from &#916;<sub><italic>r</italic></sub>G&#8242;<sup>o</sup>
+    (orange diamonds) and &#916;<sub><italic>r</italic></sub>G&#8242;<sup>m</sup>
+    (black diamonds) due to variations in metabolite concentrations from the 1 M and
+    1 mM reference states, respectively. Metabolite concentrations typically range
+    from 0.02 to 0.00001 M, resulting in a wide range of values for &#916;<sub><italic>r</italic></sub>G&#8242;
+    (blue error bars). Taking uncertainty into account, the range of possible values
+    for &#916;<sub><italic>r</italic></sub>G&#8242; can be extended (purple error
+    bars). The &#916;<sub><italic>r</italic></sub>G&#8242; ranges were used to assess
+    the feasibility and reversibility of the reactions in <italic>i</italic>AF1260;
+    reactions for which a positive &#916;<sub><italic>r</italic></sub>G&#8242; is
+    not possible are thermodynamically irreversible.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f2.jpg
+  id: msb4100155/f2
+  label: Figure 2
+- caption: <p>Utilizing <italic>i</italic>AF1260 as a predictive model. (<bold>A</bold>)
+    A drawing of central metabolism and the ETS included in <italic>i</italic>AF1260.
+    Originally, the entire network is unconstrained. (<bold>B</bold>) Application
+    of transcriptional regulatory effects restricts the total number of pathways,
+    or routes, flux can pass through in the network. (<bold>C</bold>) Further application
+    of known reaction capacities can result in more accurate predictions. For example,
+    the flux through the NADH dehydrogenase enzymes is split in a 1:1 ratio during
+    a simulation to produce an optimal P/O ratio of approximately 1.4 (<xref ref-type="bibr"
+    rid="b21">Gennis and Stewart, 1996</xref>; <xref ref-type="bibr" rid="b45">Noguchi
+    <italic>et al</italic>, 2004</xref>). (<bold>D</bold>) The non-metabolic activity
+    of the cell can be accounted for through maintenance parameters and these were
+    approximated using experimental data under known media conditions. Chemostat data
+    (see Materials and methods) was used (triangles) and the dotted line shows the
+    modeling predictions with the appropriate maintenance parameters. (<bold>E</bold>)
+    After the parameters are approximated, the model can then be used to predict the
+    GR (circles), product formation (acetate, squares) and additional uptake rates
+    (oxygen, triangles) under different environmental conditions (for succinate growth
+    in this case).</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f3.jpg
+  id: msb4100155/f3
+  label: Figure 3
+- caption: <p>Sensitivity analysis on the modeling parameters used in analyzing <italic>i</italic>AF1260.
+    The relationship between the GUR (mmol gDW<sup>&#8722;1</sup> h<sup>&#8722;1</sup>)
+    (bottom axes, the dependant variable) and the resulting (1) GR (h<sup>&#8722;1</sup>)
+    (left axes) and (2) OUR (mmol gDW<sup>&#8722;1</sup> h<sup>&#8722;1</sup>) (right
+    axes) produced during the sensitivity analysis using <italic>i</italic>AF1260.
+    Using FBA and <italic>i</italic>AF1260, optimal growth was simulated under glucose
+    aerobic conditions while varying (<bold>A</bold>) the dry weight percentage of
+    protein (50&#8211;80%), (<bold>B</bold>) RNA (10&#8211;25%) and (<bold>C</bold>)
+    lipid (7&#8211;15%) in the BOF<sub>CORE</sub> using physiologically measured values
+    (<xref ref-type="bibr" rid="b50">Pramanik and Keasling, 1997</xref>). Also analyzed
+    was (<bold>D</bold>) potential P/O ratios (1.0&#8211;2.7) in the network, as well
+    as the (<bold>E</bold>) NGAM (&#177;50%) and (<bold>F</bold>) GAM (&#177;50%)
+    that were determined for these conditions.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f4.jpg
+  id: msb4100155/f4
+  label: Figure 4
+- caption: <p>ORF essentiality predictions using <italic>i</italic>AF1260. This heat
+    map characterizes the agreement between ORFs predicted to be essential using <italic>i</italic>AF1260
+    and those experimentally determined from <xref ref-type="bibr" rid="b7">Baba <italic>et
+    al</italic> (2006)</xref> and <xref ref-type="bibr" rid="b33">Joyce <italic>et
+    al</italic> (2006)</xref>. The enlarged region details how each a row corresponds
+    to a computationally predicted essential ORF (188 total). The overall agreement
+    between <italic>i</italic>AF1260 predictions and those found to be experimentally
+    essential (overall, column 1) is shown along with a breakdown for ORFs found to
+    be essential under rich media conditions (rich, column 2), under both glucose
+    and glycerol minimal media conditions (shared, column 3) and under just glucose
+    minimal medium conditions (glucose, column 4). ORFs are further grouped by their
+    COG functional class (see <xref ref-type="fig" rid="f1">Figure 1</xref> for abbreviations;
+    MU-ORF belongs to multiple COG classes). Dark blue indicates the condition under
+    which each ORF was found to be essential. For example, <italic>folP</italic> was
+    predicted to be an essential ORF for the biosynthesis of folate in <italic>i</italic>AF1260
+    under these conditions, but was not identified as essential by <xref ref-type="bibr"
+    rid="b7">Baba <italic>et al</italic> (2006)</xref>. This suggested the possibility
+    of an alternative pathway for this step in <italic>E. coli</italic> that has yet
+    to be characterized.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f5.jpg
+  id: msb4100155/f5
+  label: Figure 5

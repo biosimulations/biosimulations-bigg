@@ -1,0 +1,71 @@
+encodes:
+  label: Salmonella enterica subsp. enterica serovar Typhimurium str. LT2 (enterobacteria)
+    genome assembly ASM694v1
+  uri: https://www.ncbi.nlm.nih.gov/assembly/28528
+reference:
+  authors:
+  - Ines Thiele
+  - Daniel R Hyduke
+  - Benjamin Steeb
+  - Guy Fankam
+  - Douglas K Allen
+  - Susanna Bazzani
+  - Pep Charusanti
+  - Feng-Chi Chen
+  - Ronan MT Fleming
+  - Chao A Hsiung
+  - Sigrid CJ De Keersmaecker
+  - Yu-Chieh Liao
+  - Kathleen Marchal
+  - Monica L Mo
+  - "Emre \xD6zdemir"
+  - Anu Raghunathan
+  - Jennifer L Reed
+  - Sook-Il Shin
+  - "Sara Sigurbj\xF6rnsd\xF3ttir"
+  - Jonas Steinmann
+  - Suresh Sudarsan
+  - Neil Swainston
+  - Inge M Thijs
+  - Karsten Zengler
+  - Bernhard O Palsson
+  - Joshua N Adkins
+  - Dirk Bumann
+  date: '2011-01-18'
+  doi: 10.1186/1752-0509-5-8
+  issue: null
+  journal: BMC Systems Biology
+  pages: '8'
+  pubmed_central_id: PMC3032673
+  pubmed_id: '21244678'
+  title: A community effort towards a knowledge-base and mathematical model of the
+    human pathogen Salmonella Typhimurium LT2
+  volume: '5'
+  year: '2011'
+taxon:
+  id: 28901
+  name: Salmonella enterica
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Approach
+    to reconcile two metabolic reconstructions (MR)</bold>. This figure illustrates
+    the automated comparison tool developed for the Salmonella reconstruction jamboree.
+    Both MRs are translated into a common language (based on KEGG [<xref ref-type="bibr"
+    rid="B44">44</xref>]). Metabolites and reactions that could not be mapped onto
+    KEGG were subject to manual evaluation by the jamboree team. The overlapping part
+    of the MRs was directly moved into the consensus MR while reactions and metabolites
+    unique to a MR were evaluated manually. This approach can be readily applied to
+    comparison of any two MRs.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
+  id: 1752-0509-5-8/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Candidate
+    drug targets</bold>. The figure contains all predicted synthetic lethal interactions
+    for STM_v1.0 in LB medium. A line connecting two genes represents a synthetic
+    lethal pair. A group of genes surrounded by a dashed box represents a protein
+    complex requiring all enclosed elements to function. Yellow background means associated
+    with sulfur metabolism. Blue background indicates that the synthetic lethal pairs
+    are functional homolog's. Red gene means that there is a chemical known to inhibit
+    the gene-product in STM_v1.0.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
+  id: 1752-0509-5-8/F2
+  label: Figure 2

@@ -1,0 +1,28 @@
+encodes:
+  label: Lactococcus lactis subsp. cremoris MG1363, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/125622882
+reference:
+  authors:
+  - Nicolas A. L. Flahaut
+  - Anne Wiersma
+  - Bert van de Bunt
+  - Dirk E. Martens
+  - Peter J. Schaap
+  - Lolke Sijtsma
+  - Vitor A. Martins dos Santos
+  - Willem M. de Vos
+  date: '2013-10-15'
+  doi: 10.1007/s00253-013-5140-2
+  issue: '19'
+  journal: Applied Microbiology and Biotechnology
+  pages: 8729-8739
+  pubmed_central_id: null
+  pubmed_id: '23974365'
+  title: Genome-scale metabolic model for Lactococcus lactis MG1363 and its application
+    to the analysis of flavor formation
+  volume: '97'
+  year: '2013'
+taxon:
+  id: 416870
+  name: Lactococcus lactis subsp. cremoris MG1363
+thumbnails: []

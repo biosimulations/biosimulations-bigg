@@ -1,0 +1,29 @@
+encodes:
+  label: Klebsiella pneumoniae subsp. pneumoniae MGH 78578, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/150953431
+reference:
+  authors:
+  - Yu-Chieh Liao
+  - Tzu-Wen Huang
+  - Feng-Chi Chen
+  - Pep Charusanti
+  - Jay S. J. Hong
+  - Hwan-You Chang
+  - Shih-Feng Tsai
+  - Bernhard O. Palsson
+  - Chao A. Hsiung
+  date: '2011-04-15'
+  doi: 10.1128/JB.01218-10
+  issue: '7'
+  journal: Journal of Bacteriology
+  pages: 1710-1717
+  pubmed_central_id: PMC3067640
+  pubmed_id: '21296962'
+  title: An experimentally validated genome-scale metabolic reconstruction of Klebsiella
+    pneumoniae MGH 78578, iYL1228
+  volume: '193'
+  year: '2011'
+taxon:
+  id: 272620
+  name: Klebsiella pneumoniae subsp. pneumoniae MGH 78578
+thumbnails: []

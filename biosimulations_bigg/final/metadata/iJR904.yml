@@ -1,0 +1,118 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Jennifer L Reed
+  - Thuy D Vo
+  - Christophe H Schilling
+  - Bernhard O Palsson
+  date: '2003-12-15'
+  doi: 10.1186/gb-2003-4-9-r54
+  issue: '9'
+  journal: Genome Biology
+  pages: R54
+  pubmed_central_id: PMC193654
+  pubmed_id: '12952533'
+  title: An expanded genome-scale model of Escherichia coli K-12 (iJR904 GSM/GPR)
+  volume: '4'
+  year: '2003'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Principles of constraint-based
+    modeling. A three-dimensional flux space for a given metabolic network is depicted
+    here. Without any constraints the fluxes can take on any real value. After application
+    of stoichiometric, thermodynamic and enzyme capacity constraints, the possible
+    solutions are confined to a region in the total flux space, termed the allowable
+    solution space. Any point outside of this space violates one or more of the applied
+    constraints. Linear optimization can then be applied to identify a solution in
+    the allowable solution space that maximizes or minimizes a defined objective,
+    for example ATP or biomass production [<xref ref-type="bibr" rid="B3">3</xref>-<xref
+    ref-type="bibr" rid="B6">6</xref>].</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
+  id: gb-2003-4-9-r54/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Representation of gene to
+    protein to reaction (GPR) associations. Each gene included in the model is associated
+    with at least one reaction. Examples of different types of associations are shown,
+    where the top layer is the gene locus, the second layer is the translated peptide,
+    the third layer is the functional protein and the bottom layer is the reaction
+    (shown as its corresponding abbreviation listed in the additional data file).
+    Subunits (for example, sdhABCD and gapC_1C_2) and enzyme complexes (for example,
+    xylFGH) are connected to reactions with '&amp;' associations, indicating that
+    all have to be expressed for the reaction to occur. For sdhABCD, the '&amp;' is
+    shown above the functional protein level, denoting that all of these gene products
+    are needed for the functional enzyme. With xylFGH the '&amp;' association is shown
+    above the reaction level, indicating that the different proteins form a complex
+    that carries out the reaction. Isozymes (for example, gapC_1C_2 and gapA) are
+    independent proteins which carry out identical reactions where only one of the
+    isozymes needs to be present for the reaction to occur. Isozymes are shown as
+    two or more arrows leaving different proteins but impinging on the same reaction.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
+  id: gb-2003-4-9-r54/F2
+  label: Figure 2
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Quinone specificity for electron
+    donors and terminal acceptors. <italic>E. coli i</italic>JR904 also accounts for
+    the quinone specificity of different reactions. Electron donors are listed on
+    the left, terminal electron acceptors are on the right, and the three types of
+    quinones (DMK, MK, Q; note that these abbreviations differ from those listed in
+    the additional data files) that serve as carriers are shown in the middle. The
+    electron donors shown in red were able to donate their electrons to fumarate in
+    <italic>i</italic>JE660a, but are now unable to do so. DMK, demethylmenaquinone;
+    DMSO, dimethyl sulfoxide; MK, menaquinone; Q, ubiquinone; TMAO, trimethylamine
+    N-oxide.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
+  id: gb-2003-4-9-r54/F3
+  label: Figure 3
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Effect of proton balancing
+    on predicted growth rate. The figure shows how limiting the exchange of protons
+    between the cell and the medium affects the predicted growth rates under aerobic
+    conditions. The relative growth rate (<italic>y</italic>-axis) is the ratio of
+    the predicted growth rate when the proton exchange flux is limited over the predicted
+    growth rate when the proton exchange flux is not limited (at its optimal value).
+    These calculations are for the conditions of aerobic growth on minimal media;
+    the carbon source uptake rates were set to 5 mmol/g DW-hr and the maximum oxygen
+    uptake rate was set to 20 mmol/g DW-hr. Carbon sources resulting in an outward
+    flux of protons (lines to the right of the <italic>y</italic>-axis) would make
+    the medium more acidic, while carbon sources resulting in an inward flux of protons
+    (lines to the left of the <italic>y</italic>-axis) would make the medium more
+    basic.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
+  id: gb-2003-4-9-r54/F4
+  label: Figure 4
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Comparisons between phenotypic
+    phase planes (PhPP) calculated using <italic>i</italic>JR904 and <italic>i</italic>JE660a.
+    <bold>(a-e) </bold>The PhPP for growth on (a) malate, (b) glucose, (c) acetate,
+    (d) glycerol, and (e) &#945;-ketoglutarate (&#945;KG) are shown, where the red
+    lines show the PhPP calculated from <italic>i</italic>JR904 and the blue lines
+    the PhPP calculated from <italic>i</italic>JE660a. The line of optimality (LO)
+    corresponds to maximal biomass yield. (e) With &#945;KG as the carbon source,
+    the phase planes calculated from <italic>i</italic>JR904 (red line) and <italic>i</italic>JE660a
+    (blue line) are drastically different in the oxygen-limited region (area below
+    the LO). <bold>(f)</bold> The different metabolic routes (along with their associated
+    genes) added to the network in <italic>i</italic>JR904 that enable fermentative
+    growth on &#945;KG are shown in red, blue and green. AC, acetate; CIT, citrate;
+    GLYCLT, glycolate; GLYC-R, R-glycerate; GLX, glyoxylate; ICIT, isocitrate; &#945;KG,
+    &#945;-ketoglutarate, OAA, oxaloacetate; 3PG, 3-phospho-D-glycerate; SUCC, succinate;
+    SUCCOA, succinyl-CoA.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
+  id: gb-2003-4-9-r54/F5
+  label: Figure 5
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink">Flux map of TCA cycle and
+    citrate lyase. During oxygen-limited growth on &#945;KG maximal biomass will be
+    made by utilizing the citrate lyase reaction. As oxygen becomes more limiting,
+    the reactions shown in red, culminating in the production of oxaloacetate (OAA),
+    were predicted by <italic>i</italic>JR904 to be used more heavily than the forward
+    direction of the TCA cycle reactions (shown in black). <italic>i</italic>JE660a
+    does not include the citrate lyase reaction so carbon flow is directed only in
+    the forward direction of the TCA cycle; these reactions produce more reduced redox
+    carriers, which are difficult for the cell to oxidize in an oxygen-limited environment.
+    The ''+'' sign indicates that the cofactor is produced by the reaction in the
+    direction shown and the ''-'' sign indicates that the cofactor is consumed. For
+    abbreviations see Figure <xref ref-type="fig" rid="F5">5</xref>, with the following
+    additions: ACCOA, acetyl-CoA; FUM, fumarate; MAL, malate, PYR, pyruvate.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
+  id: gb-2003-4-9-r54/F6
+  label: Figure 6

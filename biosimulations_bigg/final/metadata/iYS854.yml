@@ -1,0 +1,123 @@
+encodes:
+  label: Staphylococcus aureus subsp. aureus USA300_TCH1516, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/161508266
+reference:
+  authors:
+  - Yara Seif
+  - Jonathan M. Monk
+  - Nathan Mih
+  - Hannah Tsunemoto
+  - Saugat Poudel
+  - Cristal Zuniga
+  - Jared Broddrick
+  - Karsten Zengler
+  - Bernhard O. Palsson
+  date: '2019-01-15'
+  doi: 10.1371/journal.pcbi.1006644
+  issue: '1'
+  journal: PLOS Computational Biology
+  pages: e1006644
+  pubmed_central_id: PMC6326480
+  pubmed_id: '30625152'
+  title: A computational knowledge-base elucidates the response of Staphylococcus
+    aureus to different media types
+  volume: '15'
+  year: '2019'
+taxon:
+  id: 451516
+  name: Staphylococcus aureus subsp. aureus USA300_TCH1516
+thumbnails:
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Summary
+    of the reconstruction efforts for <italic>i</italic>YS854.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">(A) Evolution of <italic>S</italic>.
+    <italic>aureus</italic> genome scale metabolic reconstructions and their biomass
+    objective function from 2005 to 2018. (B) Graphical representation of the four
+    central objects in the <italic>S</italic>. <italic>aureus</italic> GEM; genes,
+    reactions, metabolites, and structures. A representative mapping between all four
+    objects along with relevant metadata are added during the reconstruction process.
+    (C) Percentage of metabolic genes mapped to protein crystal structures and protein
+    homology models, and distribution of metabolic subsystems per category (more details
+    are shown in <bold>Table S4 in <xref ref-type="supplementary-material" rid="pcbi.1006644.s002">S2
+    Appendix</xref></bold>).</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g001.jpg
+  id: pcbi.1006644/pcbi.1006644.g001
+  label: Fig 1
+- caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Break
+    down of the novel content in <italic>i</italic>YS854 by metabolic sub-module and
+    COG category.</title><p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">(A)
+    We compared the gene content in <italic>i</italic>YS854 to that of the four previous
+    GEMs of <italic>S</italic>. <italic>aureus</italic> and categorized them by their
+    metabolic sub-modules. For purposes of clarity we only show a subset of the sub-modules
+    across three COG categories: cofactor and prosthetic group metabolism, transport,
+    and cell wall metabolism. The color scale represents the percentage of novel genes
+    in <italic>i</italic>YS864 with respect to previous GEMs (columns) by each metabolic
+    sub-module (rows). We highlight the date for the most recent reference that was
+    added in <italic>i</italic>YS854 for each metabolic sub-module (see S3 Table in
+    <xref ref-type="supplementary-material" rid="pcbi.1006644.s002">S2 Appendix</xref>
+    for more details). Genes may have different annotations in previous reconstructions
+    (for example the staphylopine biosynthesis pathway was only uncovered in 2016).
+    Note that &#8220;h&#8221; represents a metabolic sub-module that was added based
+    on gene homology. (B) We compared the most recently published GEM with <italic>i</italic>YS854
+    and highlighted the new additions in reaction content per COG module.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g002.jpg
+  id: pcbi.1006644/pcbi.1006644.g002
+  label: Fig 2
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Comparison
+    of <italic>in vivo</italic> vs. <italic>in silico</italic> gene essentiality.</title><p
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">(A)
+    Contingency matrix for the comparison of <italic>in silico</italic> gene essentiality
+    predictions of <italic>i</italic>YS854 on rich medium with <italic>in vitro</italic>
+    observations of tn-seq mutants on TSB. The accuracy is 85.7%, which represents
+    an increase of 10.1% with respect to the most recent model [<xref rid="pcbi.1006644.ref011"
+    ref-type="bibr">11</xref>]. (B) The genes that fell into the category of false
+    negatives were grouped by the biomass precursor in whose biosynthesis they participate.
+    (C) Predictions of gene knockout on growth phenotype across defined media types.
+    Here, we show a subset of four media types and the subset of conditionally essential
+    genes that are not essential in at least one media type. The full data is available
+    in S3 Table and the full cluster map is available in <xref ref-type="supplementary-material"
+    rid="pcbi.1006644.s001"><bold>S1</bold> Appendix</xref>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g003.jpg
+  id: pcbi.1006644/pcbi.1006644.g003
+  label: Fig 3
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Condition-specific
+    GEM validation and evaluation.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">(A) Quantitative exo-metabolomics
+    measurements (for both CDM and CDMG) were used to build two condition specific
+    GEMs. Growth was simulated using flux balance analysis and cross-checked against
+    experimentally observed growth rates. See <bold><xref ref-type="supplementary-material"
+    rid="pcbi.1006644.s001">S1 Appendix</xref></bold> for comparison of predicted
+    and measured relative growth rate across the two media types. (B) We compared
+    the measured and simulated relative oxygen consumption as well as the relative
+    intracellular ATP concentration between the two condition-specific GEMs <bold>(Methods)</bold>.
+    (C) Growth phenotype predictions for 28 CDM-specific mutant GEMs were compared
+    against experimentally observed transposon mutant growth phenotypes. Two genes
+    (<italic>ackA</italic> and <italic>gudB</italic>) were classified as false positives
+    due to the presence of alternative pathways. (D) We simulated single reaction
+    knockouts and compared essential reactions across conditions. The Venn diagram
+    highlights the differences in reaction essentiality between the CDM-specific GEM
+    and the CDMG-specific GEM.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g004.jpg
+  id: pcbi.1006644/pcbi.1006644.g004
+  label: Fig 4
+- caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Comparison
+    of flux distribution across two condition-specific GEMs.</title><p xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML">(A) The reactions that were shown
+    to significantly differ in their flux distribution (determined by the Kolmogorov-Smirnoff
+    test) between the CDMG- and CDM-specific GEM are shown. The width of the arrows
+    qualitatively represents the median flux value across 10,000 sampled fluxes. The
+    blue arrows represent the flux simulation results for the CDM-specific GEM and
+    the red arrows represent the flux simulations of the CDMG-specific GEM. The13C
+    labelled intracellular metabolites detected by NMR in both conditions are highlighted
+    in red (metabolic intermediates derived from extracellular glucose in CDMG) and
+    in blue (metabolic intermediates derived from nine extracellular amino acids in
+    CDM) [<xref rid="pcbi.1006644.ref079" ref-type="bibr">79</xref>]. Metabolites
+    highlighted in grey are present in the extracellular medium (note that D-glucose
+    is only present in CDMG). (B) Differential cycling of ammonium (as well as several
+    cofactors) between the two GEMs highlights the relative contribution to the production
+    and consumption of ammonium for all reactions utilizing or synthesizing ammonium
+    in CDM (blue) and CDMG (red). Several metabolic processes contribute to the ammonium
+    pool in CDM (including the glycine cleavage system) while serine dehydrogenase
+    is the main source of ammonium in CDMG.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g005.jpg
+  id: pcbi.1006644/pcbi.1006644.g005
+  label: Fig 5

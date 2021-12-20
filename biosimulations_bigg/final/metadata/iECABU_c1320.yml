@@ -1,0 +1,28 @@
+encodes:
+  label: Escherichia coli ABU 83972, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/307551844
+reference:
+  authors:
+  - J. M. Monk
+  - P. Charusanti
+  - R. K. Aziz
+  - J. A. Lerman
+  - N. Premyodhin
+  - J. D. Orth
+  - A. M. Feist
+  - B. O. Palsson
+  date: '2013-12-10'
+  doi: 10.1073/pnas.1307797110
+  issue: '50'
+  journal: Proceedings of the National Academy of Sciences
+  pages: 20338-20343
+  pubmed_central_id: PMC3864276
+  pubmed_id: '24277855'
+  title: Genome-scale metabolic reconstructions of multiple Escherichia coli strains
+    highlight strain-specific adaptations to nutritional environments
+  volume: '110'
+  year: '2013'
+taxon:
+  id: 655817
+  name: Escherichia coli ABU 83972
+thumbnails: []

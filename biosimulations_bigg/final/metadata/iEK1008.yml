@@ -1,0 +1,78 @@
+encodes:
+  label: Mycobacterium tuberculosis H37Rv, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/448814763
+reference:
+  authors:
+  - Erol S. Kavvas
+  - Yara Seif
+  - James T. Yurkovich
+  - Charles Norsigian
+  - Saugat Poudel
+  - William W. Greenwald
+  - Sankha Ghatak
+  - Bernhard O. Palsson
+  - Jonathan M. Monk
+  date: '2018-03-02'
+  doi: 10.1186/s12918-018-0557-y
+  issue: '1'
+  journal: BMC Systems Biology
+  pages: '25'
+  pubmed_central_id: PMC5834885
+  pubmed_id: '29499714'
+  title: Updated and standardized genome-scale reconstruction of Mycobacterium tuberculosis
+    H37Rv, iEK1011, simulates flux states indicative of physiological conditions
+  volume: '12'
+  year: '2018'
+taxon:
+  id: 83332
+  name: Mycobacterium tuberculosis H37Rv
+thumbnails:
+- caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink"><bold>a</bold>
+    Workflow of reconstruction process. A draft GEM model was built from the TB BioCyc
+    20.0 database and mapped to BIGGs IDs along with sMtb and iOSDD (see Additional
+    file <xref rid="MOESM2" ref-type="media">2</xref>). The models were then unified
+    by first joining the similarities between them, followed by manual curation of
+    model differences literature and database validation. <bold>b</bold> Overlap of
+    genes across different model sets. The model that covers most of the models within
+    the particular set is enclosed by a box</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
+  id: 12918_2018_Article_557/Fig1
+  label: Fig. 1
+- caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Gene
+    Essentiality Prediction Comparisons. <bold>a</bold> Model-predicted gene essentiality
+    results compared to both the <italic>Griffin</italic> et al. and <italic>deJesus</italic>
+    et al. essentiality experimental datasets. <bold>b</bold> Gene essentiality performance
+    using the Matthews Correlation Coefficient. iSM810 and sMtb, which were both built
+    off of GSMN-TB 1.1, significantly outperform iNJ661 and iOSDD. iEK1011 outperforms
+    all models on both gene essentiality datasets</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
+  id: 12918_2018_Article_557/Fig2
+  label: Fig. 2
+- caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Metabolic
+    map of flux differences through central carbon metabolism in iEK1011 between approximate
+    in vitro and in vivo conditions. The media conditions are represented by nutrients
+    outside of the dotted boundary line. Box plots graphically depict flux differences
+    in the sampled solution spaces between in vivo and in vitro media conditions</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
+  id: 12918_2018_Article_557/Fig3
+  label: Fig. 3
+- caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Escher
+    map of arabinogalactan-peptidoglycan complex biosynthesis with known resistance-conferring
+    genes mapped. The gene-antibiotic relation is indicated by the number placed proximal
+    to the gene. The mechanistic effect by the antibiotic is indicated by the blue
+    line. No blue line is shown for mutations in which the gene-antibiotic relation
+    remains unclear (i.g., <italic>mshC</italic>, <italic>drrBC</italic>), Escher-usable
+    maps were built for multiple subsystems in iEK1011 (see Additional file <xref
+    rid="MOESM4" ref-type="media">4</xref>)</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
+  id: 12918_2018_Article_557/Fig4
+  label: Fig. 4
+- caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Heatmaps
+    of maximum FVA values for for a matrix representing FVA values for the curated
+    AMR reactions across simulations of different drug-specific objective functions
+    (see Table <xref rid="Tab2" ref-type="table">2</xref> for curated list of AMR
+    genes and their associated iEK1011 reactions, see Table <xref rid="Tab3" ref-type="table">3</xref>
+    for drug-specific objectives)</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
+  id: 12918_2018_Article_557/Fig5
+  label: Fig. 5

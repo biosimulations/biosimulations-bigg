@@ -1,0 +1,101 @@
+encodes:
+  label: Clostridium ljungdahlii DSM 13528, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/300853232
+reference:
+  authors:
+  - Harish Nagarajan
+  - Merve Sahin
+  - Juan Nogales
+  - Haythem Latif
+  - Derek R Lovley
+  - Ali Ebrahim
+  - Karsten Zengler
+  date: '2013-11-25'
+  doi: 10.1186/1475-2859-12-118
+  issue: null
+  journal: Microbial Cell Factories
+  pages: '118'
+  pubmed_central_id: PMC4222884
+  pubmed_id: '24274140'
+  title: Characterizing acetogenic metabolism using a genome-scale metabolic reconstruction
+    of Clostridium ljungdahlii
+  volume: '12'
+  year: '2013'
+taxon:
+  id: 748727
+  name: Clostridium ljungdahlii DSM 13528
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Reconstruction
+    workflow.</bold> Iterative reconciliatory reconstruction workflow adopted for
+    generating the metabolic model for <italic>C. ljungdahlii</italic>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
+  id: 1475-2859-12-118/F1
+  label: Figure 1
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Characterizing
+    the nitrate reduction pathway in </bold><bold><italic>C. ljungdahlii. </italic></bold><bold>(A)</bold>
+    Pathway map of the reconstructed nitrate reduction pathway with the respective
+    genes associated to the reactions. Inset shows the differential expression of
+    the genes in the nitrate reduction pathway under ammonium-free medium with nitrate
+    compared to nitrate-free medium with ammonium as the nitrogen source. Reaction
+    abbreviations: NO3t2 (nitrate transporter), NO2t2r (nitrite transporter), NTRARf
+    (nitrate reductase), NTRIR5 (nitrite reductase), HAMR (hydroxylamine reductase),
+    NH4t (ammonium transporter). <bold>(B)</bold> Physiological data when <italic>C.
+    ljungdahlii</italic> is grown on fructose in ammonium-free media with nitrate
+    as the nitrogen source. Purple line represents fructose, green line represents
+    OD<sub>600</sub>, brown line represents acetate, red line represents nitrate and
+    orange line represents ammonia measurements respectively.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
+  id: 1475-2859-12-118/F2
+  label: Figure 2
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Energy
+    conservation mechanisms in </bold><bold><italic>C. ljungdahlii. </italic></bold><bold>(A)</bold>
+    Shown is the Wood-Ljungdahl pathway with an emphasis on the electron bifurcation
+    in the Wood-Ljungdahl pathway at the methylene-tetrahydrofolate deydrogenase small
+    subunit to generate reduced ferredoxin. The detailed Wood-Ljungdahl pathway is
+    shown in Figure&#160;
+
+    <xref ref-type="fig" rid="F4">4</xref>. Reaction abbreviations are the same as
+    those in Figure&#160;
+
+    <xref ref-type="fig" rid="F4">4</xref>. <bold>(B)</bold> Energy conservation through
+    proton gradient established at the Rnf complex. <bold>(C)</bold> Identification
+    of a gene encoding the electron bifurcating transhydrogenase for the generation
+    of NADPH during autotrophic growth (Nfn complex). <bold>(D)</bold> Electron bifurcating
+    hydrogenase for the reduction of ferredoxin from hydrogen during autotrophic growth.
+    Yellow nodes indicate the oxidized form of reducing equivalents and blue nodes
+    indicate the reduced form.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
+  id: 1475-2859-12-118/F3
+  label: Figure 3
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Wood-Ljungdahl
+    pathway and pathways for acetate and ethanol formation. (A)</bold> Shown is the
+    detailed representation of the Wood-Ljungdahl pathway explicitly summarizing the
+    reducing equivalents required for carbon fixation. <bold>(B)</bold> Pathway showing
+    acetate formation and ethanol formation from acetyl-coA. Reaction abbreviations:
+    FDH7 (formate dehydrogenase), FTHFLi (formate-tetrahydrofolate ligase), MTHFC
+    (methenyltetrahydrofolate cyclohydrolase), MTHFD (methylenetetrahydrofolate dehydrogenase
+    (NADP)), MTHFR5 (5,10-methylenetetrahydrofolate reductase (Ferredoxin) Electron
+    bifurcating), METR (Methyltetrahydrofolate:corrinoid/iron-sulfur protein methyltransferase),
+    CODH_ACS (CODH/Acetyl-CoA synthase), PTAr (phospotransacetylase), ACKr (acetate
+    kinase), ACALD (acetaldehyde dehydrogenase), ALCD2x (ethanol dehydrogenase). Yellow
+    nodes indicate the oxidized form of reducing equivalents and blue nodes indicate
+    the reduced form.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
+  id: 1475-2859-12-118/F4
+  label: Figure 4
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Insights
+    from modeling genetic perturbation into aspects of energy conservation in </bold><bold><italic>C.
+    ljungdahlii. </italic></bold><bold>(A)</bold> Deletion of acetate kinase during
+    growth on fructose shifts the flux from acetate towards ethanol. <bold>(B)</bold>
+    Growth is feasible when CO is the electron donor despite the deletion of acetate
+    kinase. <bold>(C)</bold> Growth is feasible when H<sub>2</sub> is the electron
+    donor despite the deletion of acetate kinase if the bifurcating hydrogenase is
+    NADPH dependent. <bold>(D)</bold> Acetate kinase is essential for autotrophic
+    growth with H<sub>2</sub> as the electron donor if the bifurcating hydrogenase
+    is NADH dependent. Modeling analysis reveals an insufficient ATP in the absence
+    of <italic>ackA</italic> if the hydrogenase is NADH dependent (0.75 ATP) . However,
+    if the bifurcating hydrogenase is NADP dependent, sufficient ATP (1.5 ATP) is
+    generated to enable ethanol production in the absence of <italic>ackA</italic>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
+  id: 1475-2859-12-118/F5
+  label: Figure 5

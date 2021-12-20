@@ -1,0 +1,89 @@
+encodes:
+  label: Mycobacterium tuberculosis H37Rv, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/448814763
+reference:
+  authors:
+  - Neema Jamshidi
+  - "Bernhard \xD8 Palsson"
+  date: '2007-06-08'
+  doi: 10.1186/1752-0509-1-26
+  issue: null
+  journal: BMC Systems Biology
+  pages: '26'
+  pubmed_central_id: PMC1925256
+  pubmed_id: '17555602'
+  title: Investigating the metabolic capabilities of Mycobacterium tuberculosis H37Rv
+    using the in silico strain iNJ661 and proposing alternative drug targets
+  volume: '1'
+  year: '2007'
+taxon:
+  id: 83332
+  name: Mycobacterium tuberculosis H37Rv
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">The Gene Index for Mycobacterium
+    tuberculosis H37Rv was downloaded from The Institute for Genomic Research (TIGR)
+    [45]. Reconstruction content was defined based on the sequence annotation, legacy
+    data, the Tuberculist database [31], ancillary sources such as the Kyoto Encyclopedia
+    of Genes and Genomes (KEGG), and SEED [47]. Reactions were defined and according
+    to the Tuberculist web and KEGG. Legacy data was also used in the process of building
+    the model from the reconstruction. The manual curation aspects of the reconstruction
+    are outlined above and discussed in further detail in [42]. Debugging was started
+    once the first draft of the reconstruction was completed and functional testing
+    (i.e. flux balance analysis calculations, etc.) were begun.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-1.jpg
+  id: 1752-0509-1-26/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">a. Phase plane diagram of
+    glycerol versus glucose uptake while optimizing for growth on Middlebrook media.
+    iNJ661 can grow with glycerol serving as the sole carbon source, but not glucose.
+    The open dots are the calculated phase points and the solid black lines indicate
+    isoclines. b. Phase plane diagram for phosphate versus sulfate uptake on Middlebrook
+    media. Although the transport fluxes are very small, they are both necessary for
+    the organism to be able to grow.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-2.jpg
+  id: 1752-0509-1-26/F2
+  label: Figure 2
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Biomass optimization on Middlebrook
+    media without glucose. Carbon monoxide uptake can affect the growth at very low
+    glycerol uptake rates via Carbon Monoxide Dehydrogenase, which generate protons
+    through the oxidation of carbon dioxide.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-3.jpg
+  id: 1752-0509-1-26/F3
+  label: Figure 3
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink">Summary of experimental
+    datasets and their overlap with <italic>iNJ</italic>661 and the <italic>iNJ</italic>661
+    gene deletion studies. OptGro refers to the dataset described in [23], ConstExp
+    refers to the dataset described in [29], and Infect describes the dataset in [30].
+    ^ denotes the subset of genes from the experimental dataset contained in <italic>iNJ</italic>661.
+    <italic>iNJ</italic>661 represents the 661 genes in the reconstruction. <italic>iNJ</italic>661
+    optimal growth represents the subset of genes required for optimal growth with
+    the original objective function. <italic>iNJ</italic>661 optimal growth* represents
+    the subset of genes required for optimal growth with the objective function expanded
+    to include vitamins and cofactors. <italic>iNJ</italic>661 alternative objective
+    represents the set of genes required for optimal growth using the objective function
+    constructed based on the ConstExp dataset. Panel A: The Venn diagram shows the
+    overlap between the different experimental gene expression datasets. The accompanying
+    chart summarizes the total number of genes in each dataset and how many of those
+    genes are found in the <italic>iNJ661 </italic>reconstruction. Panel B: Series
+    of Venn diagrams summarizing the results for the gene deletion studies carried
+    out of <italic>iNJ</italic>661 compared to the experimental gene expression datasets.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-4.jpg
+  id: 1752-0509-1-26/F4
+  label: Figure 4
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink">The stoichiometric matrix
+    is created from the metabolic network. The HCR (Hard Coupled Reaction) sets are
+    calculated directly from the stoichiometric matrix and mapped back to the gene
+    loci. Gene-Protein-Reaction relationships: top box is the gene, the next box is
+    the peptide, the oval represents the functional protein, and the bottom boxes
+    are the reactions catalyzed by the protein.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-5.jpg
+  id: 1752-0509-1-26/F5
+  label: Figure 5
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">A partial metabolic map of
+    <italic>iNJ</italic>661 with the 25 drug target HCR sets. Each reaction is numbered
+    and color coded according to the HCR which it belongs to. The number of the HCR
+    sets matches those in the Additional files. Only pathways or parts of pathways
+    which included members of the 25 HCRs are depicted.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1925256/PMC1925256/1752-0509-1-26-6.jpg
+  id: 1752-0509-1-26/F6
+  label: Figure 6

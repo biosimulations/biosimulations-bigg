@@ -1,0 +1,1543 @@
+duration: 5.099091
+exception: null
+output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
+  \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
+  \n    Reports (2):\r\n      objective: 1 data sets\r\n      reaction_fluxes: 743\
+  \ data sets\r\n\r\nExecuting SED-ML file 1: simulation.sedml ...\r\n\r\nBundling\
+  \ outputs ...\r\nCleaning up ...\r\n\r\n============= SUMMARY =============\r\n\
+  Executed 1 SED documents:\r\n  SED documents (1):\r\n    Succeeded: 1\r\n    Skipped:\
+  \ 0\r\n    Failed: 0\r\n  Tasks (1):\r\n    Succeeded: 1\r\n    Skipped: 0\r\n \
+  \   Failed: 0\r\n  Outputs (2):\r\n    Succeeded: 2\r\n    Skipped: 0\r\n    Failed:\
+  \ 0\r\n\r\n"
+sedDocuments:
+- duration: 3.568146
+  exception: null
+  location: simulation.sedml
+  output: "  Found 1 tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\
+    \n      `objective`\r\n      `reaction_fluxes`\r\n  Executing task 1: `task`\r\
+    \n    Executing simulation ... \e[34msucceeded\e[0m\r\n    Generating 2 outputs\
+    \ ...\r\n      Generating output 1: `objective` ... \e[34msucceeded\e[0m\r\n \
+    \     Generating output 2: `reaction_fluxes` ... \e[34msucceeded\e[0m\r\n\r\n\
+    \  Executed 1 tasks and 2 outputs:\r\n    Tasks:\r\n      Succeeded: 1\r\n   \
+    \   Skipped: 0\r\n      Failed: 0\r\n    Outputs:\r\n      Succeeded: 2\r\n  \
+    \    Skipped: 0\r\n      Failed: 0\r\n"
+  outputs:
+  - dataSets:
+    - id: obj
+      status: SUCCEEDED
+    duration: 0.059028
+    exception: null
+    id: objective
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  - dataSets:
+    - id: R_ADMDC
+      status: SUCCEEDED
+    - id: R_CO2t
+      status: SUCCEEDED
+    - id: R_CSNt2
+      status: SUCCEEDED
+    - id: R_CYSabc
+      status: SUCCEEDED
+    - id: R_DAPE
+      status: SUCCEEDED
+    - id: R_DKMPPD
+      status: SUCCEEDED
+    - id: R_DKMPPD2
+      status: SUCCEEDED
+    - id: R_D_LACt2
+      status: SUCCEEDED
+    - id: R_6PGALSZ
+      status: SUCCEEDED
+    - id: R_6PHBG
+      status: SUCCEEDED
+    - id: R_ETOHt
+      status: SUCCEEDED
+    - id: R_EX_26dap__M_e
+      status: SUCCEEDED
+    - id: R_ABTA
+      status: SUCCEEDED
+    - id: R_EX_Cit_Mg_e
+      status: SUCCEEDED
+    - id: R_CHOLD
+      status: SUCCEEDED
+    - id: R_ACACT1r
+      status: SUCCEEDED
+    - id: R_ACACT2r
+      status: SUCCEEDED
+    - id: R_DDPA
+      status: SUCCEEDED
+    - id: R_ACALD
+      status: SUCCEEDED
+    - id: R_CHORM
+      status: SUCCEEDED
+    - id: R_ACOATA
+      status: SUCCEEDED
+    - id: R_ADNt2
+      status: SUCCEEDED
+    - id: R_ACLDC
+      status: SUCCEEDED
+    - id: R_ACNAMt2
+      status: SUCCEEDED
+    - id: R_CHORS
+      status: SUCCEEDED
+    - id: R_ACCOAC
+      status: SUCCEEDED
+    - id: R_CIT_Mgt
+      status: SUCCEEDED
+    - id: R_ACGApts
+      status: SUCCEEDED
+    - id: R_CPPPGO
+      status: SUCCEEDED
+    - id: R_ACGK
+      status: SUCCEEDED
+    - id: R_ACNML
+      status: SUCCEEDED
+    - id: R_ASPabc
+      status: SUCCEEDED
+    - id: R_ACHBS
+      status: SUCCEEDED
+    - id: R_CLPNS_SA
+      status: SUCCEEDED
+    - id: R_ACLS
+      status: SUCCEEDED
+    - id: R_ACOAD1
+      status: SUCCEEDED
+    - id: R_ACOAD2
+      status: SUCCEEDED
+    - id: R_ACOAD3
+      status: SUCCEEDED
+    - id: R_ACOAD4
+      status: SUCCEEDED
+    - id: R_ACOAD5
+      status: SUCCEEDED
+    - id: R_ACONT
+      status: SUCCEEDED
+    - id: R_ATPM
+      status: SUCCEEDED
+    - id: R_BPNT
+      status: SUCCEEDED
+    - id: R_BTNt2i
+      status: SUCCEEDED
+    - id: R_CDAPPA_SA
+      status: SUCCEEDED
+    - id: R_ADPT
+      status: SUCCEEDED
+    - id: R_ADSK
+      status: SUCCEEDED
+    - id: R_ADSL2r
+      status: SUCCEEDED
+    - id: R_ACOTA
+      status: SUCCEEDED
+    - id: R_ACPS1
+      status: SUCCEEDED
+    - id: R_ADSS
+      status: SUCCEEDED
+    - id: R_COabc
+      status: SUCCEEDED
+    - id: R_AGDC
+      status: SUCCEEDED
+    - id: R_AGMHE
+      status: SUCCEEDED
+    - id: R_ACPpds
+      status: SUCCEEDED
+    - id: R_ACYP_2
+      status: SUCCEEDED
+    - id: R_ACS
+      status: SUCCEEDED
+    - id: R_CS
+      status: SUCCEEDED
+    - id: R_ADCL
+      status: SUCCEEDED
+    - id: R_ADCS
+      status: SUCCEEDED
+    - id: R_ARGN
+      status: SUCCEEDED
+    - id: R_AGMT
+      status: SUCCEEDED
+    - id: R_ADCYRS
+      status: SUCCEEDED
+    - id: R_ADK1
+      status: SUCCEEDED
+    - id: R_CTPS1
+      status: SUCCEEDED
+    - id: R_ADKd
+      status: SUCCEEDED
+    - id: R_AGPR
+      status: SUCCEEDED
+    - id: R_AHCYSNS
+      status: SUCCEEDED
+    - id: R_AICART
+      status: SUCCEEDED
+    - id: R_CYSTL
+      status: SUCCEEDED
+    - id: R_AIRC2
+      status: SUCCEEDED
+    - id: R_AIRC3
+      status: SUCCEEDED
+    - id: R_AKGDa
+      status: SUCCEEDED
+    - id: R_AKGDb
+      status: SUCCEEDED
+    - id: R_AKGMAL
+      status: SUCCEEDED
+    - id: R_CYSS
+      status: SUCCEEDED
+    - id: R_ALKP
+      status: SUCCEEDED
+    - id: R_ALAALAr
+      status: SUCCEEDED
+    - id: R_ALATA_D
+      status: SUCCEEDED
+    - id: R_CYSTRS
+      status: SUCCEEDED
+    - id: R_CYTD
+      status: SUCCEEDED
+    - id: R_ALAD_L
+      status: SUCCEEDED
+    - id: R_ALAR
+      status: SUCCEEDED
+    - id: R_CYTDK2
+      status: SUCCEEDED
+    - id: R_ALATRS
+      status: SUCCEEDED
+    - id: R_CYTDt4
+      status: SUCCEEDED
+    - id: R_CYTK2
+      status: SUCCEEDED
+    - id: R_CAT
+      status: SUCCEEDED
+    - id: R_EX_acgam_e
+      status: SUCCEEDED
+    - id: R_EX_acnam_e
+      status: SUCCEEDED
+    - id: R_CYTK1
+      status: SUCCEEDED
+    - id: R_EX_adn_e
+      status: SUCCEEDED
+    - id: R_EX_akg_e
+      status: SUCCEEDED
+    - id: R_ALAabc
+      status: SUCCEEDED
+    - id: R_ALAt2r
+      status: SUCCEEDED
+    - id: R_Cut1
+      status: SUCCEEDED
+    - id: R_ALCD2x
+      status: SUCCEEDED
+    - id: R_DAGK_SA
+      status: SUCCEEDED
+    - id: R_AMANAPEr
+      status: SUCCEEDED
+    - id: R_ALDD2x
+      status: SUCCEEDED
+    - id: R_EX_ala__D_e
+      status: SUCCEEDED
+    - id: R_EX_ala__L_e
+      status: SUCCEEDED
+    - id: R_DASYN_SA
+      status: SUCCEEDED
+    - id: R_EX_arg__L_e
+      status: SUCCEEDED
+    - id: R_EX_asp__L_e
+      status: SUCCEEDED
+    - id: R_EX_btn_e
+      status: SUCCEEDED
+    - id: R_AMAA
+      status: SUCCEEDED
+    - id: R_AMANK
+      status: SUCCEEDED
+    - id: R_AMAOTr
+      status: SUCCEEDED
+    - id: R_ANPRT
+      status: SUCCEEDED
+    - id: R_EX_chol_e
+      status: SUCCEEDED
+    - id: R_EX_co2_e
+      status: SUCCEEDED
+    - id: R_EX_cobalt2_e
+      status: SUCCEEDED
+    - id: R_DAPDC
+      status: SUCCEEDED
+    - id: R_EX_crn_e
+      status: SUCCEEDED
+    - id: R_EX_csn_e
+      status: SUCCEEDED
+    - id: R_AOXSr
+      status: SUCCEEDED
+    - id: R_EX_cu2_e
+      status: SUCCEEDED
+    - id: R_ARGDC
+      status: SUCCEEDED
+    - id: R_DB4PS
+      status: SUCCEEDED
+    - id: R_APRAUR
+      status: SUCCEEDED
+    - id: R_ARGDr
+      status: SUCCEEDED
+    - id: R_EX_cys__L_e
+      status: SUCCEEDED
+    - id: R_EX_cytd_e
+      status: SUCCEEDED
+    - id: R_DBTS
+      status: SUCCEEDED
+    - id: R_EX_etoh_e
+      status: SUCCEEDED
+    - id: R_EX_fe2_e
+      status: SUCCEEDED
+    - id: R_ARGORNt7
+      status: SUCCEEDED
+    - id: R_ARGSL
+      status: SUCCEEDED
+    - id: R_DCMPDA
+      status: SUCCEEDED
+    - id: R_ARGSS
+      status: SUCCEEDED
+    - id: R_ARGTRS
+      status: SUCCEEDED
+    - id: R_ASAD
+      status: SUCCEEDED
+    - id: R_EX_for_e
+      status: SUCCEEDED
+    - id: R_EX_fru_e
+      status: SUCCEEDED
+    - id: R_EX_galt_e
+      status: SUCCEEDED
+    - id: R_ASNN
+      status: SUCCEEDED
+    - id: R_EX_glc__D_e
+      status: SUCCEEDED
+    - id: R_ASNS1
+      status: SUCCEEDED
+    - id: R_DGK1
+      status: SUCCEEDED
+    - id: R_ASNTRS
+      status: SUCCEEDED
+    - id: R_ASP1DC
+      status: SUCCEEDED
+    - id: R_EX_glcn_e
+      status: SUCCEEDED
+    - id: R_EX_glu__L_e
+      status: SUCCEEDED
+    - id: R_EX_gly_e
+      status: SUCCEEDED
+    - id: R_ASPCT
+      status: SUCCEEDED
+    - id: R_DHAD1
+      status: SUCCEEDED
+    - id: R_ASPTA
+      status: SUCCEEDED
+    - id: R_ASPK
+      status: SUCCEEDED
+    - id: R_ASPTRS
+      status: SUCCEEDED
+    - id: R_ATPPRT
+      status: SUCCEEDED
+    - id: R_BACCL
+      status: SUCCEEDED
+    - id: R_BETALDHx
+      status: SUCCEEDED
+    - id: R_EX_glyald_e
+      status: SUCCEEDED
+    - id: R_EX_glyb_e
+      status: SUCCEEDED
+    - id: R_EX_glyc3p_e
+      status: SUCCEEDED
+    - id: R_EX_glyc_e
+      status: SUCCEEDED
+    - id: R_EX_gua_e
+      status: SUCCEEDED
+    - id: R_EX_h2o_e
+      status: SUCCEEDED
+    - id: R_EX_h_e
+      status: SUCCEEDED
+    - id: R_EX_hdca_e
+      status: SUCCEEDED
+    - id: R_EX_his__L_e
+      status: SUCCEEDED
+    - id: R_BETALDHy
+      status: SUCCEEDED
+    - id: R_BTS3r
+      status: SUCCEEDED
+    - id: R_DHAD2
+      status: SUCCEEDED
+    - id: R_CDPMEK
+      status: SUCCEEDED
+    - id: R_CBMKr
+      status: SUCCEEDED
+    - id: R_EX_ile__L_e
+      status: SUCCEEDED
+    - id: R_EX_k_e
+      status: SUCCEEDED
+    - id: R_CBPS
+      status: SUCCEEDED
+    - id: R_DHAK
+      status: SUCCEEDED
+    - id: R_CHCOAL
+      status: SUCCEEDED
+    - id: R_EX_lac__D_e
+      status: SUCCEEDED
+    - id: R_EX_lac__L_e
+      status: SUCCEEDED
+    - id: R_EX_lcts_e
+      status: SUCCEEDED
+    - id: R_CHLt2
+      status: SUCCEEDED
+    - id: R_EX_leu__L_e
+      status: SUCCEEDED
+    - id: R_CHLabc
+      status: SUCCEEDED
+    - id: R_DHDPRy
+      status: SUCCEEDED
+    - id: R_EX_lys__L_e
+      status: SUCCEEDED
+    - id: R_DHDPS
+      status: SUCCEEDED
+    - id: R_EX_mal__L_e
+      status: SUCCEEDED
+    - id: R_EX_malt_e
+      status: SUCCEEDED
+    - id: R_DHFR
+      status: SUCCEEDED
+    - id: R_EX_man_e
+      status: SUCCEEDED
+    - id: R_EX_met__L_e
+      status: SUCCEEDED
+    - id: R_EX_mg2_e
+      status: SUCCEEDED
+    - id: R_EX_mn2_e
+      status: SUCCEEDED
+    - id: R_EX_mnl_e
+      status: SUCCEEDED
+    - id: R_EX_zn2_e
+      status: SUCCEEDED
+    - id: R_EX_mobd_e
+      status: SUCCEEDED
+    - id: R_DHFS
+      status: SUCCEEDED
+    - id: R_EX_na1_e
+      status: SUCCEEDED
+    - id: R_EX_nac_e
+      status: SUCCEEDED
+    - id: R_GLCPcom_SA
+      status: SUCCEEDED
+    - id: R_EX_ncam_e
+      status: SUCCEEDED
+    - id: R_DHNAOT
+      status: SUCCEEDED
+    - id: R_EX_nh4_e
+      status: SUCCEEDED
+    - id: R_EX_ni2_e
+      status: SUCCEEDED
+    - id: R_DHNPA2r
+      status: SUCCEEDED
+    - id: R_EX_no2_e
+      status: SUCCEEDED
+    - id: R_EX_no3_e
+      status: SUCCEEDED
+    - id: R_DHORD5
+      status: SUCCEEDED
+    - id: R_EX_o2_e
+      status: SUCCEEDED
+    - id: R_DHORTS
+      status: SUCCEEDED
+    - id: R_EX_orn_e
+      status: SUCCEEDED
+    - id: R_EX_phe__L_e
+      status: SUCCEEDED
+    - id: R_DHPPDA
+      status: SUCCEEDED
+    - id: R_EX_pheme_e
+      status: SUCCEEDED
+    - id: R_EX_pi_e
+      status: SUCCEEDED
+    - id: R_DHPS2
+      status: SUCCEEDED
+    - id: R_EX_pro__L_e
+      status: SUCCEEDED
+    - id: R_EX_ptrc_e
+      status: SUCCEEDED
+    - id: R_GLUPRT
+      status: SUCCEEDED
+    - id: R_DHQS
+      status: SUCCEEDED
+    - id: R_GCALDD
+      status: SUCCEEDED
+    - id: R_EX_rib__D_e
+      status: SUCCEEDED
+    - id: R_EX_salcn_e
+      status: SUCCEEDED
+    - id: R_GK1
+      status: SUCCEEDED
+    - id: R_EX_ser__L_e
+      status: SUCCEEDED
+    - id: R_DMATT
+      status: SUCCEEDED
+    - id: R_EX_so4_e
+      status: SUCCEEDED
+    - id: R_EX_spmd_e
+      status: SUCCEEDED
+    - id: R_DNMPPA
+      status: SUCCEEDED
+    - id: R_EX_sucr_e
+      status: SUCCEEDED
+    - id: R_EX_thm_e
+      status: SUCCEEDED
+    - id: R_EX_thr__L_e
+      status: SUCCEEDED
+    - id: R_EX_thymd_e
+      status: SUCCEEDED
+    - id: R_EX_tre_e
+      status: SUCCEEDED
+    - id: R_FACOAL160
+      status: SUCCEEDED
+    - id: R_FBP
+      status: SUCCEEDED
+    - id: R_FBA
+      status: SUCCEEDED
+    - id: R_FCLT
+      status: SUCCEEDED
+    - id: R_EX_trp__L_e
+      status: SUCCEEDED
+    - id: R_DNTPPA
+      status: SUCCEEDED
+    - id: R_EX_tyr__L_e
+      status: SUCCEEDED
+    - id: R_FFSD
+      status: SUCCEEDED
+    - id: R_EX_ura_e
+      status: SUCCEEDED
+    - id: R_FDH
+      status: SUCCEEDED
+    - id: R_EX_urea_e
+      status: SUCCEEDED
+    - id: R_DPCOAK
+      status: SUCCEEDED
+    - id: R_EX_uri_e
+      status: SUCCEEDED
+    - id: R_FE2abc
+      status: SUCCEEDED
+    - id: R_FGLU
+      status: SUCCEEDED
+    - id: R_FLVRx
+      status: SUCCEEDED
+    - id: R_EX_val__L_e
+      status: SUCCEEDED
+    - id: R_DPMVD
+      status: SUCCEEDED
+    - id: R_EX_xan_e
+      status: SUCCEEDED
+    - id: R_FMNRx2
+      status: SUCCEEDED
+    - id: R_FLVR
+      status: SUCCEEDED
+    - id: R_DRBK
+      status: SUCCEEDED
+    - id: R_FMNAT
+      status: SUCCEEDED
+    - id: R_FMNRx
+      status: SUCCEEDED
+    - id: R_DPR
+      status: SUCCEEDED
+    - id: R_FORt2
+      status: SUCCEEDED
+    - id: R_FORt3
+      status: SUCCEEDED
+    - id: R_FRUK
+      status: SUCCEEDED
+    - id: R_GUAt2r
+      status: SUCCEEDED
+    - id: R_DTMPK
+      status: SUCCEEDED
+    - id: R_FRUpts
+      status: SUCCEEDED
+    - id: R_DRPA
+      status: SUCCEEDED
+    - id: R_FTHFLi
+      status: SUCCEEDED
+    - id: R_FUM
+      status: SUCCEEDED
+    - id: R_H2Ot
+      status: SUCCEEDED
+    - id: R_HDCAt2
+      status: SUCCEEDED
+    - id: R_HEMEti
+      status: SUCCEEDED
+    - id: R_G1PACT
+      status: SUCCEEDED
+    - id: R_GMHEPAT
+      status: SUCCEEDED
+    - id: R_GMHEPK
+      status: SUCCEEDED
+    - id: R_G3PD2
+      status: SUCCEEDED
+    - id: R_DURIK1
+      status: SUCCEEDED
+    - id: R_G3PD5
+      status: SUCCEEDED
+    - id: R_G3PD6
+      status: SUCCEEDED
+    - id: R_HISTP
+      status: SUCCEEDED
+    - id: R_G3PD7
+      status: SUCCEEDED
+    - id: R_HISabc
+      status: SUCCEEDED
+    - id: R_ECOAH1
+      status: SUCCEEDED
+    - id: R_ILEabc
+      status: SUCCEEDED
+    - id: R_G6PDA
+      status: SUCCEEDED
+    - id: R_G6PDH2r
+      status: SUCCEEDED
+    - id: R_DURIPP
+      status: SUCCEEDED
+    - id: R_GALTpts
+      status: SUCCEEDED
+    - id: R_GAL6PI
+      status: SUCCEEDED
+    - id: R_GUAPRT
+      status: SUCCEEDED
+    - id: R_ENO
+      status: SUCCEEDED
+    - id: R_IMPC
+      status: SUCCEEDED
+    - id: R_GLGC
+      status: SUCCEEDED
+    - id: R_LEUabc
+      status: SUCCEEDED
+    - id: R_GALUi
+      status: SUCCEEDED
+    - id: R_GARFT
+      status: SUCCEEDED
+    - id: R_GAPD
+      status: SUCCEEDED
+    - id: R_GF6PTA
+      status: SUCCEEDED
+    - id: R_GCCa
+      status: SUCCEEDED
+    - id: R_GTPCII
+      status: SUCCEEDED
+    - id: R_GRTT
+      status: SUCCEEDED
+    - id: R_HACD1
+      status: SUCCEEDED
+    - id: R_HACD2
+      status: SUCCEEDED
+    - id: R_GCCb
+      status: SUCCEEDED
+    - id: R_MDH
+      status: SUCCEEDED
+    - id: R_GCCc
+      status: SUCCEEDED
+    - id: R_GHMT2r
+      status: SUCCEEDED
+    - id: R_HACD3
+      status: SUCCEEDED
+    - id: R_HACD4
+      status: SUCCEEDED
+    - id: R_HACD5
+      status: SUCCEEDED
+    - id: R_HACD6
+      status: SUCCEEDED
+    - id: R_GNK
+      status: SUCCEEDED
+    - id: R_GLCNt2r
+      status: SUCCEEDED
+    - id: R_GLCS1
+      status: SUCCEEDED
+    - id: R_GLNS
+      status: SUCCEEDED
+    - id: R_GLUDxi
+      status: SUCCEEDED
+    - id: R_GPDDA1
+      status: SUCCEEDED
+    - id: R_GPDDA2
+      status: SUCCEEDED
+    - id: R_GLUR
+      status: SUCCEEDED
+    - id: R_GPDDA3
+      status: SUCCEEDED
+    - id: R_MDRPD
+      status: SUCCEEDED
+    - id: R_GTPCI
+      status: SUCCEEDED
+    - id: R_GTHPi
+      status: SUCCEEDED
+    - id: R_HCYSMT
+      status: SUCCEEDED
+    - id: R_GLUSx
+      status: SUCCEEDED
+    - id: R_GLUTRR
+      status: SUCCEEDED
+    - id: R_GLUTRS
+      status: SUCCEEDED
+    - id: R_METabc
+      status: SUCCEEDED
+    - id: R_GLUt2r_copy1
+      status: SUCCEEDED
+    - id: R_GTPDPK
+      status: SUCCEEDED
+    - id: R_HCO3E
+      status: SUCCEEDED
+    - id: R_HEMEAS
+      status: SUCCEEDED
+    - id: R_GLUabc
+      status: SUCCEEDED
+    - id: R_HEMEOS
+      status: SUCCEEDED
+    - id: R_MTHFR2
+      status: SUCCEEDED
+    - id: R_HETZK
+      status: SUCCEEDED
+    - id: R_HEX1
+      status: SUCCEEDED
+    - id: R_HEX7
+      status: SUCCEEDED
+    - id: R_GLYCt
+      status: SUCCEEDED
+    - id: R_GLUt2r_copy2
+      status: SUCCEEDED
+    - id: R_GLYALDt
+      status: SUCCEEDED
+    - id: R_HEXTT
+      status: SUCCEEDED
+    - id: R_GLYAT
+      status: SUCCEEDED
+    - id: R_GLYC3Pt6
+      status: SUCCEEDED
+    - id: R_GLYBt2r
+      status: SUCCEEDED
+    - id: R_HISDr
+      status: SUCCEEDED
+    - id: R_HISTD
+      status: SUCCEEDED
+    - id: R_HMBS
+      status: SUCCEEDED
+    - id: R_MTRI
+      status: SUCCEEDED
+    - id: R_HMGCOAR
+      status: SUCCEEDED
+    - id: R_HMGCOAS
+      status: SUCCEEDED
+    - id: R_HPYRRx
+      status: SUCCEEDED
+    - id: R_GLYCK
+      status: SUCCEEDED
+    - id: R_GLYK
+      status: SUCCEEDED
+    - id: R_HPPK2
+      status: SUCCEEDED
+    - id: R_MTRK
+      status: SUCCEEDED
+    - id: R_HSDy
+      status: SUCCEEDED
+    - id: R_GLYTRS
+      status: SUCCEEDED
+    - id: R_GMHEPPA
+      status: SUCCEEDED
+    - id: R_GMPR
+      status: SUCCEEDED
+    - id: R_GMPS2
+      status: SUCCEEDED
+    - id: R_HSERTA
+      status: SUCCEEDED
+    - id: R_HSK
+      status: SUCCEEDED
+    - id: R_GND
+      status: SUCCEEDED
+    - id: R_NACt
+      status: SUCCEEDED
+    - id: R_HXPRT
+      status: SUCCEEDED
+    - id: R_HSTPT
+      status: SUCCEEDED
+    - id: R_ICDHyr
+      status: SUCCEEDED
+    - id: R_MTAN
+      status: SUCCEEDED
+    - id: R_ICHORS
+      status: SUCCEEDED
+    - id: R_IGPDH
+      status: SUCCEEDED
+    - id: R_LYSDC
+      status: SUCCEEDED
+    - id: R_IG3PS
+      status: SUCCEEDED
+    - id: R_MTHFD
+      status: SUCCEEDED
+    - id: R_IGPS
+      status: SUCCEEDED
+    - id: R_ILETA
+      status: SUCCEEDED
+    - id: R_ILETRS
+      status: SUCCEEDED
+    - id: R_NADTRHD
+      status: SUCCEEDED
+    - id: R_LEUTA
+      status: SUCCEEDED
+    - id: R_NCAMUP
+      status: SUCCEEDED
+    - id: R_NH4OHDs
+      status: SUCCEEDED
+    - id: R_IMPD
+      status: SUCCEEDED
+    - id: R_ILEt2r
+      status: SUCCEEDED
+    - id: R_INDPYRD
+      status: SUCCEEDED
+    - id: R_IPDDI
+      status: SUCCEEDED
+    - id: R_IPMD
+      status: SUCCEEDED
+    - id: R_O2t
+      status: SUCCEEDED
+    - id: R_M1PD
+      status: SUCCEEDED
+    - id: R_PALASA_SA2
+      status: SUCCEEDED
+    - id: R_PAPA_SA
+      status: SUCCEEDED
+    - id: R_IZPN
+      status: SUCCEEDED
+    - id: R_IPPS
+      status: SUCCEEDED
+    - id: R_IPPMIa
+      status: SUCCEEDED
+    - id: R_IPPMIb
+      status: SUCCEEDED
+    - id: R_PAPSR
+      status: SUCCEEDED
+    - id: R_LEUt2r
+      status: SUCCEEDED
+    - id: R_PASYN_SA
+      status: SUCCEEDED
+    - id: R_KARA1
+      status: SUCCEEDED
+    - id: R_KARA2
+      status: SUCCEEDED
+    - id: R_ORNTAC
+      status: SUCCEEDED
+    - id: R_MALTabc
+      status: SUCCEEDED
+    - id: R_MI1PP
+      status: SUCCEEDED
+    - id: R_ORNDC
+      status: SUCCEEDED
+    - id: R_MACPD
+      status: SUCCEEDED
+    - id: R_NO2t2r
+      status: SUCCEEDED
+    - id: R_PDH
+      status: SUCCEEDED
+    - id: R_PGLYSA_SA2
+      status: SUCCEEDED
+    - id: R_PHEt2r
+      status: SUCCEEDED
+    - id: R_OMCDC
+      status: SUCCEEDED
+    - id: R_Kabc
+      status: SUCCEEDED
+    - id: R_PDHcr
+      status: SUCCEEDED
+    - id: R_PLEUSA_SA2
+      status: SUCCEEDED
+    - id: R_PLYSSA_SA2
+      status: SUCCEEDED
+    - id: R_PSD_SA
+      status: SUCCEEDED
+    - id: R_Kt2r
+      status: SUCCEEDED
+    - id: R_NADK
+      status: SUCCEEDED
+    - id: R_LDH_L
+      status: SUCCEEDED
+    - id: R_NADH7
+      status: SUCCEEDED
+    - id: R_NAt3_1_copy1
+      status: SUCCEEDED
+    - id: R_PSERT
+      status: SUCCEEDED
+    - id: R_PSP_L
+      status: SUCCEEDED
+    - id: R_NADS1
+      status: SUCCEEDED
+    - id: R_LYSTRS
+      status: SUCCEEDED
+    - id: R_NAPRT
+      status: SUCCEEDED
+    - id: R_NALN6
+      status: SUCCEEDED
+    - id: R_PSSA_SA
+      status: SUCCEEDED
+    - id: R_LACpts
+      status: SUCCEEDED
+    - id: R_RBFSb
+      status: SUCCEEDED
+    - id: R_NAt3_15
+      status: SUCCEEDED
+    - id: R_NAt3_1_copy2
+      status: SUCCEEDED
+    - id: R_MALT
+      status: SUCCEEDED
+    - id: R_NAt3_2
+      status: SUCCEEDED
+    - id: R_NBAH
+      status: SUCCEEDED
+    - id: R_PNTK
+      status: SUCCEEDED
+    - id: R_PROabc
+      status: SUCCEEDED
+    - id: R_LDH_D
+      status: SUCCEEDED
+    - id: R_RBK
+      status: SUCCEEDED
+    - id: R_RAFH
+      status: SUCCEEDED
+    - id: R_NDPK4
+      status: SUCCEEDED
+    - id: R_NDPK5
+      status: SUCCEEDED
+    - id: R_NDPK6
+      status: SUCCEEDED
+    - id: R_MALTATr
+      status: SUCCEEDED
+    - id: R_NDPK7
+      status: SUCCEEDED
+    - id: R_PUNP2
+      status: SUCCEEDED
+    - id: R_RBFK
+      status: SUCCEEDED
+    - id: R_NDPK8
+      status: SUCCEEDED
+    - id: R_LYSabc
+      status: SUCCEEDED
+    - id: R_NH4t4
+      status: SUCCEEDED
+    - id: R_PGLYCP
+      status: SUCCEEDED
+    - id: R_PYRZAM
+      status: SUCCEEDED
+    - id: R_NNAM
+      status: SUCCEEDED
+    - id: R_LYSt2r
+      status: SUCCEEDED
+    - id: R_NNATr
+      status: SUCCEEDED
+    - id: R_NIabc
+      status: SUCCEEDED
+    - id: R_NO3t7
+      status: SUCCEEDED
+    - id: R_OCTD
+      status: SUCCEEDED
+    - id: R_NO3R1
+      status: SUCCEEDED
+    - id: R_PHETA1
+      status: SUCCEEDED
+    - id: R_PGMT
+      status: SUCCEEDED
+    - id: R_PGCD
+      status: SUCCEEDED
+    - id: R_PGI
+      status: SUCCEEDED
+    - id: R_PGK
+      status: SUCCEEDED
+    - id: R_PGM
+      status: SUCCEEDED
+    - id: R_PGPP_SA
+      status: SUCCEEDED
+    - id: R_NO3R2
+      status: SUCCEEDED
+    - id: R_NOPD
+      status: SUCCEEDED
+    - id: R_MDH3
+      status: SUCCEEDED
+    - id: R_NPHS
+      status: SUCCEEDED
+    - id: R_PGSA_SA
+      status: SUCCEEDED
+    - id: R_PIt7
+      status: SUCCEEDED
+    - id: R_PIabc
+      status: SUCCEEDED
+    - id: R_L_LACt2r
+      status: SUCCEEDED
+    - id: R_PMANM
+      status: SUCCEEDED
+    - id: R_OMPDC
+      status: SUCCEEDED
+    - id: R_OCBT
+      status: SUCCEEDED
+    - id: R_MAN6PI
+      status: SUCCEEDED
+    - id: R_NTRIRx
+      status: SUCCEEDED
+    - id: R_NTRIRy
+      status: SUCCEEDED
+    - id: R_PMEVK
+      status: SUCCEEDED
+    - id: R_POX
+      status: SUCCEEDED
+    - id: R_MANpts
+      status: SUCCEEDED
+    - id: R_PMPK
+      status: SUCCEEDED
+    - id: R_ORNTA
+      status: SUCCEEDED
+    - id: R_POX2
+      status: SUCCEEDED
+    - id: R_MCOATA
+      status: SUCCEEDED
+    - id: R_PPA
+      status: SUCCEEDED
+    - id: R_OOR3r
+      status: SUCCEEDED
+    - id: R_ORNCD
+      status: SUCCEEDED
+    - id: R_ORPT
+      status: SUCCEEDED
+    - id: R_ORNabc
+      status: SUCCEEDED
+    - id: R_P5CD
+      status: SUCCEEDED
+    - id: R_PPBNGS
+      status: SUCCEEDED
+    - id: R_PPCDC
+      status: SUCCEEDED
+    - id: R_PPCK
+      status: SUCCEEDED
+    - id: R_PPM
+      status: SUCCEEDED
+    - id: R_PPM2
+      status: SUCCEEDED
+    - id: R_PPND
+      status: SUCCEEDED
+    - id: R_P5CR
+      status: SUCCEEDED
+    - id: R_MDH2
+      status: SUCCEEDED
+    - id: R_PANTS
+      status: SUCCEEDED
+    - id: R_PAPPT3
+      status: SUCCEEDED
+    - id: R_PPNDH
+      status: SUCCEEDED
+    - id: R_PPPGO
+      status: SUCCEEDED
+    - id: R_PRAGSr
+      status: SUCCEEDED
+    - id: R_PC
+      status: SUCCEEDED
+    - id: R_ME1
+      status: SUCCEEDED
+    - id: R_PFK
+      status: SUCCEEDED
+    - id: R_PRAIi
+      status: SUCCEEDED
+    - id: R_PRAIS
+      status: SUCCEEDED
+    - id: R_PRAMPC
+      status: SUCCEEDED
+    - id: R_PFK_2
+      status: SUCCEEDED
+    - id: R_PRATPP
+      status: SUCCEEDED
+    - id: R_PFL
+      status: SUCCEEDED
+    - id: R_METTRS
+      status: SUCCEEDED
+    - id: R_PRASCSi
+      status: SUCCEEDED
+    - id: R_PRFGS
+      status: SUCCEEDED
+    - id: R_PGAMT
+      status: SUCCEEDED
+    - id: R_MEPCT
+      status: SUCCEEDED
+    - id: R_PRMICI
+      status: SUCCEEDED
+    - id: R_PROD2
+      status: SUCCEEDED
+    - id: R_PROt4
+      status: SUCCEEDED
+    - id: R_METAT
+      status: SUCCEEDED
+    - id: R_MHPGLUT
+      status: SUCCEEDED
+    - id: R_PRPPS
+      status: SUCCEEDED
+    - id: R_PSCVT
+      status: SUCCEEDED
+    - id: R_PTAr
+      status: SUCCEEDED
+    - id: R_PTHPS
+      status: SUCCEEDED
+    - id: R_PTPATi
+      status: SUCCEEDED
+    - id: R_PTRCORNt7
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_1a
+      status: SUCCEEDED
+    - id: R_SA_free_FA
+      status: SUCCEEDED
+    - id: R_SPMS
+      status: SUCCEEDED
+    - id: R_SULabc
+      status: SUCCEEDED
+    - id: R_PYK
+      status: SUCCEEDED
+    - id: R_PYNP1
+      status: SUCCEEDED
+    - id: R_METS
+      status: SUCCEEDED
+    - id: R_RBK_L1
+      status: SUCCEEDED
+    - id: R_TAGO
+      status: SUCCEEDED
+    - id: R_MNt2
+      status: SUCCEEDED
+    - id: R_MEVK1
+      status: SUCCEEDED
+    - id: R_MEVK2
+      status: SUCCEEDED
+    - id: R_MEVK3
+      status: SUCCEEDED
+    - id: R_MEVK4
+      status: SUCCEEDED
+    - id: R_MG2abc
+      status: SUCCEEDED
+    - id: R_MNLpts
+      status: SUCCEEDED
+    - id: R_MOBDabc
+      status: SUCCEEDED
+    - id: R_MNabc
+      status: SUCCEEDED
+    - id: R_MOHMT
+      status: SUCCEEDED
+    - id: R_MTHFC
+      status: SUCCEEDED
+    - id: R_THMDt2
+      status: SUCCEEDED
+    - id: R_NADH10
+      status: SUCCEEDED
+    - id: R_RNTR1
+      status: SUCCEEDED
+    - id: R_NADH5
+      status: SUCCEEDED
+    - id: R_RNDR1
+      status: SUCCEEDED
+    - id: R_THMabc
+      status: SUCCEEDED
+    - id: R_THRt2r
+      status: SUCCEEDED
+    - id: R_THMDt4
+      status: SUCCEEDED
+    - id: R_NADH6
+      status: SUCCEEDED
+    - id: R_THFGLUS
+      status: SUCCEEDED
+    - id: R_TRPt2r
+      status: SUCCEEDED
+    - id: R_ACACT3r
+      status: SUCCEEDED
+    - id: R_TYRt2r
+      status: SUCCEEDED
+    - id: R_UAG4Ei
+      status: SUCCEEDED
+    - id: R_UDPG12dgrGT_SA2
+      status: SUCCEEDED
+    - id: R_UDPG3g12dgrGT_SA2
+      status: SUCCEEDED
+    - id: R_TMDK1
+      status: SUCCEEDED
+    - id: R_SUCR
+      status: SUCCEEDED
+    - id: R_RNTR3
+      status: SUCCEEDED
+    - id: R_RNTR4
+      status: SUCCEEDED
+    - id: R_RNTR2
+      status: SUCCEEDED
+    - id: R_UNK3
+      status: SUCCEEDED
+    - id: R_ACACT4r
+      status: SUCCEEDED
+    - id: R_RPE
+      status: SUCCEEDED
+    - id: R_RPI
+      status: SUCCEEDED
+    - id: R_S3AdT
+      status: SUCCEEDED
+    - id: R_VALabc
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_2a
+      status: SUCCEEDED
+    - id: R_ACACT5r
+      status: SUCCEEDED
+    - id: R_Spt3AdT
+      status: SUCCEEDED
+    - id: R_S7PI
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_2b
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_3a
+      status: SUCCEEDED
+    - id: R_ACACT6r
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_3b
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_4a
+      status: SUCCEEDED
+    - id: R_SADT2
+      status: SUCCEEDED
+    - id: R_SALCpts
+      status: SUCCEEDED
+    - id: R_ACACT7r
+      status: SUCCEEDED
+    - id: R_SDPDS
+      status: SUCCEEDED
+    - id: R_SBTD_D2
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_5a
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_6a
+      status: SUCCEEDED
+    - id: R_ACGS
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_6b
+      status: SUCCEEDED
+    - id: R_SERD_L
+      status: SUCCEEDED
+    - id: R_SDPTA
+      status: SUCCEEDED
+    - id: R_SERAT
+      status: SUCCEEDED
+    - id: R_SHK3Dr
+      status: SUCCEEDED
+    - id: R_SERTRS
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_7a
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_7b
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_8a
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_lipids_only
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_nuc_only
+      status: SUCCEEDED
+    - id: R_ACKr
+      status: SUCCEEDED
+    - id: R_SHCHCS2
+      status: SUCCEEDED
+    - id: R_ACOAD6
+      status: SUCCEEDED
+    - id: R_SHCHD2
+      status: SUCCEEDED
+    - id: R_SHCHF
+      status: SUCCEEDED
+    - id: R_BIOMASS_SA_only_AA
+      status: SUCCEEDED
+    - id: R_SK_ahcys_c
+      status: SUCCEEDED
+    - id: R_SHKK
+      status: SUCCEEDED
+    - id: R_SHSL1
+      status: SUCCEEDED
+    - id: R_SK_glyclt_c
+      status: SUCCEEDED
+    - id: R_ACOAD7
+      status: SUCCEEDED
+    - id: R_3M2OBLOXRD
+      status: SUCCEEDED
+    - id: R_3M2OPLOXRD
+      status: SUCCEEDED
+    - id: R_4M2OPLOXRD
+      status: SUCCEEDED
+    - id: R_SHSL4r
+      status: SUCCEEDED
+    - id: R_SPMDabc
+      status: SUCCEEDED
+    - id: R_SQLS
+      status: SUCCEEDED
+    - id: R_SSALy
+      status: SUCCEEDED
+    - id: R_ADPRDP
+      status: SUCCEEDED
+    - id: R_SPODM
+      status: SUCCEEDED
+    - id: R_SUCBZL
+      status: SUCCEEDED
+    - id: R_SUCBZS
+      status: SUCCEEDED
+    - id: R_UDPG4E
+      status: SUCCEEDED
+    - id: R_URIK1
+      status: SUCCEEDED
+    - id: R_SUCD1
+      status: SUCCEEDED
+    - id: R_SULR
+      status: SUCCEEDED
+    - id: R_URIK2
+      status: SUCCEEDED
+    - id: R_ADSL1r
+      status: SUCCEEDED
+    - id: R_URIK3
+      status: SUCCEEDED
+    - id: R_URIt4
+      status: SUCCEEDED
+    - id: R_UMPK
+      status: SUCCEEDED
+    - id: R_UAGPT3
+      status: SUCCEEDED
+    - id: R_URFGTT
+      status: SUCCEEDED
+    - id: R_SUCOAS
+      status: SUCCEEDED
+    - id: R_SUCpts
+      status: SUCCEEDED
+    - id: R_SUCD4
+      status: SUCCEEDED
+    - id: R_TALA
+      status: SUCCEEDED
+    - id: R_TGBPA
+      status: SUCCEEDED
+    - id: R_THDPS
+      status: SUCCEEDED
+    - id: R_VALTA
+      status: SUCCEEDED
+    - id: R_THRA
+      status: SUCCEEDED
+    - id: R_AKP1
+      status: SUCCEEDED
+    - id: R_THRTRS
+      status: SUCCEEDED
+    - id: R_THRD_L
+      status: SUCCEEDED
+    - id: R_TYRTA
+      status: SUCCEEDED
+    - id: R_UAG2E
+      status: SUCCEEDED
+    - id: R_VALt2r
+      status: SUCCEEDED
+    - id: R_ZNabc
+      status: SUCCEEDED
+    - id: R_THRS
+      status: SUCCEEDED
+    - id: R_TRPS1
+      status: SUCCEEDED
+    - id: R_TKT1
+      status: SUCCEEDED
+    - id: R_GLYabc
+      status: SUCCEEDED
+    - id: R_TKT2
+      status: SUCCEEDED
+    - id: R_TMPPP
+      status: SUCCEEDED
+    - id: R_UAAGDS
+      status: SUCCEEDED
+    - id: R_TMDS
+      status: SUCCEEDED
+    - id: R_UAG2EMA
+      status: SUCCEEDED
+    - id: R_SERabc
+      status: SUCCEEDED
+    - id: R_UAGDP
+      status: SUCCEEDED
+    - id: R_TPI
+      status: SUCCEEDED
+    - id: R_DALAt2r
+      status: SUCCEEDED
+    - id: R_TRE6PH
+      status: SUCCEEDED
+    - id: R_TRDR
+      status: SUCCEEDED
+    - id: R_UAGCVT
+      status: SUCCEEDED
+    - id: R_UAMAGS
+      status: SUCCEEDED
+    - id: R_UAMAS
+      status: SUCCEEDED
+    - id: R_UAPGR
+      status: SUCCEEDED
+    - id: R_UDCPKr
+      status: SUCCEEDED
+    - id: R_UDPDPS
+      status: SUCCEEDED
+    - id: R_TREpts
+      status: SUCCEEDED
+    - id: R_ALCD1
+      status: SUCCEEDED
+    - id: R_G1SAT
+      status: SUCCEEDED
+    - id: R_G3PCT
+      status: SUCCEEDED
+    - id: R_UGMDDS
+      status: SUCCEEDED
+    - id: R_UPP3MT
+      status: SUCCEEDED
+    - id: R_UPP3S
+      status: SUCCEEDED
+    - id: R_UPPDC1
+      status: SUCCEEDED
+    - id: R_RIBabc
+      status: SUCCEEDED
+    - id: R_ATPS4r
+      status: SUCCEEDED
+    - id: R_GLCpts
+      status: SUCCEEDED
+    - id: R_GLYC3Pabc
+      status: SUCCEEDED
+    - id: R_UPPDC2
+      status: SUCCEEDED
+    - id: R_URCN
+      status: SUCCEEDED
+    - id: R_UPPRT
+      status: SUCCEEDED
+    - id: R_RNDR2
+      status: SUCCEEDED
+    - id: R_ANS
+      status: SUCCEEDED
+    - id: R_RNDR3
+      status: SUCCEEDED
+    - id: R_RNDR4
+      status: SUCCEEDED
+    - id: R_URAt2
+      status: SUCCEEDED
+    - id: R_UREAt
+      status: SUCCEEDED
+    - id: R_UREA
+      status: SUCCEEDED
+    - id: R_GPDDA4
+      status: SUCCEEDED
+    - id: R_URIDK2r
+      status: SUCCEEDED
+    - id: R_GPDDA5
+      status: SUCCEEDED
+    - id: R_RBFSa
+      status: SUCCEEDED
+    - id: R_KAS13
+      status: SUCCEEDED
+    - id: R_KAS14
+      status: SUCCEEDED
+    - id: R_XANt
+      status: SUCCEEDED
+    - id: R_XANt2
+      status: SUCCEEDED
+    - id: R_XPPT
+      status: SUCCEEDED
+    - id: R_YUMPS
+      status: SUCCEEDED
+    - id: R_KAS15
+      status: SUCCEEDED
+    - id: R_PMDPHT
+      status: SUCCEEDED
+    - id: R_KAS17
+      status: SUCCEEDED
+    - id: R_KAS19SA
+      status: SUCCEEDED
+    - id: R_GLYBabc
+      status: SUCCEEDED
+    - id: R_KAS2
+      status: SUCCEEDED
+    - id: R_KAS20SA
+      status: SUCCEEDED
+    - id: R_KAS1
+      status: SUCCEEDED
+    - id: R_KAS3
+      status: SUCCEEDED
+    - id: R_CYTBD
+      status: SUCCEEDED
+    - id: R_KAS4
+      status: SUCCEEDED
+    - id: R_KAS5
+      status: SUCCEEDED
+    - id: R_DHQTi
+      status: SUCCEEDED
+    - id: R_KAS6
+      status: SUCCEEDED
+    - id: R_CRNabc
+      status: SUCCEEDED
+    - id: R_KAS7
+      status: SUCCEEDED
+    - id: R_KAS10
+      status: SUCCEEDED
+    - id: R_KAS8
+      status: SUCCEEDED
+    - id: R_KAS9
+      status: SUCCEEDED
+    - id: R_PUNP1
+      status: SUCCEEDED
+    - id: R_TECA2S
+      status: SUCCEEDED
+    - id: R_NADH8
+      status: SUCCEEDED
+    - id: R_ECOAH2
+      status: SUCCEEDED
+    - id: R_KAS16
+      status: SUCCEEDED
+    - id: R_NADH9
+      status: SUCCEEDED
+    - id: R_NDPK9
+      status: SUCCEEDED
+    - id: R_NDPK1
+      status: SUCCEEDED
+    - id: R_NDPK2
+      status: SUCCEEDED
+    - id: R_ECOAH3
+      status: SUCCEEDED
+    - id: R_NDPK3
+      status: SUCCEEDED
+    - id: R_ECOAH4
+      status: SUCCEEDED
+    - id: R_PPNCL2
+      status: SUCCEEDED
+    - id: R_TECA1S
+      status: SUCCEEDED
+    - id: R_TECA3S
+      status: SUCCEEDED
+    - id: R_TECA4S
+      status: SUCCEEDED
+    - id: R_ECOAH5
+      status: SUCCEEDED
+    - id: R_ECOAH6
+      status: SUCCEEDED
+    - id: R_ECOAH7
+      status: SUCCEEDED
+    - id: R_HACD7
+      status: SUCCEEDED
+    - id: R_KAS11
+      status: SUCCEEDED
+    - id: R_KAS12
+      status: SUCCEEDED
+    - id: R_OIVD3
+      status: SUCCEEDED
+    - id: R_OIVD1r
+      status: SUCCEEDED
+    - id: R_OIVD2
+      status: SUCCEEDED
+    duration: 0.113048
+    exception: null
+    id: reaction_fluxes
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  skipReason: null
+  status: SUCCEEDED
+  tasks:
+  - algorithm: KISAO_0000437
+    duration: 2.188136
+    exception: null
+    id: task
+    output: ''
+    simulatorDetails:
+    - key: method
+      value: biosimulators_cobrapy.data_model.<lambda>
+    - key: arguments
+      value: {}
+    skipReason: null
+    status: SUCCEEDED
+skipReason: null
+status: SUCCEEDED

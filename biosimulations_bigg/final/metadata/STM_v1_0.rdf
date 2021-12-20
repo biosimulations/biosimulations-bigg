@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<rdf:RDF xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:collex="http://www.collex.org/schema#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:scoro="http://purl.org/spar/scoro/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:biomodel="http://biomodels.net/model-qualifiers/">
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:title>STM_v1_0</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:abstract>Flux balance analysis model of the metabolism of Salmonella enterica.</dc:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <prism:keyword>metabolism</prism:keyword>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <dc:identifier rdf:resource="http://identifiers.org/taxonomy:28901">http://identifiers.org/taxonomy:28901</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <rdfs:label>Salmonella enterica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <bqbiol:hasTaxon rdf:resource="local:00001">local:00001</bqbiol:hasTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <dc:identifier rdf:resource="http://identifiers.org/GO:0008152">http://identifiers.org/GO:0008152</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <rdfs:label>metabolic process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <bqbiol:encodes rdf:resource="local:00002">local:00002</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <dc:identifier rdf:resource="https://www.ncbi.nlm.nih.gov/assembly/28528">https://www.ncbi.nlm.nih.gov/assembly/28528</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <rdfs:label>Salmonella enterica subsp. enterica serovar Typhimurium str. LT2 (enterobacteria) genome assembly ASM694v1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <bqbiol:encodes rdf:resource="local:00003">local:00003</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/PMC3032673-F2.jpg">http://omex-library.org/STM_v1_0.omex/PMC3032673-F2.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/PMC3032673-F1.jpg">http://omex-library.org/STM_v1_0.omex/PMC3032673-F1.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png">http://omex-library.org/STM_v1_0.omex/iJO1366.Fatty-acid-biosynthesis--saturated-.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/iJO1366.Nucleotide-metabolism.png">http://omex-library.org/STM_v1_0.omex/iJO1366.Nucleotide-metabolism.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/iJO1366.Central-metabolism.png">http://omex-library.org/STM_v1_0.omex/iJO1366.Central-metabolism.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/iJO1366.Fatty-acid-beta-oxidation.png">http://omex-library.org/STM_v1_0.omex/iJO1366.Fatty-acid-beta-oxidation.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/STM_v1_0.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png">http://omex-library.org/STM_v1_0.omex/iJO1366.Nucleotide-and-histidine-biosynthesis.png</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <rdfs:label>Ines Thiele</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <foaf:name>Ines Thiele</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00004">local:00004</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <rdfs:label>Daniel R Hyduke</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <foaf:name>Daniel R Hyduke</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00005">local:00005</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <rdfs:label>Benjamin Steeb</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:name>Benjamin Steeb</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00006">local:00006</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <rdfs:label>Guy Fankam</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:name>Guy Fankam</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00007">local:00007</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <rdfs:label>Douglas K Allen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <foaf:name>Douglas K Allen</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00008">local:00008</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <rdfs:label>Susanna Bazzani</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <foaf:name>Susanna Bazzani</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00009">local:00009</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <rdfs:label>Pep Charusanti</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <foaf:name>Pep Charusanti</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00010">local:00010</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <rdfs:label>Feng-Chi Chen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <foaf:name>Feng-Chi Chen</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00011">local:00011</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <rdfs:label>Ronan MT Fleming</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <foaf:name>Ronan MT Fleming</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00012">local:00012</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <rdfs:label>Chao A Hsiung</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:name>Chao A Hsiung</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00013">local:00013</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <rdfs:label>Sigrid CJ De Keersmaecker</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:name>Sigrid CJ De Keersmaecker</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00014">local:00014</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <rdfs:label>Yu-Chieh Liao</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <foaf:name>Yu-Chieh Liao</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00015">local:00015</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <rdfs:label>Kathleen Marchal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <foaf:name>Kathleen Marchal</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00016">local:00016</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <rdfs:label>Monica L Mo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <foaf:name>Monica L Mo</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00017">local:00017</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <rdfs:label>Emre Özdemir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <foaf:name>Emre Özdemir</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00018">local:00018</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00019">
+    <rdfs:label>Anu Raghunathan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00019">
+    <foaf:name>Anu Raghunathan</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00019">local:00019</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00020">
+    <rdfs:label>Jennifer L Reed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00020">
+    <foaf:name>Jennifer L Reed</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00020">local:00020</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00021">
+    <rdfs:label>Sook-Il Shin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00021">
+    <foaf:name>Sook-Il Shin</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00021">local:00021</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00022">
+    <rdfs:label>Sara Sigurbjörnsdóttir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00022">
+    <foaf:name>Sara Sigurbjörnsdóttir</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00022">local:00022</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00023">
+    <rdfs:label>Jonas Steinmann</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00023">
+    <foaf:name>Jonas Steinmann</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00023">local:00023</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00024">
+    <rdfs:label>Suresh Sudarsan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00024">
+    <foaf:name>Suresh Sudarsan</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00024">local:00024</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00025">
+    <rdfs:label>Neil Swainston</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00025">
+    <foaf:name>Neil Swainston</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00025">local:00025</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00026">
+    <rdfs:label>Inge M Thijs</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00026">
+    <foaf:name>Inge M Thijs</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00026">local:00026</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00027">
+    <rdfs:label>Karsten Zengler</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00027">
+    <foaf:name>Karsten Zengler</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00027">local:00027</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00028">
+    <rdfs:label>Bernhard O Palsson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00028">
+    <foaf:name>Bernhard O Palsson</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00028">local:00028</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00029">
+    <rdfs:label>Joshua N Adkins</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00029">
+    <foaf:name>Joshua N Adkins</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00029">local:00029</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00030">
+    <rdfs:label>Dirk Bumann</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00030">
+    <foaf:name>Dirk Bumann</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:creator rdf:resource="local:00030">local:00030</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00031">
+    <dc:identifier rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00031">
+    <rdfs:label>Systems Biology Research Group at the University of California, San Diego</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00031">
+    <foaf:accountName rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00031">
+    <foaf:name>Systems Biology Research Group at the University of California, San Diego</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:contributor rdf:resource="local:00031">local:00031</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00032">
+    <dc:identifier rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00032">
+    <rdfs:label>Jonathan R. Karr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00032">
+    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00032">
+    <foaf:name>Jonathan R. Karr</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:contributor rdf:resource="local:00032">local:00032</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00033">
+    <rdfs:label>Briman Yang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00033">
+    <foaf:name>Briman Yang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:contributor rdf:resource="local:00033">local:00033</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00034">
+    <dc:identifier rdf:resource="http://identifiers.org/bigg.model:STM_v1_0">http://identifiers.org/bigg.model:STM_v1_0</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00034">
+    <rdfs:label>bigg.model:STM_v1_0</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <bqmodel:is rdf:resource="local:00034">local:00034</bqmodel:is>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00035">
+    <dc:identifier rdf:resource="http://identifiers.org/doi:10.1186/1752-0509-5-8">http://identifiers.org/doi:10.1186/1752-0509-5-8</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00035">
+    <rdfs:label>Ines Thiele, Daniel R Hyduke, Benjamin Steeb, Guy Fankam, Douglas K Allen, Susanna Bazzani, Pep Charusanti, Feng-Chi Chen, Ronan MT Fleming, Chao A Hsiung, Sigrid CJ De Keersmaecker, Yu-Chieh Liao, Kathleen Marchal, Monica L Mo, Emre Özdemir, Anu Raghunathan, Jennifer L Reed, Sook-Il Shin, Sara Sigurbjörnsdóttir, Jonas Steinmann, Suresh Sudarsan, Neil Swainston, Inge M Thijs, Karsten Zengler, Bernhard O Palsson, Joshua N Adkins &amp; Dirk Bumann. A community effort towards a knowledge-base and mathematical model of the human pathogen Salmonella Typhimurium LT2. BMC Systems Biology 5: 8 (2011).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <bqmodel:isDescribedBy rdf:resource="local:00035">local:00035</bqmodel:isDescribedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00036">
+    <dc:identifier rdf:resource="http://bigg.ucsd.edu/license">http://bigg.ucsd.edu/license</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00036">
+    <rdfs:label>BiGG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:license rdf:resource="local:00036">local:00036</dc:license>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:created>2011-01-18</dc:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/STM_v1_0.omex">
+    <dc:modified>2019-10-31</dc:modified>
+  </rdf:Description>
+</rdf:RDF>

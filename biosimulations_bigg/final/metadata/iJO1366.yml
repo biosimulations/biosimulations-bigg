@@ -1,0 +1,62 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Jeffrey D Orth
+  - Tom M Conrad
+  - Jessica Na
+  - Joshua A Lerman
+  - Hojung Nam
+  - Adam M Feist
+  - "Bernhard \xD8 Palsson"
+  date: '2011-10-11'
+  doi: 10.1038/msb.2011.65
+  issue: null
+  journal: Molecular Systems Biology
+  pages: '535'
+  pubmed_central_id: PMC3261703
+  pubmed_id: '21988831'
+  title: A comprehensive genome-scale reconstruction of Escherichia coli metabolism--2011
+  volume: '7'
+  year: '2011'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails:
+- caption: <p>Properties of <italic>i</italic>JO1366. (<bold>A</bold>) The number
+    of reactions in each of 11 functional categories. Non-gene-associated (orphan)
+    reactions are indicated by the lighter portion at the far right of each bar. (<bold>B</bold>)
+    The number of genes with associated reactions in each category. The number of
+    genes unique to each category (i.e. associated only with reactions in one category)
+    is given as a percentage. (<bold>C</bold>) The number of unique metabolites that
+    participate in at least one reaction in each category, with the number of metabolites
+    unique to each category indicated. (<bold>D</bold>) Histogram of the years in
+    which the function of each of the 107 new genes was first unambiguously identified.
+    (<bold>E</bold>) Classification of each of the 107 new genes in <italic>i</italic>JO1366.
+    &#8216;New content added' includes genes associated with new (non-gap-filling)
+    pathways and systems in the model. &#8216;Orphan fill' includes genes associated
+    with orphan reactions from <italic>i</italic>AF1260. &#8216;New gene with existing
+    reaction' includes new isozymes for existing gene-associated reactions in <italic>i</italic>AF1260.
+    &#8216;Gap fill' includes genes associated with new gap-filling reactions. &#8216;Others'
+    includes genes that are associated both with new, non-gap-filling reactions, and
+    with a previous orphan reaction or as a new isozyme.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f1.jpg
+  id: msb201165/f1
+  label: Figure 1
+- caption: <p>Results of the mapping between the <italic>i</italic>JO1366 reconstruction
+    and all 38 available <italic>E. coli</italic> and <italic>Shigella</italic> strains.
+    (<bold>A</bold>) The number of strain models capable of producing all components
+    of the <italic>i</italic>JO1366 core biomass reaction at different PID cutoffs.
+    The PID of 40% used in parts (<bold>B</bold>, <bold>C</bold>) of this figure is
+    indicated with a yellow square. At a PID of 40%, only four strains are incapable
+    of complete biomass synthesis. (<bold>B</bold>) Biomass components that cannot
+    be produced in one or more models with a PID of 40%. The strains are indicated
+    by their KEGG organism code. (<bold>C</bold>) The fraction of <italic>i</italic>JO1366
+    genes present in all 38 strains at a PID of 40%. Strains are listed by their KEGG
+    organism code. Laboratory strains are colored blue, commensal and environmental
+    strains are in green, and pathogens are in red. A dashed line indicates the average
+    fraction of genes present (97%).</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f2.jpg
+  id: msb201165/f2
+  label: Figure 2

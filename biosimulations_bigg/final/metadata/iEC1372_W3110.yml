@@ -1,0 +1,28 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. W3110, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/388476123
+reference:
+  authors:
+  - "Jonathan\_M. Monk"
+  - Anna Koza
+  - "Miguel\_A. Campodonico"
+  - Daniel Machado
+  - "Jose\_Miguel Seoane"
+  - "Bernhard\_O. Palsson"
+  - "Markus\_J. Herrg\xE5rd"
+  - "Adam\_M. Feist"
+  date: '2016-09-28'
+  doi: 10.1016/j.cels.2016.08.013
+  issue: '3'
+  journal: Cell Systems
+  pages: 238-251.e12
+  pubmed_central_id: PMC5058344
+  pubmed_id: '27667363'
+  title: Multi-omics Quantification of Species Variation of Escherichia coli Links
+    Molecular Features with Strain Phenotypes
+  volume: '3'
+  year: '2016'
+taxon:
+  id: 316407
+  name: Escherichia coli str. K-12 substr. W3110
+thumbnails: []

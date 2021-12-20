@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<rdf:RDF xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:collex="http://www.collex.org/schema#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:scoro="http://purl.org/spar/scoro/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:biomodel="http://biomodels.net/model-qualifiers/">
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:title>iYL1228</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:abstract>Flux balance analysis model of the metabolism of Klebsiella pneumoniae subsp. pneumoniae MGH 78578.</dc:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <prism:keyword>metabolism</prism:keyword>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <dc:identifier rdf:resource="http://identifiers.org/taxonomy:272620">http://identifiers.org/taxonomy:272620</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <rdfs:label>Klebsiella pneumoniae subsp. pneumoniae MGH 78578</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <bqbiol:hasTaxon rdf:resource="local:00001">local:00001</bqbiol:hasTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <dc:identifier rdf:resource="http://identifiers.org/GO:0008152">http://identifiers.org/GO:0008152</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <rdfs:label>metabolic process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <bqbiol:encodes rdf:resource="local:00002">local:00002</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <dc:identifier rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/150953431">https://www.ncbi.nlm.nih.gov/nuccore/150953431</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <rdfs:label>Klebsiella pneumoniae subsp. pneumoniae MGH 78578, complete genome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <bqbiol:encodes rdf:resource="local:00003">local:00003</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <rdfs:label>Yu-Chieh Liao</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <foaf:name>Yu-Chieh Liao</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00004">local:00004</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <rdfs:label>Tzu-Wen Huang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <foaf:name>Tzu-Wen Huang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00005">local:00005</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <rdfs:label>Feng-Chi Chen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:name>Feng-Chi Chen</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00006">local:00006</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <rdfs:label>Pep Charusanti</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:name>Pep Charusanti</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00007">local:00007</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <rdfs:label>Jay S. J. Hong</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <foaf:name>Jay S. J. Hong</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00008">local:00008</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <rdfs:label>Hwan-You Chang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <foaf:name>Hwan-You Chang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00009">local:00009</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <rdfs:label>Shih-Feng Tsai</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <foaf:name>Shih-Feng Tsai</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00010">local:00010</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <rdfs:label>Bernhard O. Palsson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <foaf:name>Bernhard O. Palsson</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00011">local:00011</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <rdfs:label>Chao A. Hsiung</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <foaf:name>Chao A. Hsiung</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:creator rdf:resource="local:00012">local:00012</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <dc:identifier rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <rdfs:label>Systems Biology Research Group at the University of California, San Diego</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:accountName rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:name>Systems Biology Research Group at the University of California, San Diego</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:contributor rdf:resource="local:00013">local:00013</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <dc:identifier rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <rdfs:label>Jonathan R. Karr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:name>Jonathan R. Karr</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:contributor rdf:resource="local:00014">local:00014</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <rdfs:label>Briman Yang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <foaf:name>Briman Yang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:contributor rdf:resource="local:00015">local:00015</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <dc:identifier rdf:resource="http://identifiers.org/bigg.model:iYL1228">http://identifiers.org/bigg.model:iYL1228</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <rdfs:label>bigg.model:iYL1228</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <bqmodel:is rdf:resource="local:00016">local:00016</bqmodel:is>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <dc:identifier rdf:resource="http://identifiers.org/doi:10.1128/JB.01218-10">http://identifiers.org/doi:10.1128/JB.01218-10</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <rdfs:label>Yu-Chieh Liao, Tzu-Wen Huang, Feng-Chi Chen, Pep Charusanti, Jay S. J. Hong, Hwan-You Chang, Shih-Feng Tsai, Bernhard O. Palsson &amp; Chao A. Hsiung. An experimentally validated genome-scale metabolic reconstruction of Klebsiella pneumoniae MGH 78578, iYL1228. Journal of Bacteriology 193, 7: 1710-1717 (2011).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <bqmodel:isDescribedBy rdf:resource="local:00017">local:00017</bqmodel:isDescribedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <dc:identifier rdf:resource="http://bigg.ucsd.edu/license">http://bigg.ucsd.edu/license</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <rdfs:label>BiGG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:license rdf:resource="local:00018">local:00018</dc:license>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:created>2011-04-15</dc:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iYL1228.omex">
+    <dc:modified>2019-10-31</dc:modified>
+  </rdf:Description>
+</rdf:RDF>

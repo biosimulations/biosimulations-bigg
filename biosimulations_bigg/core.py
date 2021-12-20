@@ -33,39 +33,41 @@ import yaml
 BASE_DIR = pkg_resources.resource_filename('biosimulations_bigg', '.')
 
 Entrez.email = os.getenv('ENTREZ_EMAIL', None)
-ENTREZ_DELAY = 5.
-
-SOURCE_API_ENDPOINT = 'http://bigg.ucsd.edu/api/v2'
-SOURCE_MODEL_FILES_ENDPOINT = 'http://bigg.ucsd.edu/static'
-SOURCE_MAP_FILE_ENDPOINT = 'http://bigg.ucsd.edu/escher_map_json'
-
-BIOSIMULATIONS_API_CLIENT_ID = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
-BIOSIMULATIONS_API_CLIENT_SECRET = os.getenv('BIOSIMULATIONS_API_CLIENT_SECRET')
 
 __all__ = ['import_models', 'get_config']
 
 
 def get_config(
-        source_dirname=os.path.join(BASE_DIR, 'source'),
-        source_license_filename=os.path.join(BASE_DIR, 'source', 'LICENSE'),
-        sessions_dirname=os.path.join(BASE_DIR, 'source'),
-        final_dirname=os.path.join(BASE_DIR, 'final'),
-        curators_filename=os.path.join(BASE_DIR, 'final', 'curators.yml'),
-        issues_filename=os.path.join(BASE_DIR, 'final', 'issues.yml'),
-        status_filename=os.path.join(BASE_DIR, 'final', 'status.yml'),
-        thumbnails_filename=os.path.join(BASE_DIR, 'final', 'thumbnails.yml'),
-        extra_visualizations_filename=os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'),
+        source_api_endpoint='http://bigg.ucsd.edu/api/v2',
+        source_model_file_endpoint='http://bigg.ucsd.edu/static',
+        source_map_file_endpoint='http://bigg.ucsd.edu/escher_map_json',
+        source_dirname=None,
+        source_license_filename=None,
+        sessions_dirname=None,
+        final_dirname=None,
+        curators_filename=None,
+        issues_filename=None,
+        status_filename=None,
+        thumbnails_filename=None,
+        extra_visualizations_filename=None,
         max_models=None,
         max_num_reactions=None,
         max_thumbnails=None,
         update=False,
         update_combine_archives=True,
         simulate_models=True,
+        publish_models=True,
+        entrez_delay=5.,
+        biosimulations_api_client_id=None,
+        biosimulations_api_client_secret=None,
         dry_run=False,
 ):
     """ Get a configuration
 
     Args:
+        source_api_endpoint (obj:`str`, optional): endpoint for retrieving metadata about BiGG models
+        source_model_file_endpoint (obj:`str`, optional): endpoint for retrieving files for BiGG models
+        source_map_file_endpoint (obj:`str`, optional): endpoint for retrieving files for Escher visualizations
         source_dirname (obj:`str`, optional): directory where source models, metabolic flux maps, and thumbnails should be stored
         source_license_filename (obj:`str`, optional): path to BiGG license to copy into COMBINE/OMEX archives
         sessions_dirname (obj:`str`, optional): directory where cached HTTP sessions should be stored
@@ -78,19 +80,51 @@ def get_config(
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
-        update (:obj:`bool`, optional): whether to update models even if they have already been imported
-        update_combine_archives (:obj:`bool`, optional): whether to update COMBINE archives even if they already exist
+        update (:obj:`bool`, optional): whether to update models even if they have already been imported; used for testing
+        update_combine_archives (:obj:`bool`, optional): whether to update COMBINE archives even if they already exist; used for testing
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
+        publish_models (:obj:`bool`, optional): whether to pushlish models; used for testing
+        entrez_delay (:obj:`float`, optional): delay in between Entrez queries
+        biosimulations_api_client_id (:obj:`str`, optional): id for client to the BioSimulations API
+        biosimulations_api_client_secret (:obj:`str`, optional): secret for client to the BioSimulations API
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
 
     Returns:
         obj:`dict`: configuration
     """
 
+    if source_dirname is None:
+        source_dirname = os.getenv('SOURCE_DIRNAME', os.path.join(BASE_DIR, 'source'))
+    if source_license_filename is None:
+        source_license_filename = os.getenv('SOURCE_LICENSE_FILENAME', os.path.join(BASE_DIR, 'source', 'LICENSE'))
+    if sessions_dirname is None:
+        sessions_dirname = os.getenv('SESSIONS_DIRNAME', os.path.join(BASE_DIR, 'source'))
+    if final_dirname is None:
+        final_dirname = os.getenv('FINAL_DIRNAME', os.path.join(BASE_DIR, 'final'))
+    if curators_filename is None:
+        curators_filename = os.getenv('CURATORS_FILENAME', os.path.join(BASE_DIR, 'final', 'curators.yml'))
+    if issues_filename is None:
+        issues_filename = os.getenv('ISSUES_FILENAME', os.path.join(BASE_DIR, 'final', 'issues.yml'))
+    if status_filename is None:
+        status_filename = os.getenv('STATUS_FILENAME', os.path.join(BASE_DIR, 'final', 'status.yml'))
+    if thumbnails_filename is None:
+        thumbnails_filename = os.getenv('THUMBNAILS_FILENAME', os.path.join(BASE_DIR, 'final', 'thumbnails.yml'))
+    if extra_visualizations_filename is None:
+        extra_visualizations_filename = os.getenv('EXTRA_VISUALIZATIONS_FILENAME',
+                                                  os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'))
+    if biosimulations_api_client_id is None:
+        biosimulations_api_client_id = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
+    if biosimulations_api_client_secret is None:
+        biosimulations_api_client_secret = os.getenv('BIOSIMULATIONS_API_CLIENT_SECRET')
+
     with open(curators_filename, 'r') as file:
         curators = yaml.load(file, Loader=yaml.Loader)
 
     return {
+        'source_api_endpoint': source_api_endpoint,
+        'source_model_file_endpoint': source_model_file_endpoint,
+        'source_map_file_endpoint': source_map_file_endpoint,
+
         'source_models_dirname': os.path.join(source_dirname, 'models'),
         'source_visualizations_dirname': os.path.join(source_dirname, 'visualizations'),
         'source_thumbnails_dirname': os.path.join(source_dirname, 'thumbnails'),
@@ -123,6 +157,10 @@ def get_config(
         'update': update,
         'update_combine_archives': update_combine_archives,
         'simulate_models': simulate_models,
+        'publish_models': publish_models,
+        'entrez_delay': entrez_delay,
+        'biosimulations_api_client_id': biosimulations_api_client_id,
+        'biosimulations_api_client_secret': biosimulations_api_client_secret,
         'dry_run': dry_run,
     }
 
@@ -136,7 +174,7 @@ def get_models(config):
     Returns:
         :obj:`list` of :obj:`dict`: models
     """
-    response = config['source_session'].get(SOURCE_API_ENDPOINT + '/models')
+    response = config['source_session'].get(config['source_api_endpoint'] + '/models')
     response.raise_for_status()
     models = response.json()['results']
     models.sort(key=lambda model: model['bigg_id'])
@@ -154,14 +192,14 @@ def get_model_details(model, config):
         :obj:`dict`: detailed information about the model
     """
     # get information about the model
-    response = config['source_session'].get(SOURCE_API_ENDPOINT + '/models/' + model['bigg_id'])
+    response = config['source_session'].get(config['source_api_endpoint'] + '/models/' + model['bigg_id'])
     response.raise_for_status()
     model_detail = response.json()
 
     # download the file for the model
     model_filename = os.path.join(config['source_models_dirname'], model['bigg_id'] + '.xml')
     if not os.path.isfile(model_filename):
-        response = config['source_session'].get(SOURCE_MODEL_FILES_ENDPOINT + '/models/{}.xml'.format(model['bigg_id']))
+        response = config['source_session'].get(config['source_model_file_endpoint'] + '/models/{}.xml'.format(model['bigg_id']))
         response.raise_for_status()
         with open(model_filename, 'wb') as file:
             file.write(response.content)
@@ -172,7 +210,7 @@ def get_model_details(model, config):
         standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
         escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
         if not os.path.isfile(escher_filename):
-            response = config['source_session'].get(SOURCE_MAP_FILE_ENDPOINT + '/' + map_name)
+            response = config['source_session'].get(config['source_map_file_endpoint'] + '/' + map_name)
             response.raise_for_status()
             with open(escher_filename, 'wb') as file:
                 file.write(response.content)
@@ -229,7 +267,7 @@ def get_metadata_for_model(model_detail, config):
 
     # NCBI id for organism
     if taxon is None or encodes is None:
-        time.sleep(ENTREZ_DELAY)
+        time.sleep(config['entrez_delay'])
         handle = Entrez.esearch(db="nucleotide", term='{}[Assembly] OR {}[Primary Accession]'.format(
             model_detail['genome_name'], model_detail['genome_name']), retmax=1, retmode="xml")
         record = Entrez.read(handle)
@@ -237,7 +275,7 @@ def get_metadata_for_model(model_detail, config):
         if len(record["IdList"]) > 0:
             nucleotide_id = record["IdList"][0]
 
-            time.sleep(ENTREZ_DELAY)
+            time.sleep(config['entrez_delay'])
             handle = Entrez.esummary(db="nucleotide", id=nucleotide_id, retmode="xml")
             records = list(Entrez.parse(handle))
             handle.close()
@@ -251,7 +289,7 @@ def get_metadata_for_model(model_detail, config):
             taxon_id = int(records[0]['TaxId'].real)
 
         else:
-            time.sleep(ENTREZ_DELAY)
+            time.sleep(config['entrez_delay'])
             handle = Entrez.esearch(db="assembly", term='{}'.format(
                 model_detail['genome_name']), retmax=1, retmode="xml")
             record = Entrez.read(handle)
@@ -262,7 +300,7 @@ def get_metadata_for_model(model_detail, config):
 
             assembly_id = str(record["IdList"][0])
 
-            time.sleep(ENTREZ_DELAY)
+            time.sleep(config['entrez_delay'])
             handle = Entrez.esummary(db="assembly", id=assembly_id, retmode="xml")
             record = Entrez.read(handle)['DocumentSummarySet']['DocumentSummary'][0]
             handle.close()
@@ -274,7 +312,7 @@ def get_metadata_for_model(model_detail, config):
 
             taxon_id = int(record['SpeciesTaxid'])
 
-        time.sleep(ENTREZ_DELAY)
+        time.sleep(config['entrez_delay'])
         handle = Entrez.esummary(db="taxonomy", id=taxon_id, retmode="xml")
         record = Entrez.read(handle)
         assert len(record) == 1
@@ -582,6 +620,7 @@ def import_models(config):
             lambda model:
             (
                 model['model_bigg_id'] not in status
+                or not status[model['model_bigg_id']]['runbiosimulationsId']
                 or (
                     (dateutil.parser.parse(model['last_updated']) + datetime.timedelta(1))
                     > dateutil.parser.parse(status[model['model_bigg_id']]['updated'])
@@ -595,7 +634,7 @@ def import_models(config):
 
     # get authorization for BioSimulations API
     auth = biosimulators_utils.biosimulations.utils.get_authorization_for_client(
-        BIOSIMULATIONS_API_CLIENT_ID, BIOSIMULATIONS_API_CLIENT_SECRET)
+        config['biosimulations_api_client_id'], config['biosimulations_api_client_secret'])
 
     # download models, convert them to COMBINE/OMEX archives, simulate them, and deposit them to the BioSimulations database
     for i_model, model in enumerate(models):
@@ -733,16 +772,22 @@ def import_models(config):
 
         # submit COMBINE/OMEX archive to BioSimulations
         if config['dry_run']:
-            runbiosimulations_id = None
+            runbiosimulations_id = status.get(model['model_bigg_id'], {}).get('runbiosimulationsId', None)
+            updated = status.get(model['model_bigg_id'], {}).get('updated', None)
         else:
             name = model['model_bigg_id']
+            if config['publish_models']:
+                project_id = name
+            else:
+                project_id = None
             runbiosimulations_id = biosimulators_utils.biosimulations.utils.run_simulation_project(
-                name, project_filename, 'cobrapy', project_id=name, auth=auth)
+                name, project_filename, 'cobrapy', project_id=project_id, auth=auth)
+            updated = str(update_times[model['model_bigg_id']])
 
         # output status
         status[model['model_bigg_id']] = {
             'created': status.get(model['model_bigg_id'], {}).get('created', str(update_times[model['model_bigg_id']])),
-            'updated': str(update_times[model['model_bigg_id']]),
+            'updated': updated,
             'objective': objective,
             'duration': duration,
             'runbiosimulationsId': runbiosimulations_id,

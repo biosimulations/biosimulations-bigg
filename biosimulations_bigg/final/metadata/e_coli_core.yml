@@ -1,0 +1,23 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Jeffrey D. Orth
+  - R. M. T. Fleming
+  - "Bernhard \xD8. Palsson"
+  date: '2010-09-15'
+  doi: 10.1128/ecosalplus.10.2.1
+  issue: '1'
+  journal: EcoSal Plus
+  pages: ecosalplus.10.2.1
+  pubmed_central_id: null
+  pubmed_id: '26443778'
+  title: 'Reconstruction and Use of Microbial Metabolic Networks: the Core Escherichia
+    coli Metabolic Model as an Educational Guide'
+  volume: '4'
+  year: '2010'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails: []

@@ -1,0 +1,25 @@
+encodes:
+  label: Bacillus subtilis subsp. subtilis str. 168 complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/225184640
+reference:
+  authors:
+  - You-Kwan Oh
+  - Bernhard O. Palsson
+  - Sung M. Park
+  - Christophe H. Schilling
+  - Radhakrishnan Mahadevan
+  date: '2007-09-28'
+  doi: 10.1074/jbc.M703759200
+  issue: '39'
+  journal: Journal of Biological Chemistry
+  pages: 28791-28799
+  pubmed_central_id: null
+  pubmed_id: '17573341'
+  title: Genome-scale reconstruction of metabolic network in Bacillus subtilis based
+    on high-throughput phenotyping and gene essentiality data
+  volume: '282'
+  year: '2007'
+taxon:
+  id: 224308
+  name: Bacillus subtilis subsp. subtilis str. 168
+thumbnails: []

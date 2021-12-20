@@ -1,0 +1,24 @@
+encodes:
+  label: Cricetulus griseus mitochondrion, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/91176202
+reference:
+  authors:
+  - Cyrielle Calmels
+  - "Andr\xE9a McCann"
+  - Laetitia Malphettes
+  - "Mikael R\xF8rdam Andersen"
+  date: '2019-01-15'
+  doi: 10.1016/j.ymben.2018.09.009
+  issue: null
+  journal: Metabolic Engineering
+  pages: 9-19
+  pubmed_central_id: null
+  pubmed_id: '30227251'
+  title: Application of a curated genome-scale metabolic model of CHO DG44 to an industrial
+    fed-batch process
+  volume: '51'
+  year: '2019'
+taxon:
+  id: 10029
+  name: Cricetulus griseus
+thumbnails: []

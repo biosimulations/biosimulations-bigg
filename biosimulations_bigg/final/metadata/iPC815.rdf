@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<rdf:RDF xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:collex="http://www.collex.org/schema#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:scoro="http://purl.org/spar/scoro/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:biomodel="http://biomodels.net/model-qualifiers/">
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:title>iPC815</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:abstract>Flux balance analysis model of the metabolism of Yersinia pestis CO92.</dc:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <prism:keyword>metabolism</prism:keyword>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <dc:identifier rdf:resource="http://identifiers.org/taxonomy:214092">http://identifiers.org/taxonomy:214092</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <rdfs:label>Yersinia pestis CO92</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <bqbiol:hasTaxon rdf:resource="local:00001">local:00001</bqbiol:hasTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <dc:identifier rdf:resource="http://identifiers.org/GO:0008152">http://identifiers.org/GO:0008152</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <rdfs:label>metabolic process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <bqbiol:encodes rdf:resource="local:00002">local:00002</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <dc:identifier rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/16120353">https://www.ncbi.nlm.nih.gov/nuccore/16120353</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <rdfs:label>Yersinia pestis CO92, complete sequence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <bqbiol:encodes rdf:resource="local:00003">local:00003</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iPC815.omex/PMC3220653-F3.jpg">http://omex-library.org/iPC815.omex/PMC3220653-F3.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iPC815.omex/PMC3220653-F2.jpg">http://omex-library.org/iPC815.omex/PMC3220653-F2.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iPC815.omex/PMC3220653-F1.jpg">http://omex-library.org/iPC815.omex/PMC3220653-F1.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iPC815.omex/PMC3220653-F4.jpg">http://omex-library.org/iPC815.omex/PMC3220653-F4.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <rdfs:label>Pep Charusanti</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <foaf:name>Pep Charusanti</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00004">local:00004</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <rdfs:label>Sadhana Chauhan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <foaf:name>Sadhana Chauhan</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00005">local:00005</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <rdfs:label>Kathleen McAteer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:name>Kathleen McAteer</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00006">local:00006</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <rdfs:label>Joshua A Lerman</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:name>Joshua A Lerman</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00007">local:00007</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <rdfs:label>Daniel R Hyduke</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <foaf:name>Daniel R Hyduke</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00008">local:00008</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <rdfs:label>Vladimir L Motin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <foaf:name>Vladimir L Motin</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00009">local:00009</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <rdfs:label>Charles Ansong</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <foaf:name>Charles Ansong</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00010">local:00010</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <rdfs:label>Joshua N Adkins</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <foaf:name>Joshua N Adkins</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00011">local:00011</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <rdfs:label>Bernhard O Palsson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00012">
+    <foaf:name>Bernhard O Palsson</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:creator rdf:resource="local:00012">local:00012</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <dc:identifier rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <rdfs:label>Systems Biology Research Group at the University of California, San Diego</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:accountName rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00013">
+    <foaf:name>Systems Biology Research Group at the University of California, San Diego</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:contributor rdf:resource="local:00013">local:00013</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <dc:identifier rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <rdfs:label>Jonathan R. Karr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00014">
+    <foaf:name>Jonathan R. Karr</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:contributor rdf:resource="local:00014">local:00014</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <rdfs:label>Briman Yang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00015">
+    <foaf:name>Briman Yang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:contributor rdf:resource="local:00015">local:00015</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <dc:identifier rdf:resource="http://identifiers.org/bigg.model:iPC815">http://identifiers.org/bigg.model:iPC815</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00016">
+    <rdfs:label>bigg.model:iPC815</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <bqmodel:is rdf:resource="local:00016">local:00016</bqmodel:is>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <dc:identifier rdf:resource="http://identifiers.org/doi:10.1186/1752-0509-5-163">http://identifiers.org/doi:10.1186/1752-0509-5-163</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00017">
+    <rdfs:label>Pep Charusanti, Sadhana Chauhan, Kathleen McAteer, Joshua A Lerman, Daniel R Hyduke, Vladimir L Motin, Charles Ansong, Joshua N Adkins &amp; Bernhard O Palsson. An experimentally-supported genome-scale metabolic network reconstruction for Yersinia pestis CO92. BMC Systems Biology 5: 163 (2011).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <bqmodel:isDescribedBy rdf:resource="local:00017">local:00017</bqmodel:isDescribedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <dc:identifier rdf:resource="http://bigg.ucsd.edu/license">http://bigg.ucsd.edu/license</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00018">
+    <rdfs:label>BiGG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:license rdf:resource="local:00018">local:00018</dc:license>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:created>2011-10-13</dc:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iPC815.omex">
+    <dc:modified>2019-10-31</dc:modified>
+  </rdf:Description>
+</rdf:RDF>

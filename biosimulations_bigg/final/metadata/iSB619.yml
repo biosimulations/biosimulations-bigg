@@ -1,0 +1,47 @@
+encodes:
+  label: Staphylococcus aureus subsp. aureus N315, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/29165615
+reference:
+  authors:
+  - Scott A Becker
+  - "Bernhard \xD8 Palsson"
+  date: '2005-03-07'
+  doi: 10.1186/1471-2180-5-8
+  issue: null
+  journal: BMC Microbiology
+  pages: '8'
+  pubmed_central_id: PMC1079855
+  pubmed_id: '15752426'
+  title: 'Genome-scale reconstruction of the metabolic network in Staphylococcus aureus
+    N315: an initial draft to the two-dimensional annotation'
+  volume: '5'
+  year: '2005'
+taxon:
+  id: 158879
+  name: Staphylococcus aureus subsp. aureus N315
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Amino acid contributions
+    to growth. </bold>The results of adding equivalent quantities of each amino acid
+    to the media are shown here. Red bars represent amino acids that are reported
+    essential in the literature, and green bars are amino acids that are not. Arginine
+    is present in all cases and is the baseline against which the rest of the values
+    are normalized. On average, adding an essential amino acid to the media allows
+    better growth than does adding a non-essential amino acid. E stands for average
+    essential amino acid, and NE stands for average non-essential amino acid. Two
+    amino acids do not have transporters in the genome annotation and are not included
+    here for that reason.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
+  id: 1471-2180-5-8/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Relative growth efficiency
+    with different carbon sources. </bold>The in silico growth of <italic>i</italic>SB619
+    varies depending on which carbon source is provided and the amount of oxygen present.
+    The predicted efficiency of carbon incorporation into biomass is shown here as
+    a function on the oxygen consumption. Growth rate is normalized relative to the
+    number of carbon atoms per molecule. Oxygen consumption is normalized relative
+    to optimal oxygen consumption for each carbon source. Trehalose, lactose, and
+    sucrose all overlap (the trehalose line indicates all three). The legend is presented
+    in the same order as the carbon sources appear in the figure, top to bottom.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
+  id: 1471-2180-5-8/F2
+  label: Figure 2

@@ -1,0 +1,33 @@
+encodes:
+  label: Thermotoga maritima MSB8, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/15642775
+reference:
+  authors:
+  - Ying Zhang
+  - Ines Thiele
+  - Dana Weekes
+  - Zhanwen Li
+  - Lukasz Jaroszewski
+  - Krzysztof Ginalski
+  - Ashley M. Deacon
+  - John Wooley
+  - Scott A. Lesley
+  - Ian A. Wilson
+  - Bernhard Palsson
+  - Andrei Osterman
+  - Adam Godzik
+  date: '2009-09-18'
+  doi: 10.1126/science.1174671
+  issue: '5947'
+  journal: Science
+  pages: 1544-1549
+  pubmed_central_id: PMC2833182
+  pubmed_id: '19762644'
+  title: Three-dimensional structural view of the central metabolic network of Thermotoga
+    maritima
+  volume: '325'
+  year: '2009'
+taxon:
+  id: 243274
+  name: Thermotoga maritima MSB8
+thumbnails: []

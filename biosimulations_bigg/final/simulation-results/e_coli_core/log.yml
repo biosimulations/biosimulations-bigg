@@ -1,0 +1,248 @@
+duration: 0.9957
+exception: null
+output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
+  \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
+  \n    Reports (2):\r\n      objective: 1 data sets\r\n      reaction_fluxes: 95\
+  \ data sets\r\n\r\nExecuting SED-ML file 1: simulation.sedml ...\r\n\r\nBundling\
+  \ outputs ...\r\nCleaning up ...\r\n\r\n============= SUMMARY =============\r\n\
+  Executed 1 SED documents:\r\n  SED documents (1):\r\n    Succeeded: 1\r\n    Skipped:\
+  \ 0\r\n    Failed: 0\r\n  Tasks (1):\r\n    Succeeded: 1\r\n    Skipped: 0\r\n \
+  \   Failed: 0\r\n  Outputs (2):\r\n    Succeeded: 2\r\n    Skipped: 0\r\n    Failed:\
+  \ 0\r\n\r\n"
+sedDocuments:
+- duration: 0.596892
+  exception: null
+  location: simulation.sedml
+  output: "  Found 1 tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\
+    \n      `objective`\r\n      `reaction_fluxes`\r\n  Executing task 1: `task`\r\
+    \n    Executing simulation ... \e[34msucceeded\e[0m\r\n    Generating 2 outputs\
+    \ ...\r\n      Generating output 1: `objective` ... \e[34msucceeded\e[0m\r\n \
+    \     Generating output 2: `reaction_fluxes` ... \e[34msucceeded\e[0m\r\n\r\n\
+    \  Executed 1 tasks and 2 outputs:\r\n    Tasks:\r\n      Succeeded: 1\r\n   \
+    \   Skipped: 0\r\n      Failed: 0\r\n    Outputs:\r\n      Succeeded: 2\r\n  \
+    \    Skipped: 0\r\n      Failed: 0\r\n"
+  outputs:
+  - dataSets:
+    - id: obj
+      status: SUCCEEDED
+    duration: 0.04474
+    exception: null
+    id: objective
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  - dataSets:
+    - id: R_PFK
+      status: SUCCEEDED
+    - id: R_PFL
+      status: SUCCEEDED
+    - id: R_PGI
+      status: SUCCEEDED
+    - id: R_PGK
+      status: SUCCEEDED
+    - id: R_PGL
+      status: SUCCEEDED
+    - id: R_ACALD
+      status: SUCCEEDED
+    - id: R_AKGt2r
+      status: SUCCEEDED
+    - id: R_PGM
+      status: SUCCEEDED
+    - id: R_PIt2r
+      status: SUCCEEDED
+    - id: R_ALCD2x
+      status: SUCCEEDED
+    - id: R_ACALDt
+      status: SUCCEEDED
+    - id: R_ACKr
+      status: SUCCEEDED
+    - id: R_PPC
+      status: SUCCEEDED
+    - id: R_ACONTa
+      status: SUCCEEDED
+    - id: R_ACONTb
+      status: SUCCEEDED
+    - id: R_ATPM
+      status: SUCCEEDED
+    - id: R_PPCK
+      status: SUCCEEDED
+    - id: R_ACt2r
+      status: SUCCEEDED
+    - id: R_PPS
+      status: SUCCEEDED
+    - id: R_ADK1
+      status: SUCCEEDED
+    - id: R_AKGDH
+      status: SUCCEEDED
+    - id: R_ATPS4r
+      status: SUCCEEDED
+    - id: R_PTAr
+      status: SUCCEEDED
+    - id: R_PYK
+      status: SUCCEEDED
+    - id: R_BIOMASS_Ecoli_core_w_GAM
+      status: SUCCEEDED
+    - id: R_PYRt2
+      status: SUCCEEDED
+    - id: R_CO2t
+      status: SUCCEEDED
+    - id: R_RPE
+      status: SUCCEEDED
+    - id: R_CS
+      status: SUCCEEDED
+    - id: R_RPI
+      status: SUCCEEDED
+    - id: R_SUCCt2_2
+      status: SUCCEEDED
+    - id: R_CYTBD
+      status: SUCCEEDED
+    - id: R_D_LACt2
+      status: SUCCEEDED
+    - id: R_ENO
+      status: SUCCEEDED
+    - id: R_SUCCt3
+      status: SUCCEEDED
+    - id: R_ETOHt2r
+      status: SUCCEEDED
+    - id: R_SUCDi
+      status: SUCCEEDED
+    - id: R_SUCOAS
+      status: SUCCEEDED
+    - id: R_TALA
+      status: SUCCEEDED
+    - id: R_THD2
+      status: SUCCEEDED
+    - id: R_TKT1
+      status: SUCCEEDED
+    - id: R_TKT2
+      status: SUCCEEDED
+    - id: R_TPI
+      status: SUCCEEDED
+    - id: R_EX_ac_e
+      status: SUCCEEDED
+    - id: R_EX_acald_e
+      status: SUCCEEDED
+    - id: R_EX_akg_e
+      status: SUCCEEDED
+    - id: R_EX_co2_e
+      status: SUCCEEDED
+    - id: R_EX_etoh_e
+      status: SUCCEEDED
+    - id: R_EX_for_e
+      status: SUCCEEDED
+    - id: R_EX_fru_e
+      status: SUCCEEDED
+    - id: R_EX_fum_e
+      status: SUCCEEDED
+    - id: R_EX_glc__D_e
+      status: SUCCEEDED
+    - id: R_EX_gln__L_e
+      status: SUCCEEDED
+    - id: R_EX_glu__L_e
+      status: SUCCEEDED
+    - id: R_EX_h_e
+      status: SUCCEEDED
+    - id: R_EX_h2o_e
+      status: SUCCEEDED
+    - id: R_EX_lac__D_e
+      status: SUCCEEDED
+    - id: R_EX_mal__L_e
+      status: SUCCEEDED
+    - id: R_EX_nh4_e
+      status: SUCCEEDED
+    - id: R_EX_o2_e
+      status: SUCCEEDED
+    - id: R_EX_pi_e
+      status: SUCCEEDED
+    - id: R_EX_pyr_e
+      status: SUCCEEDED
+    - id: R_EX_succ_e
+      status: SUCCEEDED
+    - id: R_FBA
+      status: SUCCEEDED
+    - id: R_FBP
+      status: SUCCEEDED
+    - id: R_FORt2
+      status: SUCCEEDED
+    - id: R_FORt
+      status: SUCCEEDED
+    - id: R_FRD7
+      status: SUCCEEDED
+    - id: R_FRUpts2
+      status: SUCCEEDED
+    - id: R_FUM
+      status: SUCCEEDED
+    - id: R_FUMt2_2
+      status: SUCCEEDED
+    - id: R_G6PDH2r
+      status: SUCCEEDED
+    - id: R_GAPD
+      status: SUCCEEDED
+    - id: R_GLCpts
+      status: SUCCEEDED
+    - id: R_GLNS
+      status: SUCCEEDED
+    - id: R_GLNabc
+      status: SUCCEEDED
+    - id: R_GLUDy
+      status: SUCCEEDED
+    - id: R_GLUN
+      status: SUCCEEDED
+    - id: R_GLUSy
+      status: SUCCEEDED
+    - id: R_GLUt2r
+      status: SUCCEEDED
+    - id: R_GND
+      status: SUCCEEDED
+    - id: R_H2Ot
+      status: SUCCEEDED
+    - id: R_ICDHyr
+      status: SUCCEEDED
+    - id: R_ICL
+      status: SUCCEEDED
+    - id: R_LDH_D
+      status: SUCCEEDED
+    - id: R_MALS
+      status: SUCCEEDED
+    - id: R_MALt2_2
+      status: SUCCEEDED
+    - id: R_MDH
+      status: SUCCEEDED
+    - id: R_ME1
+      status: SUCCEEDED
+    - id: R_ME2
+      status: SUCCEEDED
+    - id: R_NADH16
+      status: SUCCEEDED
+    - id: R_NADTRHD
+      status: SUCCEEDED
+    - id: R_NH4t
+      status: SUCCEEDED
+    - id: R_O2t
+      status: SUCCEEDED
+    - id: R_PDH
+      status: SUCCEEDED
+    duration: 0.044745
+    exception: null
+    id: reaction_fluxes
+    output: ''
+    skipReason: null
+    status: SUCCEEDED
+  skipReason: null
+  status: SUCCEEDED
+  tasks:
+  - algorithm: KISAO_0000437
+    duration: 0.32828
+    exception: null
+    id: task
+    output: "Academic license - for non-commercial use only - expires 2022-09-04\r\
+      \nUsing license file /home/jonrkarr/gurobi.lic\r\n"
+    simulatorDetails:
+    - key: method
+      value: cobra.core.model.optimize
+    - key: arguments
+      value: {}
+    skipReason: null
+    status: SUCCEEDED
+skipReason: null
+status: SUCCEEDED

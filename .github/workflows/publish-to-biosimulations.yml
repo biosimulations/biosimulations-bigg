@@ -1,0 +1,85 @@
+name: Publish BiGG to BioSimulations
+
+on:
+  schedule:
+    - cron: '0 1 * * 0' # weekly at 1:00 am on Sundays
+
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: Publish BiGG to BioSimulations
+    runs-on: ubuntu-latest
+    env:
+      ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
+      GRB_WLSACCESSID: ${{ secrets.GRB_WLSACCESSID }}
+      GRB_WLSSECRET: ${{ secrets.GRB_WLSSECRET }}
+      GRB_LICENSEID: ${{ secrets.GRB_LICENSEID }}
+      BIOSIMULATIONS_API_CLIENT_ID: ${{ secrets.BIOSIMULATIONS_API_CLIENT_ID }}
+      BIOSIMULATIONS_API_CLIENT_SECRET: ${{ secrets.BIOSIMULATIONS_API_CLIENT_SECRET }}
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: dev
+
+      # Install requirements
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements.optional.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
+      # install package
+      - name: Install the package
+        run: python -m pip install .
+
+      # Publish models to BioSimulations
+      - name: Publish models to BioSimulations        
+        run: biosimulations-bigg publish
+
+      # Push compiled projects
+      - id: commit-projects
+        name: Commit the compiled projects
+        run: |
+          git config --local user.email "biosimulations.daemon@gmail.com"
+          git config --local user.name "biosimulationsdaemon"
+          git config pull.rebase false
+          git stash
+          git pull
+          set +e
+          git stash pop
+          git add biosimulations_bigg/source
+          git lfs track biosimulations_bigg/source/thumbnails/**/*.tar.gz
+          git add -f biosimulations_bigg/source/thumbnails/**/*.tar.gz
+          git add -f biosimulations_bigg/source/thumbnails/**/**/*.jpg
+          git add -f biosimulations_bigg/source/thumbnails/**/**/*.nxml
+          git add biosimulations_bigg/final
+          git commit -m "Updated compiled projects [skip ci]"
+          if [[ $? = 0 ]]; then
+            changed=1
+          else
+            changed=0
+          fi
+          echo "::set-output name=changed::$changed"
+
+      - name: Push the compiled projects
+        if: steps.commit-projects.outputs.changed == '1'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dev

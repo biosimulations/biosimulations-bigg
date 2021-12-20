@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<rdf:RDF xmlns:dc="http://dublincore.org/specifications/dublin-core/dcmi-terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:collex="http://www.collex.org/schema#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:scoro="http://purl.org/spar/scoro/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:biomodel="http://biomodels.net/model-qualifiers/">
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:title>iSB619</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:abstract>Flux balance analysis model of the metabolism of Staphylococcus aureus subsp. aureus N315.</dc:abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <prism:keyword>metabolism</prism:keyword>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <dc:identifier rdf:resource="http://identifiers.org/taxonomy:158879">http://identifiers.org/taxonomy:158879</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00001">
+    <rdfs:label>Staphylococcus aureus subsp. aureus N315</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <bqbiol:hasTaxon rdf:resource="local:00001">local:00001</bqbiol:hasTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <dc:identifier rdf:resource="http://identifiers.org/GO:0008152">http://identifiers.org/GO:0008152</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00002">
+    <rdfs:label>metabolic process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <bqbiol:encodes rdf:resource="local:00002">local:00002</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <dc:identifier rdf:resource="https://www.ncbi.nlm.nih.gov/nuccore/29165615">https://www.ncbi.nlm.nih.gov/nuccore/29165615</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00003">
+    <rdfs:label>Staphylococcus aureus subsp. aureus N315, complete sequence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <bqbiol:encodes rdf:resource="local:00003">local:00003</bqbiol:encodes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iSB619.omex/PMC1079855-F1.jpg">http://omex-library.org/iSB619.omex/PMC1079855-F1.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <collex:thumbnail rdf:resource="http://omex-library.org/iSB619.omex/PMC1079855-F2.jpg">http://omex-library.org/iSB619.omex/PMC1079855-F2.jpg</collex:thumbnail>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <rdfs:label>Scott A Becker</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00004">
+    <foaf:name>Scott A Becker</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:creator rdf:resource="local:00004">local:00004</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <rdfs:label>Bernhard Ø Palsson</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00005">
+    <foaf:name>Bernhard Ø Palsson</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:creator rdf:resource="local:00005">local:00005</dc:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <dc:identifier rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <rdfs:label>Systems Biology Research Group at the University of California, San Diego</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:accountName rdf:resource="https://systemsbiology.ucsd.edu/">https://systemsbiology.ucsd.edu/</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00006">
+    <foaf:name>Systems Biology Research Group at the University of California, San Diego</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:contributor rdf:resource="local:00006">local:00006</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <dc:identifier rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <rdfs:label>Jonathan R. Karr</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00007">
+    <foaf:name>Jonathan R. Karr</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:contributor rdf:resource="local:00007">local:00007</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <rdfs:label>Briman Yang</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00008">
+    <foaf:name>Briman Yang</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:contributor rdf:resource="local:00008">local:00008</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <dc:identifier rdf:resource="http://identifiers.org/bigg.model:iSB619">http://identifiers.org/bigg.model:iSB619</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00009">
+    <rdfs:label>bigg.model:iSB619</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <bqmodel:is rdf:resource="local:00009">local:00009</bqmodel:is>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <dc:identifier rdf:resource="http://identifiers.org/doi:10.1186/1471-2180-5-8">http://identifiers.org/doi:10.1186/1471-2180-5-8</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00010">
+    <rdfs:label>Scott A Becker &amp; Bernhard Ø Palsson. Genome-scale reconstruction of the metabolic network in Staphylococcus aureus N315: an initial draft to the two-dimensional annotation. BMC Microbiology 5: 8 (2005).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <bqmodel:isDescribedBy rdf:resource="local:00010">local:00010</bqmodel:isDescribedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <dc:identifier rdf:resource="http://bigg.ucsd.edu/license">http://bigg.ucsd.edu/license</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="local:00011">
+    <rdfs:label>BiGG</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:license rdf:resource="local:00011">local:00011</dc:license>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:created>2005-03-07</dc:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://omex-library.org/iSB619.omex">
+    <dc:modified>2019-10-31</dc:modified>
+  </rdf:Description>
+</rdf:RDF>

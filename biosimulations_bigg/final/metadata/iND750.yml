@@ -1,0 +1,23 @@
+encodes:
+  label: Saccharomyces cerevisiae S288C chromosome XVI, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/330443753
+reference:
+  authors:
+  - Duarte NC
+  - "Herrg\xE5rd MJ"
+  - "Palsson B\xD8"
+  date: '2004-07-15'
+  doi: 10.1101/gr.2250904
+  issue: '7'
+  journal: Genome Research
+  pages: 1298-1309
+  pubmed_central_id: PMC442145
+  pubmed_id: '15197165'
+  title: Reconstruction and validation of Saccharomyces cerevisiae iND750, a fully
+    compartmentalized genome-scale metabolic model
+  volume: '14'
+  year: '2004'
+taxon:
+  id: 559292
+  name: Saccharomyces cerevisiae S288C
+thumbnails: []

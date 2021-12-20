@@ -1,0 +1,85 @@
+encodes:
+  label: Pseudomonas putida KT2440 (g-proteobacteria) genome assembly ASM756v1
+  uri: https://www.ncbi.nlm.nih.gov/assembly/29148
+reference:
+  authors:
+  - Juan Nogales
+  - "Bernhard \xD8 Palsson"
+  - Ines Thiele
+  date: '2008-09-16'
+  doi: 10.1186/1752-0509-2-79
+  issue: null
+  journal: BMC Systems Biology
+  pages: '79'
+  pubmed_central_id: PMC2569920
+  pubmed_id: '18793442'
+  title: 'A genome-scale metabolic reconstruction of Pseudomonas putida KT2440: iJN746
+    as a cell factory'
+  volume: '2'
+  year: '2008'
+taxon:
+  id: 303
+  name: Pseudomonas putida
+thumbnails:
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>A</bold>. <bold>Pie
+    chart showing the distribution of <italic>i</italic>JN746''s intracellular reactions
+    over the different subsystems.</bold> The number of reactions per subsystem is
+    shown and subsystems of high importance were highlighted in bold. <bold>B</bold>.
+    Heat map of the confidence score of the different subsystems in <italic>i</italic>JN746.
+    The 4 rows in the map represent the different confidence score (from left to right:
+    4, 3, 2, 1). The various colors correspond to the percentage of subsystems reactions
+    that have the corresponding confidence score (red = 100%, blue = 0%). The confidence
+    level was based on a scale from 1 to 4. A level, or score, of 4 corresponds to
+    biochemical evidence for a gene product and its reaction(s); 3 represents physiological,
+    genetic, or proteomic evidence; 2 corresponds to only sequence-based evidence
+    for a gene product and its reaction(s); and finally a score of 1 reflects that
+    the reaction had to be included for model functionality (e. g., production of
+    biomass precursor).</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
+  id: 1752-0509-2-79/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>General depiction of
+    the aromatic compound degradation routes present in <italic>i</italic>JN746.</bold>
+    The protocatechuate (pca genes) and catechol (cat genes) branches of the beta-ketoadipate
+    pathway are shown as well as peripheral pathways by orange arrows. The homogentisate
+    pathway (hmg genes) is represented by green arrows and the phenylacetate pathway
+    (paa genes) is represented by purple arrows. The nicotinate and gallate pathways
+    (unknown genes) are shown by green and red arrows, respectively. Finally, the
+    Tol pathway (xyl genes from pWW0 plasmid) for toluene and xylene degradation is
+    represented by blue arrows. The initial aromatic compounds are indicated by green
+    circles and the central metabolic compounds for each pathway are also highlighted.
+    A detailed list of reactions involved in aromatic acid degradation can be found
+    in the Additional file <xref ref-type="supplementary-material" rid="S9">9</xref>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
+  id: 1752-0509-2-79/F2
+  label: Figure 2
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Glucose metabolizing pathways
+    present in <italic>P. putida </italic>KT2440 and its metabolic reconstruction,
+    <italic>i</italic>JN746.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
+  id: 1752-0509-2-79/F3
+  label: Figure 3
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>(A) </bold><bold>The
+    phenotypic phase plane analysis showed growth rate as a function of OUR and TUR
+    in </bold><italic><bold>i</bold></italic><bold>JN746.</bold> The growth rate is
+    given in 1/h (color legend). The red and yellow lines represent OUR constrained
+    to 20.93 and 33 mmol/gDW/h, respectively. <bold>(B) </bold>Diagram of oxygen producing
+    and reducing reactions in <italic>i</italic>JN746. The flux rates are given in
+    mmol/gDW/h and represent one possible flux state of the network in toluene minimal
+    medium at an OUR of 40 mmol oxygen/gDW/h. The reaction abbreviations are as follows:
+    CAT, catalase; O2tpp, oxygen periplasmic transport (oxygen uptake); ASPO6, L-aspartate
+    oxidase; BZ12DOX, benzoate 1,2-dioxygenase; CAT23DOX, catechol 2,3-dioxygenase;
+    CYTBO3_4pp, cytochrome oxidase bo3; DHORD, dihydoorotic acid dehydrogenase; GLYCTO1,
+    Glycolate oxidase and XMO, toluene monooxygenase.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
+  id: 1752-0509-2-79/F4
+  label: Figure 4
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Maximal possible msc-PHA
+    production rate from various carbon sources</bold>. The msc-PHA production rate
+    is scaled per substrate carbon to facilitate the yield comparison. The simulation
+    conditions correspond to chemostate culturing at a dilution rate of &#956; = 0.2
+    1/hr, minimal medium (iM9) supplemented with each carbon source. 'Mix' corresponds
+    to the simultaneous production of C8:0, C6:0, C10:0, and C12:0 msc-PHA (1:1:1:1).</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
+  id: 1752-0509-2-79/F5
+  label: Figure 5

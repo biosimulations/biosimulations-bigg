@@ -1,0 +1,26 @@
+encodes:
+  label: Escherichia coli str. K-12 substr. MG1655, complete genome
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/556503834
+reference:
+  authors:
+  - Adam M. Feist
+  - Daniel C. Zielinski
+  - Jeffrey D. Orth
+  - Jan Schellenberger
+  - Markus J. Herrgard
+  - "Bernhard \xD8. Palsson"
+  date: '2010-05-15'
+  doi: 10.1016/j.ymben.2009.10.003
+  issue: '3'
+  journal: Metabolic Engineering
+  pages: 173-186
+  pubmed_central_id: PMC3125152
+  pubmed_id: '19840862'
+  title: Model-driven evaluation of the production potential for growth-coupled products
+    of Escherichia coli
+  volume: '12'
+  year: '2010'
+taxon:
+  id: 511145
+  name: Escherichia coli str. K-12 substr. MG1655
+thumbnails: []

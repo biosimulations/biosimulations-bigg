@@ -1,0 +1,85 @@
+encodes:
+  label: Saccharomyces cerevisiae S288C chromosome XVI, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/330443753
+reference:
+  authors:
+  - Monica L Mo
+  - "Bernhard \xD8 Palsson"
+  - "Markus J Herrg\xE5rd"
+  date: '2009-03-25'
+  doi: 10.1186/1752-0509-3-37
+  issue: null
+  journal: BMC Systems Biology
+  pages: '37'
+  pubmed_central_id: PMC2679711
+  pubmed_id: '19321003'
+  title: Connecting extracellular metabolomic measurements to intracellular flux states
+    in yeast
+  volume: '3'
+  year: '2009'
+taxon:
+  id: 559292
+  name: Saccharomyces cerevisiae S288C
+thumbnails:
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Schematic illustrating
+    the integration of exometabolomic (EM) data with the constraint-based framework</bold>.
+    (A) Cells are subjected to genetic and/or environmental perturbations to secrete
+    metabolite patterns unique to that condition. (B) EM is detected, identified,
+    and quantified. (C) EM data is integrated as required secretion flux constraints
+    to define allowable solution space. (D) Random sampling of solution space yields
+    the range of feasible flux distributions for intracellular reactions. (E) Sampled
+    fluxes were compared to sampled fluxes of another condition to determine which
+    metabolic regions were altered between the two conditions (see Figure 2). (F)
+    Significantly altered metabolic regions were identified.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
+  id: 1752-0509-3-37/F1
+  label: Figure 1
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Schematic of sampling
+    and scoring analysis to determine intracellular flux changes</bold>. (A) Reaction
+    fluxes are sampled for two conditions. (B &amp; C) Sample of flux differences
+    is calculated by selecting random flux values from each condition to obtain a
+    distribution of flux differences for each reaction. (D) Standardized reaction
+    <italic>Z</italic>-scores are determined, which represent how far the sampled
+    flux differences deviates from a zero flux change. Reaction scores can be used
+    in visualizing perturbation subnetworks and analyzing reporter metabolites and
+    subsystems.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
+  id: 1752-0509-3-37/F2
+  label: Figure 2
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Perturbation reaction
+    subnetwork of <italic>gdh1/GDH2 </italic>mutant under aerobic conditions</bold>.
+    The network illustrates a simplified subset of highly perturbed reactions connected
+    to aerobically-secreted metabolites predicted from the sampling analysis of the
+    <italic>gdh1/GDH2 </italic>mutant strain. The major secreted metabolites (glutamate,
+    proline, D-lactate, and 2-hydroxybuturate) were also detected in the anaerobic
+    condition. Metabolite abbreviations are found in Additional file <xref ref-type="supplementary-material"
+    rid="S1">1</xref>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
+  id: 1752-0509-3-37/F3
+  label: Figure 3
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Perturbation reaction
+    subnetwork of <italic>gdh1/GDH2 </italic>mutant under anaerobic conditions</bold>.
+    Subnetwork illustrates the highly perturbed anaerobic reactions of similar <italic>Z</italic><sub>reaction
+    </sub>magnitude to the reactions in Figure 3. A significantly larger number of
+    reactions indicates mutant metabolic effects are more widespread in the anaerobic
+    environment. The network shows that perturbed pathways converge on glutamate,
+    the main site in which the <italic>gdh1/GDH2 </italic>modification was introduced,
+    which suggests that the direct genetic perturbation effects are amplified under
+    this environment. Metabolite abbreviations are found in Additional file <xref
+    ref-type="supplementary-material" rid="S1">1</xref>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
+  id: 1752-0509-3-37/F4
+  label: Figure 4
+- caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Clustergram of top
+    reporter metabolites (i.e. in yellow) in ammonium-toxic and potassium-limited
+    conditions</bold>. Amino acid perturbation patterns (shown in red) were shown
+    to be consistently scored across conditions, indicating that potassium-limited
+    environments K1 (lowest concentration) and K2 (low concentration) elicited a similar
+    ammonium detoxification response as ammonium-toxic environments N1 (high concentration)
+    and N2 (highest concentration). Metabolites associated with folate metabolism
+    (highlighted in green) are also highly perturbed in ammonium-toxic conditions.
+    Metabolite abbreviations are found in Additional file <xref ref-type="supplementary-material"
+    rid="S1">1</xref>.</p>
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
+  id: 1752-0509-3-37/F5
+  label: Figure 5

@@ -1,9 +1,23 @@
 Tutorial
 ========
 
-The models in the BiGG repository can be imported in BioSimulations by running the command-line program as illustrated below::
+First, set the following environment variables
 
-   biosimulations-bigg
+* ``ENTREZ_EMAIL``: email address to credit queries to NCBI Entrez to (e.g., ``biosimulations.daemon@gmail.com``)
+* ``BIOSIMULATIONS_API_CLIENT_ID``: id of the client for the BioSimulations API
+* ``BIOSIMULATIONS_API_CLIENT_SECRET``: secret for this client
+
+Second, run the following command-line program to published the models in the BiGG repository to BioSimulations. This program downloads models from BiGG, converts them to COMBINE/OMEX archives, submits the archives to runBioSimulations, and publishes their simulation runs to BioSimulations. This program provides several optional arguments for forcing updates, skipping simulations, skipping publication, and more.::
+
+   biosimulations-bigg publish
+
+Third, the following command-line program can optionally be run to publish the runs of each model to BioSimulations. This is useful if the above publication program was run with the ``--skip-publication`` option.::
+
+   biosimulations-bigg publish-runs
+
+Fourth, run the following command-line program to verify that each model was successfully published to BioSimulations. This should be run several minutes after the publication step was run.::
+
+   biosimulations-bigg verify-publication
 
 Help for the command-line program is available inline by running::
 
@@ -21,7 +35,8 @@ The command-line program imports each BiGG models into BioSimulations as follows
 #. Converts the Escher flux maps to `Vega <https://vega.github.io/vega/>`_ data visualizations.
 #. Exports the metadata to a OMEX metadata-compliant RDF file. The list of curators is determined by ``biosimulations_bigg/final/curators.yml``. Individuals who contribute should add their name to this document.
 #. Packages the model, SED-ML, Escher and Vega flux maps, images, and metadata files into a `COMBINE/OMEX archive <https://combinearchive.org/>`_.
-#. Uses `BioSimultors-COBRApy <https://github.com/biosimulators/Biosimulators_COBRApy>`_ to execute the COMBINE/OMEX archive.
+#. Uses `BioSimulators-COBRApy <https://github.com/biosimulators/Biosimulators_COBRApy>`_ to test the execution the COMBINE/OMEX archive.
 #. Checks that the optimal objective value is positive.
-#. Submits the COMBINE/OMEX archive to RunBioSimulations.
+#. Submits the COMBINE/OMEX archive to runBioSimulations.
+#. Publishes the run of the archive to BioSimulations. 
 #. Updates the import status of the model in ``biosimulations_bigg/final/status.yml``

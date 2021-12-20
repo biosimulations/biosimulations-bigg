@@ -1,0 +1,81 @@
+encodes:
+  label: Yersinia pestis CO92, complete sequence
+  uri: https://www.ncbi.nlm.nih.gov/nuccore/16120353
+reference:
+  authors:
+  - Pep Charusanti
+  - Sadhana Chauhan
+  - Kathleen McAteer
+  - Joshua A Lerman
+  - Daniel R Hyduke
+  - Vladimir L Motin
+  - Charles Ansong
+  - Joshua N Adkins
+  - Bernhard O Palsson
+  date: '2011-10-13'
+  doi: 10.1186/1752-0509-5-163
+  issue: null
+  journal: BMC Systems Biology
+  pages: '163'
+  pubmed_central_id: PMC3220653
+  pubmed_id: '21995956'
+  title: An experimentally-supported genome-scale metabolic network reconstruction
+    for Yersinia pestis CO92
+  volume: '5'
+  year: '2011'
+taxon:
+  id: 214092
+  name: Yersinia pestis CO92
+thumbnails:
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>A.
+    Breakdown of the genes in iPC815 by COG classification</bold>. The COG classifications
+    that make up the Miscellaneous category are: K, L, Q, S, T, U, and V. <bold>B</bold>.
+    Venn diagrams showing the overlap between iPC815 and published <italic>E. coli</italic>,
+    <italic>S</italic>. Typhimurium, and <italic>Y. pestis </italic>91001 reconstructions
+    based on shared versus organism-specific reactions (<italic>E. coli </italic>and
+    <italic>S</italic>. Typhimurium) and E.C. numbers (<italic>Y. pestis </italic>91001).
+    In the latter case, an E.C. number associated with more than one reaction was
+    only counted once. The low overlap between iPC815 and the <italic>Y. pestis </italic>91001
+    reconstruction arises from the use of E.C. numbers to compare the two models rather
+    than true biological differences between the two strains.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
+  id: 1752-0509-5-163/F1
+  label: Figure 1
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Essential
+    gaps in key <italic>Y. pestis </italic>CO92 metabolic pathways</bold>. <bold>A</bold>.
+    The last step during each fatty acid elongation cycle involves the reduction of
+    an enoyl-ACP intermediate. In other Enterobacteria such as <italic>E. coli </italic>and
+    <italic>S</italic>. Typhimurium, FabI catalyzes this step; however, the current
+    annotation of the YP CO92 genome does not contain <italic>fabI</italic>. <bold>B</bold>.
+    The enzyme ArgD catalyzes the sixth step in the nine-step lysine biosynthesis
+    pathway, but <italic>argD </italic>(YPO0170) is disrupted in YP CO92. YPO1962
+    has the greatest homology to YPO0170 within the <italic>Y. pestis </italic>CO92
+    genome, and we hypothesize here that YPO1962 can replace the function of YPO0170.
+    Note: although each reaction in each pathway is depicted as unidirectional, some
+    are reversible.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
+  id: 1752-0509-5-163/F2
+  label: Figure 2
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Analysis
+    of possible defects within the <italic>Y. pestis </italic>CO92 rhamnose, melibiose,
+    and glycerol uptake pathways</bold>. Epidemic <italic>Y. pestis </italic>strains
+    such as CO92 cannot utilize rhamnose, and YP CO92 cannot ferment glycerol. The
+    dashed line indicates a reaction catalyzed by GlpD (YPO3937) that is present in
+    most other Enterobacteria but appears to be absent in YP CO92 due to a disruption
+    in an underlying gene. Abbreviations: rham, rhamnose; 1-P, 1-phosphate; 3-P: 3-phosphate;
+    DHAP, dihydroxyacetone phosphate; melib, melibiose; glc-D, D-glucose; galact,
+    galactose; glyc, glycerol; OMP, outer membrane porin. The suffixes [e], [p], and
+    [c] denote metabolites located in extracellular, periplasmic, and cytoplasmic
+    compartments, respectively.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
+  id: 1752-0509-5-163/F3
+  label: Figure 3
+- caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Breakdown
+    by COG classification of 146 genes predicted to be essential in <italic>Y. pestis
+    </italic>CO92</bold>. The 146 genes cover growth at both 25-28&#176;C and 37&#176;C
+    and on both glucose and gluconate defined media (Additional File <xref ref-type="supplementary-material"
+    rid="S2">2</xref>). The COG classifications that make up the Miscellaneous category
+    are: S, V, and Unassigned.</p>'
+  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
+  id: 1752-0509-5-163/F4
+  label: Figure 4
