@@ -167,8 +167,22 @@
                 
   <section id="tutorial">
 <h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
-<p>The models in the BiGG repository can be imported in BioSimulations by running the command-line program as illustrated below:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span>
+<p>First, set the following environment variables</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ENTREZ_EMAIL</span></code>: email address to credit queries to NCBI Entrez to (e.g., <code class="docutils literal notranslate"><span class="pre">biosimulations.daemon&#64;gmail.com</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BIOSIMULATIONS_API_CLIENT_ID</span></code>: id of the client for the BioSimulations API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BIOSIMULATIONS_API_CLIENT_SECRET</span></code>: secret for this client</p></li>
+</ul>
+<p>Second, run the following command-line program to published the models in the BiGG repository to BioSimulations. This program downloads models from BiGG, converts them to COMBINE/OMEX archives, submits the archives to runBioSimulations, and publishes their simulation runs to BioSimulations. This program provides several optional arguments for forcing updates, skipping simulations, skipping publication, and more.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span> <span class="n">publish</span>
+</pre></div>
+</div>
+<p>Third, the following command-line program can optionally be run to publish the runs of each model to BioSimulations. This is useful if the above publication program was run with the <code class="docutils literal notranslate"><span class="pre">--skip-publication</span></code> option.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span> <span class="n">publish</span><span class="o">-</span><span class="n">runs</span>
+</pre></div>
+</div>
+<p>Fourth, run the following command-line program to verify that each model was successfully published to BioSimulations. This should be run several minutes after the publication step was run.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">biosimulations</span><span class="o">-</span><span class="n">bigg</span> <span class="n">verify</span><span class="o">-</span><span class="n">publication</span>
 </pre></div>
 </div>
 <p>Help for the command-line program is available inline by running:</p>
@@ -187,9 +201,10 @@
 <li><p>Converts the Escher flux maps to <a class="reference external" href="https://vega.github.io/vega/">Vega</a> data visualizations.</p></li>
 <li><p>Exports the metadata to a OMEX metadata-compliant RDF file. The list of curators is determined by <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/curators.yml</span></code>. Individuals who contribute should add their name to this document.</p></li>
 <li><p>Packages the model, SED-ML, Escher and Vega flux maps, images, and metadata files into a <a class="reference external" href="https://combinearchive.org/">COMBINE/OMEX archive</a>.</p></li>
-<li><p>Uses <a class="reference external" href="https://github.com/biosimulators/Biosimulators_COBRApy">BioSimultors-COBRApy</a> to execute the COMBINE/OMEX archive.</p></li>
+<li><p>Uses <a class="reference external" href="https://github.com/biosimulators/Biosimulators_COBRApy">BioSimulators-COBRApy</a> to test the execution the COMBINE/OMEX archive.</p></li>
 <li><p>Checks that the optimal objective value is positive.</p></li>
-<li><p>Submits the COMBINE/OMEX archive to RunBioSimulations.</p></li>
+<li><p>Submits the COMBINE/OMEX archive to runBioSimulations.</p></li>
+<li><p>Publishes the run of the archive to BioSimulations.</p></li>
 <li><p>Updates the import status of the model in <code class="docutils literal notranslate"><span class="pre">biosimulations_bigg/final/status.yml</span></code></p></li>
 </ol>
 </section>
