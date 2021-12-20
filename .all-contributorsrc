@@ -13,12 +13,22 @@
       "contributions": [
         "code"
       ]
-    }  
+    },
+    {
+      "login": "SBRG",
+      "name": "Systems Biology Research Group",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4237829?v=4",
+      "profile": "http://systemsbiology.ucsd.edu/",
+      "contributions": [
+        "data"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "biosimulations-bigg",
   "projectOwner": "biosimulations",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "none"
 }
