@@ -53,8 +53,8 @@ def get_config(
         max_models=None,
         max_num_reactions=None,
         max_thumbnails=None,
-        update=False,
-        update_combine_archives=True,
+        update_combine_archives=False,
+        update_simulation_runs=False,
         simulate_models=True,
         publish_models=True,
         entrez_delay=5.,
@@ -80,8 +80,8 @@ def get_config(
         max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
-        update (:obj:`bool`, optional): whether to update models even if they have already been imported; used for testing
         update_combine_archives (:obj:`bool`, optional): whether to update COMBINE archives even if they already exist; used for testing
+        update_simulation_runs (:obj:`bool`, optional): whether to update models even if they have already been imported; used for testing
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         publish_models (:obj:`bool`, optional): whether to pushlish models; used for testing
         entrez_delay (:obj:`float`, optional): delay in between Entrez queries
@@ -154,8 +154,8 @@ def get_config(
         'max_models': max_models,
         'max_num_reactions': max_num_reactions,
         'max_thumbnails': max_thumbnails,
-        'update': update,
         'update_combine_archives': update_combine_archives,
+        'update_simulation_runs': update_simulation_runs,
         'simulate_models': simulate_models,
         'publish_models': publish_models,
         'entrez_delay': entrez_delay,
@@ -615,7 +615,7 @@ def import_models(config):
     models = model_details
 
     # filter out models that don't need to be imported because they've already been imported and haven't been updated
-    if not config['update']:
+    if not config['update_simulation_runs']:
         models = list(filter(
             lambda model:
             (

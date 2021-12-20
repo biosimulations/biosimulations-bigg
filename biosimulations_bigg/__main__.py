@@ -68,14 +68,14 @@ class PublishController(cement.Controller):
                 ),
             ),
             (
-                ['--update'],
+                ['--update-combine-archives'],
                 dict(
                     action='store_true',
                     help='If set, update models even if they have already been imported. Used for testing.'
                 ),
             ),
             (
-                ['--update-combine-archives'],
+                ['--update-simulation-runs'],
                 dict(
                     action='store_true',
                     help='If set, update models even if they have already been imported. Used for testing.'
@@ -109,8 +109,8 @@ class PublishController(cement.Controller):
         args = self.app.pargs
 
         config = get_config(max_models=args.max_models, max_num_reactions=args.max_num_reactions,
-                            update=args.update,
                             update_combine_archives=args.update_combine_archives,
+                            update_simulation_runs=args.update_simulation_runs,
                             simulate_models=not args.skip_simulation,
                             publish_models=not args.skip_publication,
                             dry_run=args.dry_run)
