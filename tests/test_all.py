@@ -27,13 +27,15 @@ class TestCase(unittest.TestCase):
             max_models=1,
             max_num_reactions=200,
         )
-        with mock.patch('biosimulators_utils.biosimulations.utils.submit_project_to_runbiosimulations', return_value='*' * 32):
-            import_models(config)
+        with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
+            with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
+                import_models(config)
 
     def test_cli(self):
-        with mock.patch('biosimulators_utils.biosimulations.utils.submit_project_to_runbiosimulations', return_value='*' * 32):
-            with mock.patch('sys.argv', ['', '--max-models', '1', '--max-num-reactions', '200']):
-                main()
+        with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
+            with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
+                with mock.patch('sys.argv', ['', '--max-models', '1', '--max-num-reactions', '200']):
+                    main()
 
     def test_cli_help(self):
         with mock.patch('sys.argv', ['', '--help']):

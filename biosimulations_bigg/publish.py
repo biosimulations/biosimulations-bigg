@@ -1,12 +1,13 @@
+from biosimulators_utils.config import Config
+import biosimulators_utils.biosimulations.utils
 import os
 import requests
+import sys
 import yaml
 
 
 STATUS_FILENAME = os.path.join(os.path.dirname(__file__), 'final', 'status.yml')
-BIOSIMULATIONS_API_ENDPOINT = 'https://api.biosimulations.org'
-BIOSIMULATIONS_API_AUTH_ENDPOINT = 'https://auth.biosimulations.org/oauth/token'
-BIOSIMULATIONS_API_AUDIENCE = 'dispatch.biosimulations.org'
+BIOSIMULATIONS_API_ENDPOINT = Config().BIOSIMULATIONS_API_ENDPOINT
 BIOSIMULATIONS_API_CLIENT_ID = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
 BIOSIMULATIONS_API_CLIENT_SECRET = os.getenv('BIOSIMULATIONS_API_CLIENT_SECRET')
 
@@ -20,7 +21,7 @@ def main():
     # check status
     failures = []
     for id, project in projects.items():
-        response = requests.get(BIOSIMULATIONS_API_ENDPOINT + '/runs/' + project['runbiosimulationsId'])
+        response = requests.get(BIOSIMULATIONS_API_ENDPOINT + 'runs/' + project['runbiosimulationsId'])
         response.raise_for_status()
         project['runbiosimulationsStatus'] = response.json()['status']
         if project['runbiosimulationsStatus'] != 'SUCCEEDED':
@@ -29,31 +30,36 @@ def main():
         raise ValueError('{} simulation runs did not succeed:\n  {}'.format(len(failures), '\n  '.join(sorted(failures))))
 
     # login to publish projects
-    response = requests.post(BIOSIMULATIONS_API_AUTH_ENDPOINT,
-                             json={
-                                 'client_id': BIOSIMULATIONS_API_CLIENT_ID,
-                                 'client_secret': BIOSIMULATIONS_API_CLIENT_SECRET,
-                                 'audience': BIOSIMULATIONS_API_AUDIENCE,
-                                 "grant_type": "client_credentials",
-                             })
-    response.raise_for_status()
-    response_data = response.json()
-    auth_headers = {'Authorization': response_data['token_type'] + ' ' + response_data['access_token']}
+    auth_headers = {
+        'Authorization': biosimulators_utils.biosimulations.utils.get_authorization_for_client(
+            BIOSIMULATIONS_API_CLIENT_ID, BIOSIMULATIONS_API_CLIENT_SECRET)
+    }
 
     # publish projects
-    for id, project in projects.items():
-        response = requests.get(BIOSIMULATIONS_API_ENDPOINT + '/projects/' + id)
+    print('Publishing or updating {} projects ...'.format(len(projects)))
+    for i_project, (id, project) in enumerate(projects.items()):
+        print('  {}: {} ... '.format(i_project + 1, id), end='')
+        sys.stdout.flush()
+
+        endpoint = BIOSIMULATIONS_API_ENDPOINT + 'projects/' + id
+
+        response = requests.get(endpoint)
 
         if response.status_code == 200:
             if response.json()['simulationRun'] == project['runbiosimulationsId']:
                 api_method = None
+                print('already up to date. ', end='')
+                sys.stdout.flush()
+
             else:
                 api_method = requests.put
-                endpoint = BIOSIMULATIONS_API_ENDPOINT + '/projects/' + id
+                print('updating ... ', end='')
+                sys.stdout.flush()
 
         else:
             api_method = requests.post
-            endpoint = BIOSIMULATIONS_API_ENDPOINT + '/projects'
+            print('publishing ... ', end='')
+            sys.stdout.flush()
 
         if api_method:
             response = api_method(endpoint,
@@ -63,6 +69,8 @@ def main():
                                       'simulationRun': project['runbiosimulationsId']
                                   })
             response.raise_for_status()
+
+        print('done.')
 
     # print message
     print('All {} projects were successfully published or updated'.format(len(projects)))

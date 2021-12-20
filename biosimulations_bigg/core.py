@@ -22,6 +22,7 @@ import datetime
 import dateutil.parser
 import os
 import pkg_resources
+import re
 import requests_cache
 import shutil
 import tempfile
@@ -37,6 +38,9 @@ ENTREZ_DELAY = 5.
 SOURCE_API_ENDPOINT = 'http://bigg.ucsd.edu/api/v2'
 SOURCE_MODEL_FILES_ENDPOINT = 'http://bigg.ucsd.edu/static'
 SOURCE_MAP_FILE_ENDPOINT = 'http://bigg.ucsd.edu/escher_map_json'
+
+BIOSIMULATIONS_API_CLIENT_ID = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
+BIOSIMULATIONS_API_CLIENT_SECRET = os.getenv('BIOSIMULATIONS_API_CLIENT_SECRET')
 
 __all__ = ['import_models', 'get_config']
 
@@ -55,6 +59,7 @@ def get_config(
         max_num_reactions=None,
         max_thumbnails=None,
         update=False,
+        update_combine_archives=True,
         simulate_models=True,
         dry_run=False,
 ):
@@ -74,6 +79,7 @@ def get_config(
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
         update (:obj:`bool`, optional): whether to update models even if they have already been imported
+        update_combine_archives (:obj:`bool`, optional): whether to update COMBINE archives even if they already exist
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
 
@@ -115,6 +121,7 @@ def get_config(
         'max_num_reactions': max_num_reactions,
         'max_thumbnails': max_thumbnails,
         'update': update,
+        'update_combine_archives': update_combine_archives,
         'simulate_models': simulate_models,
         'dry_run': dry_run,
     }
@@ -161,9 +168,11 @@ def get_model_details(model, config):
 
     # download flux map visualizations associated with the model
     for escher_map in model_detail['escher_maps']:
-        escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
+        map_name = escher_map['map_name']
+        standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+        escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
         if not os.path.isfile(escher_filename):
-            response = config['source_session'].get(SOURCE_MAP_FILE_ENDPOINT + '/' + escher_map['map_name'])
+            response = config['source_session'].get(SOURCE_MAP_FILE_ENDPOINT + '/' + map_name)
             response.raise_for_status()
             with open(escher_filename, 'wb') as file:
                 file.write(response.content)
@@ -329,7 +338,6 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
         'abstract': 'Flux balance analysis model of the metabolism of {}.'.format(taxon['name']),
         'keywords': [
             'metabolism',
-            'BiGG',
         ],
         'description': None,
         'taxa': [
@@ -585,6 +593,10 @@ def import_models(config):
     # filter out models with issues
     models = list(filter(lambda model: model['model_bigg_id'] not in issues, models))
 
+    # get authorization for BioSimulations API
+    auth = biosimulators_utils.biosimulations.utils.get_authorization_for_client(
+        BIOSIMULATIONS_API_CLIENT_ID, BIOSIMULATIONS_API_CLIENT_SECRET)
+
     # download models, convert them to COMBINE/OMEX archives, simulate them, and deposit them to the BioSimulations database
     for i_model, model in enumerate(models):
         model_filename = os.path.join(config['source_models_dirname'], model['model_bigg_id'] + '.xml')
@@ -626,18 +638,22 @@ def import_models(config):
         )
 
         for escher_map in escher_maps:
-            escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
-            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
+            map_name = escher_map['map_name']
+            standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+            escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
+
+            vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
             if not os.path.isfile(vega_filename):
                 reaction_fluxes_data_set = {
                     'sedmlUri': ['simulation.sedml', 'reaction_fluxes'],
                 }
                 escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
-            png_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.png')
+
+            png_filename = os.path.join(config['source_visualizations_dirname'], map_name + '.png')
             if os.path.isfile(png_filename):
                 thumbnails.append(mock.Mock(
                     filename=png_filename,
-                    location=escher_map['map_name'] + '.png',
+                    location=standardized_map_name + '.png',
                     format=CombineArchiveContentFormat.PNG,
                 ))
 
@@ -670,14 +686,16 @@ def import_models(config):
             format=CombineArchiveContentFormat.TEXT,
         )
         for escher_map in escher_maps:
-            escher_filename = os.path.join(config['source_visualizations_dirname'], escher_map['map_name'] + '.json')
-            vega_filename = os.path.join(config['final_visualizations_dirname'], escher_map['map_name'] + '.vg.json')
+            map_name = escher_map['map_name']
+            standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+            escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
+            vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
             extra_contents[escher_filename] = CombineArchiveContent(
-                location=escher_map['map_name'] + '.escher.json',
+                location=standardized_map_name + '.escher.json',
                 format=CombineArchiveContentFormat.Escher,
             )
             extra_contents[vega_filename] = CombineArchiveContent(
-                location=escher_map['map_name'] + '.vg.json',
+                location=standardized_map_name + '.vg.json',
                 format=CombineArchiveContentFormat.Vega,
             )
         for thumbnail in thumbnails:
@@ -686,12 +704,13 @@ def import_models(config):
                 format=thumbnail.format,
             )
 
-        build_combine_archive_for_model(model_filename, project_filename, extra_contents=extra_contents)
+        project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
+
+        if not os.path.isfile(project_filename) or config['update_combine_archives']:
+            build_combine_archive_for_model(model_filename, project_filename, extra_contents=extra_contents)
 
         # simulate COMBINE/OMEX archives
         print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
-
-        project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
 
         if config['simulate_models']:
             out_dirname = os.path.join(config['final_simulation_results_dirname'], model['model_bigg_id'])
@@ -713,12 +732,12 @@ def import_models(config):
             duration = status.get(model['model_bigg_id'], {}).get('duration', None)
 
         # submit COMBINE/OMEX archive to BioSimulations
-        if not config['dry_run']:
-            name = model['model_bigg_id']
-            runbiosimulations_id = biosimulators_utils.biosimulations.utils.submit_project_to_runbiosimulations(
-                name, project_filename, 'cobrapy')
-        else:
+        if config['dry_run']:
             runbiosimulations_id = None
+        else:
+            name = model['model_bigg_id']
+            runbiosimulations_id = biosimulators_utils.biosimulations.utils.run_simulation_project(
+                name, project_filename, 'cobrapy', project_id=name, auth=auth)
 
         # output status
         status[model['model_bigg_id']] = {

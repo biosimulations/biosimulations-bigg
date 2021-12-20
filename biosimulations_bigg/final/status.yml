@@ -1,670 +1,528 @@
 STM_v1_0:
-  created: '2021-10-09 01:10:05.595651'
-  duration: 50.920366
-  objective: 0.47783366076071954
-  runbiosimulationsId: 61612394e3fd865d21131795
-  updated: '2021-10-09 05:06:25.315892'
+  created: '2021-12-16 05:49:04.562597'
+  duration: 21.766007
+  objective: 0.47783366076072237
+  runbiosimulationsId: 61bad390dc9231ed7efb171b
+  updated: '2021-12-16 05:49:04.562597'
 e_coli_core:
-  created: '2021-10-09 01:24:51.428888'
-  duration: 1.719884
-  objective: 0.8739215069684303
-  runbiosimulationsId: 616123a604cd6f265f5fa751
-  updated: '2021-10-09 05:06:25.317893'
+  created: '2021-12-16 05:52:23.779157'
+  duration: 0.895919
+  objective: 0.8739215069684302
+  runbiosimulationsId: 61bad43d7ae88abc0e1e8143
+  updated: '2021-12-16 05:52:23.779157'
 iAB_RBC_283:
-  created: '2021-10-22 19:38:48.400825'
-  duration: 6.965178
+  created: '2021-12-16 05:52:23.780242'
+  duration: 2.980567
   objective: 2.9355614666666665
-  runbiosimulationsId: 61731375b2be97c51f9f68f3
-  updated: '2021-10-22 19:38:48.400825'
+  runbiosimulationsId: 61bad444a567fd7c8a32edd1
+  updated: '2021-12-16 05:52:23.780242'
 iAF1260:
-  created: '2021-10-09 01:24:51.433844'
-  duration: 46.189741
-  objective: 0.7367009388623597
-  runbiosimulationsId: 616123dbe3fd86c5b313179b
-  updated: '2021-10-09 05:06:25.321892'
+  created: '2021-12-16 05:52:23.781256'
+  duration: 19.771539
+  objective: 0.7367009388648753
+  runbiosimulationsId: 61bad4667ae88abc0e1e8164
+  updated: '2021-12-16 05:52:23.781256'
 iAF1260b:
-  created: '2021-10-09 01:24:51.435893'
-  duration: 46.580831
-  objective: 0.7367009388648791
-  runbiosimulationsId: 61611a4a09e391931f73ccf6
-  updated: '2021-10-09 04:25:06.931191'
+  created: '2021-12-16 05:52:23.782357'
+  duration: 27.848874
+  objective: 0.7367009388648843
+  runbiosimulationsId: 61bad48edc9231ed7efb176e
+  updated: '2021-12-16 05:52:23.782357'
 iAF987:
-  created: '2021-10-09 01:24:51.439970'
-  duration: 21.369668
-  objective: 0.04732237605613248
-  runbiosimulationsId: 616123f2e3fd861e8213179e
-  updated: '2021-10-09 05:06:25.328233'
+  created: '2021-12-16 05:52:23.784445'
+  duration: 8.708659
+  objective: 0.047322376056133195
+  runbiosimulationsId: 61bad49fdc9231ed7efb1776
+  updated: '2021-12-16 05:52:23.784445'
 iAM_Pb448:
-  created: '2021-10-09 01:24:51.441990'
-  duration: 16.601567
-  objective: 0.6586991858988221
-  runbiosimulationsId: 6161240c04cd6f089a5fa75d
-  updated: '2021-10-09 05:06:25.330393'
+  created: '2021-12-16 05:55:00.432529'
+  duration: 7.094705
+  objective: 0.6586991858988218
+  runbiosimulationsId: 61bad4e2dc9231ed7efb17b2
+  updated: '2021-12-16 05:55:00.432529'
 iAM_Pc455:
-  created: '2021-10-09 01:24:51.443914'
-  duration: 16.313131
+  created: '2021-12-16 05:55:00.433505'
+  duration: 7.134778
   objective: 0.6587010614860831
-  runbiosimulationsId: 6161242109e391379873ce08
-  updated: '2021-10-09 05:06:25.332434'
+  runbiosimulationsId: 61bad4ef7ae88abc0e1e81c8
+  updated: '2021-12-16 05:55:00.433505'
 iAM_Pf480:
-  created: '2021-10-09 01:24:51.445980'
-  duration: 16.809321
-  objective: 0.6871751707722257
-  runbiosimulationsId: 6161243704cd6fe5dd5fa76a
-  updated: '2021-10-09 05:06:25.334626'
+  created: '2021-12-16 05:55:00.434482'
+  duration: 7.216482
+  objective: 0.6871751707722246
+  runbiosimulationsId: 61bad4fda567fd7c8a32ee4c
+  updated: '2021-12-16 05:55:00.434482'
 iAM_Pk459:
-  created: '2021-10-09 01:24:51.447927'
-  duration: 16.317594
-  objective: 0.6871751707722252
-  runbiosimulationsId: 6161245109e3912fb373ce0e
-  updated: '2021-10-09 05:06:25.336641'
+  created: '2021-12-16 05:55:00.436064'
+  duration: 6.929149
+  objective: 0.6871751707722251
+  runbiosimulationsId: 61bad50e7ae88abc0e1e81d5
+  updated: '2021-12-16 05:55:00.436064'
 iAM_Pv461:
-  created: '2021-10-09 01:24:51.449924'
-  duration: 16.694907
-  objective: 0.6871751707722258
-  runbiosimulationsId: 6161246709e391404b73ce11
-  updated: '2021-10-09 05:06:25.338734'
+  created: '2021-12-16 05:55:00.437263'
+  duration: 7.102383
+  objective: 0.6871751707722247
+  runbiosimulationsId: 61bad51aa567fd7c8a32ee5b
+  updated: '2021-12-16 05:55:00.437263'
 iAPECO1_1312:
-  created: '2021-10-09 01:24:51.451922'
-  duration: 58.656738
-  objective: 0.9824784386660063
-  published: true
-  runbiosimulationsId: 61610db5e3fd86e7e013155f
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.451922'
+  created: '2021-12-16 05:57:44.210877'
+  duration: 21.797338
+  objective: 0.9824784386660038
+  runbiosimulationsId: 61bad5987ae88abc0e1e8227
+  updated: '2021-12-16 05:57:44.210877'
 iB21_1397:
-  created: '2021-10-09 01:24:51.455924'
-  duration: 58.157664
-  objective: 0.9756145115851372
-  published: true
-  runbiosimulationsId: 61610db6e3fd869d57131562
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.455924'
+  created: '2021-12-16 05:57:44.213416'
+  duration: 23.483789
+  objective: 0.9756145115851275
+  runbiosimulationsId: 61bad5bcdc9231ed7efb182b
+  updated: '2021-12-16 05:57:44.213416'
 iBWG_1329:
-  created: '2021-10-09 01:24:51.458795'
-  duration: 56.782871
-  objective: 0.9824784386659988
-  published: true
-  runbiosimulationsId: 61610db709e3911ff473cb86
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.458795'
-iCHOv1_DG44:
-  created: '2021-10-09 01:24:51.463068'
-  duration: 94.892735
-  objective: 0.010689973084939866
-  published: true
-  runbiosimulationsId: 61610db8e3fd864b76131565
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.463068'
+  created: '2021-12-16 05:57:44.214366'
+  duration: 21.930284
+  objective: 0.9824784386660068
+  runbiosimulationsId: 61bad5df7ae88abc0e1e8237
+  updated: '2021-12-16 05:57:44.214366'
 iE2348C_1286:
-  created: '2021-10-09 01:24:51.470012'
-  duration: 55.490785
-  objective: 0.9824784386660057
-  published: true
-  runbiosimulationsId: 61610dba04cd6fa71e5fa54a
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.470012'
-iEC042_1314:
-  created: '2021-10-09 01:24:51.471962'
-  duration: 57.569432
-  objective: 0.9824784386660057
-  published: true
-  runbiosimulationsId: 61610dbb09e391ba8773cb89
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.471962'
-iEC1344_C:
-  created: '2021-10-09 01:24:51.474072'
-  duration: 53.565146
-  objective: 0.9823963461342967
-  published: true
-  runbiosimulationsId: 61610dbc09e391673873cb8c
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.474072'
-iEC1349_Crooks:
-  created: '2021-10-09 01:24:51.475983'
-  duration: 54.878737
-  objective: 0.9865789307459482
-  published: true
-  runbiosimulationsId: 61610dbde3fd8639e4131568
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.475983'
-iEC1356_Bl21DE3:
-  created: '2021-10-09 01:24:51.477998'
-  duration: 53.925204
-  objective: 0.9767013604875463
-  published: true
-  runbiosimulationsId: 61610dbee3fd86485113156b
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.477998'
-iEC1364_W:
-  created: '2021-10-09 01:24:51.480845'
-  duration: 55.096637
-  objective: 0.9853648657315356
-  published: true
-  runbiosimulationsId: 61610dc004cd6f397b5fa54d
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.480845'
-iEC1368_DH5a:
-  created: '2021-10-09 01:24:51.482891'
-  duration: 55.19738
-  objective: 0.982396346134302
-  published: true
-  runbiosimulationsId: 61610dc104cd6f2d365fa550
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.482891'
-iEC1372_W3110:
-  created: '2021-10-09 01:24:51.484961'
-  duration: 55.422376
-  objective: 0.9823963461342998
-  published: true
-  runbiosimulationsId: 61610dc2e3fd86dba9131575
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.484961'
-iEC55989_1330:
-  created: '2021-10-09 01:24:51.487065'
-  duration: 56.078728
-  objective: 0.9824784386660169
-  published: true
-  runbiosimulationsId: 61610dc409e391199573cb9a
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.487065'
-iECABU_c1320:
-  created: '2021-10-09 01:24:51.489442'
-  duration: 54.472528
-  objective: 0.982478438666008
-  published: true
-  runbiosimulationsId: 61610dc509e391fae173cb9d
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.489442'
-iECBD_1354:
-  created: '2021-10-09 01:24:51.491551'
-  duration: 55.406194
-  objective: 0.9756145115851256
-  published: true
-  runbiosimulationsId: 61610dc604cd6f2a785fa554
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.491551'
-iECB_1328:
-  created: '2021-10-09 01:24:51.493595'
-  duration: 54.705842
-  objective: 0.9824784386660156
-  published: true
-  runbiosimulationsId: 61610dc8e3fd865ead131579
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.493595'
-iECDH10B_1368:
-  created: '2021-10-09 01:24:51.496390'
-  duration: 55.17824
-  objective: 1.0374775435499868
-  published: true
-  runbiosimulationsId: 61610dc904cd6f50a25fa557
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.496390'
-iECDH1ME8569_1439:
-  created: '2021-10-09 01:24:51.498495'
-  duration: 55.66233
-  objective: 0.9824784386660047
-  published: true
-  runbiosimulationsId: 61610dca04cd6f89755fa55a
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.498495'
-iECD_1391:
-  created: '2021-10-09 01:24:51.500444'
-  duration: 55.041956
-  objective: 0.9756145115851269
-  published: true
-  runbiosimulationsId: 61610dcb04cd6fba985fa55d
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.500444'
-iECED1_1282:
-  created: '2021-10-09 01:24:51.502523'
-  duration: 54.553575
-  objective: 0.9824634433767987
-  published: true
-  runbiosimulationsId: 61610dcce3fd86202f13157c
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.502523'
-iECH74115_1262:
-  created: '2021-10-09 01:24:51.504460'
-  duration: 53.462053
-  objective: 0.9824784386660085
-  published: true
-  runbiosimulationsId: 61610dcd04cd6f29595fa560
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.504460'
-iECIAI1_1343:
-  created: '2021-10-09 01:24:51.507022'
-  duration: 58.048796
-  objective: 20.52222562979408
-  published: true
-  runbiosimulationsId: 61610dcfe3fd86b83913157f
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.507022'
-iECIAI39_1322:
-  created: '2021-10-09 01:24:51.509296'
-  duration: 55.244123
-  objective: 0.9828409640719176
-  published: true
-  runbiosimulationsId: 61610dd109e3913e8f73cba2
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.509296'
-iECNA114_1301:
-  created: '2021-10-09 01:24:51.511268'
-  duration: 54.768609
-  objective: 0.9824784386660028
-  published: true
-  runbiosimulationsId: 61610dd2e3fd862531131582
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.511268'
-iECO103_1326:
-  created: '2021-10-09 01:24:51.513345'
-  duration: 57.039783
-  objective: 0.9824784386660116
-  published: true
-  runbiosimulationsId: 61610dd304cd6ffd235fa563
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.513345'
-iECO111_1330:
-  created: '2021-10-09 01:24:51.515540'
-  duration: 56.787489
-  objective: 0.9824784386660066
-  published: true
-  runbiosimulationsId: 61610dd504cd6f0ad95fa566
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.515540'
-iECO26_1355:
-  created: '2021-10-09 01:24:51.518516'
-  duration: 57.609694
-  objective: 0.9824784386660026
-  published: true
-  runbiosimulationsId: 61610dd604cd6f3f1b5fa569
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.518516'
-iECOK1_1307:
-  created: '2021-10-09 01:24:51.520554'
-  duration: 57.252215
-  objective: 0.9824784386660044
-  published: true
-  runbiosimulationsId: 61610dd704cd6f95e75fa56c
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.520554'
-iECP_1309:
-  created: '2021-10-09 01:24:51.522603'
-  duration: 56.257036
-  objective: 0.9824784386660069
-  published: true
-  runbiosimulationsId: 61610dd8e3fd868151131585
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.522603'
-iECS88_1305:
-  created: '2021-10-09 01:24:51.524641'
-  duration: 56.491904
-  objective: 0.9824784386660042
-  published: true
-  runbiosimulationsId: 61610dd904cd6fd33a5fa56f
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.524641'
-iECSE_1348:
-  created: '2021-10-09 01:24:51.526725'
-  duration: 56.899049
-  objective: 0.9824784386660079
-  published: true
-  runbiosimulationsId: 61610ddae3fd86b468131588
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.526725'
-iECSF_1327:
-  created: '2021-10-09 01:24:51.530074'
-  duration: 57.143163
-  objective: 0.9824784386660061
-  published: true
-  runbiosimulationsId: 61610ddc09e391824473cba5
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.530074'
-iECSP_1301:
-  created: '2021-10-09 01:24:51.532178'
-  duration: 55.691515
-  objective: 0.9824784386660048
-  published: true
-  runbiosimulationsId: 61610ddd04cd6f4cf65fa573
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.532178'
-iECUMN_1333:
-  created: '2021-10-09 01:24:51.534264'
-  duration: 57.881582
-  objective: 0.9826920127837668
-  published: true
-  runbiosimulationsId: 61610dde09e391848f73cba8
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.534264'
-iECW_1372:
-  created: '2021-10-09 01:24:51.536236'
-  duration: 58.149919
-  objective: 0.9824784386660042
-  published: true
-  runbiosimulationsId: 616115a8e3fd8620bd1316d1
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.536236'
-iECs_1301:
-  created: '2021-10-09 01:24:51.539149'
-  duration: 55.621986
-  objective: 0.9824784386660019
-  published: true
-  runbiosimulationsId: 61610de109e391d0e773cbaf
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.539149'
-iEK1008:
-  created: '2021-10-09 01:24:51.541450'
-  duration: 26.093293
-  objective: 0.058173872989698415
-  runbiosimulationsId: 6161247e04cd6f40a75fa77a
-  updated: '2021-10-09 05:06:25.426205'
-iETEC_1333:
-  created: '2021-10-09 01:24:51.547203'
-  duration: 57.484579
-  objective: 0.9824784386660037
-  published: true
-  runbiosimulationsId: 61610de309e3917eb573cbba
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.547203'
-iEcDH1_1363:
-  created: '2021-10-09 01:24:51.549623'
-  duration: 57.821436
-  objective: 0.9824784386659973
-  published: true
-  runbiosimulationsId: 61610de404cd6f196c5fa582
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.549623'
-iEcE24377_1341:
-  created: '2021-10-09 01:24:51.551713'
-  duration: 57.656874
-  objective: 0.9824784386694726
-  published: true
-  runbiosimulationsId: 61610de609e391e6bf73cbbe
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.551713'
-iEcHS_1320:
-  created: '2021-10-09 01:24:51.553851'
-  duration: 57.274119
-  objective: 0.9824784386660025
-  published: true
-  runbiosimulationsId: 61610de7e3fd86528a1315a6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.553851'
-iEcSMS35_1347:
-  created: '2021-10-09 01:24:51.556040'
-  duration: 57.250931
-  objective: 0.9824784386660084
-  published: true
-  runbiosimulationsId: 61610de804cd6f1c8d5fa586
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.556040'
-iEcolC_1368:
-  created: '2021-10-09 01:24:51.558074'
-  duration: 57.807946
-  objective: 0.9824784386660097
-  published: true
-  runbiosimulationsId: 61610de9e3fd8642c91315ab
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.558074'
-iG2583_1286:
-  created: '2021-10-09 01:24:51.560156'
-  duration: 56.906638
-  objective: 0.9824784386660096
-  published: true
-  runbiosimulationsId: 61610deb09e391214273cbd6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.560156'
-iHN637:
-  created: '2021-10-09 01:24:51.562175'
-  duration: 12.450421
-  objective: 0.22445454211988486
-  runbiosimulationsId: 61612493e3fd86f9b51317b0
-  updated: '2021-10-09 05:06:25.446880'
-iIT341:
-  created: '2021-10-09 01:24:51.574492'
-  duration: 8.252942
-  objective: 0.6928126934734464
-  published: true
-  runbiosimulationsId: 61610dee04cd6f26bd5fa58b
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.574492'
-iJN678:
-  created: '2021-10-09 01:24:51.582197'
-  duration: 14.62995
-  objective: 0.06314983713171121
-  published: true
-  runbiosimulationsId: 61610def04cd6fbd0c5fa58f
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.582197'
-iJN746:
-  created: '2021-10-09 01:24:51.584379'
-  duration: 17.453049
-  objective: 1.4
-  runbiosimulationsId: 616124ad04cd6f25045fa781
-  updated: '2021-10-09 05:06:25.469309'
-iJO1366:
-  created: '2021-10-09 01:24:51.586658'
-  duration: 52.076513
-  objective: 0.9823718127269835
-  runbiosimulationsId: 616124cc09e391539673ce1f
-  updated: '2021-10-09 05:06:25.471540'
-iJR904:
-  created: '2021-10-09 01:24:51.589274'
-  duration: 17.542281
-  objective: 0.9219480950504655
-  runbiosimulationsId: 616124e4e3fd864aba1317b6
-  updated: '2021-10-09 05:06:25.473892'
-iLF82_1304:
-  created: '2021-10-09 01:24:51.593481'
-  duration: 56.060632
+  created: '2021-12-16 05:57:44.219199'
+  duration: 22.348773
   objective: 0.9824784386660054
-  published: true
-  runbiosimulationsId: 61610dfa04cd6f26cb5fa5a3
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.593481'
-iLJ478:
-  created: '2021-10-09 01:24:51.595465'
-  duration: 9.835712
-  objective: 0.22840679202946793
-  published: true
-  runbiosimulationsId: 61610dfb09e3917b3f73cbe7
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.595465'
-iML1515:
-  created: '2021-10-09 01:24:51.598352'
-  duration: 57.893677
-  objective: 0.8769972144269748
-  published: true
-  runbiosimulationsId: 61610dfc04cd6f18fa5fa5a8
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.598352'
-iMM904:
-  created: '2021-10-09 01:24:51.603322'
-  duration: 31.971434
-  objective: 0.28786570370401793
-  runbiosimulationsId: 616124fc09e391327673ce28
-  updated: '2021-10-09 05:06:25.486318'
-iND750:
-  created: '2021-10-09 01:24:51.607203'
-  duration: 21.323896
-  objective: 0.0973233759037678
-  published: true
-  runbiosimulationsId: 61610e0009e391794473cbea
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.607203'
-iNF517:
-  created: '2021-10-09 01:24:51.609604'
-  duration: 11.499862
-  objective: 0.0426346054433733
-  published: true
-  runbiosimulationsId: 61610e0104cd6f67355fa5ac
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 01:24:51.609604'
-iNJ661:
-  created: '2021-10-09 02:50:02.078202'
-  duration: 15.681181
-  objective: 0.052549801008500305
-  runbiosimulationsId: 6161251109e391b45973ce2d
-  updated: '2021-10-09 05:06:25.493405'
-iNRG857_1313:
-  created: '2021-10-09 02:50:02.080232'
-  duration: 54.119917
-  objective: 0.9824784386660126
-  published: true
-  runbiosimulationsId: 61610e03e3fd86dc011315b6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.080232'
-iPC815:
-  created: '2021-10-09 02:50:02.082334'
-  duration: 36.551338
-  objective: 0.2835583812148244
-  runbiosimulationsId: 6161252be3fd8669461317bc
-  updated: '2021-10-09 05:06:25.497783'
-iSB619:
-  created: '2021-10-09 02:50:02.098650'
-  duration: 11.625586
-  objective: 0.15805029160278705
-  runbiosimulationsId: 6161254009e39170db73ce34
-  updated: '2021-10-09 05:06:25.502095'
-iSBO_1134:
-  created: '2021-10-09 02:50:02.100847'
-  duration: 51.075951
-  objective: 0.39988012494534053
-  published: true
-  runbiosimulationsId: 61610e0604cd6f7c685fa5b5
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.100847'
-iSDY_1059:
-  created: '2021-10-09 02:50:02.103657'
-  duration: 48.807188
-  objective: 0.9378903140618764
-  published: true
-  runbiosimulationsId: 61610e0709e39148f673cbed
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.103657'
-iSFV_1184:
-  created: '2021-10-09 02:50:02.106067'
-  duration: 51.024123
-  objective: 0.8938577495747843
-  published: true
-  runbiosimulationsId: 61610e0809e391d67873cbf0
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.106067'
-iSF_1195:
-  created: '2021-10-09 02:50:02.108198'
-  duration: 51.405917
-  objective: 0.9145918468942452
-  published: true
-  runbiosimulationsId: 61610e0904cd6f551f5fa5b8
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.108198'
-iSFxv_1172:
-  created: '2021-10-09 02:50:02.110435'
-  duration: 51.586281
-  objective: 0.8940890261581892
-  published: true
-  runbiosimulationsId: 61610e0ae3fd86f0421315bc
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.110435'
-iSSON_1240:
-  created: '2021-10-09 02:50:02.112436'
-  duration: 52.958117
-  objective: 0.9826450753012028
-  published: true
-  runbiosimulationsId: 61610e0c09e39102de73cbf3
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.112436'
-iS_1188:
-  created: '2021-10-09 02:50:02.114548'
-  duration: 51.489059
-  objective: 0.8570768327332383
-  published: true
-  runbiosimulationsId: 61610e0d09e391671773cbf6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.114548'
-iSbBS512_1146:
-  created: '2021-10-09 02:50:02.116833'
-  duration: 50.364919
-  objective: 0.9828118163906598
-  published: true
-  runbiosimulationsId: 61610e0ee3fd86703c1315c0
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.116833'
-iUMN146_1321:
-  created: '2021-10-09 02:50:02.121296'
-  duration: 54.16095
-  objective: 0.9824784386660005
-  published: true
-  runbiosimulationsId: 61610e10e3fd8693e11315c3
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.121296'
-iUMNK88_1353:
-  created: '2021-10-09 02:50:02.123721'
-  duration: 55.897641
+  runbiosimulationsId: 61bad632a567fd7c8a32eed7
+  updated: '2021-12-16 05:57:44.219199'
+iEC042_1314:
+  created: '2021-12-16 06:21:23.230911'
+  duration: 23.860673
+  objective: 0.9824784386660037
+  runbiosimulationsId: 61badb5741b17ddeb82e8e4e
+  updated: '2021-12-16 06:21:23.230911'
+iEC1344_C:
+  created: '2021-12-16 06:21:23.231913'
+  duration: 23.194733
+  objective: 0.9823963461343024
+  runbiosimulationsId: 61badb7b41b17ddeb82e8e55
+  updated: '2021-12-16 06:21:23.231913'
+iEC1349_Crooks:
+  created: '2021-12-16 06:21:23.232875'
+  duration: 24.241215
+  objective: 0.9865789307459379
+  runbiosimulationsId: 61badb9ea567fd7c8a32efb9
+  updated: '2021-12-16 06:21:23.232875'
+iEC1356_Bl21DE3:
+  created: '2021-12-16 06:21:23.233837'
+  duration: 23.509692
+  objective: 0.9767013604875486
+  runbiosimulationsId: 61badbc041b17ddeb82e8e77
+  updated: '2021-12-16 06:21:23.233837'
+iEC1364_W:
+  created: '2021-12-16 06:31:27.483327'
+  duration: 23.703355
+  objective: 0.985364865731541
+  runbiosimulationsId: 61badd817f627fdee8207a08
+  updated: '2021-12-16 06:31:27.483327'
+iEC1368_DH5a:
+  created: '2021-12-16 06:31:27.484374'
+  duration: 23.152078
+  objective: 0.9823963461343005
+  runbiosimulationsId: 61badda4a567fd7c8a32f007
+  updated: '2021-12-16 06:31:27.484374'
+iEC1372_W3110:
+  created: '2021-12-16 06:31:27.485345'
+  duration: 22.911995
+  objective: 0.9823963461343017
+  runbiosimulationsId: 61baddc77f627fdee8207a1b
+  updated: '2021-12-16 06:31:27.485345'
+iEC55989_1330:
+  created: '2021-12-16 06:48:37.118134'
+  duration: 23.510043
+  objective: 0.9824784386660044
+  runbiosimulationsId: 61bae1867f627fdee8207a39
+  updated: '2021-12-16 06:48:37.118134'
+iECABU_c1320:
+  created: '2021-12-16 06:48:37.119920'
+  duration: 23.01578
+  objective: 0.9824784386660046
+  runbiosimulationsId: 61bae1a941b17ddeb82e8ec0
+  updated: '2021-12-16 06:48:37.119920'
+iECBD_1354:
+  created: '2021-12-16 06:48:37.121082'
+  duration: 23.270729
+  objective: 0.9756145115851277
+  runbiosimulationsId: 61bae1cb7f627fdee8207a47
+  updated: '2021-12-16 06:48:37.121082'
+iECB_1328:
+  created: '2021-12-16 06:48:37.122098'
+  duration: 23.572784
+  objective: 0.9824784386660049
+  runbiosimulationsId: 61bae1ee41b17ddeb82e8ef8
+  updated: '2021-12-16 06:48:37.122098'
+iECDH10B_1368:
+  created: '2021-12-16 06:53:12.129457'
+  duration: 26.165167
+  objective: 1.0374775435499828
+  runbiosimulationsId: 61bae29c41b17ddeb82e8f14
+  updated: '2021-12-16 06:53:12.129457'
+iECDH1ME8569_1439:
+  created: '2021-12-16 06:53:12.130395'
+  duration: 23.116703
+  objective: 0.9824784386660054
+  runbiosimulationsId: 61bae2be41b17ddeb82e8f19
+  updated: '2021-12-16 06:53:12.130395'
+iECD_1391:
+  created: '2021-12-16 06:53:12.131344'
+  duration: 22.58498
+  objective: 0.9756145115851259
+  runbiosimulationsId: 61bae2dfa567fd7c8a32f0fb
+  updated: '2021-12-16 06:53:12.131344'
+iECED1_1282:
+  created: '2021-12-16 14:14:17.817785'
+  duration: 23.540524
+  objective: 0.9824634433768036
+  runbiosimulationsId: 61bb49fca567fd7c8a32f137
+  updated: '2021-12-16 14:14:17.817785'
+iECH74115_1262:
+  created: '2021-12-16 14:14:17.818815'
+  duration: 22.779425
+  objective: 0.9824784386660097
+  runbiosimulationsId: 61bb4a1ea567fd7c8a32f13f
+  updated: '2021-12-16 14:14:17.818815'
+iECIAI1_1343:
+  created: '2021-12-16 14:32:05.914259'
+  duration: 23.031637
+  objective: 20.52222562979419
+  runbiosimulationsId: 61bb4e27c3338613266df510
+  updated: '2021-12-16 14:32:05.914259'
+iECIAI39_1322:
+  created: '2021-12-16 14:32:05.915236'
+  duration: 22.82012
+  objective: 0.9828409640719113
+  runbiosimulationsId: 61bb4e4b95b6ce0842447ba2
+  updated: '2021-12-16 14:32:05.915236'
+iECNA114_1301:
+  created: '2021-12-16 14:32:05.916308'
+  duration: 23.997796
+  objective: 0.9824784386660026
+  runbiosimulationsId: 61bb4e6ec3338613266df523
+  updated: '2021-12-16 14:32:05.916308'
+iECO103_1326:
+  created: '2021-12-16 14:32:05.917292'
+  duration: 23.065153
+  objective: 0.9824784386660087
+  runbiosimulationsId: 61bb4e9095b6ce0842447bbf
+  updated: '2021-12-16 14:32:05.917292'
+iECO111_1330:
+  created: '2021-12-16 14:32:05.918254'
+  duration: 23.502656
+  objective: 0.9824784386660049
+  runbiosimulationsId: 61bb4eb395b6ce0842447bcc
+  updated: '2021-12-16 14:32:05.918254'
+iECO26_1355:
+  created: '2021-12-16 14:32:05.919233'
+  duration: 22.972869
+  objective: 0.982478438666008
+  runbiosimulationsId: 61bb4ed5c3338613266df56a
+  updated: '2021-12-16 14:32:05.919233'
+iECOK1_1307:
+  created: '2021-12-16 14:32:05.920334'
+  duration: 24.354329
   objective: 0.982478438666002
-  published: true
-  runbiosimulationsId: 61610e12e3fd86f3131315cb
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.123721'
+  runbiosimulationsId: 61bb4ef941b17ddeb82e9001
+  updated: '2021-12-16 14:32:05.920334'
+iECP_1309:
+  created: '2021-12-16 14:32:05.921353'
+  duration: 23.735537
+  objective: 0.9824784386660033
+  runbiosimulationsId: 61bb4f1a41b17ddeb82e9011
+  updated: '2021-12-16 14:32:05.921353'
+iECS88_1305:
+  created: '2021-12-16 14:32:05.922320'
+  duration: 24.270337
+  objective: 0.9824784386660055
+  runbiosimulationsId: 61bb4f3f95b6ce0842447c61
+  updated: '2021-12-16 14:32:05.922320'
+iECSE_1348:
+  created: '2021-12-16 14:32:05.923285'
+  duration: 23.287687
+  objective: 0.9824784386660044
+  runbiosimulationsId: 61bb4f6956e79ac90d3346ac
+  updated: '2021-12-16 14:32:05.923285'
+iECSF_1327:
+  created: '2021-12-16 14:32:05.924338'
+  duration: 22.808959
+  objective: 0.982478438666005
+  runbiosimulationsId: 61bb4f9495b6ce0842447ccb
+  updated: '2021-12-16 14:32:05.924338'
+iECSP_1301:
+  created: '2021-12-16 14:32:05.925353'
+  duration: 22.28481
+  objective: 0.98247843866601
+  runbiosimulationsId: 61bb4fb595b6ce0842447cdb
+  updated: '2021-12-16 14:32:05.925353'
+iECUMN_1333:
+  created: '2021-12-16 14:32:05.926313'
+  duration: 23.178115
+  objective: 0.982692012783774
+  runbiosimulationsId: 61bb4fdedcae11fb620ccc0d
+  updated: '2021-12-16 14:32:05.926313'
+iECW_1372:
+  created: '2021-12-16 14:32:05.927279'
+  duration: 24.122191
+  objective: 0.9824784386660036
+  runbiosimulationsId: 61bb500495b6ce0842447d1c
+  updated: '2021-12-16 14:32:05.927279'
+iECs_1301:
+  created: '2021-12-16 14:32:05.928286'
+  duration: 22.724319
+  objective: 0.9824784386660047
+  runbiosimulationsId: 61bb5025dcae11fb620ccc63
+  updated: '2021-12-16 14:32:05.928286'
+iEK1008:
+  created: '2021-12-16 14:32:05.929238'
+  duration: 10.68785
+  objective: 0.0581738729896984
+  runbiosimulationsId: 61bb503795b6ce0842447d3a
+  updated: '2021-12-16 14:32:05.929238'
+iETEC_1333:
+  created: '2021-12-16 14:32:05.931167'
+  duration: 23.341197
+  objective: 0.982478438666005
+  runbiosimulationsId: 61bb50580b3179cecc6c2682
+  updated: '2021-12-16 14:32:05.931167'
+iEcDH1_1363:
+  created: '2021-12-16 14:32:05.932216'
+  duration: 22.96128
+  objective: 0.98247843866601
+  runbiosimulationsId: 61bb507bdcae11fb620cccbe
+  updated: '2021-12-16 14:32:05.932216'
+iEcE24377_1341:
+  created: '2021-12-16 14:32:05.933185'
+  duration: 23.211738
+  objective: 0.982478438666004
+  runbiosimulationsId: 61bb509cdcae11fb620cccc7
+  updated: '2021-12-16 14:32:05.933185'
+iEcHS_1320:
+  created: '2021-12-16 14:32:05.934141'
+  duration: 23.540031
+  objective: 0.9824784386660086
+  runbiosimulationsId: 61bb50c60b3179cecc6c26bb
+  updated: '2021-12-16 14:32:05.934141'
+iEcSMS35_1347:
+  created: '2021-12-16 14:32:05.935122'
+  duration: 22.856331
+  objective: 0.982478438666006
+  runbiosimulationsId: 61bb50e8dcae11fb620ccce5
+  updated: '2021-12-16 14:32:05.935122'
+iEcolC_1368:
+  created: '2021-12-16 14:32:05.936239'
+  duration: 23.007057
+  objective: 0.9824784386660068
+  runbiosimulationsId: 61bb510939b7ed2ba15e352f
+  updated: '2021-12-16 14:32:05.936239'
+iG2583_1286:
+  created: '2021-12-16 14:32:05.937545'
+  duration: 22.280546
+  objective: 0.9824784386660048
+  runbiosimulationsId: 61bb51350b3179cecc6c2704
+  updated: '2021-12-16 14:32:05.937545'
+iHN637:
+  created: '2021-12-16 14:32:05.938624'
+  duration: 5.152584
+  objective: 0.22445454211988544
+  runbiosimulationsId: 61bb514d39b7ed2ba15e356e
+  updated: '2021-12-16 14:32:05.938624'
+iIT341:
+  created: '2021-12-16 14:32:05.943500'
+  duration: 3.464829
+  objective: 0.692812693473446
+  runbiosimulationsId: 61bb515439b7ed2ba15e3571
+  updated: '2021-12-16 14:32:05.943500'
+iJN678:
+  created: '2021-12-16 14:32:05.946445'
+  duration: 5.88488
+  objective: 0.06314993754142186
+  runbiosimulationsId: 61bb5161dcae11fb620ccd3a
+  updated: '2021-12-16 14:32:05.946445'
+iJN746:
+  created: '2021-12-16 14:32:05.947419'
+  duration: 7.150394
+  objective: 1.4
+  runbiosimulationsId: 61bb516c0b3179cecc6c273b
+  updated: '2021-12-16 14:32:05.947419'
+iJO1366:
+  created: '2021-12-16 16:12:38.625356'
+  duration: 23.333951
+  objective: 0.9823718127269794
+  runbiosimulationsId: 61bb65b8dcae11fb620ccd92
+  updated: '2021-12-16 16:12:38.625356'
+iJR904:
+  created: '2021-12-16 16:12:38.626358'
+  duration: 7.77577
+  objective: 0.9219480950504676
+  runbiosimulationsId: 61bb65c739b7ed2ba15e35ce
+  updated: '2021-12-16 16:12:38.626358'
+iLF82_1304:
+  created: '2021-12-16 16:12:38.628571'
+  duration: 25.297163
+  objective: 0.9824784386660039
+  runbiosimulationsId: 61bb65ebdcae11fb620ccd9e
+  updated: '2021-12-16 16:12:38.628571'
+iLJ478:
+  created: '2021-12-16 16:12:38.629628'
+  duration: 4.34775
+  objective: 0.2284067920294667
+  runbiosimulationsId: 61bb65f539b7ed2ba15e3605
+  updated: '2021-12-16 16:12:38.629628'
+iML1515:
+  created: '2021-12-16 16:12:38.630665'
+  duration: 25.656768
+  objective: 0.8769972144269736
+  runbiosimulationsId: 61bb661839b7ed2ba15e361e
+  updated: '2021-12-16 16:12:38.630665'
+iMM904:
+  created: '2021-12-16 16:12:38.632818'
+  duration: 12.112625
+  objective: 0.28786570370401704
+  runbiosimulationsId: 61bb662e39b7ed2ba15e3629
+  updated: '2021-12-16 16:12:38.632818'
+iND750:
+  created: '2021-12-16 16:12:38.633847'
+  duration: 9.354126
+  objective: 0.09732337590376772
+  runbiosimulationsId: 61bb663f0b3179cecc6c27f2
+  updated: '2021-12-16 16:12:38.633847'
+iNF517:
+  created: '2021-12-16 16:12:38.634883'
+  duration: 5.20573
+  objective: 0.04263460544337326
+  runbiosimulationsId: 61bb664a0b3179cecc6c27fa
+  updated: '2021-12-16 16:12:38.634883'
+iNJ661:
+  created: '2021-12-16 16:12:38.636253'
+  duration: 7.181504
+  objective: 0.05254980100850084
+  runbiosimulationsId: 61bb665739b7ed2ba15e3665
+  updated: '2021-12-16 16:12:38.636253'
+iNRG857_1313:
+  created: '2021-12-16 16:12:38.637350'
+  duration: 25.181492
+  objective: 0.9824784386660058
+  runbiosimulationsId: 61bb667b07e805d6c41c5f5a
+  updated: '2021-12-16 16:12:38.637350'
+iPC815:
+  created: '2021-12-16 16:12:38.638446'
+  duration: 15.940688
+  objective: 0.28355838121482524
+  runbiosimulationsId: 61bb669ac03cef4a3dbadc89
+  updated: '2021-12-16 16:12:38.638446'
+iSB619:
+  created: '2021-12-16 16:12:38.640499'
+  duration: 5.099091
+  objective: 0.158050291602793
+  runbiosimulationsId: 61bb66a607e805d6c41c5f92
+  updated: '2021-12-16 16:12:38.640499'
+iSBO_1134:
+  created: '2021-12-16 16:12:38.641462'
+  duration: 22.912446
+  objective: 0.3998801249453399
+  runbiosimulationsId: 61bb66c507e805d6c41c5fa0
+  updated: '2021-12-16 16:12:38.641462'
+iSDY_1059:
+  created: '2021-12-16 16:12:38.642440'
+  duration: 22.821255
+  objective: 0.9378903140618766
+  runbiosimulationsId: 61bb66e407e805d6c41c5fc8
+  updated: '2021-12-16 16:12:38.642440'
+iSFV_1184:
+  created: '2021-12-16 16:12:38.643659'
+  duration: 23.915554
+  objective: 0.8938577495747733
+  runbiosimulationsId: 61bb6707c03cef4a3dbadccf
+  updated: '2021-12-16 16:12:38.643659'
+iSF_1195:
+  created: '2021-12-16 16:21:09.832978'
+  duration: 22.700232
+  objective: 0.9145918468942533
+  runbiosimulationsId: 61bb67b6c03cef4a3dbadcf7
+  updated: '2021-12-16 16:21:09.832978'
+iSFxv_1172:
+  created: '2021-12-16 16:21:09.833950'
+  duration: 23.000672
+  objective: 0.8940890261581943
+  runbiosimulationsId: 61bb67d607e805d6c41c5ffe
+  updated: '2021-12-16 16:21:09.833950'
+iSSON_1240:
+  created: '2021-12-16 16:21:09.834897'
+  duration: 24.076186
+  objective: 0.9826450753011996
+  runbiosimulationsId: 61bb67f7c03cef4a3dbadd01
+  updated: '2021-12-16 16:21:09.834897'
+iS_1188:
+  created: '2021-12-16 16:21:09.835917'
+  duration: 22.849153
+  objective: 0.857076832733238
+  runbiosimulationsId: 61bb681b38bb4b0c93caff45
+  updated: '2021-12-16 16:21:09.835917'
+iSbBS512_1146:
+  created: '2021-12-16 16:21:09.837062'
+  duration: 22.662358
+  objective: 0.9828118163906594
+  runbiosimulationsId: 61bb683b07e805d6c41c6030
+  updated: '2021-12-16 16:21:09.837062'
+iUMN146_1321:
+  created: '2021-12-16 16:21:09.839223'
+  duration: 24.632229
+  objective: 0.982478438666005
+  runbiosimulationsId: 61bb685d07e805d6c41c6041
+  updated: '2021-12-16 16:21:09.839223'
+iUMNK88_1353:
+  created: '2021-12-16 16:21:09.840350'
+  duration: 25.114986
+  objective: 0.9824784386660063
+  runbiosimulationsId: 61bb688007e805d6c41c605d
+  updated: '2021-12-16 16:21:09.840350'
 iUTI89_1310:
-  created: '2021-10-09 02:50:02.125883'
-  duration: 54.17621
-  objective: 0.9824784386659983
-  published: true
-  runbiosimulationsId: 61610e1304cd6feb655fa5bb
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.125883'
+  created: '2021-12-16 16:21:09.841338'
+  duration: 24.518743
+  objective: 0.98247843866601
+  runbiosimulationsId: 61bb68a307e805d6c41c606b
+  updated: '2021-12-16 16:21:09.841338'
 iWFL_1372:
-  created: '2021-10-09 02:50:02.127862'
-  duration: 56.128948
-  objective: 0.9824784386660106
-  published: true
-  runbiosimulationsId: 61610e1404cd6f11965fa5be
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.127862'
+  created: '2021-12-16 16:21:09.842361'
+  duration: 25.706046
+  objective: 0.982478438666007
+  runbiosimulationsId: 61bb68cb38bb4b0c93caffa9
+  updated: '2021-12-16 16:21:09.842361'
 iY75_1357:
-  created: '2021-10-09 02:50:02.129885'
-  duration: 55.406075
-  objective: 0.9824784386660079
-  published: true
-  runbiosimulationsId: 61610e1509e39105a073cc01
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.129885'
+  created: '2021-12-16 16:21:09.843345'
+  duration: 25.28975
+  objective: 0.9824784386660051
+  runbiosimulationsId: 61bb68f238bb4b0c93caffb7
+  updated: '2021-12-16 16:21:09.843345'
 iYL1228:
-  created: '2021-10-09 02:50:02.131819'
-  duration: 42.654309
-  objective: 1.0426374979773791
-  published: true
-  runbiosimulationsId: 61610e1704cd6f4bbd5fa5c6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.131819'
+  created: '2021-12-16 16:21:09.844772'
+  duration: 19.003744
+  objective: 1.0426374979773834
+  runbiosimulationsId: 61bb690e38bb4b0c93caffc4
+  updated: '2021-12-16 16:21:09.844772'
 iYO844:
-  created: '2021-10-09 02:50:02.134136'
-  duration: 20.809387
-  objective: 0.1179663893223982
-  published: true
-  runbiosimulationsId: 61610e1809e391974373cc05
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.134136'
+  created: '2021-12-16 16:21:09.846244'
+  duration: 9.139056
+  objective: 0.11796638932239921
+  runbiosimulationsId: 61bb692e07e805d6c41c60be
+  updated: '2021-12-16 16:21:09.846244'
 iYS854:
-  created: '2021-10-09 02:50:02.139101'
-  duration: 31.450983
-  objective: 1.360224986987768
-  runbiosimulationsId: 61612559e3fd865bb81317c0
-  updated: '2021-10-09 05:06:25.541570'
+  created: '2021-12-16 16:29:11.766694'
+  duration: 13.199464
+  objective: 1.3602249869877756
+  runbiosimulationsId: 61bb698c48f42dceb5bc553a
+  updated: '2021-12-16 16:29:11.766694'
 iZ_1308:
-  created: '2021-10-09 02:50:02.141725'
-  duration: 54.228049
-  objective: 0.9824784386660081
-  published: true
-  runbiosimulationsId: 616115d404cd6f27805fa68f
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.141725'
+  created: '2021-12-16 16:29:11.767766'
+  duration: 23.970582
+  objective: 0.9824784386660028
+  runbiosimulationsId: 61bb69af48f42dceb5bc553f
+  updated: '2021-12-16 16:29:11.767766'
 ic_1306:
-  created: '2021-10-09 02:50:02.144023'
-  duration: 54.074254
-  objective: 1.0319222801126817
-  published: true
-  runbiosimulationsId: 61610e1de3fd86cbf61315d6
-  runbiosimulationsStatus: SUCCEEDED
-  updated: '2021-10-09 02:50:02.144023'
+  created: '2021-12-16 16:29:11.768748'
+  duration: 24.281891
+  objective: 1.031922280112681
+  runbiosimulationsId: 61bb69d248f42dceb5bc554c
+  updated: '2021-12-16 16:29:11.768748'
