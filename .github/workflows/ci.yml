@@ -67,6 +67,47 @@ jobs:
           flags: unittests
           file: ./coverage.xml
 
+      # compile documentation
+      - name: Install the requirements for compiling the documentation
+        run: python -m pip install -r docs-src/requirements.txt
+
+      - name: Compile the documentation
+        run: |
+          sphinx-apidoc . setup.py --output-dir docs-src/source --force --module-first --no-toc
+          mkdir -p docs-src/_static
+          sphinx-build docs-src docs
+
+  release:
+    name: Release a new version
+    needs: [build]
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+      # checkout coe
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: dev
+
+      # install Python and Pip
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements.optional.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
       # compile package
       - name: Install twine
         run: |
@@ -99,7 +140,6 @@ jobs:
 
       # Push the compiled documentation
       - id: commit-docs
-        if: startsWith(github.ref, 'refs/tags/')
         name: Commit the compiled documentation
         run: |
           git config --local user.email "biosimulations.daemon@gmail.com"
@@ -119,7 +159,7 @@ jobs:
           echo "::set-output name=docsChanged::$docsChanged"
 
       - name: Push the compiled documentation
-        if: startsWith(github.ref, 'refs/tags/') && steps.commit-docs.outputs.docsChanged == '1'
+        if: steps.commit-docs.outputs.docsChanged == '1'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -127,7 +167,6 @@ jobs:
 
       # Create PyPI release
       - name: Upload packages to PyPI
-        if: startsWith(github.ref, 'refs/tags/')
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
@@ -136,7 +175,6 @@ jobs:
 
       # Create GitHub release
       - name: Create GitHub release
-        if: startsWith(github.ref, 'refs/tags/')
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
