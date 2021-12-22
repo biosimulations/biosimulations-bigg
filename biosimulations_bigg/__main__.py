@@ -1,4 +1,5 @@
-from .core import import_models, get_config
+from .config import get_config
+from .core import import_models
 from ._version import __version__
 from biosimulators_utils.config import get_config as get_biosimulators_config
 import biosimulators_utils.biosimulations.utils

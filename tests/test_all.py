@@ -1,15 +1,46 @@
 from biosimulations_bigg import __main__
 from biosimulations_bigg._version import __version__
-from biosimulations_bigg.core import import_models, get_config
+from biosimulations_bigg.core import import_models
+from biosimulations_bigg.config import get_config
 from unittest import mock
 import Bio.Entrez
+import biosimulations_bigg.__main__
 import capturer
 import os
+import requests_cache
 import shutil
 import tempfile
 import unittest
 
 Bio.Entrez.email = 'biosimulations.daemon@gmail.com'
+
+
+class MockCrossRefSessionResponse:
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return {
+            'message': {
+                'title': [''],
+                'container-title': [''],
+                'volume': '',
+                'published': {
+                    'date-parts': [
+                        [
+                            2021,
+                            12,
+                            31,
+                        ]
+                    ]
+                }
+            }
+        }
+
+
+class MockCrossRefSession:
+    def get(self, url):
+        return MockCrossRefSessionResponse()
 
 
 class TestCase(unittest.TestCase):
@@ -30,6 +61,9 @@ class TestCase(unittest.TestCase):
             max_models=1,
             max_num_reactions=200,
         )
+
+        config['cross_ref_session'] = MockCrossRefSession()
+
         with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
             with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
                 import_models(config)
@@ -41,14 +75,21 @@ class TestCase(unittest.TestCase):
             'FINAL_DIRNAME': os.path.join(self.dirname, 'final'),
             'STATUS_FILENAME': os.path.join(self.dirname, 'final', 'status.yml'),
         }):
+            def mock_get_config(**args):
+                config = get_config(**args)
+                config['cross_ref_session'] = MockCrossRefSession()
+                return config
+
             with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
                 with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
-                    with __main__.App(argv=[
-                        'publish',
-                        '--max-models', '1',
-                        '--max-num-reactions', '200',
-                    ]) as app:
-                        app.run()
+                    import biosimulations_bigg.config
+                    with mock.patch.object(biosimulations_bigg.__main__, 'get_config', side_effect=mock_get_config):
+                        with __main__.App(argv=[
+                            'publish',
+                            '--max-models', '1',
+                            '--max-num-reactions', '200',
+                        ]) as app:
+                            app.run()
 
     def test_cli_help(self):
         with mock.patch('sys.argv', ['', '--help']):
