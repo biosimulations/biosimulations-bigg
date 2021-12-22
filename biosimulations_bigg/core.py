@@ -782,7 +782,7 @@ def import_models(config):
             else:
                 project_id = None
             runbiosimulations_id = biosimulators_utils.biosimulations.utils.run_simulation_project(
-                name, project_filename, 'cobrapy', project_id=project_id, auth=auth)
+                name, project_filename, 'cobrapy', project_id=project_id, purpose='academic', auth=auth)
             updated = str(update_times[model['model_bigg_id']])
 
         # output status
