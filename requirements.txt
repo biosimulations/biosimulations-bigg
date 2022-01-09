@@ -1,6 +1,7 @@
 biopython
 biosimulators_cobrapy
 biosimulators_utils[escher] >= 0.1.152
+boto3
 cement
 pyyaml
 python_dateutil
