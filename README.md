@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/biosimulations/biosimulations-bigg/HEAD)](#contributors-)
 
 # BioSimulations-BiGG
-BioSimulations-BiGG provides a command-line application for importing the [BiGG model repository](http://bigg.ucsd.edu/) of flux balance models into the [BioSimulations](https://biosimulations.org) repository for simulation projects.
+BioSimulations-BiGG provides a command-line application for publishing the [BiGG model repository](http://bigg.ucsd.edu/) of flux balance models to the [BioSimulations](https://biosimulations.org) repository for simulation projects.
 
 This command-line program is run weekly by the GitHub action in this repository.
 

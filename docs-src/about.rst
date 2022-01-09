@@ -19,4 +19,4 @@ This work was supported by National Institutes of Health award P41EB023912.
 
 Questions and comments
 ----------------------
-Please contact the `BioSimulations Team <mailto:info@biosimulations.org>`_ with any questions or comments about this package. Please contact the `BiGG Team <https://github.com/SBRG/bigg_models/issues>` with any questions or comments about BiGG.
+Please contact the `BioSimulations Team <mailto:info@biosimulations.org>`_ with any questions or comments about this package. Please contact the `BiGG Team <https://github.com/SBRG/bigg_models/issues>`_ with any questions or comments about BiGG.

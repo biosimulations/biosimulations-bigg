@@ -32,7 +32,7 @@ setuptools.setup(
     name='biosimulations-bigg',
     version=md.version,
     description=(
-        "Command-line program for importing the BiGG model repository into BioSimulations."
+        "Command-line program for publishing the BiGG model repository to BioSimulations."
     ),
     long_description=md.long_description,
     url="https://github.com/biosimulations/biosimulations-bigg",

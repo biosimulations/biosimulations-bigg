@@ -6,6 +6,12 @@ First, set the following environment variables
 * ``ENTREZ_EMAIL``: email address to credit queries to NCBI Entrez to (e.g., ``biosimulations.daemon@gmail.com``)
 * ``BIOSIMULATIONS_API_CLIENT_ID``: id of the client for the BioSimulations API
 * ``BIOSIMULATIONS_API_CLIENT_SECRET``: secret for this client
+* ``BUCKET_ENDPOINT``: Endpoint for uploading COMBINE archives to be published to an S3 bucket
+* ``BUCKET_PUBLIC_ENDPOINT``: Endpoint which the BioSimulations API can use to download COMBINE archives submitted to it
+* ``BUCKET_NAME``: Name of the bucket
+* ``BUCKET_PREFIX``: Prefix to store COMBINE archives in the bucket
+* ``BUCKET_ACCESS_KEY_ID``: Access key for the bucket
+* ``BUCKET_SECRET_ACCESS_KEY``: Secret for the access key
 
 Second, run the following command-line program to published the models in the BiGG repository to BioSimulations. This program downloads models from BiGG, converts them to COMBINE/OMEX archives, submits the archives to runBioSimulations, and publishes their simulation runs to BioSimulations. This program provides several optional arguments for forcing updates, skipping simulations, skipping publication, and more.::
 
