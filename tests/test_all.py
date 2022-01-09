@@ -43,6 +43,14 @@ class MockCrossRefSession:
         return MockCrossRefSessionResponse()
 
 
+class MockS3Bucket:
+    def __init__(self, name):
+        pass
+
+    def upload_file(self, *args, **kwargs):
+        pass
+
+
 class TestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -60,13 +68,15 @@ class TestCase(unittest.TestCase):
             status_filename=os.path.join(self.dirname, 'final', 'status.yml'),
             max_models=1,
             max_num_reactions=200,
+            bucket_name='bucket',
         )
 
         config['cross_ref_session'] = MockCrossRefSession()
 
         with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
             with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
-                import_models(config)
+                with mock.patch('boto3.resource', return_value=mock.Mock(Bucket=MockS3Bucket)):
+                    import_models(config)
 
     def test_cli(self):
         with mock.patch.dict('os.environ', {
@@ -74,6 +84,7 @@ class TestCase(unittest.TestCase):
             'SESSIONS_DIRNAME': os.path.join(self.dirname, 'source'),
             'FINAL_DIRNAME': os.path.join(self.dirname, 'final'),
             'STATUS_FILENAME': os.path.join(self.dirname, 'final', 'status.yml'),
+            'BUCKET_NAME': 'bucket',
         }):
             def mock_get_config(**args):
                 config = get_config(**args)
@@ -82,14 +93,15 @@ class TestCase(unittest.TestCase):
 
             with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
                 with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
-                    import biosimulations_bigg.config
-                    with mock.patch.object(biosimulations_bigg.__main__, 'get_config', side_effect=mock_get_config):
-                        with __main__.App(argv=[
-                            'publish',
-                            '--max-models', '1',
-                            '--max-num-reactions', '200',
-                        ]) as app:
-                            app.run()
+                    with mock.patch('boto3.resource', return_value=mock.Mock(Bucket=MockS3Bucket)):
+                        import biosimulations_bigg.config
+                        with mock.patch.object(biosimulations_bigg.__main__, 'get_config', side_effect=mock_get_config):
+                            with __main__.App(argv=[
+                                'publish',
+                                '--max-models', '1',
+                                '--max-num-reactions', '200',
+                            ]) as app:
+                                app.run()
 
     def test_cli_help(self):
         with mock.patch('sys.argv', ['', '--help']):

@@ -17,6 +17,7 @@ from biosimulators_utils.warnings import BioSimulatorsWarning
 from unittest import mock
 import biosimulators_cobrapy
 import biosimulators_utils.biosimulations.utils
+import boto3
 import dataclasses
 import datetime
 import dateutil.parser
@@ -500,6 +501,14 @@ def import_models(config):
     # filter out models with issues
     models = list(filter(lambda model: model['model_bigg_id'] not in issues, models))
 
+    # get S3 bucket to save archives
+    s3 = boto3.resource('s3',
+                        endpoint_url=config['bucket_endpoint'],
+                        aws_access_key_id=config['bucket_access_key_id'],
+                        aws_secret_access_key=config['bucket_secret_access_key'],
+                        verify=False)
+    bucket = s3.Bucket(config['bucket_name'])
+
     # get authorization for BioSimulations API
     auth = biosimulators_utils.biosimulations.utils.get_authorization_for_client(
         config['biosimulations_api_client_id'], config['biosimulations_api_client_secret'])
@@ -649,8 +658,13 @@ def import_models(config):
                 project_id = name
             else:
                 project_id = None
+
+            project_bucket_key = '{}{}.omex'.format(config['bucket_prefix'], model['model_bigg_id'])
+            bucket.upload_file(project_filename, project_bucket_key, ExtraArgs={'ACL': 'public-read'})
+            project_url = '{}{}'.format(config['bucket_public_endpoint'], project_bucket_key)
+
             runbiosimulations_id = biosimulators_utils.biosimulations.utils.run_simulation_project(
-                name, project_filename, 'cobrapy', project_id=project_id, purpose='academic', auth=auth)
+                name, project_url, 'cobrapy', project_id=project_id, purpose='academic', auth=auth)
             updated = str(update_times[model['model_bigg_id']])
 
         # output status

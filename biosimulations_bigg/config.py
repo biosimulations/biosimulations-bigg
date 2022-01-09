@@ -31,6 +31,12 @@ def get_config(
         simulate_models=True,
         publish_models=True,
         entrez_delay=5.,
+        bucket_endpoint=None,
+        bucket_public_endpoint=None,
+        bucket_name=None,
+        bucket_prefix=None,
+        bucket_access_key_id=None,
+        bucket_secret_access_key=None,
         biosimulations_api_client_id=None,
         biosimulations_api_client_secret=None,
         dry_run=False,
@@ -58,6 +64,12 @@ def get_config(
         simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
         publish_models (:obj:`bool`, optional): whether to pushlish models; used for testing
         entrez_delay (:obj:`float`, optional): delay in between Entrez queries
+        bucket_endpoint (:obj:`str`, optional): endpoint for storage bucket
+        bucket_public_endpoint (:obj:`str`, optional): public endpoint for storage bucket
+        bucket_name (:obj:`str`, optional): name of storage bucket
+        bucket_prefix (:obj:`str`, optional): prefix for storing files in the storage bucket
+        bucket_access_key_id (:obj:`str`, optional): key id for storage bucket
+        bucket_secret_access_key (:obj:`str`, optional): access key for storage bucket
         biosimulations_api_client_id (:obj:`str`, optional): id for client to the BioSimulations API
         biosimulations_api_client_secret (:obj:`str`, optional): secret for client to the BioSimulations API
         dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
@@ -85,6 +97,19 @@ def get_config(
     if extra_visualizations_filename is None:
         extra_visualizations_filename = os.getenv('EXTRA_VISUALIZATIONS_FILENAME',
                                                   os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'))
+    if bucket_endpoint is None:
+        bucket_endpoint = os.getenv('BUCKET_ENDPOINT')
+    if bucket_public_endpoint is None:
+        bucket_public_endpoint = os.getenv('BUCKET_PUBLIC_ENDPOINT')
+    if bucket_name is None:
+        bucket_name = os.getenv('BUCKET_NAME')
+    if bucket_prefix is None:
+        bucket_prefix = os.getenv('BUCKET_PREFIX')
+    if bucket_access_key_id is None:
+        bucket_access_key_id = os.getenv('BUCKET_ACCESS_KEY_ID')
+    if bucket_secret_access_key is None:
+        bucket_secret_access_key = os.getenv('BUCKET_SECRET_ACCESS_KEY')
+
     if biosimulations_api_client_id is None:
         biosimulations_api_client_id = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
     if biosimulations_api_client_secret is None:
@@ -132,6 +157,12 @@ def get_config(
         'simulate_models': simulate_models,
         'publish_models': publish_models,
         'entrez_delay': entrez_delay,
+        'bucket_endpoint': bucket_endpoint,
+        'bucket_public_endpoint': bucket_public_endpoint,
+        'bucket_name': bucket_name,
+        'bucket_prefix': bucket_prefix,
+        'bucket_access_key_id': bucket_access_key_id,
+        'bucket_secret_access_key': bucket_secret_access_key,
         'biosimulations_api_client_id': biosimulations_api_client_id,
         'biosimulations_api_client_secret': biosimulations_api_client_secret,
         'dry_run': dry_run,
