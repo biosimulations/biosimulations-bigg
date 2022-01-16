@@ -1,6 +1,6 @@
 biopython
 biosimulators_cobrapy
-biosimulators_utils[escher] >= 0.1.152
+biosimulators_utils[escher] ==0.1.159
 boto3
 cement
 pyyaml
