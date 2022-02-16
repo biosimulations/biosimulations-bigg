@@ -21,16 +21,16 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
+
       GRB_WLSACCESSID: ${{ secrets.GRB_WLSACCESSID }}
       GRB_WLSSECRET: ${{ secrets.GRB_WLSSECRET }}
       GRB_LICENSEID: ${{ secrets.GRB_LICENSEID }}
+
       BIOSIMULATIONS_API_CLIENT_ID: ${{ secrets.BIOSIMULATIONS_API_CLIENT_ID }}
       BIOSIMULATIONS_API_CLIENT_SECRET: ${{ secrets.BIOSIMULATIONS_API_CLIENT_SECRET }}
-      BUCKET_ENDPOINT_DOMAIN_PORT: 4443
-      BUCKET_ENDPOINT: https://localhost:4443
-      BUCKET_PUBLIC_ENDPOINT: ${{ secrets.BUCKET_PUBLIC_ENDPOINT }}
+
+      BUCKET_ENDPOINT: ${{ secrets.BUCKET_ENDPOINT }}
       BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-      BUCKET_PREFIX: ${{ secrets.BUCKET_PREFIX }}
       BUCKET_ACCESS_KEY_ID: ${{ secrets.BUCKET_ACCESS_KEY_ID }}
       BUCKET_SECRET_ACCESS_KEY: ${{ secrets.BUCKET_SECRET_ACCESS_KEY }}
     steps:
@@ -64,24 +64,9 @@ jobs:
       - name: Install the package
         run: python -m pip install .
 
-      # Setup SSH connection for S3 bucket
-      - name: Set up SSH connection for S3 bucket
-        run: |
-          mkdir -p ~/.ssh
-          chmod 0700 ~/.ssh
-          echo "${{ secrets.BUCKET_SSH_KEY }}" > ~/.ssh/id_bucket_ssh
-          chmod 600 ~/.ssh/id_bucket_ssh
-          ssh-keyscan -H ${{ secrets.BUCKET_SSH_HOST }} >> ~/.ssh/known_hosts
-
       # Publish models to BioSimulations
       - name: Publish models to BioSimulations
         run: |
-          ssh \
-            -i ~/.ssh/id_bucket_ssh \
-            -L ${BUCKET_ENDPOINT_DOMAIN_PORT}:${{ secrets.BUCKET_ENDPOINT }}:443 \
-            -fNT \
-            ${{ secrets.BUCKET_SSH_USERNAME }}@${{ secrets.BUCKET_SSH_HOST }}
-
           if [ "${{ github.event.inputs.updateCombineArchives }}" = "1" ]; then
             args="--update-combine-archives --update-simulation-runs"
           else

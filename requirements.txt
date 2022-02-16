@@ -5,5 +5,6 @@ boto3
 cement
 pyyaml
 python_dateutil
+python_dotenv
 requests_cache
 setuptools

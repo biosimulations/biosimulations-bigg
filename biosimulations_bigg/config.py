@@ -1,4 +1,5 @@
 import datetime
+import dotenv
 import os
 import pkg_resources
 import requests_cache
@@ -32,9 +33,7 @@ def get_config(
         publish_models=True,
         entrez_delay=5.,
         bucket_endpoint=None,
-        bucket_public_endpoint=None,
         bucket_name=None,
-        bucket_prefix=None,
         bucket_access_key_id=None,
         bucket_secret_access_key=None,
         biosimulations_api_client_id=None,
@@ -65,9 +64,7 @@ def get_config(
         publish_models (:obj:`bool`, optional): whether to pushlish models; used for testing
         entrez_delay (:obj:`float`, optional): delay in between Entrez queries
         bucket_endpoint (:obj:`str`, optional): endpoint for storage bucket
-        bucket_public_endpoint (:obj:`str`, optional): public endpoint for storage bucket
         bucket_name (:obj:`str`, optional): name of storage bucket
-        bucket_prefix (:obj:`str`, optional): prefix for storing files in the storage bucket
         bucket_access_key_id (:obj:`str`, optional): key id for storage bucket
         bucket_secret_access_key (:obj:`str`, optional): access key for storage bucket
         biosimulations_api_client_id (:obj:`str`, optional): id for client to the BioSimulations API
@@ -78,42 +75,43 @@ def get_config(
         obj:`dict`: configuration
     """
 
+    env = {
+        **dotenv.dotenv_values("secret.env"),
+        **os.environ,
+    }
+
     if source_dirname is None:
-        source_dirname = os.getenv('SOURCE_DIRNAME', os.path.join(BASE_DIR, 'source'))
+        source_dirname = env.get('SOURCE_DIRNAME', os.path.join(BASE_DIR, 'source'))
     if source_license_filename is None:
-        source_license_filename = os.getenv('SOURCE_LICENSE_FILENAME', os.path.join(BASE_DIR, 'source', 'LICENSE'))
+        source_license_filename = env.get('SOURCE_LICENSE_FILENAME', os.path.join(BASE_DIR, 'source', 'LICENSE'))
     if sessions_dirname is None:
-        sessions_dirname = os.getenv('SESSIONS_DIRNAME', os.path.join(BASE_DIR, 'source'))
+        sessions_dirname = env.get('SESSIONS_DIRNAME', os.path.join(BASE_DIR, 'source'))
     if final_dirname is None:
-        final_dirname = os.getenv('FINAL_DIRNAME', os.path.join(BASE_DIR, 'final'))
+        final_dirname = env.get('FINAL_DIRNAME', os.path.join(BASE_DIR, 'final'))
     if curators_filename is None:
-        curators_filename = os.getenv('CURATORS_FILENAME', os.path.join(BASE_DIR, 'final', 'curators.yml'))
+        curators_filename = env.get('CURATORS_FILENAME', os.path.join(BASE_DIR, 'final', 'curators.yml'))
     if issues_filename is None:
-        issues_filename = os.getenv('ISSUES_FILENAME', os.path.join(BASE_DIR, 'final', 'issues.yml'))
+        issues_filename = env.get('ISSUES_FILENAME', os.path.join(BASE_DIR, 'final', 'issues.yml'))
     if status_filename is None:
-        status_filename = os.getenv('STATUS_FILENAME', os.path.join(BASE_DIR, 'final', 'status.yml'))
+        status_filename = env.get('STATUS_FILENAME', os.path.join(BASE_DIR, 'final', 'status.yml'))
     if thumbnails_filename is None:
-        thumbnails_filename = os.getenv('THUMBNAILS_FILENAME', os.path.join(BASE_DIR, 'final', 'thumbnails.yml'))
+        thumbnails_filename = env.get('THUMBNAILS_FILENAME', os.path.join(BASE_DIR, 'final', 'thumbnails.yml'))
     if extra_visualizations_filename is None:
-        extra_visualizations_filename = os.getenv('EXTRA_VISUALIZATIONS_FILENAME',
-                                                  os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'))
+        extra_visualizations_filename = env.get('EXTRA_VISUALIZATIONS_FILENAME',
+                                                os.path.join(BASE_DIR, 'final', 'extra-visualizations.yml'))
     if bucket_endpoint is None:
-        bucket_endpoint = os.getenv('BUCKET_ENDPOINT')
-    if bucket_public_endpoint is None:
-        bucket_public_endpoint = os.getenv('BUCKET_PUBLIC_ENDPOINT')
+        bucket_endpoint = env.get('BUCKET_ENDPOINT')
     if bucket_name is None:
-        bucket_name = os.getenv('BUCKET_NAME')
-    if bucket_prefix is None:
-        bucket_prefix = os.getenv('BUCKET_PREFIX')
+        bucket_name = env.get('BUCKET_NAME')
     if bucket_access_key_id is None:
-        bucket_access_key_id = os.getenv('BUCKET_ACCESS_KEY_ID')
+        bucket_access_key_id = env.get('BUCKET_ACCESS_KEY_ID')
     if bucket_secret_access_key is None:
-        bucket_secret_access_key = os.getenv('BUCKET_SECRET_ACCESS_KEY')
+        bucket_secret_access_key = env.get('BUCKET_SECRET_ACCESS_KEY')
 
     if biosimulations_api_client_id is None:
-        biosimulations_api_client_id = os.getenv('BIOSIMULATIONS_API_CLIENT_ID')
+        biosimulations_api_client_id = env.get('BIOSIMULATIONS_API_CLIENT_ID')
     if biosimulations_api_client_secret is None:
-        biosimulations_api_client_secret = os.getenv('BIOSIMULATIONS_API_CLIENT_SECRET')
+        biosimulations_api_client_secret = env.get('BIOSIMULATIONS_API_CLIENT_SECRET')
 
     with open(curators_filename, 'r') as file:
         curators = yaml.load(file, Loader=yaml.Loader)
@@ -158,9 +156,7 @@ def get_config(
         'publish_models': publish_models,
         'entrez_delay': entrez_delay,
         'bucket_endpoint': bucket_endpoint,
-        'bucket_public_endpoint': bucket_public_endpoint,
         'bucket_name': bucket_name,
-        'bucket_prefix': bucket_prefix,
         'bucket_access_key_id': bucket_access_key_id,
         'bucket_secret_access_key': bucket_secret_access_key,
         'biosimulations_api_client_id': biosimulations_api_client_id,
