@@ -28,7 +28,7 @@ thumbnails:
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Reconstruction
     workflow.</bold> Iterative reconciliatory reconstruction workflow adopted for
     generating the metabolic model for <italic>C. ljungdahlii</italic>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
   id: 1475-2859-12-118/F1
   label: Figure 1
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Characterizing
@@ -44,7 +44,7 @@ thumbnails:
     as the nitrogen source. Purple line represents fructose, green line represents
     OD<sub>600</sub>, brown line represents acetate, red line represents nitrate and
     orange line represents ammonia measurements respectively.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
   id: 1475-2859-12-118/F2
   label: Figure 2
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Energy
@@ -64,7 +64,7 @@ thumbnails:
     hydrogenase for the reduction of ferredoxin from hydrogen during autotrophic growth.
     Yellow nodes indicate the oxidized form of reducing equivalents and blue nodes
     indicate the reduced form.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
   id: 1475-2859-12-118/F3
   label: Figure 3
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Wood-Ljungdahl
@@ -80,7 +80,7 @@ thumbnails:
     kinase), ACALD (acetaldehyde dehydrogenase), ALCD2x (ethanol dehydrogenase). Yellow
     nodes indicate the oxidized form of reducing equivalents and blue nodes indicate
     the reduced form.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
   id: 1475-2859-12-118/F4
   label: Figure 4
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Insights
@@ -96,6 +96,6 @@ thumbnails:
     of <italic>ackA</italic> if the hydrogenase is NADH dependent (0.75 ATP) . However,
     if the bifurcating hydrogenase is NADP dependent, sufficient ATP (1.5 ATP) is
     generated to enable ethanol production in the absence of <italic>ackA</italic>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
   id: 1475-2859-12-118/F5
   label: Figure 5

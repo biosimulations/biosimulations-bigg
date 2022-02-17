@@ -35,7 +35,7 @@ thumbnails:
     model differences literature and database validation. <bold>b</bold> Overlap of
     genes across different model sets. The model that covers most of the models within
     the particular set is enclosed by a box</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
   id: 12918_2018_Article_557/Fig1
   label: Fig. 1
 - caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Gene
@@ -45,7 +45,7 @@ thumbnails:
     using the Matthews Correlation Coefficient. iSM810 and sMtb, which were both built
     off of GSMN-TB 1.1, significantly outperform iNJ661 and iOSDD. iEK1011 outperforms
     all models on both gene essentiality datasets</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
   id: 12918_2018_Article_557/Fig2
   label: Fig. 2
 - caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Metabolic
@@ -53,7 +53,7 @@ thumbnails:
     in vitro and in vivo conditions. The media conditions are represented by nutrients
     outside of the dotted boundary line. Box plots graphically depict flux differences
     in the sampled solution spaces between in vivo and in vitro media conditions</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
   id: 12918_2018_Article_557/Fig3
   label: Fig. 3
 - caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Escher
@@ -64,7 +64,7 @@ thumbnails:
     remains unclear (i.g., <italic>mshC</italic>, <italic>drrBC</italic>), Escher-usable
     maps were built for multiple subsystems in iEK1011 (see Additional file <xref
     rid="MOESM4" ref-type="media">4</xref>)</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
   id: 12918_2018_Article_557/Fig4
   label: Fig. 4
 - caption: <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">Heatmaps
@@ -73,6 +73,6 @@ thumbnails:
     (see Table <xref rid="Tab2" ref-type="table">2</xref> for curated list of AMR
     genes and their associated iEK1011 reactions, see Table <xref rid="Tab3" ref-type="table">3</xref>
     for drug-specific objectives)</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
   id: 12918_2018_Article_557/Fig5
   label: Fig. 5

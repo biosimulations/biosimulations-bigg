@@ -41,7 +41,7 @@ thumbnails:
     &#8216;Gap fill' includes genes associated with new gap-filling reactions. &#8216;Others'
     includes genes that are associated both with new, non-gap-filling reactions, and
     with a previous orphan reaction or as a new isozyme.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f1.jpg
+  filename: PMC3261703/PMC3261703/msb201165-f1.jpg
   id: msb201165/f1
   label: Figure 1
 - caption: <p>Results of the mapping between the <italic>i</italic>JO1366 reconstruction
@@ -57,6 +57,6 @@ thumbnails:
     organism code. Laboratory strains are colored blue, commensal and environmental
     strains are in green, and pathogens are in red. A dashed line indicates the average
     fraction of genes present (97%).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3261703/PMC3261703/msb201165-f2.jpg
+  filename: PMC3261703/PMC3261703/msb201165-f2.jpg
   id: msb201165/f2
   label: Figure 2

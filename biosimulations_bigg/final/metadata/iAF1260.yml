@@ -41,7 +41,7 @@ thumbnails:
     and the percent unique in each class. Other (OT) includes classes J, K, L, O,
     T, U, V (see <xref ref-type="supplementary-material" rid="S1">Supplementary information</xref>).
     NC, no COG assignment.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f1.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f1.jpg
   id: msb4100155/f1
   label: Figure 1
 - caption: <p>Thermodynamic properties of the reactions in <italic>i</italic>AF1260.
@@ -65,7 +65,7 @@ thumbnails:
     the feasibility and reversibility of the reactions in <italic>i</italic>AF1260;
     reactions for which a positive &#916;<sub><italic>r</italic></sub>G&#8242; is
     not possible are thermodynamically irreversible.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f2.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f2.jpg
   id: msb4100155/f2
   label: Figure 2
 - caption: <p>Utilizing <italic>i</italic>AF1260 as a predictive model. (<bold>A</bold>)
@@ -86,7 +86,7 @@ thumbnails:
     GR (circles), product formation (acetate, squares) and additional uptake rates
     (oxygen, triangles) under different environmental conditions (for succinate growth
     in this case).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f3.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f3.jpg
   id: msb4100155/f3
   label: Figure 3
 - caption: <p>Sensitivity analysis on the modeling parameters used in analyzing <italic>i</italic>AF1260.
@@ -102,7 +102,7 @@ thumbnails:
     was (<bold>D</bold>) potential P/O ratios (1.0&#8211;2.7) in the network, as well
     as the (<bold>E</bold>) NGAM (&#177;50%) and (<bold>F</bold>) GAM (&#177;50%)
     that were determined for these conditions.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f4.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f4.jpg
   id: msb4100155/f4
   label: Figure 4
 - caption: <p>ORF essentiality predictions using <italic>i</italic>AF1260. This heat
@@ -124,6 +124,6 @@ thumbnails:
     rid="b7">Baba <italic>et al</italic> (2006)</xref>. This suggested the possibility
     of an alternative pathway for this step in <italic>E. coli</italic> that has yet
     to be characterized.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1911197/PMC1911197/msb4100155-f5.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f5.jpg
   id: msb4100155/f5
   label: Figure 5

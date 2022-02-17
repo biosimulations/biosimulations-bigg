@@ -51,7 +51,7 @@ thumbnails:
     reconstruction. C) A schematic of the validation of network content with transcriptomics
     data for a shift from acetate growth conditions to benzoate with the MADE computational
     algorithm.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g001.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g001.jpg
   id: pcbi.1003575/pcbi-1003575-g001
   label: Figure 1
 - caption: <title xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -69,7 +69,7 @@ thumbnails:
     condition. Carbon fixation is occurring under these conditions and the specifics
     of this process can be further elucidated in subsequent &#8220;drill-down&#8221;
     studies.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g002.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g002.jpg
   id: pcbi.1003575/pcbi-1003575-g002
   label: Figure 2
 - caption: <title xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -95,6 +95,6 @@ thumbnails:
     data and an estimate of the cost associated with transferring electrons from the
     internal membrane cytochrome (focytC) to the extracellular electron acceptor Fe(III)
     (fe3).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3998878/PMC3998878/pcbi.1003575.g003.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g003.jpg
   id: pcbi.1003575/pcbi-1003575-g003
   label: Figure 3

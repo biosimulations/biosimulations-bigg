@@ -46,7 +46,7 @@ thumbnails:
     predicted drug targets differ from predictions in the human-infecting system.
     Multi-species metabolic models were also used to characterize pan and core metabolic
     capacities of the different species.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Content
@@ -68,7 +68,7 @@ thumbnails:
     PDH-knock out <italic>P</italic>. <italic>falciparum</italic> while simulating
     standard <italic>in vitro</italic> growth conditions. Flux rates are in nmol/
     1x10<sup>8</sup> cells/min.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Life
@@ -84,7 +84,7 @@ thumbnails:
     AUROC: area under the receiver operator curve (ROC), DEG: differential expression
     analysis, T: trophozoite, GII: early gametocyte stage, GV: late gametocyte stage,
     Ook: ookinete.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Stage-specific
@@ -113,7 +113,7 @@ thumbnails:
     metabolism in the GV stage (see supplementary material for discussion and <xref
     ref-type="supplementary-material" rid="pcbi.1005895.s003">S1 Fig</xref> for the
     high resolution version of the figure).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Stage-specific
@@ -132,7 +132,7 @@ thumbnails:
     new drugs to target, as well as new areas of metabolism warranting further investigation.
     See <xref ref-type="supplementary-material" rid="pcbi.1005895.s004">S2 Fig</xref>
     for the high resolution version of the figure.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Species-specific
@@ -162,6 +162,6 @@ thumbnails:
     of the corresponding gene. T: trophozoite, GII: early gametocyte stage, GV: late
     gametocyte stage, Ook: ookinete. See <xref ref-type="supplementary-material" rid="pcbi.1005895.s005">S3
     Fig</xref> for the high resolution version of the figure.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6

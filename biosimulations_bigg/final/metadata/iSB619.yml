@@ -30,7 +30,7 @@ thumbnails:
     essential amino acid, and NE stands for average non-essential amino acid. Two
     amino acids do not have transporters in the genome annotation and are not included
     here for that reason.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
+  filename: PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
   id: 1471-2180-5-8/F1
   label: Figure 1
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Relative growth efficiency
@@ -42,6 +42,6 @@ thumbnails:
     to optimal oxygen consumption for each carbon source. Trehalose, lactose, and
     sucrose all overlap (the trehalose line indicates all three). The legend is presented
     in the same order as the carbon sources appear in the figure, top to bottom.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
+  filename: PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
   id: 1471-2180-5-8/F2
   label: Figure 2

@@ -34,7 +34,7 @@ thumbnails:
     data is raw and difficult to interpret. The process detailed in panel A provides
     a means to build a meaningful knowledge-base of available high-throughput data
     that can then be probed and tested.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-1.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-1.jpg
   id: 1752-0509-5-110/F1
   label: Figure 1
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Topological
@@ -43,7 +43,7 @@ thumbnails:
     for additional carbohydrate and nucleotide metabolism. In addition, the erythrocyte
     plays roles in amino acid, cofactor, and lipid metabolism. Abbreviations: PPP
     - pentose phosphate pathway, Arg - arginine, Met - methionine.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-2.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-2.jpg
   id: 1752-0509-5-110/F2
   label: Figure 2
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>The
@@ -53,7 +53,7 @@ thumbnails:
     organelles have less metabolic connectivity denoted by data point being on or
     below the reference lines. This characteristic can be attributed to either 1)
     an inherently 'fragmented' erythrocyte network, or 2) incomplete proteomic coverage.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-3.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-3.jpg
   id: 1752-0509-5-110/F3
   label: Figure 3
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>To
@@ -63,7 +63,7 @@ thumbnails:
     non-erythrocyte related pathologies (see Table 1). In addition, over 230 FDA-approved,
     FDA-withdrawn, and experimental drugs have known protein targets in the human
     erythrocyte.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-4.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-4.jpg
   id: 1752-0509-5-110/F4
   label: Figure 4
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Flux
@@ -80,6 +80,6 @@ thumbnails:
     <bold>(B) </bold>We detected 71% and 62% of the morbid SNPs and drugs associated
     with the erythrocyte. The distribution shows that most perturbed conditions have
     between one to ten differentially active exchange reactions.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3158119/PMC3158119/1752-0509-5-110-5.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-5.jpg
   id: 1752-0509-5-110/F5
   label: Figure 5

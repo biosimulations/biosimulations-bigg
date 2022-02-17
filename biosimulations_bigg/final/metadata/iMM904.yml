@@ -31,7 +31,7 @@ thumbnails:
     fluxes were compared to sampled fluxes of another condition to determine which
     metabolic regions were altered between the two conditions (see Figure 2). (F)
     Significantly altered metabolic regions were identified.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
   id: 1752-0509-3-37/F1
   label: Figure 1
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Schematic of sampling
@@ -43,7 +43,7 @@ thumbnails:
     flux differences deviates from a zero flux change. Reaction scores can be used
     in visualizing perturbation subnetworks and analyzing reporter metabolites and
     subsystems.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
   id: 1752-0509-3-37/F2
   label: Figure 2
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Perturbation reaction
@@ -54,7 +54,7 @@ thumbnails:
     proline, D-lactate, and 2-hydroxybuturate) were also detected in the anaerobic
     condition. Metabolite abbreviations are found in Additional file <xref ref-type="supplementary-material"
     rid="S1">1</xref>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
   id: 1752-0509-3-37/F3
   label: Figure 3
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Perturbation reaction
@@ -67,7 +67,7 @@ thumbnails:
     which suggests that the direct genetic perturbation effects are amplified under
     this environment. Metabolite abbreviations are found in Additional file <xref
     ref-type="supplementary-material" rid="S1">1</xref>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
   id: 1752-0509-3-37/F4
   label: Figure 4
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Clustergram of top
@@ -80,6 +80,6 @@ thumbnails:
     (highlighted in green) are also highly perturbed in ammonium-toxic conditions.
     Metabolite abbreviations are found in Additional file <xref ref-type="supplementary-material"
     rid="S1">1</xref>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
   id: 1752-0509-3-37/F5
   label: Figure 5

@@ -38,7 +38,7 @@ thumbnails:
     only counted once. The low overlap between iPC815 and the <italic>Y. pestis </italic>91001
     reconstruction arises from the use of E.C. numbers to compare the two models rather
     than true biological differences between the two strains.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
   id: 1752-0509-5-163/F1
   label: Figure 1
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Essential
@@ -53,7 +53,7 @@ thumbnails:
     genome, and we hypothesize here that YPO1962 can replace the function of YPO0170.
     Note: although each reaction in each pathway is depicted as unidirectional, some
     are reversible.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
   id: 1752-0509-5-163/F2
   label: Figure 2
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Analysis
@@ -67,7 +67,7 @@ thumbnails:
     galactose; glyc, glycerol; OMP, outer membrane porin. The suffixes [e], [p], and
     [c] denote metabolites located in extracellular, periplasmic, and cytoplasmic
     compartments, respectively.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
   id: 1752-0509-5-163/F3
   label: Figure 3
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Breakdown
@@ -76,6 +76,6 @@ thumbnails:
     and on both glucose and gluconate defined media (Additional File <xref ref-type="supplementary-material"
     rid="S2">2</xref>). The COG classifications that make up the Miscellaneous category
     are: S, V, and Unassigned.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
   id: 1752-0509-5-163/F4
   label: Figure 4

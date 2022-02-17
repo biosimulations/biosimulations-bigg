@@ -31,7 +31,7 @@ thumbnails:
     the allowable solution space that maximizes or minimizes a defined objective,
     for example ATP or biomass production [<xref ref-type="bibr" rid="B3">3</xref>-<xref
     ref-type="bibr" rid="B6">6</xref>].</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
   id: gb-2003-4-9-r54/F1
   label: Figure 1
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Representation of gene to
@@ -50,7 +50,7 @@ thumbnails:
     independent proteins which carry out identical reactions where only one of the
     isozymes needs to be present for the reaction to occur. Isozymes are shown as
     two or more arrows leaving different proteins but impinging on the same reaction.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
   id: gb-2003-4-9-r54/F2
   label: Figure 2
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Quinone specificity for electron
@@ -63,7 +63,7 @@ thumbnails:
     <italic>i</italic>JE660a, but are now unable to do so. DMK, demethylmenaquinone;
     DMSO, dimethyl sulfoxide; MK, menaquinone; Q, ubiquinone; TMAO, trimethylamine
     N-oxide.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
   id: gb-2003-4-9-r54/F3
   label: Figure 3
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Effect of proton balancing
@@ -79,7 +79,7 @@ thumbnails:
     the medium more acidic, while carbon sources resulting in an inward flux of protons
     (lines to the left of the <italic>y</italic>-axis) would make the medium more
     basic.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
   id: gb-2003-4-9-r54/F4
   label: Figure 4
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Comparisons between phenotypic
@@ -97,7 +97,7 @@ thumbnails:
     GLYCLT, glycolate; GLYC-R, R-glycerate; GLX, glyoxylate; ICIT, isocitrate; &#945;KG,
     &#945;-ketoglutarate, OAA, oxaloacetate; 3PG, 3-phospho-D-glycerate; SUCC, succinate;
     SUCCOA, succinyl-CoA.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
   id: gb-2003-4-9-r54/F5
   label: Figure 5
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink">Flux map of TCA cycle and
@@ -113,6 +113,6 @@ thumbnails:
     direction shown and the ''-'' sign indicates that the cofactor is consumed. For
     abbreviations see Figure <xref ref-type="fig" rid="F5">5</xref>, with the following
     additions: ACCOA, acetyl-CoA; FUM, fumarate; MAL, malate, PYR, pyruvate.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
   id: gb-2003-4-9-r54/F6
   label: Figure 6

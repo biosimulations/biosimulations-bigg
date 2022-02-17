@@ -39,7 +39,7 @@ thumbnails:
     homology models, and distribution of metabolic subsystems per category (more details
     are shown in <bold>Table S4 in <xref ref-type="supplementary-material" rid="pcbi.1006644.s002">S2
     Appendix</xref></bold>).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g001.jpg
+  filename: PMC6326480/PMC6326480/pcbi.1006644.g001.jpg
   id: pcbi.1006644/pcbi.1006644.g001
   label: Fig 1
 - caption: '<title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Break
@@ -59,7 +59,7 @@ thumbnails:
     Note that &#8220;h&#8221; represents a metabolic sub-module that was added based
     on gene homology. (B) We compared the most recently published GEM with <italic>i</italic>YS854
     and highlighted the new additions in reaction content per COG module.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g002.jpg
+  filename: PMC6326480/PMC6326480/pcbi.1006644.g002.jpg
   id: pcbi.1006644/pcbi.1006644.g002
   label: Fig 2
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Comparison
@@ -76,7 +76,7 @@ thumbnails:
     genes that are not essential in at least one media type. The full data is available
     in S3 Table and the full cluster map is available in <xref ref-type="supplementary-material"
     rid="pcbi.1006644.s001"><bold>S1</bold> Appendix</xref>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g003.jpg
+  filename: PMC6326480/PMC6326480/pcbi.1006644.g003.jpg
   id: pcbi.1006644/pcbi.1006644.g003
   label: Fig 3
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Condition-specific
@@ -96,7 +96,7 @@ thumbnails:
     knockouts and compared essential reactions across conditions. The Venn diagram
     highlights the differences in reaction essentiality between the CDM-specific GEM
     and the CDMG-specific GEM.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g004.jpg
+  filename: PMC6326480/PMC6326480/pcbi.1006644.g004.jpg
   id: pcbi.1006644/pcbi.1006644.g004
   label: Fig 4
 - caption: <title xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">Comparison
@@ -118,6 +118,6 @@ thumbnails:
     in CDM (blue) and CDMG (red). Several metabolic processes contribute to the ammonium
     pool in CDM (including the glycine cleavage system) while serine dehydrogenase
     is the main source of ammonium in CDMG.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC6326480/PMC6326480/pcbi.1006644.g005.jpg
+  filename: PMC6326480/PMC6326480/pcbi.1006644.g005.jpg
   id: pcbi.1006644/pcbi.1006644.g005
   label: Fig 5

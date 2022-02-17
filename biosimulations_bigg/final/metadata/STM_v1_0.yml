@@ -55,7 +55,7 @@ thumbnails:
     of the MRs was directly moved into the consensus MR while reactions and metabolites
     unique to a MR were evaluated manually. This approach can be readily applied to
     comparison of any two MRs.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
+  filename: PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
   id: 1752-0509-5-8/F1
   label: Figure 1
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"><bold>Candidate
@@ -66,6 +66,6 @@ thumbnails:
     with sulfur metabolism. Blue background indicates that the synthetic lethal pairs
     are functional homolog's. Red gene means that there is a chemical known to inhibit
     the gene-product in STM_v1.0.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
+  filename: PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
   id: 1752-0509-5-8/F2
   label: Figure 2

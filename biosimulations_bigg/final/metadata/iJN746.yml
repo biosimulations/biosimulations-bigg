@@ -35,7 +35,7 @@ thumbnails:
     for a gene product and its reaction(s); and finally a score of 1 reflects that
     the reaction had to be included for model functionality (e. g., production of
     biomass precursor).</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
   id: 1752-0509-2-79/F1
   label: Figure 1
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>General depiction of
@@ -50,13 +50,13 @@ thumbnails:
     circles and the central metabolic compounds for each pathway are also highlighted.
     A detailed list of reactions involved in aromatic acid degradation can be found
     in the Additional file <xref ref-type="supplementary-material" rid="S9">9</xref>.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
   id: 1752-0509-2-79/F2
   label: Figure 2
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink">Glucose metabolizing pathways
     present in <italic>P. putida </italic>KT2440 and its metabolic reconstruction,
     <italic>i</italic>JN746.</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
   id: 1752-0509-2-79/F3
   label: Figure 3
 - caption: '<p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>(A) </bold><bold>The
@@ -71,7 +71,7 @@ thumbnails:
     oxidase; BZ12DOX, benzoate 1,2-dioxygenase; CAT23DOX, catechol 2,3-dioxygenase;
     CYTBO3_4pp, cytochrome oxidase bo3; DHORD, dihydoorotic acid dehydrogenase; GLYCTO1,
     Glycolate oxidase and XMO, toluene monooxygenase.</p>'
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
   id: 1752-0509-2-79/F4
   label: Figure 4
 - caption: <p xmlns:xlink="http://www.w3.org/1999/xlink"><bold>Maximal possible msc-PHA
@@ -80,6 +80,6 @@ thumbnails:
     conditions correspond to chemostate culturing at a dilution rate of &#956; = 0.2
     1/hr, minimal medium (iM9) supplemented with each carbon source. 'Mix' corresponds
     to the simultaneous production of C8:0, C6:0, C10:0, and C12:0 msc-PHA (1:1:1:1).</p>
-  filename: /home/jonrkarr/Documents/biosimulations-bigg/biosimulations_bigg/./source/thumbnails/PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
   id: 1752-0509-2-79/F5
   label: Figure 5

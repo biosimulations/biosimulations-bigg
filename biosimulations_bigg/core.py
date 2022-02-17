@@ -119,6 +119,9 @@ def get_metadata_for_model(model_detail, config):
         if reference:
             reference = JournalArticle(**reference)
         if thumbnails:
+            for thumbnail in thumbnails:
+                thumbnail['filename'] = os.path.join(config['source_thumbnails_dirname'], thumbnail['filename'])
+
             thumbnails = [PubMedCentralOpenAccesGraphic(**thumbnail) for thumbnail in thumbnails]
     else:
         taxon = None
@@ -218,6 +221,9 @@ def get_metadata_for_model(model_detail, config):
         'reference': reference.__dict__,
         'thumbnails': [dataclasses.asdict(thumbnail) for thumbnail in thumbnails],
     }
+    for thumbnail in metadata['thumbnails']:
+        thumbnail['filename'] = os.path.relpath(thumbnail['filename'], config['source_thumbnails_dirname'])
+
     with open(metadata_filename, 'w') as file:
         file.write(yaml.dump(metadata))
 
@@ -449,6 +455,9 @@ def import_models(config):
     if os.path.isfile(config['thumbnails_filename']):
         with open(config['thumbnails_filename'], 'r') as file:
             thumbnails_curation = yaml.load(file, Loader=yaml.Loader)
+        for model in thumbnails_curation.values():
+            for thumbnail in model:
+                thumbnail['filename'] = os.path.join(config['source_thumbnails_dirname'], thumbnail['filename'])
     else:
         thumbnails_curation = {}
 
@@ -677,5 +686,9 @@ def import_models(config):
         }
         with open(config['status_filename'], 'w') as file:
             file.write(yaml.dump(status))
+
+        for model in thumbnails_curation.values():
+            for thumbnail in model:
+                thumbnail['filename'] = os.path.relpath(thumbnail['filename'], config['source_thumbnails_dirname'])
         with open(config['thumbnails_filename'], 'w') as file:
             file.write(yaml.dump(thumbnails_curation))
