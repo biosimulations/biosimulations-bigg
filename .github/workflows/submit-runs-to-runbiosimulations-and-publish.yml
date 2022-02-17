@@ -1,4 +1,4 @@
-name: Publish BiGG to BioSimulations
+name: Submit runs to runBioSimulations and publish runs to BioSimulations
 
 on:
   schedule:
@@ -7,17 +7,37 @@ on:
   workflow_dispatch:
     inputs:
       updateCombineArchives:
-        description: 'Whether to overwrite existing COMBINE/OMEX archives: "0" (default) or "1"'
+        description: 'Whether to rebuild existing COMBINE/OMEX archives: "0" (default) or "1"'
         required: false
         default: '0'
+      validateCombineArchives:
+        description: 'Whether to simulate the COMBINE/OMEX archives in this GitHub action (in addition to in runBioSimulations): "0" or "1" (default)'
+        required: false
+        default: '1'
+      simulateCombineArchives:
+        description: 'Whether to submit COMBINE/OMEX archives to runBioSimulations: "0" or "1" (default)'
+        required: false
+        default: '1'
       updateSimulationRuns:
-        description: 'Whether to overwrite existing simulation runs: "0" (default) or "1"'
+        description: 'Whether to re-run COMBINE/OMEX archives that have already been submitted to runBioSimulations: "0" (default) or "1"'
         required: false
         default: '0'
+      publishCombineArchive:
+        description: 'Whether to publish the COMBINE/OMEX archives to BioSimulations: "0" or "1" (default)'
+        required: false
+        default: '1'
+      maxModels:
+        description: 'Maximum number of models to publish: "" (no limit; default) or a positive integer'
+        required: false
+        default: ''
+      maxNumReactions:
+        description: 'Maximum size model to publish: "" (no limit; default) or a positive integer'
+        required: false
+        default: ''
 
 jobs:
   publish:
-    name: Publish BiGG to BioSimulations
+    name: Submit runs to runBioSimulations and publish runs to BioSimulations
     runs-on: ubuntu-latest
     env:
       ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
@@ -64,8 +84,8 @@ jobs:
       - name: Install the package
         run: python -m pip install .
 
-      # Publish models to BioSimulations
-      - name: Publish models to BioSimulations
+      # Submit runs to runBioSimulations and publish runs to BioSimulations
+      - name: Submit runs to runBioSimulations and publish runs to BioSimulations
         run: |
           if [ "${{ github.event.inputs.updateCombineArchives }}" = "1" ]; then
             args="--update-combine-archives --update-simulation-runs"
@@ -77,6 +97,26 @@ jobs:
             fi
           fi
 
+          if [ "${{ github.event.inputs.validateCombineArchives }}" = "0" ]; then
+            args="$args --skip-simulation"
+          fi
+
+          if [ "${{ github.event.inputs.simulateCombineArchives }}" = "0" ]; then
+            args="$args --dry-run"
+          fi
+
+          if [ "${{ github.event.inputs.publishCombineArchive }}" = "0" ]; then
+            args="$args --skip-publication"
+          fi
+
+          if [ "${{ github.event.inputs.maxModels }}" = "1" ]; then
+            args="$args --max-models ${{ github.event.inputs.maxModels }}"
+          fi
+
+          if [ "${{ github.event.inputs.maxModels }}" = "1" ]; then
+            args="$args --max-num-reactions ${{ github.event.inputs.maxNumReactions }}"
+          fi
+          
           biosimulations-bigg publish $args
 
       # Push compiled projects

@@ -1,0 +1,46 @@
+name: Publish previously executed runs of simulations to BioSimulations
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Publish previously executed runs of simulations to BioSimulations
+    runs-on: ubuntu-latest
+    env:
+      BIOSIMULATIONS_API_CLIENT_ID: ${{ secrets.BIOSIMULATIONS_API_CLIENT_ID }}
+      BIOSIMULATIONS_API_CLIENT_SECRET: ${{ secrets.BIOSIMULATIONS_API_CLIENT_SECRET }}
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: dev
+
+      # Install requirements
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Setup pip cache
+        uses: actions/cache@v2
+        with:
+          path: /opt/hostedtoolcache/Python
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements.optional.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install pip and setuptools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade setuptools
+
+      # install package
+      - name: Install the package
+        run: python -m pip install .
+
+      # Publish previously executed runs of simulations to BioSimulations
+      - name: Publish previously executed runs of simulations to BioSimulations
+        run: biosimulations-bigg publish-runs
