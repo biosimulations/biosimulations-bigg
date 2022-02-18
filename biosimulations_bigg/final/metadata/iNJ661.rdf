@@ -94,7 +94,7 @@
     <rdfs:label>Jonathan R. Karr</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="local:00007">
-    <foaf:accountName rdf:resource="http://identifiers.org/orcid:0000-0002-2605-5080">http://identifiers.org/orcid:0000-0002-2605-5080</foaf:accountName>
+    <foaf:accountName rdf:resource="https://orcid.org/0000-0002-2605-5080">https://orcid.org/0000-0002-2605-5080</foaf:accountName>
   </rdf:Description>
   <rdf:Description rdf:about="local:00007">
     <foaf:name>Jonathan R. Karr</foaf:name>
