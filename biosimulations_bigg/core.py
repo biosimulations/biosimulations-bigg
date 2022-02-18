@@ -21,6 +21,7 @@ import boto3
 import dataclasses
 import datetime
 import dateutil.parser
+import dotenv
 import os
 import re
 import shutil
@@ -29,7 +30,12 @@ import time
 import warnings
 import yaml
 
-Entrez.email = os.getenv('ENTREZ_EMAIL', None)
+env = {
+    **dotenv.dotenv_values("config.env"),
+    **os.environ,
+}
+
+Entrez.email = env.get('ENTREZ_EMAIL', None)
 
 __all__ = ['import_models']
 
