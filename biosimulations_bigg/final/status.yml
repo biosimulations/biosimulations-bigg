@@ -1,9 +1,9 @@
 STM_v1_0:
   created: '2021-12-16 05:49:04.562597'
-  duration: 21.616402
-  objective: 0.47783366076072237
-  runbiosimulationsId: 620d62018dda8ca4122e989d
-  updated: '2022-02-16 20:43:42.453221'
+  duration: 25.146084
+  objective: 0.47783366076071954
+  runbiosimulationsId: 620ee569ecf8f2250909f01d
+  updated: '2022-02-18 00:16:04.647105'
 e_coli_core:
   created: '2021-12-16 05:52:23.779157'
   duration: 1.269568

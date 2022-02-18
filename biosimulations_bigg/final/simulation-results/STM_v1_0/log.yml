@@ -1,31 +1,27 @@
-duration: 21.616402
+duration: 25.146084
 exception: null
-output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
-  \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
-  \n    Reports (2):\r\n      objective: 1 data sets\r\n      reaction_fluxes: 2545\
-  \ data sets\r\n\r\nExecuting SED-ML file 1: simulation.sedml ...\r\n\r\nBundling\
-  \ outputs ...\r\nCleaning up ...\r\n\r\n============= SUMMARY =============\r\n\
-  Executed 1 SED documents:\r\n  SED documents (1):\r\n    Succeeded: 1\r\n    Skipped:\
-  \ 0\r\n    Failed: 0\r\n  Tasks (1):\r\n    Succeeded: 1\r\n    Skipped: 0\r\n \
-  \   Failed: 0\r\n  Outputs (2):\r\n    Succeeded: 2\r\n    Skipped: 0\r\n    Failed:\
-  \ 0\r\n\r\n"
+output: "Retrieving 1 of 3: RECON1 ...\r\nRetrieving 2 of 3: Recon3D ...\r\nRetrieving\
+  \ 3 of 3: STM_v1_0 ...\r\nGetting metadata for 1 of 1: STM_v1_0\r\nExporting project\
+  \ metadata for 1 of 1: STM_v1_0\r\nConverting model 1 of 1: STM_v1_0 ...\r\nSimulating\
+  \ model 1 of 1: STM_v1_0 ...\r\n"
 sedDocuments:
-- duration: 15.848947
+- duration: 17.746246
   exception: null
   location: simulation.sedml
-  output: "  Found 1 tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\
-    \n      `objective`\r\n      `reaction_fluxes`\r\n  Executing task 1: `task`\r\
-    \n    Executing simulation ... \e[34msucceeded\e[0m\r\n    Generating 2 outputs\
-    \ ...\r\n      Generating output 1: `objective` ... \e[34msucceeded\e[0m\r\n \
-    \     Generating output 2: `reaction_fluxes` ... \e[34msucceeded\e[0m\r\n\r\n\
-    \  Executed 1 tasks and 2 outputs:\r\n    Tasks:\r\n      Succeeded: 1\r\n   \
-    \   Skipped: 0\r\n      Failed: 0\r\n    Outputs:\r\n      Succeeded: 2\r\n  \
-    \    Skipped: 0\r\n      Failed: 0\r\n"
+  output: "Archive contains 1 SED-ML documents with 1 models, 1 simulations, 1 tasks,\
+    \ 2 reports, and 0 plots:\r\n  simulation.sedml:\r\n    Tasks (1):\r\n      task\r\
+    \n    Reports (2):\r\n      objective: 1 data sets\r\n      reaction_fluxes: 2545\
+    \ data sets\r\n\r\nExecuting SED-ML file 1: simulation.sedml ...\r\n  Found 1\
+    \ tasks and 2 outputs:\r\n    Tasks:\r\n      `task`\r\n    Outputs:\r\n     \
+    \ `objective`\r\n      `reaction_fluxes`\r\n  Executing task 1: `task`\r\n   \
+    \ Executing simulation ... \e[34msucceeded\e[0m\r\n    Generating 2 outputs ...\r\
+    \n      Generating output 1: `objective` ... \e[34msucceeded\e[0m\r\n      Generating\
+    \ output 2: `reaction_fluxes` ..."
   outputs:
   - dataSets:
     - id: obj
       status: SUCCEEDED
-    duration: 0.043587
+    duration: 0.051513
     exception: null
     id: objective
     output: ''
@@ -5122,7 +5118,7 @@ sedDocuments:
       status: SUCCEEDED
     - id: R_OA4VL_ST
       status: SUCCEEDED
-    duration: 0.243844
+    duration: 0.27602
     exception: null
     id: reaction_fluxes
     output: ''
@@ -5132,11 +5128,11 @@ sedDocuments:
   status: SUCCEEDED
   tasks:
   - algorithm: KISAO_0000437
-    duration: 11.81129
+    duration: 12.311315
     exception: null
     id: task
-    output: "Academic license - for non-commercial use only - expires 2022-09-04\r\
-      \nUsing license file /home/jonrkarr/gurobi.lic\r\n"
+    output: "Scaling...\r\n A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio\
+      \ =  1.000e+00\r\nProblem data seem to be well scaled\r\n"
     simulatorDetails:
     - key: method
       value: cobra.core.model.optimize
