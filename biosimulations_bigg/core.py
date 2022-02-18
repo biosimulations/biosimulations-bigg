@@ -514,8 +514,7 @@ def import_models(config):
     s3 = boto3.resource('s3',
                         endpoint_url=config['bucket_endpoint'],
                         aws_access_key_id=config['bucket_access_key_id'],
-                        aws_secret_access_key=config['bucket_secret_access_key'],
-                        verify=False)
+                        aws_secret_access_key=config['bucket_secret_access_key'])
     bucket = s3.Bucket(config['bucket_name'])
 
     # get authorization for BioSimulations API
