@@ -82,7 +82,7 @@ jobs:
 
       # install package
       - name: Install the package
-        run: python -m pip install .
+        run: python -m pip install -e .
 
       # Submit runs to runBioSimulations and publish runs to BioSimulations
       - name: Submit runs to runBioSimulations and publish runs to BioSimulations
@@ -109,11 +109,11 @@ jobs:
             args="$args --skip-publication"
           fi
 
-          if [ "${{ github.event.inputs.maxModels }}" = "1" ]; then
+          if [ ! -z "${{ github.event.inputs.maxModels }}" ]; then
             args="$args --max-models ${{ github.event.inputs.maxModels }}"
           fi
 
-          if [ "${{ github.event.inputs.maxModels }}" = "1" ]; then
+          if [ ! -z "${{ github.event.inputs.maxNumReactions }}" ]; then
             args="$args --max-num-reactions ${{ github.event.inputs.maxNumReactions }}"
           fi
           

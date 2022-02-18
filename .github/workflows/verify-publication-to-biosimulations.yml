@@ -39,7 +39,7 @@ jobs:
 
       # install package
       - name: Install the package
-        run: python -m pip install .
+        run: python -m pip install -e .
 
       # Verify that each model was successfully published
       - name: Verify that each model was successfully published
