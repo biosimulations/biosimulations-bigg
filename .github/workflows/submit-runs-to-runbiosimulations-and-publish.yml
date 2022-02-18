@@ -60,6 +60,7 @@ jobs:
         with:
           fetch-depth: 1
           ref: dev
+          lfs: true
 
       # Install requirements
       - name: Install Python
