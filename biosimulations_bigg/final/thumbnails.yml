@@ -1,192 +1,192 @@
 STM_v1_0:
 - enabled: true
-  filename: ../../../../../../../PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
+  filename: PMC3032673/PMC3032673/1752-0509-5-8-2.jpg
   id: 1752-0509-5-8/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
+  filename: PMC3032673/PMC3032673/1752-0509-5-8-1.jpg
   id: 1752-0509-5-8/F1
   label: Figure 1
 e_coli_core: []
 iAB_RBC_283:
 - enabled: true
-  filename: ../../../../../../../PMC3158119/PMC3158119/1752-0509-5-110-2.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-2.jpg
   id: 1752-0509-5-110/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC3158119/PMC3158119/1752-0509-5-110-1.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-1.jpg
   id: 1752-0509-5-110/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC3158119/PMC3158119/1752-0509-5-110-3.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-3.jpg
   id: 1752-0509-5-110/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC3158119/PMC3158119/1752-0509-5-110-4.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-4.jpg
   id: 1752-0509-5-110/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC3158119/PMC3158119/1752-0509-5-110-5.jpg
+  filename: PMC3158119/PMC3158119/1752-0509-5-110-5.jpg
   id: 1752-0509-5-110/F5
   label: Figure 5
 iAF1260:
 - enabled: true
-  filename: ../../../../../../../PMC1911197/PMC1911197/msb4100155-f1.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f1.jpg
   id: msb4100155/f1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC1911197/PMC1911197/msb4100155-f2.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f2.jpg
   id: msb4100155/f2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC1911197/PMC1911197/msb4100155-f3.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f3.jpg
   id: msb4100155/f3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC1911197/PMC1911197/msb4100155-f4.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f4.jpg
   id: msb4100155/f4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC1911197/PMC1911197/msb4100155-f5.jpg
+  filename: PMC1911197/PMC1911197/msb4100155-f5.jpg
   id: msb4100155/f5
   label: Figure 5
 iAF1260b: []
 iAF987:
 - enabled: true
-  filename: ../../../../../../../PMC3998878/PMC3998878/pcbi.1003575.g003.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g003.jpg
   id: pcbi.1003575/pcbi-1003575-g003
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC3998878/PMC3998878/pcbi.1003575.g002.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g002.jpg
   id: pcbi.1003575/pcbi-1003575-g002
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC3998878/PMC3998878/pcbi.1003575.g001.jpg
+  filename: PMC3998878/PMC3998878/pcbi.1003575.g001.jpg
   id: pcbi.1003575/pcbi-1003575-g001
   label: Figure 1
 iAM_Pb448:
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6
 iAM_Pc455:
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6
 iAM_Pf480:
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6
 iAM_Pk459:
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6
 iAM_Pv461:
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g005.jpg
   id: pcbi.1005895/pcbi.1005895.g005
   label: Fig 5
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g001.jpg
   id: pcbi.1005895/pcbi.1005895.g001
   label: Fig 1
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g002.jpg
   id: pcbi.1005895/pcbi.1005895.g002
   label: Fig 2
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g003.jpg
   id: pcbi.1005895/pcbi.1005895.g003
   label: Fig 3
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g004.jpg
   id: pcbi.1005895/pcbi.1005895.g004
   label: Fig 4
 - enabled: true
-  filename: ../../../../../../../PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
+  filename: PMC5771636/PMC5771636/pcbi.1005895.g006.jpg
   id: pcbi.1005895/pcbi.1005895.g006
   label: Fig 6
 iAPECO1_1312: []
@@ -227,23 +227,23 @@ iECW_1372: []
 iECs_1301: []
 iEK1008:
 - enabled: true
-  filename: ../../../../../../../PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig3_HTML.jpg
   id: 12918_2018_Article_557/Fig3
   label: Fig. 3
 - enabled: true
-  filename: ../../../../../../../PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig4_HTML.jpg
   id: 12918_2018_Article_557/Fig4
   label: Fig. 4
 - enabled: true
-  filename: ../../../../../../../PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig1_HTML.jpg
   id: 12918_2018_Article_557/Fig1
   label: Fig. 1
 - enabled: true
-  filename: ../../../../../../../PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig2_HTML.jpg
   id: 12918_2018_Article_557/Fig2
   label: Fig. 2
 - enabled: true
-  filename: ../../../../../../../PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
+  filename: PMC5834885/PMC5834885/12918_2018_557_Fig5_HTML.jpg
   id: 12918_2018_Article_557/Fig5
   label: Fig. 5
 iETEC_1333: []
@@ -255,80 +255,80 @@ iEcolC_1368: []
 iG2583_1286: []
 iHN637:
 - enabled: true
-  filename: ../../../../../../../PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-3.jpg
   id: 1475-2859-12-118/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-4.jpg
   id: 1475-2859-12-118/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-5.jpg
   id: 1475-2859-12-118/F5
   label: Figure 5
 - enabled: true
-  filename: ../../../../../../../PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-2.jpg
   id: 1475-2859-12-118/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
+  filename: PMC4222884/PMC4222884/1475-2859-12-118-1.jpg
   id: 1475-2859-12-118/F1
   label: Figure 1
 iIT341: []
 iJN678: []
 iJN746:
 - enabled: true
-  filename: ../../../../../../../PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-3.jpg
   id: 1752-0509-2-79/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-2.jpg
   id: 1752-0509-2-79/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-1.jpg
   id: 1752-0509-2-79/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-4.jpg
   id: 1752-0509-2-79/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
+  filename: PMC2569920/PMC2569920/1752-0509-2-79-5.jpg
   id: 1752-0509-2-79/F5
   label: Figure 5
 iJO1366:
 - enabled: true
-  filename: ../../../../../../../PMC3261703/PMC3261703/msb201165-f1.jpg
+  filename: PMC3261703/PMC3261703/msb201165-f1.jpg
   id: msb201165/f1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC3261703/PMC3261703/msb201165-f2.jpg
+  filename: PMC3261703/PMC3261703/msb201165-f2.jpg
   id: msb201165/f2
   label: Figure 2
 iJR904:
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-6.jpg
   id: gb-2003-4-9-r54/F6
   label: Figure 6
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-2.jpg
   id: gb-2003-4-9-r54/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-3.jpg
   id: gb-2003-4-9-r54/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-1.jpg
   id: gb-2003-4-9-r54/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-4.jpg
   id: gb-2003-4-9-r54/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
+  filename: PMC193654/PMC193654/gb-2003-4-9-r54-5.jpg
   id: gb-2003-4-9-r54/F5
   label: Figure 5
 iLF82_1304: []
@@ -336,77 +336,77 @@ iLJ478: []
 iML1515: []
 iMM904:
 - enabled: true
-  filename: ../../../../../../../PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-4.jpg
   id: 1752-0509-3-37/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-3.jpg
   id: 1752-0509-3-37/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-1.jpg
   id: 1752-0509-3-37/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-2.jpg
   id: 1752-0509-3-37/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
+  filename: PMC2679711/PMC2679711/1752-0509-3-37-5.jpg
   id: 1752-0509-3-37/F5
   label: Figure 5
 iND750: []
 iNF517: []
 iNJ661:
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-6.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-6.jpg
   id: 1752-0509-1-26/F6
   label: Figure 6
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-1.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-1.jpg
   id: 1752-0509-1-26/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-2.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-2.jpg
   id: 1752-0509-1-26/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-3.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-3.jpg
   id: 1752-0509-1-26/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-4.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-4.jpg
   id: 1752-0509-1-26/F4
   label: Figure 4
 - enabled: true
-  filename: ../../../../../../../PMC1925256/PMC1925256/1752-0509-1-26-5.jpg
+  filename: PMC1925256/PMC1925256/1752-0509-1-26-5.jpg
   id: 1752-0509-1-26/F5
   label: Figure 5
 iNRG857_1313: []
 iPC815:
 - enabled: true
-  filename: ../../../../../../../PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-3.jpg
   id: 1752-0509-5-163/F3
   label: Figure 3
 - enabled: true
-  filename: ../../../../../../../PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-2.jpg
   id: 1752-0509-5-163/F2
   label: Figure 2
 - enabled: true
-  filename: ../../../../../../../PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-1.jpg
   id: 1752-0509-5-163/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
+  filename: PMC3220653/PMC3220653/1752-0509-5-163-4.jpg
   id: 1752-0509-5-163/F4
   label: Figure 4
 iSB619:
 - enabled: true
-  filename: ../../../../../../../PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
+  filename: PMC1079855/PMC1079855/1471-2180-5-8-1.jpg
   id: 1471-2180-5-8/F1
   label: Figure 1
 - enabled: true
-  filename: ../../../../../../../PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
+  filename: PMC1079855/PMC1079855/1471-2180-5-8-2.jpg
   id: 1471-2180-5-8/F2
   label: Figure 2
 iSBO_1134: []
