@@ -24,13 +24,17 @@ def get_config(
         status_filename=None,
         thumbnails_filename=None,
         extra_visualizations_filename=None,
-        max_models=None,
+        project_ids=None,
+        first_project=0,
+        max_projects=None,
         max_num_reactions=None,
         max_thumbnails=None,
+        update_project_sources=False,
         update_combine_archives=False,
+        update_simulations=False,
         update_simulation_runs=False,
-        simulate_models=True,
-        publish_models=True,
+        simulate_projects=True,
+        publish_projects=True,
         entrez_delay=5.,
         bucket_endpoint=None,
         bucket_name=None,
@@ -52,16 +56,20 @@ def get_config(
         final_dirname (obj:`str`, optional): directory where created SED-ML, metadata, and COMBINE/OMEX archives should be stored
         curators_filename (obj:`str`, optional): path which describes the people who helped curator the repository
         issues_filename (obj:`str`, optional): path to issues which prevent some models from being imported
-        status_filename (obj:`str`, optional): path to save the import status of each model
+        status_filename (obj:`str`, optional): path to save the import status of each project
         thumbnails_filename (obj:`str`, optional): path to curated list of good thumbnails
-        extra_visualizations_filename (obj:`str`, optional): path to curated list of additional Escher diagrams to use with models
-        max_models (:obj:`int`, optional): maximum number of models to download, convert, execute, and submit; used for testing
+        extra_visualizations_filename (obj:`str`, optional): path to curated list of additional Escher diagrams to use with projects
+        project_ids (:obj:`list` of :obj:`str`, optional): ids of projects to import
+        first_project (:obj:`int`, optional): iteration through projects at which to begin importing
+        max_projects (:obj:`int`, optional): maximum number of projects to download, convert, execute, and submit; used for testing
         max_num_reactions (:obj:`int`, optional): maximum size model to import; used for testing
         max_thumbnails (:obj:`int`, optional): maximum number of thumbnails to use; used for testing
+        update_project_sources (:obj:`bool`, optional): whether to update the source files for the projects; used for testing
         update_combine_archives (:obj:`bool`, optional): whether to update COMBINE archives even if they already exist; used for testing
-        update_simulation_runs (:obj:`bool`, optional): whether to update models even if they have already been imported; used for testing
-        simulate_models (:obj:`bool`, optional): whether to simulate models; used for testing
-        publish_models (:obj:`bool`, optional): whether to pushlish models; used for testing
+        update_simulations (:obj:`bool`, optional): whether to re-run COMBINE archives even if they have already been run; used for testing
+        update_simulation_runs (:obj:`bool`, optional): whether to update projects even if they have already been imported; used for testing
+        simulate_projects (:obj:`bool`, optional): whether to simulate projects; used for testing
+        publish_projects (:obj:`bool`, optional): whether to pushlish projects; used for testing
         entrez_delay (:obj:`float`, optional): delay in between Entrez queries
         bucket_endpoint (:obj:`str`, optional): endpoint for storage bucket
         bucket_name (:obj:`str`, optional): name of storage bucket
@@ -69,7 +77,7 @@ def get_config(
         bucket_secret_access_key (:obj:`str`, optional): access key for storage bucket
         biosimulations_api_client_id (:obj:`str`, optional): id for client to the BioSimulations API
         biosimulations_api_client_secret (:obj:`str`, optional): secret for client to the BioSimulations API
-        dry_run (:obj:`bool`, optional): whether to submit models to BioSimulations or not; used for testing
+        dry_run (:obj:`bool`, optional): whether to submit projects to BioSimulations or not; used for testing
 
     Returns:
         obj:`dict`: configuration
@@ -147,13 +155,17 @@ def get_config(
             os.path.join(sessions_dirname, 'pubmed-central-open-access'),
             expire_after=datetime.timedelta(4 * 7)),
 
-        'max_models': max_models,
+        'project_ids': project_ids,
+        'first_project': first_project,
+        'max_projects': max_projects,
         'max_num_reactions': max_num_reactions,
         'max_thumbnails': max_thumbnails,
+        'update_project_sources': update_project_sources,
         'update_combine_archives': update_combine_archives,
+        'update_simulations': update_simulations,
         'update_simulation_runs': update_simulation_runs,
-        'simulate_models': simulate_models,
-        'publish_models': publish_models,
+        'simulate_projects': simulate_projects,
+        'publish_projects': publish_projects,
         'entrez_delay': entrez_delay,
         'bucket_endpoint': bucket_endpoint,
         'bucket_name': bucket_name,

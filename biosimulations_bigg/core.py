@@ -37,7 +37,7 @@ env = {
 
 Entrez.email = env.get('ENTREZ_EMAIL', None)
 
-__all__ = ['import_models']
+__all__ = ['import_projects']
 
 
 def get_models(config):
@@ -56,11 +56,12 @@ def get_models(config):
     return models
 
 
-def get_model_details(model, config):
+def get_model_details(model, last_updated, config):
     """ Get the details of a model from the source database and download the associated files
 
     Args:
         model (:obj:`dict`): model
+        last_updated (:obj:`datetime.datetime`): timestamp when the model was last updated
         config (:obj:`dict`): configuration
 
     Returns:
@@ -71,20 +72,25 @@ def get_model_details(model, config):
     response.raise_for_status()
     model_detail = response.json()
 
-    # download the file for the model
-    model_filename = os.path.join(config['source_models_dirname'], model['bigg_id'] + '.xml')
-    if not os.path.isfile(model_filename):
+    download_files = (
+        last_updated is None
+        or config['update_project_sources']
+        or (dateutil.parser.parse(model_detail['last_updated']) + datetime.timedelta(1)) > last_updated
+    )
+
+    if download_files:
+        # download the file for the model
+        model_filename = os.path.join(config['source_models_dirname'], model['bigg_id'] + '.xml')
         response = config['source_session'].get(config['source_model_file_endpoint'] + '/models/{}.xml'.format(model['bigg_id']))
         response.raise_for_status()
         with open(model_filename, 'wb') as file:
             file.write(response.content)
 
-    # download flux map visualizations associated with the model
-    for escher_map in model_detail['escher_maps']:
-        map_name = escher_map['map_name']
-        standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
-        escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
-        if not os.path.isfile(escher_filename):
+        # download flux map visualizations associated with the model
+        for escher_map in model_detail['escher_maps']:
+            map_name = escher_map['map_name']
+            standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+            escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
             response = config['source_session'].get(config['source_map_file_endpoint'] + '/' + map_name)
             response.raise_for_status()
             with open(escher_filename, 'wb') as file:
@@ -253,7 +259,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
     metadata = [{
         "uri": '.',
         "combine_archive_uri": BIOSIMULATIONS_ROOT_URI_FORMAT.format(model_detail['model_bigg_id']),
-        'title': model_detail['model_bigg_id'],
+        'title': '{} metabolism'.format(taxon['name']),
         'abstract': 'Flux balance analysis model of the metabolism of {}.'.format(taxon['name']),
         'keywords': [
             'metabolism',
@@ -422,7 +428,7 @@ def build_combine_archive_for_model(model_filename, archive_filename, extra_cont
     shutil.rmtree(archive_dirname)
 
 
-def import_models(config):
+def import_projects(config):
     """ Download the source database, convert into COMBINE/OMEX archives, simulate the archives, and submit them to BioSimulations
 
     Args:
@@ -477,12 +483,17 @@ def import_models(config):
     # get a list of all models available in the source database
     models = get_models(config)
 
+    # filter to selected projects
+    if config['project_ids'] is not None:
+        models = list(filter(lambda model: model['bigg_id'] in config['project_ids'], models))
+
     # limit the models to import by number of reactions (used for testing)
     if config['max_num_reactions'] is not None:
         models = list(filter(lambda model: model['reaction_count'] < config['max_num_reactions'], models))
 
     # limit the number of models to import
-    models = models[0:config['max_models']]
+    models = models[config['first_project']:]
+    models = models[0:config['max_projects']]
 
     # get the details of each model
     model_details = []
@@ -494,7 +505,11 @@ def import_models(config):
         update_times[model['bigg_id']] = datetime.datetime.utcnow()
 
         # get the details of the model and download it from the source database
-        model_detail = get_model_details(model, config)
+        last_updated = status.get(model['bigg_id'], {}).get('updated', None)
+        if last_updated:
+            last_updated = dateutil.parser.parse(last_updated)
+
+        model_detail = get_model_details(model, last_updated, config)
         model_details.append(model_detail)
     models = model_details
 
@@ -643,7 +658,14 @@ def import_models(config):
         # simulate COMBINE/OMEX archives
         print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
 
-        if config['simulate_models']:
+        prev_objective = status.get(model['model_bigg_id'], {}).get('objective', None)
+        prev_duration = status.get(model['model_bigg_id'], {}).get('duration', None)
+
+        if config['simulate_projects'] and (
+            config['update_combine_archives']
+            or config['update_simulations']
+            or prev_objective is None
+        ):
             out_dirname = os.path.join(config['final_simulation_results_dirname'], model['model_bigg_id'])
             biosimulators_utils_config = Config(COLLECT_COMBINE_ARCHIVE_RESULTS=True)
             with warnings.catch_warnings():
@@ -659,8 +681,8 @@ def import_models(config):
                 raise ValueError('`{}` is not a meaningful simulation.'.format(model['model_bigg_id']))
             duration = log.duration
         else:
-            objective = status.get(model['model_bigg_id'], {}).get('objective', None)
-            duration = status.get(model['model_bigg_id'], {}).get('duration', None)
+            objective = prev_objective
+            duration = prev_duration
 
         # submit COMBINE/OMEX archive to BioSimulations
         if config['dry_run']:
@@ -668,7 +690,7 @@ def import_models(config):
             updated = status.get(model['model_bigg_id'], {}).get('updated', None)
         else:
             name = model['model_bigg_id']
-            if config['publish_models']:
+            if config['publish_projects']:
                 project_id = name
             else:
                 project_id = None

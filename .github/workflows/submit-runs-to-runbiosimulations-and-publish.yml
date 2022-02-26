@@ -6,6 +6,10 @@ on:
 
   workflow_dispatch:
     inputs:
+      updateProjectSources:
+        description: 'Whether to update the source files for the projects: "0" or "1" (default)'
+        required: false
+        default: '1'
       updateCombineArchives:
         description: 'Whether to rebuild existing COMBINE/OMEX archives: "0" (default) or "1"'
         required: false
@@ -18,6 +22,10 @@ on:
         description: 'Whether to submit COMBINE/OMEX archives to runBioSimulations: "0" or "1" (default)'
         required: false
         default: '1'
+      updateSimulations:
+        description: 'Whether to re-run COMBINE/OMEX archives: "0" (default) or "1"'
+        required: false
+        default: '0'
       updateSimulationRuns:
         description: 'Whether to re-run COMBINE/OMEX archives that have already been submitted to runBioSimulations: "0" (default) or "1"'
         required: false
@@ -26,8 +34,16 @@ on:
         description: 'Whether to publish the COMBINE/OMEX archives to BioSimulations: "0" or "1" (default)'
         required: false
         default: '1'
-      maxModels:
-        description: 'Maximum number of models to publish: "" (no limit; default) or a positive integer'
+      projectIds:
+        description: 'Space-separate list of ids of projects to import (e.g., "xxx" or "xxx yyy")'
+        required: false
+        default: ''
+      firstProject:
+        description: 'Iteration through projects at which to begin importing: "1" (default) or a positive integer'
+        required: false
+        default: '1'
+      maxProjects:
+        description: 'Maximum number of projects to publish: "" (no limit; default) or a positive integer'
         required: false
         default: ''
       maxNumReactions:
@@ -88,14 +104,22 @@ jobs:
       # Submit runs to runBioSimulations and publish runs to BioSimulations
       - name: Submit runs to runBioSimulations and publish runs to BioSimulations
         run: |
+          args=""
+
+          if [ "${{ github.event.inputs.updateProjectSources }}" = "1" ]; then
+            args="$args --update-project-sources"
+          fi
+
           if [ "${{ github.event.inputs.updateCombineArchives }}" = "1" ]; then
-            args="--update-combine-archives --update-simulation-runs"
-          else
-            if [ "${{ github.event.inputs.updateSimulationRuns }}" = "1" ]; then
-              args="--update-simulation-runs"
-            else
-              args=""
-            fi
+            args="$args --update-combine-archives"
+          fi
+
+          if [ "${{ github.event.inputs.updateSimulations }}" = "1" ]; then
+            args="$args --update-simulations"
+          fi
+
+          if [ "${{ github.event.inputs.updateSimulationRuns }}" = "1" ]; then
+            args="$args --update-simulation-runs"
           fi
 
           if [ "${{ github.event.inputs.validateCombineArchives }}" = "0" ]; then
@@ -110,15 +134,23 @@ jobs:
             args="$args --skip-publication"
           fi
 
-          if [ ! -z "${{ github.event.inputs.maxModels }}" ]; then
-            args="$args --max-models ${{ github.event.inputs.maxModels }}"
+          if [ ! -z "${{ github.event.inputs.projectIds }}" ]; then
+            args="$args --project ${{ github.event.inputs.projectIds }}"
+          fi
+
+          if [ ! -z "${{ github.event.inputs.firstProject }}" ]; then
+            args="$args --first-project ${{ github.event.inputs.firstProject }}"
+          fi
+
+          if [ ! -z "${{ github.event.inputs.maxProjects }}" ]; then
+            args="$args --max-projects ${{ github.event.inputs.maxProjects }}"
           fi
 
           if [ ! -z "${{ github.event.inputs.maxNumReactions }}" ]; then
             args="$args --max-num-reactions ${{ github.event.inputs.maxNumReactions }}"
           fi
           
-          biosimulations-bigg publish $args
+          biosimulations-bigg run-projects-and-publish $args
 
       # Push compiled projects
       - id: commit-projects

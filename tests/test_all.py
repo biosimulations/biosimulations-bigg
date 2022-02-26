@@ -1,6 +1,6 @@
 from biosimulations_bigg import __main__
 from biosimulations_bigg._version import __version__
-from biosimulations_bigg.core import import_models
+from biosimulations_bigg.core import import_projects
 from biosimulations_bigg.config import get_config
 from unittest import mock
 import Bio.Entrez
@@ -60,13 +60,13 @@ class TestCase(unittest.TestCase):
     def tearDownClass(cls):
         shutil.rmtree(cls.dirname)
 
-    def test_import_models(self):
+    def test_import_projects(self):
         config = get_config(
             source_dirname=os.path.join(self.dirname, 'source'),
             sessions_dirname=os.path.join(self.dirname, 'source'),
             final_dirname=os.path.join(self.dirname, 'final'),
             status_filename=os.path.join(self.dirname, 'final', 'status.yml'),
-            max_models=1,
+            max_projects=1,
             max_num_reactions=200,
             bucket_name='bucket',
         )
@@ -76,7 +76,7 @@ class TestCase(unittest.TestCase):
         with mock.patch('biosimulators_utils.biosimulations.utils.run_simulation_project', return_value='*' * 32):
             with mock.patch('biosimulators_utils.biosimulations.utils.get_authorization_for_client', return_value='xxx yyy'):
                 with mock.patch('boto3.resource', return_value=mock.Mock(Bucket=MockS3Bucket)):
-                    import_models(config)
+                    import_projects(config)
 
     def test_cli(self):
         with mock.patch.dict('os.environ', {
@@ -97,8 +97,8 @@ class TestCase(unittest.TestCase):
                         import biosimulations_bigg.config
                         with mock.patch.object(biosimulations_bigg.__main__, 'get_config', side_effect=mock_get_config):
                             with __main__.App(argv=[
-                                'publish',
-                                '--max-models', '1',
+                                'run-projects-and-publish',
+                                '--max-projects', '1',
                                 '--max-num-reactions', '200',
                             ]) as app:
                                 app.run()

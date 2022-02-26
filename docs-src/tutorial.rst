@@ -19,7 +19,7 @@ Second, to optionally use `Gurobi <https://www.gurobi.com/products/gurobi-optimi
 
 Third, run the following command-line program to published the models in the BiGG repository to BioSimulations. This program downloads models from BiGG, converts them to COMBINE/OMEX archives, submits the archives to runBioSimulations, and publishes their simulation runs to BioSimulations. This program provides several optional arguments for forcing updates, skipping simulations, skipping publication, and more.::
 
-   biosimulations-bigg publish
+   biosimulations-bigg run-projects-and-publish
 
 Fourth, the following command-line program can optionally be run to publish the runs of each model to BioSimulations. This is useful if the above publication program was run with the ``--skip-publication`` option.::
 

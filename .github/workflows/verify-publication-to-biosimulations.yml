@@ -1,4 +1,4 @@
-name: Verify that models were successfully published to BioSimulations
+name: Verify that projects were successfully published to BioSimulations
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   verify:
-    name: Verify that models were successfully published to BioSimulations
+    name: Verify that projects were successfully published to BioSimulations
     runs-on: ubuntu-latest
     steps:
       # Checkout repository
@@ -42,6 +42,6 @@ jobs:
       - name: Install the package
         run: python -m pip install -e .
 
-      # Verify that each model was successfully published
-      - name: Verify that each model was successfully published
+      # Verify that each project was successfully published
+      - name: Verify that each project was successfully published
         run: biosimulations-bigg verify-publication
