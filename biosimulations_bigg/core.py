@@ -25,7 +25,6 @@ import dotenv
 import os
 import re
 import shutil
-import tempfile
 import time
 import warnings
 import yaml
@@ -323,7 +322,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
     assert not errors
 
 
-def build_combine_archive_for_model(model_filename, archive_filename, extra_contents):
+def build_combine_archive_for_model(model_filename, archive_dirname, archive_filename, extra_contents):
     params, sims, vars, outputs = get_parameters_variables_outputs_for_simulation(
         model_filename, ModelLanguage.SBML, SteadyStateSimulation, native_ids=True)
 
@@ -400,8 +399,10 @@ def build_combine_archive_for_model(model_filename, archive_filename, extra_cont
             data_generator=data_gen,
         ))
 
-    # make temporary directory for archive
-    archive_dirname = tempfile.mkdtemp()
+    # make directory for archive
+    if os.path.isdir(archive_dirname):
+        shutil.rmtree(archive_dirname)
+    os.makedirs(archive_dirname)
     shutil.copyfile(model_filename, os.path.join(archive_dirname, os.path.basename(model_filename)))
 
     SedmlSimulationWriter().run(sedml_doc, os.path.join(archive_dirname, 'simulation.sedml'))
@@ -423,9 +424,6 @@ def build_combine_archive_for_model(model_filename, archive_filename, extra_cont
 
     # save archive to file
     CombineArchiveWriter().run(archive, archive_dirname, archive_filename)
-
-    # clean up temporary directory for archive
-    shutil.rmtree(archive_dirname)
 
 
 def import_projects(config):
@@ -650,10 +648,11 @@ def import_projects(config):
                 format=thumbnail.format,
             )
 
+        project_dirname = os.path.join(config['final_projects_dirname'], model['model_bigg_id'])
         project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
 
         if not os.path.isfile(project_filename) or config['update_combine_archives']:
-            build_combine_archive_for_model(model_filename, project_filename, extra_contents=extra_contents)
+            build_combine_archive_for_model(model_filename, project_dirname, project_filename, extra_contents=extra_contents)
 
         # simulate COMBINE/OMEX archives
         print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
