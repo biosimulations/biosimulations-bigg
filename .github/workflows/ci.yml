@@ -16,7 +16,7 @@ jobs:
 
       ########## install package and its requirements
       - name: Install Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: '3.9'
 
@@ -92,7 +92,7 @@ jobs:
 
       # install Python and Pip
       - name: Install Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: '3.9'
 
