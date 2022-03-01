@@ -1,5 +1,6 @@
 encodes:
-  label: Klebsiella pneumoniae subsp. pneumoniae MGH 78578, complete genome
+  label: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 strain ATCC 700721 chromosome,
+    complete genome
   uri: https://www.ncbi.nlm.nih.gov/nuccore/150953431
 reference:
   authors:
@@ -12,7 +13,7 @@ reference:
   - Shih-Feng Tsai
   - Bernhard O. Palsson
   - Chao A. Hsiung
-  date: '2011-04-15'
+  date: '2011-04-28'
   doi: 10.1128/JB.01218-10
   issue: '7'
   journal: Journal of Bacteriology

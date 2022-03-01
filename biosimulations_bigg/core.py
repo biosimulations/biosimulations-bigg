@@ -18,6 +18,7 @@ from unittest import mock
 import biosimulators_cobrapy
 import biosimulators_utils.biosimulations.utils
 import boto3
+import copy
 import dataclasses
 import datetime
 import dateutil.parser
@@ -258,7 +259,7 @@ def export_project_metadata_for_model_to_omex_metadata(model_detail, taxon, enco
     metadata = [{
         "uri": '.',
         "combine_archive_uri": BIOSIMULATIONS_ROOT_URI_FORMAT.format(model_detail['model_bigg_id']),
-        'title': '{} metabolism'.format(taxon['name']),
+        'title': '{}: {} metabolism'.format(model_detail['model_bigg_id'], taxon['name']),
         'abstract': 'Flux balance analysis model of the metabolism of {}.'.format(taxon['name']),
         'keywords': [
             'metabolism',
@@ -542,121 +543,118 @@ def import_projects(config):
 
     # download models, convert them to COMBINE/OMEX archives, simulate them, and deposit them to the BioSimulations database
     for i_model, model in enumerate(models):
-        model_filename = os.path.join(config['source_models_dirname'], model['model_bigg_id'] + '.xml')
-
-        # get additional metadata about the model
-        print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
-        taxon, encodes, reference, thumbnails = get_metadata_for_model(model, config)
-
-        # filter out disabled thumbnails
-        if thumbnails_curation.get(model['model_bigg_id'], []):
-            thumbnails = []
-            for thumbnail in thumbnails_curation[model['model_bigg_id']]:
-                if thumbnail['enabled']:
-                    thumbnails.append(PubMedCentralOpenAccesGraphic(
-                        id=thumbnail['id'],
-                        label=thumbnail['label'],
-                        filename=thumbnail['filename'],
-                    ))
-        else:
-            thumbnails_curation[model['model_bigg_id']] = [
-                {
-                    'id': thumbnail.id,
-                    'label': thumbnail.label,
-                    'filename': thumbnail.filename,
-                    'enabled': True,
-                }
-                for thumbnail in thumbnails
-            ]
-        thumbnails = thumbnails[0:config['max_thumbnails']]
-        for thumbnail in thumbnails:
-            thumbnail.location = reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg'
-            thumbnail.format = CombineArchiveContentFormat.JPEG
-
-        # convert Escher map to Vega and add to thumbnails
-        escher_maps = model['escher_maps'] + sorted((
-            {'map_name': name} for name in set(extra_visualizations_curation.get(model['model_bigg_id'], [])).difference(
-                set(map['map_name'] for map in model['escher_maps'])
-            )),
-            key=lambda map: map['map_name'],
-        )
-
-        for escher_map in escher_maps:
-            map_name = escher_map['map_name']
-            standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
-            escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
-
-            vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
-            if not os.path.isfile(vega_filename):
-                reaction_fluxes_data_set = {
-                    'sedmlUri': ['simulation.sedml', 'reaction_fluxes'],
-                }
-                escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
-
-            png_filename = os.path.join(config['source_visualizations_dirname'], map_name + '.png')
-            if os.path.isfile(png_filename):
-                thumbnails.append(mock.Mock(
-                    filename=png_filename,
-                    location=standardized_map_name + '.png',
-                    format=CombineArchiveContentFormat.PNG,
-                ))
-
-        # export metadata to RDF
-        print('Exporting project metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
-        project_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '.rdf')
-        export_project_metadata_for_model_to_omex_metadata(model, taxon, encodes, reference, thumbnails,
-                                                           project_metadata_filename, config)
-
-        # print('Exporting model metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
-        # model_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '-omex-metadata.rdf')
-        # build_omex_meta_file_for_model(model_filename, model_metadata_filename, metadata_format=OmexMetaOutputFormat.rdfxml_abbrev)
-
-        # package model into COMBINE/OMEX archive
-        print('Converting model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
-
         project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
-
-        extra_contents = {}
-        extra_contents[project_metadata_filename] = CombineArchiveContent(
-            location='metadata.rdf',
-            format=CombineArchiveContentFormat.OMEX_METADATA,
-        )
-        # extra_contents[model_metadata_filename] = CombineArchiveContent(
-        #     location=model['model_bigg_id'] + '.rdf',
-        #     format=CombineArchiveContentFormat.OMEX_METADATA,
-        # )
-        extra_contents[config['source_license_filename']] = CombineArchiveContent(
-            location='LICENSE',
-            format=CombineArchiveContentFormat.TEXT,
-        )
-        for escher_map in escher_maps:
-            map_name = escher_map['map_name']
-            standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
-            escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
-            vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
-            extra_contents[escher_filename] = CombineArchiveContent(
-                location=standardized_map_name + '.escher.json',
-                format=CombineArchiveContentFormat.Escher,
-            )
-            extra_contents[vega_filename] = CombineArchiveContent(
-                location=standardized_map_name + '.vg.json',
-                format=CombineArchiveContentFormat.Vega,
-            )
-        for thumbnail in thumbnails:
-            extra_contents[thumbnail.filename] = CombineArchiveContent(
-                location=thumbnail.location,
-                format=thumbnail.format,
-            )
-
-        project_dirname = os.path.join(config['final_projects_dirname'], model['model_bigg_id'])
-        project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
-
         if not os.path.isfile(project_filename) or config['update_combine_archives']:
+            model_filename = os.path.join(config['source_models_dirname'], model['model_bigg_id'] + '.xml')
+
+            # get additional metadata about the model
+            print('Getting metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
+            taxon, encodes, reference, thumbnails = get_metadata_for_model(model, config)
+
+            # filter out disabled thumbnails
+            if thumbnails_curation.get(model['model_bigg_id'], []):
+                thumbnails = []
+                for thumbnail in thumbnails_curation[model['model_bigg_id']]:
+                    if thumbnail['enabled']:
+                        thumbnails.append(PubMedCentralOpenAccesGraphic(
+                            id=thumbnail['id'],
+                            label=thumbnail['label'],
+                            filename=thumbnail['filename'],
+                        ))
+            else:
+                thumbnails_curation[model['model_bigg_id']] = [
+                    {
+                        'id': thumbnail.id,
+                        'label': thumbnail.label,
+                        'filename': thumbnail.filename,
+                        'enabled': True,
+                    }
+                    for thumbnail in thumbnails
+                ]
+            thumbnails = thumbnails[0:config['max_thumbnails']]
+            for thumbnail in thumbnails:
+                thumbnail.location = reference.pubmed_central_id + '-' + os.path.basename(thumbnail.id) + '.jpg'
+                thumbnail.format = CombineArchiveContentFormat.JPEG
+
+            # convert Escher map to Vega and add to thumbnails
+            escher_maps = model['escher_maps'] + sorted((
+                {'map_name': name} for name in set(extra_visualizations_curation.get(model['model_bigg_id'], [])).difference(
+                    set(map['map_name'] for map in model['escher_maps'])
+                )),
+                key=lambda map: map['map_name'],
+            )
+
+            for escher_map in escher_maps:
+                map_name = escher_map['map_name']
+                standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+                escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
+
+                vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
+                if not os.path.isfile(vega_filename):
+                    reaction_fluxes_data_set = {
+                        'sedmlUri': ['simulation.sedml', 'reaction_fluxes'],
+                    }
+                    escher_to_vega(reaction_fluxes_data_set, escher_filename, vega_filename)
+
+                png_filename = os.path.join(config['source_visualizations_dirname'], map_name + '.png')
+                if os.path.isfile(png_filename):
+                    thumbnails.append(mock.Mock(
+                        filename=png_filename,
+                        location=standardized_map_name + '.png',
+                        format=CombineArchiveContentFormat.PNG,
+                    ))
+
+            # export metadata to RDF
+            print('Exporting project metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
+            project_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '.rdf')
+            export_project_metadata_for_model_to_omex_metadata(model, taxon, encodes, reference, thumbnails,
+                                                               project_metadata_filename, config)
+
+            # print('Exporting model metadata for {} of {}: {}'.format(i_model + 1, len(models), model['model_bigg_id']))
+            # model_metadata_filename = os.path.join(config['final_metadata_dirname'], model['model_bigg_id'] + '-omex-metadata.rdf')
+            # build_omex_meta_file_for_model(model_filename, model_metadata_filename, metadata_format=OmexMetaOutputFormat.rdfxml_abbrev)
+
+            # package model into COMBINE/OMEX archive
+            print('Converting model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
+
+            extra_contents = {}
+            extra_contents[project_metadata_filename] = CombineArchiveContent(
+                location='metadata.rdf',
+                format=CombineArchiveContentFormat.OMEX_METADATA,
+            )
+            # extra_contents[model_metadata_filename] = CombineArchiveContent(
+            #     location=model['model_bigg_id'] + '.rdf',
+            #     format=CombineArchiveContentFormat.OMEX_METADATA,
+            # )
+            extra_contents[config['source_license_filename']] = CombineArchiveContent(
+                location='LICENSE',
+                format=CombineArchiveContentFormat.TEXT,
+            )
+            for escher_map in escher_maps:
+                map_name = escher_map['map_name']
+                standardized_map_name = re.sub(r'[^a-zA-Z0-9\.]', '-', map_name)
+                escher_filename = os.path.join(config['source_visualizations_dirname'], standardized_map_name + '.json')
+                vega_filename = os.path.join(config['final_visualizations_dirname'], standardized_map_name + '.vg.json')
+                extra_contents[escher_filename] = CombineArchiveContent(
+                    location=standardized_map_name + '.escher.json',
+                    format=CombineArchiveContentFormat.Escher,
+                )
+                extra_contents[vega_filename] = CombineArchiveContent(
+                    location=standardized_map_name + '.vg.json',
+                    format=CombineArchiveContentFormat.Vega,
+                )
+            for thumbnail in thumbnails:
+                extra_contents[thumbnail.filename] = CombineArchiveContent(
+                    location=thumbnail.location,
+                    format=thumbnail.format,
+                )
+
+            project_dirname = os.path.join(config['final_projects_dirname'], model['model_bigg_id'])
+            project_filename = os.path.join(config['final_projects_dirname'], model['model_bigg_id'] + '.omex')
+
             build_combine_archive_for_model(model_filename, project_dirname, project_filename, extra_contents=extra_contents)
 
         # simulate COMBINE/OMEX archives
-        print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
-
         prev_objective = status.get(model['model_bigg_id'], {}).get('objective', None)
         prev_duration = status.get(model['model_bigg_id'], {}).get('duration', None)
 
@@ -665,6 +663,7 @@ def import_projects(config):
             or config['update_simulations']
             or prev_objective is None
         ):
+            print('Simulating model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
             out_dirname = os.path.join(config['final_simulation_results_dirname'], model['model_bigg_id'])
             biosimulators_utils_config = Config(COLLECT_COMBINE_ARCHIVE_RESULTS=True)
             with warnings.catch_warnings():
@@ -688,6 +687,8 @@ def import_projects(config):
             runbiosimulations_id = status.get(model['model_bigg_id'], {}).get('runbiosimulationsId', None)
             updated = status.get(model['model_bigg_id'], {}).get('updated', None)
         else:
+            print('Submitting model {} of {}: {} ...'.format(i_model + 1, len(models), model['model_bigg_id']))
+
             name = model['model_bigg_id']
             if config['publish_projects']:
                 project_id = name
@@ -709,12 +710,14 @@ def import_projects(config):
             'objective': objective,
             'duration': duration,
             'runbiosimulationsId': runbiosimulations_id,
+            'biosimulationsId': model['model_bigg_id'],
         }
         with open(config['status_filename'], 'w') as file:
             file.write(yaml.dump(status))
 
-        for model in thumbnails_curation.values():
+        thumbnails_curation_copy = copy.deepcopy(thumbnails_curation)
+        for model in thumbnails_curation_copy.values():
             for thumbnail in model:
                 thumbnail['filename'] = os.path.relpath(thumbnail['filename'], config['source_thumbnails_dirname'])
         with open(config['thumbnails_filename'], 'w') as file:
-            file.write(yaml.dump(thumbnails_curation))
+            file.write(yaml.dump(thumbnails_curation_copy))

@@ -1,5 +1,5 @@
 encodes:
-  label: Escherichia coli BL21(DE3), complete genome
+  label: Escherichia coli BL21(DE3) chromosome, complete genome
   uri: https://www.ncbi.nlm.nih.gov/nuccore/296142109
 reference:
   authors:
