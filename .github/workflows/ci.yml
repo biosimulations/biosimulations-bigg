@@ -109,6 +109,22 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --upgrade setuptools
 
+      # convert README.md to RST for PyPI
+      - name: Install pandoc
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends wget
+
+          wget https://github.com/jgm/pandoc/releases -O /tmp/pandocVersions.html
+          urlPart=`grep "\.deb" /tmp/pandocVersions.html | head -n 1 | cut -d'/' -f2-7 | cut -d'"' -f1`
+          wget "https://github.com/$urlPart" -O /tmp/pandoc.deb
+          sudo dpkg -i /tmp/pandoc.deb
+          rm /tmp/pandocVersions.html
+          rm /tmp/pandoc.deb
+
+      - name: Convert README to .rst format
+        run: pandoc --from=gfm --output=README.rst --to=rst README.md
+
       # compile package
       - name: Install twine
         run: |
@@ -128,22 +144,6 @@ jobs:
           sphinx-apidoc . setup.py --output-dir docs-src/source --force --module-first --no-toc
           mkdir -p docs-src/_static
           sphinx-build docs-src docs
-
-      # convert README.md to RST for PyPI
-      - name: Install pandoc
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y --no-install-recommends wget
-
-          wget https://github.com/jgm/pandoc/releases -O /tmp/pandocVersions.html
-          urlPart=`grep "\.deb" /tmp/pandocVersions.html | head -n 1 | cut -d'/' -f2-7 | cut -d'"' -f1`
-          wget "https://github.com/$urlPart" -O /tmp/pandoc.deb
-          sudo dpkg -i /tmp/pandoc.deb
-          rm /tmp/pandocVersions.html
-          rm /tmp/pandoc.deb
-
-      - name: Convert README to .rst format
-        run: pandoc --from=gfm --output=README.rst --to=rst README.md
 
       ########## Release
       # get version number
