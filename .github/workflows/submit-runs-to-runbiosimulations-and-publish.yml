@@ -46,10 +46,6 @@ on:
         description: 'Maximum number of projects to publish: "" (no limit; default) or a positive integer'
         required: false
         default: ''
-      maxNumReactions:
-        description: 'Maximum size model to publish: "" (no limit; default) or a positive integer'
-        required: false
-        default: ''
 
 jobs:
   publish:
@@ -144,10 +140,6 @@ jobs:
 
           if [ ! -z "${{ github.event.inputs.maxProjects }}" ]; then
             args="$args --max-projects ${{ github.event.inputs.maxProjects }}"
-          fi
-
-          if [ ! -z "${{ github.event.inputs.maxNumReactions }}" ]; then
-            args="$args --max-num-reactions ${{ github.event.inputs.maxNumReactions }}"
           fi
           
           biosimulations-bigg run-projects-and-publish $args
